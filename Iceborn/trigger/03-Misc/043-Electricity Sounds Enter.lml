@@ -1,0 +1,21 @@
+事件
+    TriggerRegisterEnterRectSimple
+        变量: gg_rct_Region_139_Copy_3
+    TriggerRegisterEnterRectSimple
+        变量: gg_rct_Region_139_Copy_2
+    TriggerRegisterEnterRectSimple
+        变量: gg_rct_Region_139_Copy
+    TriggerRegisterEnterRectSimple
+        变量: gg_rct_Region_139
+    TriggerRegisterEnterRectSimple
+        变量: gg_rct_Region_143
+    TriggerRegisterEnterRectSimple
+        变量: gg_rct_Region_152
+条件
+    OperatorCompareUnit
+        函数: GetEnteringUnit
+        预设: OperatorEqualENE
+        变量: Hero
+动作
+    PlaySoundBJ
+        变量: gg_snd_Electricity

@@ -1,0 +1,178 @@
+事件
+条件
+动作
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h04D
+        预设: PlayerNP
+        函数: GetUnitLoc
+            变量: MirrorLowerTrigger
+        预设: RealUnitFacing
+    SetVariable
+        变量: MirrorLowerTrigger
+        函数: GetLastCreatedUnit
+    AddTriggerEvent
+        变量: gg_trg_Chains_Mirror_Lower
+        事件: TriggerRegisterUnitEvent
+            变量: MirrorLowerTrigger
+            预设: UnitEventDeath
+    PlaySoundBJ
+        变量: gg_snd_Explosion9
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: MirrorRedLowerBool
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: MirrorRedLowerBool
+                常量: false
+            SetVariable
+                变量: MirrorPurpleLowerBool
+                常量: true
+            SetUnitFacingTimed
+                变量: MirrorLowerPurple
+                常量: 225.00
+                常量: 1.00
+            SetUnitFacingTimed
+                变量: MirrorLowerRed
+                常量: 225.00
+                常量: 1.00
+            SetUnitFacingTimed
+                变量: MirrorLowerYellow
+                常量: 225.00
+                常量: 1.00
+            SetUnitFacingTimed
+                变量: MirrorLowerGreen
+                常量: 225.00
+                常量: 1.00
+            ReturnAction
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: MirrorYellowLowerBool
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: MirrorYellowLowerBool
+                常量: false
+            SetVariable
+                变量: MirrorRedLowerBool
+                常量: true
+            SetUnitFacingTimed
+                变量: MirrorLowerPurple
+                常量: 135.00
+                常量: 1.00
+            SetUnitFacingTimed
+                变量: MirrorLowerRed
+                常量: 135.00
+                常量: 1.00
+            SetUnitFacingTimed
+                变量: MirrorLowerYellow
+                常量: 135.00
+                常量: 1.00
+            SetUnitFacingTimed
+                变量: MirrorLowerGreen
+                常量: 135.00
+                常量: 1.00
+            ReturnAction
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: MirrorGreenLowerBool
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: MirrorGreenLowerBool
+                常量: false
+            SetVariable
+                变量: MirrorYellowLowerBool
+                常量: true
+            SetUnitFacingTimed
+                变量: MirrorLowerPurple
+                常量: 45.00
+                常量: 1.00
+            SetUnitFacingTimed
+                变量: MirrorLowerRed
+                常量: 45.00
+                常量: 1.00
+            SetUnitFacingTimed
+                变量: MirrorLowerYellow
+                常量: 45.00
+                常量: 1.00
+            SetUnitFacingTimed
+                变量: MirrorLowerGreen
+                常量: 45.00
+                常量: 1.00
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: MirrorRedUpperBool
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: IsTriggerEnabled
+                                    变量: gg_trg_Chains_Triangle
+                                预设: OperatorEqualENE
+                                常量: true
+                        动作
+                            TriggerExecute
+                                变量: gg_trg_Chains_Triangle
+                            PlaySoundBJ
+                                变量: gg_snd_Explosion8
+            ReturnAction
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: MirrorPurpleLowerBool
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: MirrorPurpleLowerBool
+                常量: false
+            SetVariable
+                变量: MirrorGreenLowerBool
+                常量: true
+            SetUnitFacingTimed
+                变量: MirrorLowerPurple
+                常量: 315.00
+                常量: 1.00
+            SetUnitFacingTimed
+                变量: MirrorLowerRed
+                常量: 315.00
+                常量: 1.00
+            SetUnitFacingTimed
+                变量: MirrorLowerYellow
+                常量: 315.00
+                常量: 1.00
+            SetUnitFacingTimed
+                变量: MirrorLowerGreen
+                常量: 315.00
+                常量: 1.00
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: MirrorPurpleUpperBool
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: IsTriggerEnabled
+                                    变量: gg_trg_Chains_Book
+                                预设: OperatorEqualENE
+                                常量: true
+                        动作
+                            TriggerExecute
+                                变量: gg_trg_Chains_Book
+                            PlaySoundBJ
+                                变量: gg_snd_Explosion8
+            ReturnAction

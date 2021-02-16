@@ -1,0 +1,22 @@
+事件
+    TriggerRegisterUnitEvent
+        变量: gg_unit_H000_0001
+        预设: UnitEventSpellEffect
+条件
+    OrMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetSpellTargetUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_H03Q_0374
+            OperatorCompareUnit
+                函数: GetSpellTargetUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_H06F_0415
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    DisableTrigger
+        变量: gg_trg_Premature_Provoke_1
+    TriggerExecute
+        变量: gg_trg_P5_Provocation

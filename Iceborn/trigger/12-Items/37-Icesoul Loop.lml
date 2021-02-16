@@ -1,0 +1,29 @@
+事件
+条件
+    OperatorComparePlayer
+        函数: GetOwningPlayer
+            函数: GetTriggerUnit
+        预设: OperatorEqualENE
+        预设: PlayerNA
+动作
+    SetVariable
+        变量: AAPOINT
+        函数: GetUnitLoc
+            函数: GetTriggerUnit
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h058
+        预设: Player00
+        变量: AAPOINT
+        预设: RealUnitFacing
+    IssueTargetOrder
+        函数: GetLastCreatedUnit
+        预设: UnitOrderCripple
+        函数: GetTriggerUnit
+    StopSoundBJ
+        变量: gg_snd_DeathknightStrike
+        预设: FadeDontDont
+    PlaySoundBJ
+        变量: gg_snd_DeathknightStrike
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'

@@ -1,0 +1,14 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventHeroPickUpItem
+条件
+    OperatorCompareItemCode
+        函数: GetItemTypeId
+            函数: GetManipulatedItem
+        预设: OperatorEqualENE
+        常量: I01S
+动作
+    AdjustPlayerStateBJ
+        常量: 1
+        预设: Player00
+        预设: PlayerStateFoodUsed

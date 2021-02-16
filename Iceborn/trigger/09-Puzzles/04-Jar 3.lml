@@ -1,0 +1,71 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventDeath
+条件
+    OperatorCompareUnit
+        函数: GetDyingUnit
+        预设: OperatorEqualENE
+        变量: Jar3
+动作
+    StopSoundBJ
+        变量: gg_snd_CrippleTarget1
+        预设: FadeDontDont
+    PlaySoundBJ
+        变量: gg_snd_CrippleTarget1
+    ShowUnitHide
+        函数: GetDyingUnit
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h02B
+        预设: PlayerNP
+        函数: GetUnitLoc
+            函数: GetDyingUnit
+        预设: RealUnitFacing
+    SetVariable
+        变量: Jar3
+        函数: GetLastCreatedUnit
+    UnitAddAbilityBJ
+        常量: Avul
+        变量: Jar3
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h02C
+        预设: PlayerNP
+        函数: GetUnitLoc
+            函数: GetDyingUnit
+        预设: RealUnitFacing
+    SetVariable
+        变量: Jar3Effect
+        函数: GetLastCreatedUnit
+    TriggerSleepAction
+        常量: 6.00
+    IfThenElseMultiple
+        条件
+            AndMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: IsUnitAliveBJ
+                            变量: Jar1Effect
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsUnitAliveBJ
+                            变量: Jar2Effect
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsUnitAliveBJ
+                            变量: Jar3Effect
+                        预设: OperatorEqualENE
+                        常量: true
+        动作
+            ConditionalTriggerExecute
+                变量: gg_trg_Jar_Lighting
+        动作
+            UnitRemoveAbilityBJ
+                常量: Avul
+                变量: Jar3
+            KillUnit
+                变量: Jar3Effect
+            ShowUnitHide
+                变量: Jar3Effect

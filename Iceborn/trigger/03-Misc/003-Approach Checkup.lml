@@ -1,0 +1,38 @@
+事件
+条件
+    OrMultiple
+        条件
+            OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetTriggerUnit
+                预设: OperatorEqualENE
+                常量: h01U
+            OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetTriggerUnit
+                预设: OperatorEqualENE
+                常量: h02O
+            OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetTriggerUnit
+                预设: OperatorEqualENE
+                常量: h04V
+            OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetTriggerUnit
+                预设: OperatorEqualENE
+                常量: h037
+动作
+    IssuePointOrderLoc
+        函数: GetTriggerUnit
+        预设: UnitOrderClusterRockets
+        函数: GetUnitLoc
+            变量: Hero
+    IssuePointOrderLoc
+        函数: GetTriggerUnit
+        预设: UnitOrderCarrionSwarm
+        函数: GetUnitLoc
+            变量: Hero
+    IssueImmediateOrder
+        函数: GetTriggerUnit
+        预设: UnitOrderThunderClap

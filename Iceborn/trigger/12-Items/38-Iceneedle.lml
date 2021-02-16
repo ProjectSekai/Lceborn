@@ -1,0 +1,30 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OperatorCompareAbilityId
+        函数: GetSpellAbilityId
+        预设: OperatorEqualENE
+        常量: A05U
+动作
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h060
+        预设: PlayerNP
+        函数: GetSpellTargetLoc
+        预设: RealUnitFacing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05Z
+        预设: Player01
+        函数: GetSpellTargetLoc
+        预设: RealUnitFacing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05Y
+        预设: PlayerNP
+        函数: GetSpellTargetLoc
+        预设: RealUnitFacing
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: NeedleGroup

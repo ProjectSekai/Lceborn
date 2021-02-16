@@ -1,0 +1,40 @@
+事件
+    TriggerRegisterTimerEventPeriodic
+        常量: 140.00
+条件
+动作
+    IfThenElse
+        条件: OperatorCompareBoolean
+            函数: IsUnitDeadBJ
+                变量: gg_unit_H06N_0376
+            预设: OperatorEqualENE
+            常量: true
+        动作: DisableTrigger
+            函数: GetTriggeringTrigger
+        动作: DoNothing
+    IssuePointOrderLoc
+        变量: gg_unit_H06N_0376
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_365
+    TriggerSleepAction
+        常量: 40.00
+    IssuePointOrderLoc
+        变量: gg_unit_H06N_0376
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_365_Copy_3
+    TriggerSleepAction
+        常量: 40.00
+    IssuePointOrderLoc
+        变量: gg_unit_H06N_0376
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_365_Copy
+    TriggerSleepAction
+        常量: 30.00
+    IssuePointOrderLoc
+        变量: gg_unit_H06N_0376
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_365_Copy_2

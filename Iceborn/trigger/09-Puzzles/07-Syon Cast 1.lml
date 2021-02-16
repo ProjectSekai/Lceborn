@@ -1,0 +1,27 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventIssued_Unit_Order
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventIssued_Point_Order
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventIssued_Order
+条件
+    OperatorCompareUnit
+        函数: GetTriggerUnit
+        预设: OperatorEqualENE
+        变量: Hero
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    DestroyEffectBJ
+        变量: Ring1
+    StopSoundBJ
+        变量: gg_snd_TranquilityHealLoop1
+        预设: FadeDontDont
+    ResetUnitAnimation
+        变量: Hero
+    KillUnit
+        变量: Ring1Prog
+    SetUnitTimeScalePercent
+        变量: Ring1Prog
+        常量: 1000.00

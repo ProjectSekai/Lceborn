@@ -1,0 +1,274 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OrMultiple
+        条件
+            OperatorCompareAbilityId
+                函数: GetSpellAbilityId
+                预设: OperatorEqualENE
+                常量: A000
+            OperatorCompareAbilityId
+                函数: GetSpellAbilityId
+                预设: OperatorEqualENE
+                常量: A001
+            OperatorCompareAbilityId
+                函数: GetSpellAbilityId
+                预设: OperatorEqualENE
+                常量: A002
+            OperatorCompareAbilityId
+                函数: GetSpellAbilityId
+                预设: OperatorEqualENE
+                常量: A02S
+            OperatorCompareAbilityId
+                函数: GetSpellAbilityId
+                预设: OperatorEqualENE
+                常量: A02U
+            OperatorCompareAbilityId
+                函数: GetSpellAbilityId
+                预设: OperatorEqualENE
+                常量: A03Q
+            OperatorCompareAbilityId
+                函数: GetSpellAbilityId
+                预设: OperatorEqualENE
+                常量: A05B
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareReal
+                变量: ColdSoulReal
+                预设: OperatorEqual
+                常量: 5.00
+        动作
+            SetVariable
+                变量: ColdSoulReal
+                常量: 0.00
+            CreateTextTagUnitBJ
+                常量: 6
+                变量: Hero
+                常量: 0.00
+                常量: 20.00
+                常量: 100.00
+                常量: 100.00
+                常量: 0.00
+                常量: 0
+            SetTextTagVelocityBJ
+                函数: GetLastCreatedTextTag
+                常量: 130.00
+                常量: 90.00
+            SetTextTagPermanentBJ
+                函数: GetLastCreatedTextTag
+                预设: EnableDisableDisable
+            SetTextTagLifespanBJ
+                函数: GetLastCreatedTextTag
+                变量: Text_Duration
+            SetTextTagFadepointBJ
+                函数: GetLastCreatedTextTag
+                常量: 0.65
+            PlaySoundBJ
+                变量: gg_snd_Explosion5
+            SetVariable
+                变量: AAPOINT
+                函数: GetUnitLoc
+                    变量: Hero
+            AddSpecialEffectLocBJ
+                变量: AAPOINT
+                常量: Enchantment.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            CustomScriptCode
+                常量: 'call RemoveLocation(udg_AAPOINT)'
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: Bonds
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                    UnitAddAbilityBJ
+                        常量: A03S
+                        变量: Hero
+            TriggerSleepAction
+                常量: 3.00
+            UnitRemoveAbilityBJ
+                常量: A03S
+                变量: Hero
+            TriggerExecute
+                变量: gg_trg_Scroll_Soul_Knock
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareReal
+                        变量: ColdSoulReal
+                        预设: OperatorEqual
+                        常量: 4.00
+                动作
+                    SetVariable
+                        变量: ColdSoulReal
+                        函数: OperatorReal
+                            变量: ColdSoulReal
+                            预设: OperatorAdd
+                            常量: 1
+                    CreateTextTagUnitBJ
+                        常量: 5
+                        变量: Hero
+                        常量: 0.00
+                        常量: 20.00
+                        常量: 100.00
+                        常量: 100.00
+                        常量: 0.00
+                        常量: 0
+                    SetTextTagVelocityBJ
+                        函数: GetLastCreatedTextTag
+                        常量: 130.00
+                        常量: 90.00
+                    SetTextTagPermanentBJ
+                        函数: GetLastCreatedTextTag
+                        预设: EnableDisableDisable
+                    SetTextTagLifespanBJ
+                        函数: GetLastCreatedTextTag
+                        变量: Text_Duration
+                    SetTextTagFadepointBJ
+                        函数: GetLastCreatedTextTag
+                        常量: 0.65
+            IfThenElseMultiple
+                条件
+                    OperatorCompareReal
+                        变量: ColdSoulReal
+                        预设: OperatorEqual
+                        常量: 3.00
+                动作
+                    SetVariable
+                        变量: ColdSoulReal
+                        函数: OperatorReal
+                            变量: ColdSoulReal
+                            预设: OperatorAdd
+                            常量: 1
+                    CreateTextTagUnitBJ
+                        常量: 4
+                        变量: Hero
+                        常量: 0.00
+                        常量: 20.00
+                        常量: 100.00
+                        常量: 100.00
+                        常量: 0.00
+                        常量: 0
+                    SetTextTagVelocityBJ
+                        函数: GetLastCreatedTextTag
+                        常量: 130.00
+                        常量: 90.00
+                    SetTextTagPermanentBJ
+                        函数: GetLastCreatedTextTag
+                        预设: EnableDisableDisable
+                    SetTextTagLifespanBJ
+                        函数: GetLastCreatedTextTag
+                        变量: Text_Duration
+                    SetTextTagFadepointBJ
+                        函数: GetLastCreatedTextTag
+                        常量: 0.65
+            IfThenElseMultiple
+                条件
+                    OperatorCompareReal
+                        变量: ColdSoulReal
+                        预设: OperatorEqual
+                        常量: 2.00
+                动作
+                    SetVariable
+                        变量: ColdSoulReal
+                        函数: OperatorReal
+                            变量: ColdSoulReal
+                            预设: OperatorAdd
+                            常量: 1
+                    CreateTextTagUnitBJ
+                        常量: 3
+                        变量: Hero
+                        常量: 0.00
+                        常量: 20.00
+                        常量: 100.00
+                        常量: 100.00
+                        常量: 0.00
+                        常量: 0
+                    SetTextTagVelocityBJ
+                        函数: GetLastCreatedTextTag
+                        常量: 130.00
+                        常量: 90.00
+                    SetTextTagPermanentBJ
+                        函数: GetLastCreatedTextTag
+                        预设: EnableDisableDisable
+                    SetTextTagLifespanBJ
+                        函数: GetLastCreatedTextTag
+                        变量: Text_Duration
+                    SetTextTagFadepointBJ
+                        函数: GetLastCreatedTextTag
+                        常量: 0.65
+            IfThenElseMultiple
+                条件
+                    OperatorCompareReal
+                        变量: ColdSoulReal
+                        预设: OperatorEqual
+                        常量: 1.00
+                动作
+                    SetVariable
+                        变量: ColdSoulReal
+                        函数: OperatorReal
+                            变量: ColdSoulReal
+                            预设: OperatorAdd
+                            常量: 1
+                    CreateTextTagUnitBJ
+                        常量: 2
+                        变量: Hero
+                        常量: 0.00
+                        常量: 20.00
+                        常量: 100.00
+                        常量: 100.00
+                        常量: 0.00
+                        常量: 0
+                    SetTextTagVelocityBJ
+                        函数: GetLastCreatedTextTag
+                        常量: 130.00
+                        常量: 90.00
+                    SetTextTagPermanentBJ
+                        函数: GetLastCreatedTextTag
+                        预设: EnableDisableDisable
+                    SetTextTagLifespanBJ
+                        函数: GetLastCreatedTextTag
+                        变量: Text_Duration
+                    SetTextTagFadepointBJ
+                        函数: GetLastCreatedTextTag
+                        常量: 0.65
+            IfThenElseMultiple
+                条件
+                    OperatorCompareReal
+                        变量: ColdSoulReal
+                        预设: OperatorEqual
+                        常量: 0.00
+                动作
+                    SetVariable
+                        变量: ColdSoulReal
+                        函数: OperatorReal
+                            变量: ColdSoulReal
+                            预设: OperatorAdd
+                            常量: 1
+                    CreateTextTagUnitBJ
+                        常量: 1
+                        变量: Hero
+                        常量: 0.00
+                        常量: 20.00
+                        常量: 100.00
+                        常量: 100.00
+                        常量: 0.00
+                        常量: 0
+                    SetTextTagVelocityBJ
+                        函数: GetLastCreatedTextTag
+                        常量: 130.00
+                        常量: 90.00
+                    SetTextTagPermanentBJ
+                        函数: GetLastCreatedTextTag
+                        预设: EnableDisableDisable
+                    SetTextTagLifespanBJ
+                        函数: GetLastCreatedTextTag
+                        变量: Text_Duration
+                    SetTextTagFadepointBJ
+                        函数: GetLastCreatedTextTag
+                        常量: 0.65

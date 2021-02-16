@@ -1,0 +1,11 @@
+事件
+条件
+动作
+    SelectUnitSingle
+        变量: Hero
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 5.00
+        常量: '|cffffcc00It is still under cooldown|r
+
+'

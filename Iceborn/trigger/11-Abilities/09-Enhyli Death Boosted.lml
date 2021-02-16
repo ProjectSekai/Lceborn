@@ -1,0 +1,78 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventDeath
+条件
+    OrMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: SummonedElemental1
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: SummonedElemental2
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: IsItemOwned
+                    变量: Eyestone
+                预设: OperatorEqualENE
+                常量: true
+        动作
+        动作
+            ReturnAction
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetDyingUnit
+        常量: IceNova.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetDyingUnit
+        常量: EarthMagic.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    PlaySoundBJ
+        变量: gg_snd_Explosion2
+    ForGroupMultiple
+        函数: GetUnitsInRangeOfLocAll
+            常量: 300.00
+            函数: GetUnitLoc
+                函数: GetDyingUnit
+        动作
+            IfThenElseMultiple
+                条件
+                    AndMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: IsUnitEnemy
+                                    函数: GetEnumUnit
+                                    预设: Player00
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitAliveBJ
+                                    函数: GetEnumUnit
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitType
+                                    函数: GetEnumUnit
+                                    预设: UnitTypeMagicImmune
+                                预设: OperatorEqualENE
+                                常量: false
+                动作
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h005
+                        预设: Player00
+                        函数: GetUnitLoc
+                            函数: GetEnumUnit
+                        预设: RealUnitFacing
+                    IssueTargetOrder
+                        函数: GetLastCreatedUnit
+                        预设: UnitOrderSlow
+                        函数: GetEnumUnit

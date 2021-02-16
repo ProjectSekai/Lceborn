@@ -1,0 +1,157 @@
+事件
+    TriggerRegisterTimerEventPeriodic
+        常量: 12.00
+条件
+动作
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h06D
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317
+        常量: 225.00
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h06D
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317
+        常量: 225.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: ModeAdvanced
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            UnitAddAbilityBJ
+                常量: A077
+                函数: GetLastCreatedUnit
+            UnitAddAbilityBJ
+                常量: A03K
+                函数: GetLastCreatedUnit
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h06E
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317
+        常量: 225.00
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h06D
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317_Copy
+        常量: 225.00
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h06D
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317_Copy
+        常量: 225.00
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h06E
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317_Copy
+        常量: 225.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: ModeAdvanced
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            UnitAddAbilityBJ
+                常量: A077
+                函数: GetLastCreatedUnit
+            UnitAddAbilityBJ
+                常量: A03K
+                函数: GetLastCreatedUnit
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ

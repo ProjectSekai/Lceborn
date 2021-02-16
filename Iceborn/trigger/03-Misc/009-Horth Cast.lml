@@ -1,0 +1,14 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OperatorCompareAbilityId
+        函数: GetSpellAbilityId
+        预设: OperatorEqualENE
+        常量: A02F
+动作
+    StopSoundBJ
+        变量: gg_snd_DragonYesAttack3
+        预设: FadeDontDont
+    PlaySoundBJ
+        变量: gg_snd_DragonYesAttack3

@@ -1,0 +1,11 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventHero_Level
+条件
+动作
+    SetUnitLifePercentBJ
+        函数: GetTriggerUnit
+        常量: 100
+    SetUnitManaPercentBJ
+        函数: GetTriggerUnit
+        常量: 100

@@ -1,0 +1,57 @@
+v1.6
+
+Adjusted Icegrenade coding leaving no delays between actions
+Advanced mode is now notably harder
+Serpent has longer range of attacks
+Neutralizing Machine has its HP points increased, but lost spell immunity
+
+v1.5
+
+Icegrenade and Glyph of Tremorfrost variable confusion fixed
+Khnartho summoned Iceguards no longer has abilities
+Cirratho Elemental is now harder to defeat
+Thun'Tharok battle is now easier
+Attribute reset system is now available
+Difficulty of Act 4 slightly increased
+
+v1.4
+
+Adjusted pathing blocker structure in some areas
+Changed Glyph's hotkey to Z instead of S due to confusion
+Mannatholic Ring now restore mana points under invulnerability
+Icegrenade spell does not fail while casting on the move
+Advanced mode no longer removes 3rd scroll for the Pylon puzzle
+Some hints are no longer hidden in advanced mode
+
+v1.3
+
+Fixed preview image typo
+Minerals model animation has been fixed
+Glyph of Tremorfrost spell has been fixed
+Adjusted some of units' properties
+Added a notice about the path to the east of Tree
+
+v1.2
+
+All cinematics of Acts are now skippable at the beginning
+Eye's Neosphere no longer kills itself
+Eye's Neosphere now last for 5 seconds longer
+Eye's Neosphere now has a bigger scale of size
+
+v1.1
+
+Weakened Frostsky Sanctuary Golems
+Tyotho no longer attacks Golems
+Fixed Cirratho Elemental item drop
+Increased Northorum's mana regeneration rate
+Weakened Icemancer
+Tol Ring is no longer hidden
+Chest at Sky Boethery is now more easily spotted
+Arachnid battle can not be started prematurely anymore
+Killing Golem no longer triggers cheat detection
+Removed a part of leaks reducing the chance of crashing the game
+Valnamdeoyior last piece is now more easily spotted
+
+v1.0
+
+Primal upload

@@ -1,0 +1,59 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OperatorCompareAbilityId
+        函数: GetSpellAbilityId
+        预设: OperatorEqualENE
+        常量: A04V
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    ShowUnitShow
+        变量: Arazayah
+    ShowUnitShow
+        变量: TrapTrigger1
+    ShowUnitShow
+        变量: TrapTrigger2
+    ShowUnitShow
+        变量: TrapTrigger3
+    ShowUnitShow
+        变量: TrapTrigger4
+    ShowUnitShow
+        变量: TrapTrigger5
+    ShowUnitShow
+        变量: TrapTrigger6
+    ShowUnitShow
+        变量: TrapTrigger7
+    ShowUnitShow
+        变量: TrapTrigger8
+    ShowUnitShow
+        变量: TrapTrigger9
+    PlaySoundBJ
+        变量: gg_snd_DragonPissed1
+    CameraSetEQNoiseForPlayer
+        预设: Player00
+        常量: 6.00
+    TriggerSleepAction
+        常量: 1.00
+    CameraClearNoiseForPlayer
+        预设: Player00
+    IssuePointOrderLoc
+        变量: Arazayah
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_222
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: ModeAdvanced
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            UnitAddAbilityBJ
+                常量: A04Z
+                变量: Arazayah
+        动作
+            UnitAddAbilityBJ
+                常量: A04X
+                变量: Arazayah

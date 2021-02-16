@@ -1,0 +1,137 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventDeath
+条件
+    OperatorCompareUnit
+        函数: GetDyingUnit
+        预设: OperatorEqualENE
+        变量: gg_unit_h025_0110
+动作
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h02D
+        预设: PlayerNA
+        函数: GetRectCenter
+            变量: gg_rct_Region_115
+        预设: RealUnitFacing
+    SetVariable
+        变量: Bombarder
+        函数: GetLastCreatedUnit
+    EnableTrigger
+        变量: gg_trg_Bombarder_Strike
+    TriggerSleepAction
+        常量: 3.00
+    ForGroup
+        函数: GetUnitsInRectAll
+            变量: gg_rct_Region_116
+        动作: IfThenElse
+            条件: OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetEnumUnit
+                预设: OperatorEqualENE
+                常量: h028
+            动作: IssuePointOrderLoc
+                函数: GetEnumUnit
+                预设: UnitOrderPatrol
+                函数: GetRandomLocInRect
+                    变量: gg_rct_Region_116
+            动作: DoNothing
+    ForGroup
+        函数: GetUnitsInRectAll
+            变量: gg_rct_Region_116
+        动作: IfThenElse
+            条件: OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetEnumUnit
+                预设: OperatorEqualENE
+                常量: h028
+            动作: GroupAddUnitSimple
+                函数: GetEnumUnit
+                变量: Pals
+            动作: DoNothing
+    TriggerSleepAction
+        常量: 1.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 4.00
+        常量: '|cffffcc00瓦格罗的朋友们:|r 啊! 救命! 救命
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Pals2
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h02E
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_117
+        预设: RealUnitFacing
+    AddSpecialEffectTargetUnitBJ
+        常量: origin
+        函数: GetLastCreatedUnit
+        常量: 'Arcane Nova.mdx'
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h02E
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_117
+        预设: RealUnitFacing
+    AddSpecialEffectTargetUnitBJ
+        常量: origin
+        函数: GetLastCreatedUnit
+        常量: 'Arcane Nova.mdx'
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h02E
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_117
+        预设: RealUnitFacing
+    AddSpecialEffectTargetUnitBJ
+        常量: origin
+        函数: GetLastCreatedUnit
+        常量: 'Arcane Nova.mdx'
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h02F
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_117
+        预设: RealUnitFacing
+    AddSpecialEffectTargetUnitBJ
+        常量: origin
+        函数: GetLastCreatedUnit
+        常量: 'Arcane Nova.mdx'
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h02F
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_117
+        预设: RealUnitFacing
+    AddSpecialEffectTargetUnitBJ
+        常量: origin
+        函数: GetLastCreatedUnit
+        常量: 'Arcane Nova.mdx'
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    TriggerSleepAction
+        常量: 4.00
+    SetMusicVolumeBJ
+        常量: 100.00
+    TriggerSleepAction
+        常量: 5.00
+    ForGroup
+        变量: Pals
+        动作: IssueImmediateOrder
+            函数: GetEnumUnit
+            预设: UnitOrderStop

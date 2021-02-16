@@ -1,0 +1,52 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventAttacked
+条件
+    OrMultiple
+        条件
+            OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetAttacker
+                预设: OperatorEqualENE
+                常量: h061
+            OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetAttacker
+                预设: OperatorEqualENE
+                常量: h063
+            OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetAttacker
+                预设: OperatorEqualENE
+                常量: h05P
+            OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetAttacker
+                预设: OperatorEqualENE
+                常量: h062
+            OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetAttacker
+                预设: OperatorEqualENE
+                常量: h05M
+            OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetAttacker
+                预设: OperatorEqualENE
+                常量: h05N
+动作
+    IssuePointOrderLoc
+        函数: GetAttacker
+        预设: UnitOrderCarrionSwarm
+        函数: GetUnitLoc
+            函数: GetAttackedUnitBJ
+    IssueTargetOrder
+        函数: GetAttacker
+        预设: UnitOrderForkedLightning
+        函数: GetAttackedUnitBJ
+    IssueImmediateOrder
+        函数: GetAttacker
+        预设: UnitOrderThunderClap
+    IssueImmediateOrder
+        函数: GetAttacker
+        预设: UnitOrderFanOfKnives

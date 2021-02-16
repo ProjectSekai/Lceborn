@@ -1,0 +1,20 @@
+事件
+条件
+动作
+    SetVariable
+        变量: ModeNormal
+        常量: true
+    ShowUnitHide
+        变量: gg_unit_h00U_0020
+    KillUnit
+        变量: gg_unit_h02O_0210
+    ShowUnitHide
+        变量: gg_unit_h02O_0210
+    KillUnit
+        变量: gg_unit_h02O_0212
+    ShowUnitHide
+        变量: gg_unit_h02O_0212
+    AddTriggerEvent
+        变量: gg_trg_Ertio_Crystal_Loop
+        事件: TriggerRegisterTimerEventPeriodic
+            常量: 0.20

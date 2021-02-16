@@ -1,0 +1,29 @@
+事件
+    TriggerRegisterUnitLifeEvent
+        变量: gg_unit_H000_0001
+        预设: LimitOpLessThanOrEqual
+        函数: OperatorReal
+            函数: GetUnitStateSwap
+                预设: UnitStateMaxLife
+                变量: gg_unit_H000_0001
+            预设: OperatorMultiply
+            常量: 0.10
+条件
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    SetUnitLifePercentBJ
+        变量: Hero
+        常量: 60.00
+    PlaySoundBJ
+        变量: gg_snd_Explosion5
+    AddSpecialEffectTargetUnitBJ
+        常量: origin
+        变量: Hero
+        常量: FreezingRing.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    TriggerSleepAction
+        常量: 10.00
+    EnableTrigger
+        函数: GetTriggeringTrigger

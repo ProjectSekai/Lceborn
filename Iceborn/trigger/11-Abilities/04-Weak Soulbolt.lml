@@ -1,0 +1,60 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OperatorCompareAbilityId
+        函数: GetSpellAbilityId
+        预设: OperatorEqualENE
+        常量: A00V
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareReal
+                函数: OperatorReal
+                    函数: GetUnitStateSwap
+                        预设: UnitStateMana
+                        变量: HeroBorn
+                    预设: OperatorSubtract
+                    函数: OperatorReal
+                        函数: GetUnitStateSwap
+                            预设: UnitStateMaxMana
+                            变量: HeroBorn
+                        预设: OperatorMultiply
+                        常量: 0.03
+                预设: OperatorLessEq
+                常量: 0.00
+        动作
+            SetUnitManaPercentBJ
+                变量: HeroBorn
+                常量: 0.00
+            ReturnAction
+        动作
+            SetUnitManaBJ
+                变量: HeroBorn
+                函数: OperatorReal
+                    函数: GetUnitStateSwap
+                        预设: UnitStateMana
+                        变量: HeroBorn
+                    预设: OperatorSubtract
+                    函数: OperatorReal
+                        函数: GetUnitStateSwap
+                            预设: UnitStateMaxMana
+                            变量: HeroBorn
+                        预设: OperatorMultiply
+                        常量: 0.03
+    SetVariable
+        变量: WeakBoltTarget
+        函数: GetSpellTargetUnit
+    TriggerSleepAction
+        常量: 0.10
+    UnitDamageTargetBJ
+        变量: HeroBorn
+        变量: WeakBoltTarget
+        函数: OperatorReal
+            函数: GetUnitStateSwap
+                预设: UnitStateMana
+                变量: HeroBorn
+            预设: OperatorMultiply
+            常量: 0.02
+        预设: AttackTypeNormal
+        预设: DamageTypeNormal

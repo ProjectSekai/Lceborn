@@ -1,0 +1,15 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OperatorCompareAbilityId
+        函数: GetSpellAbilityId
+        预设: OperatorEqualENE
+        常量: A062
+动作
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetSpellTargetUnit
+        常量: BlinkTarget.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ

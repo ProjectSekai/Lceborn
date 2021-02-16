@@ -1,0 +1,30 @@
+事件
+    TriggerRegisterEnterRectSimple
+        变量: gg_rct_Region_198
+条件
+    OperatorCompareUnit
+        函数: GetTriggerUnit
+        预设: OperatorEqualENE
+        变量: Hero
+动作
+    IssueImmediateOrder
+        变量: Hero
+        预设: UnitOrderStop
+    SetUnitPositionLoc
+        变量: Hero
+        函数: GetRectCenter
+            变量: gg_rct_Region_199
+    SetUnitPositionLoc
+        变量: SummonedElemental1
+        函数: GetRectCenter
+            变量: gg_rct_Region_199
+    SetUnitPositionLoc
+        变量: SummonedElemental2
+        函数: GetRectCenter
+            变量: gg_rct_Region_199
+    AddSpecialEffectTargetUnitBJ
+        常量: origin
+        变量: Hero
+        常量: Abilities\Spells\Human\MassTeleport\MassTeleportCaster.mdl
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ

@@ -1,0 +1,247 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventDeath
+条件
+    OrMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: Bubble1
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: Bubble2
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: Bubble3
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: Bubble1
+        动作
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h01F
+                预设: PlayerNP
+                函数: GetRectCenter
+                    变量: gg_rct_Region_052
+                预设: RealUnitFacing
+            SetVariable
+                变量: Bubble1Shooter
+                函数: GetLastCreatedUnit
+            IssueTargetOrder
+                变量: Bubble1Shooter
+                预设: UnitOrderFingerOfDeath
+                变量: gg_unit_h01E_0060
+            PlaySoundBJ
+                变量: gg_snd_LightningBolt
+            IfThenElseMultiple
+                条件
+                    AndMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: IsUnitDeadBJ
+                                    变量: Bubble1
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitDeadBJ
+                                    变量: Bubble2
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitDeadBJ
+                                    变量: Bubble3
+                                预设: OperatorEqualENE
+                                常量: true
+                动作
+                    TriggerSleepAction
+                        常量: 2
+                    KillUnit
+                        变量: Bubble1Shooter
+                    KillUnit
+                        变量: Bubble2Shooter
+                    KillUnit
+                        变量: Bubble3Shooter
+                    IssueTargetOrder
+                        变量: gg_unit_h01E_0060
+                        预设: UnitOrderFingerOfDeath
+                        变量: gg_unit_H013_0039
+                    IfThenElse
+                        条件: OperatorCompareBoolean
+                            变量: ModeNormal
+                            预设: OperatorEqualENE
+                            常量: true
+                        动作: TriggerSleepAction
+                            常量: 20.00
+                        动作: TriggerSleepAction
+                            常量: 30.00
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: IsUnitDeadBJ
+                                    变量: gg_unit_H013_0039
+                                预设: OperatorEqualENE
+                                常量: true
+                        动作
+                            ReturnAction
+                    IssueImmediateOrder
+                        变量: gg_unit_h01E_0060
+                        预设: UnitOrderResurrection
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: Bubble2
+        动作
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h01F
+                预设: PlayerNP
+                函数: GetRectCenter
+                    变量: gg_rct_Region_053
+                预设: RealUnitFacing
+            SetVariable
+                变量: Bubble2Shooter
+                函数: GetLastCreatedUnit
+            IssueTargetOrder
+                变量: Bubble2Shooter
+                预设: UnitOrderFingerOfDeath
+                变量: gg_unit_h01E_0060
+            PlaySoundBJ
+                变量: gg_snd_LightningBolt
+            IfThenElseMultiple
+                条件
+                    AndMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: IsUnitDeadBJ
+                                    变量: Bubble1
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitDeadBJ
+                                    变量: Bubble2
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitDeadBJ
+                                    变量: Bubble3
+                                预设: OperatorEqualENE
+                                常量: true
+                动作
+                    TriggerSleepAction
+                        常量: 2
+                    KillUnit
+                        变量: Bubble1Shooter
+                    KillUnit
+                        变量: Bubble2Shooter
+                    KillUnit
+                        变量: Bubble3Shooter
+                    IssueTargetOrder
+                        变量: gg_unit_h01E_0060
+                        预设: UnitOrderFingerOfDeath
+                        变量: gg_unit_H013_0039
+                    IfThenElse
+                        条件: OperatorCompareBoolean
+                            变量: ModeNormal
+                            预设: OperatorEqualENE
+                            常量: true
+                        动作: TriggerSleepAction
+                            常量: 20.00
+                        动作: TriggerSleepAction
+                            常量: 30.00
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: IsUnitDeadBJ
+                                    变量: gg_unit_H013_0039
+                                预设: OperatorEqualENE
+                                常量: true
+                        动作
+                            ReturnAction
+                    IssueImmediateOrder
+                        变量: gg_unit_h01E_0060
+                        预设: UnitOrderResurrection
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: Bubble3
+        动作
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h01F
+                预设: PlayerNP
+                函数: GetRectCenter
+                    变量: gg_rct_Region_054
+                预设: RealUnitFacing
+            SetVariable
+                变量: Bubble3Shooter
+                函数: GetLastCreatedUnit
+            IssueTargetOrder
+                变量: Bubble3Shooter
+                预设: UnitOrderFingerOfDeath
+                变量: gg_unit_h01E_0060
+            PlaySoundBJ
+                变量: gg_snd_LightningBolt
+            IfThenElseMultiple
+                条件
+                    AndMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: IsUnitDeadBJ
+                                    变量: Bubble1
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitDeadBJ
+                                    变量: Bubble2
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitDeadBJ
+                                    变量: Bubble3
+                                预设: OperatorEqualENE
+                                常量: true
+                动作
+                    TriggerSleepAction
+                        常量: 2
+                    KillUnit
+                        变量: Bubble1Shooter
+                    KillUnit
+                        变量: Bubble2Shooter
+                    KillUnit
+                        变量: Bubble3Shooter
+                    IssueTargetOrder
+                        变量: gg_unit_h01E_0060
+                        预设: UnitOrderFingerOfDeath
+                        变量: gg_unit_H013_0039
+                    IfThenElse
+                        条件: OperatorCompareBoolean
+                            变量: ModeNormal
+                            预设: OperatorEqualENE
+                            常量: true
+                        动作: TriggerSleepAction
+                            常量: 20.00
+                        动作: TriggerSleepAction
+                            常量: 30.00
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: IsUnitDeadBJ
+                                    变量: gg_unit_H013_0039
+                                预设: OperatorEqualENE
+                                常量: true
+                        动作
+                            ReturnAction
+                    IssueImmediateOrder
+                        变量: gg_unit_h01E_0060
+                        预设: UnitOrderResurrection

@@ -1,0 +1,138 @@
+事件
+    TriggerRegisterPlayerChatEvent
+        预设: Player00
+        常量: Statistics
+        预设: ChatMatchTypeExact
+    TriggerRegisterPlayerChatEvent
+        预设: Player00
+        常量: Stats
+        预设: ChatMatchTypeExact
+条件
+动作
+    PlaySoundBJ
+        变量: gg_snd_Hint
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 60.00
+        常量: '|cffffcc00统 计|r
+
+'
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: ModeAdvanced
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            DisplayTimedTextToForce
+                函数: GetPlayersAll
+                常量: 60.00
+                常量: '|cffffcc00游戏模式: 进阶|r'
+        动作
+            DisplayTimedTextToForce
+                函数: GetPlayersAll
+                常量: 60.00
+                常量: '|cffffcc00游戏模式: 普通|r'
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 60.00
+        函数: OperatorString
+            常量: '|cffffcc00Damage Dealt to Enemies: '
+            函数: OperatorString
+                函数: R2S
+                    变量: DamageDealtStatistics
+                常量: |r
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 60.00
+        函数: OperatorString
+            常量: '|cffffcc00The Largest Hit Dealt to Enemies: '
+            函数: OperatorString
+                函数: R2S
+                    变量: LargestHitStatistics
+                常量: |r
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 60.00
+        函数: OperatorString
+            常量: '|cffffcc00Damage Taken by Iceborn: '
+            函数: OperatorString
+                函数: R2S
+                    变量: DamageTakenStatistics
+                常量: |r
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 60.00
+        函数: OperatorString
+            常量: '|cffffcc00Healing Done via Soulbolt: '
+            函数: OperatorString
+                函数: R2S
+                    变量: HealingStatistics
+                常量: |r
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 60.00
+        函数: OperatorString
+            常量: '|cffffcc00Number of Soulbolts Casted: '
+            函数: OperatorString
+                函数: R2S
+                    变量: SoulboltStatistics
+                常量: |r
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 60.00
+        函数: OperatorString
+            常量: '|cffffcc00Number of Enhyli Summoned: '
+            函数: OperatorString
+                函数: R2S
+                    变量: ElementalSummonStats
+                常量: |r
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 60.00
+        函数: OperatorString
+            常量: '|cffffcc00Crystonite Found: '
+            函数: OperatorString
+                函数: R2S
+                    变量: ItemTakenCryst
+                常量: |r
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 60.00
+        函数: OperatorString
+            常量: '|cffffcc00Conjured Crystonite Found: '
+            函数: OperatorString
+                函数: R2S
+                    变量: ItemTakenConCryst
+                常量: |r
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 60.00
+        函数: OperatorString
+            常量: '|cffffcc00Essence of Power Acquired: '
+            函数: OperatorString
+                函数: R2S
+                    变量: ItemTakenEssence
+                常量: |r
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 60.00
+        函数: OperatorString
+            常量: '|cffffcc00Sphere of Recovery Acquired: '
+            函数: OperatorString
+                函数: R2S
+                    变量: ItemTakenSphere
+                常量: |r
+    SetVariable
+        变量: TimeRecordReal
+        函数: TimerGetElapsed
+            变量: TimeRecord
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 60.00
+        函数: OperatorString
+            常量: '|cffffcc00Elapsed Time from Start (Seconds): '
+            函数: OperatorString
+                函数: R2S
+                    变量: TimeRecordReal
+                常量: |r

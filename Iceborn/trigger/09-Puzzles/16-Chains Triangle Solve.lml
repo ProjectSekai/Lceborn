@@ -1,0 +1,141 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventDeath
+条件
+    OperatorCompareUnitCode
+        函数: GetUnitTypeId
+            函数: GetDyingUnit
+        预设: OperatorEqualENE
+        常量: h04E
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: IsUnitDeadBJ
+                    变量: gg_unit_h04E_0282
+                预设: OperatorEqualENE
+                常量: true
+            OperatorCompareBoolean
+                函数: IsUnitDeadBJ
+                    变量: gg_unit_h04E_0274
+                预设: OperatorEqualENE
+                常量: true
+            OperatorCompareBoolean
+                函数: IsUnitDeadBJ
+                    变量: gg_unit_h04E_0279
+                预设: OperatorEqualENE
+                常量: true
+            OperatorCompareBoolean
+                函数: IsUnitDeadBJ
+                    变量: gg_unit_h04E_0273
+                预设: OperatorEqualENE
+                常量: false
+            OperatorCompareBoolean
+                函数: IsUnitDeadBJ
+                    变量: gg_unit_h04E_0267
+                预设: OperatorEqualENE
+                常量: false
+            OperatorCompareBoolean
+                函数: IsUnitDeadBJ
+                    变量: gg_unit_h04E_0269
+                预设: OperatorEqualENE
+                常量: false
+            OperatorCompareBoolean
+                函数: IsUnitDeadBJ
+                    变量: gg_unit_h04E_0066
+                预设: OperatorEqualENE
+                常量: false
+            OperatorCompareBoolean
+                函数: IsUnitDeadBJ
+                    变量: gg_unit_h04E_0266
+                预设: OperatorEqualENE
+                常量: false
+            OperatorCompareBoolean
+                函数: IsUnitAliveBJ
+                    变量: gg_unit_h04E_0275
+                预设: OperatorEqualENE
+                常量: true
+            OperatorCompareBoolean
+                函数: IsUnitAliveBJ
+                    变量: gg_unit_h04E_0278
+                预设: OperatorEqualENE
+                常量: true
+            OperatorCompareBoolean
+                函数: IsUnitAliveBJ
+                    变量: gg_unit_h04E_0281
+                预设: OperatorEqualENE
+                常量: true
+            OperatorCompareBoolean
+                函数: IsUnitAliveBJ
+                    变量: gg_unit_h04E_0276
+                预设: OperatorEqualENE
+                常量: true
+            OperatorCompareBoolean
+                函数: IsUnitAliveBJ
+                    变量: gg_unit_h04E_0277
+                预设: OperatorEqualENE
+                常量: true
+            OperatorCompareBoolean
+                函数: IsUnitAliveBJ
+                    变量: gg_unit_h04E_0280
+                预设: OperatorEqualENE
+                常量: true
+            OperatorCompareBoolean
+                函数: IsUnitAliveBJ
+                    变量: gg_unit_h04E_0268
+                预设: OperatorEqualENE
+                常量: true
+            OperatorCompareBoolean
+                函数: IsUnitAliveBJ
+                    变量: gg_unit_h04E_0271
+                预设: OperatorEqualENE
+                常量: true
+            OperatorCompareBoolean
+                函数: IsUnitAliveBJ
+                    变量: gg_unit_h04E_0272
+                预设: OperatorEqualENE
+                常量: true
+            OperatorCompareBoolean
+                函数: IsUnitAliveBJ
+                    变量: gg_unit_h04E_0270
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            DisableTrigger
+                函数: GetTriggeringTrigger
+            PlaySoundBJ
+                变量: gg_snd_Explosion8
+            TriggerSleepAction
+                常量: 2.00
+            ForGroup
+                函数: GetUnitsInRectAll
+                    变量: gg_rct_Region_200
+                动作: IfThenElse
+                    条件: OperatorCompareUnitCode
+                        函数: GetUnitTypeId
+                            函数: GetEnumUnit
+                        预设: OperatorEqualENE
+                        常量: h04E
+                    动作: KillUnit
+                        函数: GetEnumUnit
+                    动作: DoNothing
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h04I
+                预设: PlayerNP
+                变量: MirrorHintPointUpper
+                预设: RealUnitFacing
+            SetVariable
+                变量: MirrorUpperHint
+                函数: GetLastCreatedUnit
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h04J
+                预设: PlayerNP
+                变量: MirrorHintPointLower
+                预设: RealUnitFacing
+            SetVariable
+                变量: MirrorLowerHint
+                函数: GetLastCreatedUnit
+            EnableTrigger
+                变量: gg_trg_Chains_Book

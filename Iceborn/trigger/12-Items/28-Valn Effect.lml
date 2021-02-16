@@ -1,0 +1,226 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventHeroUseItem
+条件
+    OperatorCompareItemCode
+        函数: GetItemTypeId
+            函数: GetManipulatedItem
+        预设: OperatorEqualENE
+        常量: I00M
+动作
+    PlaySoundBJ
+        变量: gg_snd_Explosion3
+    ForGroupMultiple
+        函数: GetUnitsInRangeOfLocAll
+            常量: 650.00
+            函数: GetUnitLoc
+                变量: Hero
+        动作
+            IfThenElseMultiple
+                条件
+                    AndMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: IsUnitAliveBJ
+                                    函数: GetEnumUnit
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitEnemy
+                                    函数: GetEnumUnit
+                                    预设: Player00
+                                预设: OperatorEqualENE
+                                常量: true
+                动作
+                    GroupAddUnitSimple
+                        函数: GetEnumUnit
+                        变量: ValnGroup
+    SetVariable
+        变量: ValnTarget1
+        函数: GroupPickRandomUnit
+            变量: ValnGroup
+    UnitAddAbilityBJ
+        常量: A03L
+        变量: ValnTarget1
+    UnitAddAbilityBJ
+        常量: A03N
+        变量: ValnTarget1
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            变量: ValnTarget1
+        常量: EarthMagic.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            变量: ValnTarget1
+        常量: Ultima.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    GroupRemoveUnitSimple
+        变量: ValnTarget1
+        变量: ValnGroup
+    SetVariable
+        变量: ValnTarget2
+        函数: GroupPickRandomUnit
+            变量: ValnGroup
+    UnitAddAbilityBJ
+        常量: A03L
+        变量: ValnTarget2
+    UnitAddAbilityBJ
+        常量: A03N
+        变量: ValnTarget2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            变量: ValnTarget2
+        常量: EarthMagic.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            变量: ValnTarget2
+        常量: Ultima.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    GroupRemoveUnitSimple
+        变量: ValnTarget2
+        变量: ValnGroup
+    SetVariable
+        变量: ValnTarget3
+        函数: GroupPickRandomUnit
+            变量: ValnGroup
+    UnitAddAbilityBJ
+        常量: A03L
+        变量: ValnTarget3
+    UnitAddAbilityBJ
+        常量: A03N
+        变量: ValnTarget3
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            变量: ValnTarget3
+        常量: EarthMagic.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            变量: ValnTarget3
+        常量: Ultima.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    GroupRemoveUnitSimple
+        变量: ValnTarget3
+        变量: ValnGroup
+    SetVariable
+        变量: ValnTarget4
+        函数: GroupPickRandomUnit
+            变量: ValnGroup
+    UnitAddAbilityBJ
+        常量: A03L
+        变量: ValnTarget4
+    UnitAddAbilityBJ
+        常量: A03N
+        变量: ValnTarget4
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            变量: ValnTarget4
+        常量: EarthMagic.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            变量: ValnTarget4
+        常量: Ultima.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    GroupRemoveUnitSimple
+        变量: ValnTarget4
+        变量: ValnGroup
+    SetVariable
+        变量: ValnTarget5
+        函数: GroupPickRandomUnit
+            变量: ValnGroup
+    UnitAddAbilityBJ
+        常量: A03L
+        变量: ValnTarget5
+    UnitAddAbilityBJ
+        常量: A03N
+        变量: ValnTarget5
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            变量: ValnTarget5
+        常量: EarthMagic.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            变量: ValnTarget5
+        常量: Ultima.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    GroupRemoveUnitSimple
+        变量: ValnTarget5
+        变量: ValnGroup
+    SetVariable
+        变量: ValnTarget6
+        函数: GroupPickRandomUnit
+            变量: ValnGroup
+    UnitAddAbilityBJ
+        常量: A03L
+        变量: ValnTarget6
+    UnitAddAbilityBJ
+        常量: A03N
+        变量: ValnTarget6
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            变量: ValnTarget6
+        常量: EarthMagic.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            变量: ValnTarget6
+        常量: Ultima.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    GroupClear
+        变量: ValnGroup
+    TriggerSleepAction
+        常量: 20.00
+    PlaySoundBJ
+        变量: gg_snd_ManaDrainTarget1
+    UnitRemoveAbilityBJ
+        常量: A03L
+        变量: ValnTarget1
+    UnitRemoveAbilityBJ
+        常量: A03N
+        变量: ValnTarget1
+    UnitRemoveAbilityBJ
+        常量: A03L
+        变量: ValnTarget2
+    UnitRemoveAbilityBJ
+        常量: A03N
+        变量: ValnTarget2
+    UnitRemoveAbilityBJ
+        常量: A03L
+        变量: ValnTarget3
+    UnitRemoveAbilityBJ
+        常量: A03N
+        变量: ValnTarget3
+    UnitRemoveAbilityBJ
+        常量: A03L
+        变量: ValnTarget4
+    UnitRemoveAbilityBJ
+        常量: A03N
+        变量: ValnTarget4
+    UnitRemoveAbilityBJ
+        常量: A03L
+        变量: ValnTarget5
+    UnitRemoveAbilityBJ
+        常量: A03N
+        变量: ValnTarget5
+    UnitRemoveAbilityBJ
+        常量: A03L
+        变量: ValnTarget6
+    UnitRemoveAbilityBJ
+        常量: A03N
+        变量: ValnTarget6

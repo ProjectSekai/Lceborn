@@ -1,0 +1,30 @@
+事件
+条件
+动作
+    CustomScriptCode
+        常量: 'set bj_wantDestroyGroup = true'
+    SetVariable
+        变量: Max_Hp
+        函数: OperatorInt
+            函数: GetHeroStatBJ
+                预设: HeroStatStr
+                变量: Hero
+                预设: InclusionInclude
+            预设: OperatorMultiply
+            常量: 30
+    SetVariable
+        变量: Max_Mana
+        函数: OperatorInt
+            函数: GetHeroStatBJ
+                预设: HeroStatStr
+                变量: Hero
+                预设: InclusionInclude
+            预设: OperatorMultiply
+            常量: 15
+    SetVariable
+        变量: Some_Unit
+        变量: SummonedElemental1
+    TriggerExecute
+        变量: gg_trg_Set_Max_Hp
+    TriggerExecute
+        变量: gg_trg_Set_Max_Mana

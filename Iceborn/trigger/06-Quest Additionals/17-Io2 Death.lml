@@ -1,0 +1,33 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventDeath
+条件
+    OperatorCompareUnit
+        函数: GetDyingUnit
+        预设: OperatorEqualENE
+        变量: Io2
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    RemoveItem
+        函数: GetItemOfTypeFromUnitBJ
+            变量: Hero
+            常量: I00N
+    QuestItemSetCompletedBJ
+        变量: QuestOptional2Req1
+        预设: CompletionOptionCompleted
+    QuestSetCompletedBJ
+        变量: QuestOptional2
+        预设: CompletionOptionCompleted
+    AddSpecialEffectTargetUnitBJ
+        常量: origin
+        变量: Hero
+        常量: Abilities\Spells\NightElf\Blink\BlinkTarget.mdl
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateItemLoc
+        常量: I00Y
+        函数: GetUnitLoc
+            变量: Hero
+    EnableTrigger
+        变量: gg_trg_Uncharged_Obtain

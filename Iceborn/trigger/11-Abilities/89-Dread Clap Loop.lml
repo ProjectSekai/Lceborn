@@ -1,0 +1,97 @@
+事件
+    TriggerRegisterTimerEventPeriodic
+        常量: 0.03
+条件
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: IsUnitAliveBJ
+                    变量: DH_Dummy
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            CustomScriptCode
+                常量: 'set bj_wantDestroyGroup = true'
+            ForGroupMultiple
+                函数: GetUnitsInRangeOfLocMatching
+                    常量: 700.00
+                    变量: DH_TargetLoc
+                    条件: GetBooleanAnd
+                        条件: OperatorCompareBoolean
+                            函数: IsUnitType
+                                函数: GetFilterUnit
+                                预设: UnitTypeStructure
+                            预设: OperatorEqualENE
+                            常量: false
+                        条件: GetBooleanAnd
+                            条件: OperatorCompareBoolean
+                                函数: IsUnitType
+                                    函数: GetFilterUnit
+                                    预设: UnitTypeMagicImmune
+                                预设: OperatorEqualENE
+                                常量: false
+                            条件: OperatorCompareBoolean
+                                函数: IsUnitEnemy
+                                    函数: GetFilterUnit
+                                    预设: PlayerNA
+                                预设: OperatorEqualENE
+                                常量: true
+                动作
+                    SetVariable
+                        变量: TempLoc
+                        函数: GetUnitLoc
+                            函数: GetEnumUnit
+                    SetVariable
+                        变量: TempLoc2
+                        函数: PolarProjectionBJ
+                            变量: TempLoc
+                            常量: 2.00
+                            函数: AngleBetweenPoints
+                                变量: TempLoc
+                                变量: DH_TargetLoc
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: IsUnitInGroup
+                                    函数: GetEnumUnit
+                                    变量: DH_Group2
+                                预设: OperatorEqualENE
+                                常量: false
+                        动作
+                            SetUnitPositionLoc
+                                函数: GetEnumUnit
+                                变量: TempLoc2
+                            IfThenElseMultiple
+                                条件
+                                    OperatorCompareBoolean
+                                        函数: IsUnitInGroup
+                                            函数: GetEnumUnit
+                                            变量: DH_Group
+                                        预设: OperatorEqualENE
+                                        常量: false
+                                动作
+                                    GroupAddUnitSimple
+                                        函数: GetEnumUnit
+                                        变量: DH_Group
+                                    IfThenElseMultiple
+                                        条件
+                                            OperatorCompareReal
+                                                函数: DistanceBetweenPoints
+                                                    变量: DH_TargetLoc
+                                                    变量: TempLoc2
+                                                预设: OperatorLessEq
+                                                常量: 50.00
+                                        动作
+                                            GroupAddUnitSimple
+                                                函数: GetEnumUnit
+                                                变量: DH_Group2
+                    CustomScriptCode
+                        常量: 'call RemoveLocation(udg_TempLoc)'
+                    CustomScriptCode
+                        常量: 'call RemoveLocation(udg_TempLoc2)'
+        动作
+            DisableTrigger
+                函数: GetTriggeringTrigger
+            CustomScriptCode
+                常量: 'call RemoveLocation(udg_DH_TargetLoc)'

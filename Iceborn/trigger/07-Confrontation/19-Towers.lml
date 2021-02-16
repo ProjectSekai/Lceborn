@@ -1,0 +1,221 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventDeath
+条件
+    OrMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_h065_0400
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_h065_0399
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_h065_0393
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_h065_0394
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_h065_0392
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_h065_0396
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_h065_0400
+        动作
+            SetUnitOwner
+                变量: gg_unit_h066_0398
+                预设: Player01
+                预设: ChangeColorFalse
+            PlaySoundBJ
+                变量: gg_snd_DeathknightStrike
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_h065_0399
+        动作
+            SetUnitOwner
+                变量: gg_unit_h066_0397
+                预设: Player01
+                预设: ChangeColorFalse
+            PlaySoundBJ
+                变量: gg_snd_DeathknightStrike
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_h065_0393
+        动作
+            PlaySoundBJ
+                变量: gg_snd_DeathknightStrike
+            IfThenElseMultiple
+                条件
+                    AndMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: IsUnitDeadBJ
+                                    变量: gg_unit_h065_0393
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitDeadBJ
+                                    变量: gg_unit_h065_0394
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitDeadBJ
+                                    变量: gg_unit_h065_0396
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitDeadBJ
+                                    变量: gg_unit_h065_0392
+                                预设: OperatorEqualENE
+                                常量: true
+                动作
+                    SetUnitOwner
+                        变量: gg_unit_h064_0391
+                        预设: Player01
+                        预设: ChangeColorFalse
+                    SetVariable
+                        变量: VulruStar
+                        常量: true
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_h065_0394
+        动作
+            PlaySoundBJ
+                变量: gg_snd_DeathknightStrike
+            IfThenElseMultiple
+                条件
+                    AndMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: IsUnitDeadBJ
+                                    变量: gg_unit_h065_0393
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitDeadBJ
+                                    变量: gg_unit_h065_0394
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitDeadBJ
+                                    变量: gg_unit_h065_0396
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitDeadBJ
+                                    变量: gg_unit_h065_0392
+                                预设: OperatorEqualENE
+                                常量: true
+                动作
+                    SetUnitOwner
+                        变量: gg_unit_h064_0391
+                        预设: Player01
+                        预设: ChangeColorFalse
+                    SetVariable
+                        变量: VulruStar
+                        常量: true
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_h065_0392
+        动作
+            PlaySoundBJ
+                变量: gg_snd_DeathknightStrike
+            IfThenElseMultiple
+                条件
+                    AndMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: IsUnitDeadBJ
+                                    变量: gg_unit_h065_0393
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitDeadBJ
+                                    变量: gg_unit_h065_0394
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitDeadBJ
+                                    变量: gg_unit_h065_0396
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitDeadBJ
+                                    变量: gg_unit_h065_0392
+                                预设: OperatorEqualENE
+                                常量: true
+                动作
+                    SetUnitOwner
+                        变量: gg_unit_h064_0391
+                        预设: Player01
+                        预设: ChangeColorFalse
+                    SetVariable
+                        变量: VulruStar
+                        常量: true
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_h065_0396
+        动作
+            PlaySoundBJ
+                变量: gg_snd_DeathknightStrike
+            IfThenElseMultiple
+                条件
+                    AndMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: IsUnitDeadBJ
+                                    变量: gg_unit_h065_0393
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitDeadBJ
+                                    变量: gg_unit_h065_0394
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitDeadBJ
+                                    变量: gg_unit_h065_0396
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitDeadBJ
+                                    变量: gg_unit_h065_0392
+                                预设: OperatorEqualENE
+                                常量: true
+                动作
+                    SetUnitOwner
+                        变量: gg_unit_h064_0391
+                        预设: Player01
+                        预设: ChangeColorFalse
+                    SetVariable
+                        变量: VulruStar
+                        常量: true

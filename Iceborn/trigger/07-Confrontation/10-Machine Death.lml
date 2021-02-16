@@ -1,0 +1,14 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventDeath
+条件
+    OperatorCompareUnit
+        函数: GetDyingUnit
+        预设: OperatorEqualENE
+        变量: gg_unit_h06S_0381
+动作
+    TriggerSleepAction
+        常量: 2.00
+    CustomDefeatBJ
+        预设: Player00
+        常量: 中和机器被摧毁

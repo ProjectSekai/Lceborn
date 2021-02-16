@@ -1,0 +1,10 @@
+事件
+    TriggerRegisterTimerEventPeriodic
+        常量: 2
+条件
+动作
+    IssuePointOrderLoc
+        变量: gg_unit_h02R_0172
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_160

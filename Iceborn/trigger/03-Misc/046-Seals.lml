@@ -1,0 +1,54 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventDeath
+条件
+    OrMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_h029_0135
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_h02A_0134
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_h02A_0134
+        动作
+            SetUnitAnimation
+                变量: gg_unit_h027_0118
+                常量: stand
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_h029_0135
+        动作
+            SetUnitAnimation
+                变量: gg_unit_h027_0128
+                常量: stand
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: IsUnitDeadBJ
+                    变量: gg_unit_h029_0135
+                预设: OperatorEqualENE
+                常量: true
+            OperatorCompareBoolean
+                函数: IsUnitDeadBJ
+                    变量: gg_unit_h02A_0134
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            KillDestructable
+                变量: gg_dest_YTpc_6747
+            KillDestructable
+                变量: gg_dest_YTpc_6748
+            KillDestructable
+                变量: gg_dest_YTpc_6749

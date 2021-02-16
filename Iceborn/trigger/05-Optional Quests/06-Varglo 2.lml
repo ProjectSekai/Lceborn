@@ -1,0 +1,104 @@
+事件
+    TriggerRegisterDialogEventBJ
+        变量: Dialog
+条件
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    IfThenElseMultiple
+        条件
+            OperatorCompareButton
+                函数: GetClickedButtonBJ
+                预设: OperatorEqualENE
+                变量: DialogButton1
+        动作
+            DisableTrigger
+                变量: gg_trg_Varglo_Dialog_Checkup
+            KillDestructable
+                变量: gg_dest_YTpc_6741
+            KillDestructable
+                变量: gg_dest_YTpc_6742
+            KillDestructable
+                变量: gg_dest_YTpc_6743
+            ShowUnitHide
+                变量: gg_unit_h026_0111
+            TriggerSleepAction
+                常量: 1.00
+            CreateQuestBJ
+                预设: QuestTypeOptDiscovered
+                常量: 铁栏的后方
+                常量: 我遇见了瓦格罗,他邀我帮他一起解决他的问题,我答应了.现在我要去营救那些因为瓦格罗的过错而被关在铁栏后面的他的朋友们.他说那里有个货物的储藏室,而我则要把那里的东西拿个精光.
+                常量: ReplaceableTextures\CommandButtons\BTN2.blp
+            SetVariable
+                变量: QuestOptional3
+                函数: GetLastCreatedQuestBJ
+            CreateQuestItemBJ
+                变量: QuestOptional3
+                常量: 营救瓦格罗在牢狱中的朋友
+            SetVariable
+                变量: QuestOptional3Req1
+                函数: GetLastCreatedQuestItemBJ
+            FlashQuestDialogButtonBJ
+            PlaySoundBJ
+                变量: gg_snd_QuestLog
+            DisplayTextToForce
+                函数: GetPlayersAll
+                常量: '|cffffcc00 - 营救瓦格罗在牢狱中的朋友|r
+
+'
+            TriggerSleepAction
+                常量: 1.00
+            IssuePointOrderLoc
+                变量: gg_unit_h025_0110
+                预设: UnitOrderMove
+                函数: GetRectCenter
+                    变量: gg_rct_Region_109
+            SelectUnitSingle
+                变量: gg_unit_h025_0110
+            IssueTargetOrder
+                变量: Hero
+                预设: UnitOrderMoveUnit
+                变量: gg_unit_h025_0110
+            SetMusicVolumeBJ
+                常量: 50.00
+            DisplayTimedTextToForce
+                函数: GetPlayersAll
+                常量: 10.00
+                常量: '|cffffcc00瓦格罗:|r 行,跟着我慢慢走,我不想你吸引些没必要的注意,好吗? (开始行走)
+
+'
+            PlaySoundBJ
+                变量: gg_snd_Varglo4
+            TriggerSleepAction
+                常量: 14.00
+            DisplayTimedTextToForce
+                函数: GetPlayersAll
+                常量: 19.00
+                常量: '|cffffcc00瓦格罗:|r 低阶的彷徨者与守卫者残暴无比,住在这里的那些人只需要找个地方把手一放.我们被不公平地对待,这使得我们不老实,虽然惩罚一点也不会让人羡慕.
+
+'
+            PlaySoundBJ
+                变量: gg_snd_Varglo5
+            TriggerSleepAction
+                常量: 23.00
+            DisplayTimedTextToForce
+                函数: GetPlayersAll
+                常量: 16.00
+                常量: '|cffffcc00瓦格罗:|r 他们被关的笼子不是普通的那种,我希望他们没事.自从我上次见过他们以来,已经过了一段时间.他们最好还没有开始相互撕咬,我真怕最坏的结果发生.
+
+'
+            PlaySoundBJ
+                变量: gg_snd_Varglo6
+            TriggerSleepAction
+                常量: 17.00
+            SetMusicVolumeBJ
+                常量: 100.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareButton
+                函数: GetClickedButtonBJ
+                预设: OperatorEqualENE
+                变量: DialogButton3
+        动作
+            DisableTrigger
+                变量: gg_trg_Varglo_Dialog_Checkup

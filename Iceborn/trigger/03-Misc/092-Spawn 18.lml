@@ -1,0 +1,138 @@
+事件
+    TriggerRegisterEnterRectSimple
+        变量: gg_rct_Region_126
+条件
+    OperatorCompareUnit
+        函数: GetTriggerUnit
+        预设: OperatorEqualENE
+        变量: Hero
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    PlaySoundBJ
+        变量: gg_snd_GhoulYes3
+    PlaySoundBJ
+        变量: gg_snd_BlinkArrival1
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h02E
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_127
+        预设: RealUnitFacing
+    AddSpecialEffectTargetUnitBJ
+        常量: origin
+        函数: GetLastCreatedUnit
+        常量: 'Arcane Nova.mdx'
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h02E
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_127
+        预设: RealUnitFacing
+    AddSpecialEffectTargetUnitBJ
+        常量: origin
+        函数: GetLastCreatedUnit
+        常量: 'Arcane Nova.mdx'
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h02E
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_127
+        预设: RealUnitFacing
+    AddSpecialEffectTargetUnitBJ
+        常量: origin
+        函数: GetLastCreatedUnit
+        常量: 'Arcane Nova.mdx'
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h02E
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_127
+        预设: RealUnitFacing
+    AddSpecialEffectTargetUnitBJ
+        常量: origin
+        函数: GetLastCreatedUnit
+        常量: 'Arcane Nova.mdx'
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h02E
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_127
+        预设: RealUnitFacing
+    AddSpecialEffectTargetUnitBJ
+        常量: origin
+        函数: GetLastCreatedUnit
+        常量: 'Arcane Nova.mdx'
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: ModeAdvanced
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h02E
+                预设: PlayerNA
+                函数: GetRandomLocInRect
+                    变量: gg_rct_Region_127
+                预设: RealUnitFacing
+            AddSpecialEffectTargetUnitBJ
+                常量: origin
+                函数: GetLastCreatedUnit
+                常量: 'Arcane Nova.mdx'
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h02E
+                预设: PlayerNA
+                函数: GetRandomLocInRect
+                    变量: gg_rct_Region_127
+                预设: RealUnitFacing
+            UnitAddAbilityBJ
+                常量: A076
+                函数: GetLastCreatedUnit
+            UnitAddAbilityBJ
+                常量: A03K
+                函数: GetLastCreatedUnit
+            AddSpecialEffectTargetUnitBJ
+                常量: origin
+                函数: GetLastCreatedUnit
+                常量: 'Arcane Nova.mdx'
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h02E
+                预设: PlayerNA
+                函数: GetRandomLocInRect
+                    变量: gg_rct_Region_127
+                预设: RealUnitFacing
+            UnitAddAbilityBJ
+                常量: A076
+                函数: GetLastCreatedUnit
+            UnitAddAbilityBJ
+                常量: A03K
+                函数: GetLastCreatedUnit
+            AddSpecialEffectTargetUnitBJ
+                常量: origin
+                函数: GetLastCreatedUnit
+                常量: 'Arcane Nova.mdx'
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ

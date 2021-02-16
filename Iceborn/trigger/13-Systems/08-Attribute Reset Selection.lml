@@ -1,0 +1,92 @@
+事件
+    TriggerRegisterDialogEventBJ
+        变量: Dialog
+条件
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    SetVariable
+        变量: AttributePool
+        函数: OperatorInt
+            变量: AttributePool
+            预设: OperatorSubtract
+            常量: 1
+    IfThenElseMultiple
+        条件
+            OperatorCompareButton
+                函数: GetClickedButtonBJ
+                预设: OperatorEqualENE
+                变量: DialogButton1
+        动作
+            UnitAddItemByIdSwapped
+                常量: I000
+                变量: Hero
+            SetVariable
+                变量: VitalityPool
+                函数: OperatorInt
+                    变量: VitalityPool
+                    预设: OperatorAdd
+                    常量: 1
+    IfThenElseMultiple
+        条件
+            OperatorCompareButton
+                函数: GetClickedButtonBJ
+                预设: OperatorEqualENE
+                变量: DialogButton2
+        动作
+            UnitAddItemByIdSwapped
+                常量: I003
+                变量: Hero
+            SetVariable
+                变量: ProtectionPool
+                函数: OperatorInt
+                    变量: ProtectionPool
+                    预设: OperatorAdd
+                    常量: 1
+    IfThenElseMultiple
+        条件
+            OperatorCompareButton
+                函数: GetClickedButtonBJ
+                预设: OperatorEqualENE
+                变量: DialogButton3
+        动作
+            UnitAddItemByIdSwapped
+                常量: I002
+                变量: Hero
+            SetVariable
+                变量: WillpowerPool
+                函数: OperatorInt
+                    变量: WillpowerPool
+                    预设: OperatorAdd
+                    常量: 1
+    IfThenElseMultiple
+        条件
+            OperatorCompareInteger
+                变量: AttributePool
+                预设: OperatorEqual
+                常量: 0
+        动作
+            SetVariable
+                变量: AttributePool
+                函数: IAbsBJ
+                    变量: AttributePoolMemory
+            DisableTrigger
+                变量: gg_trg_Attribute_Reset
+            EnableTrigger
+                变量: gg_trg_Attribute_Reset_CD
+            DisplayTextToForce
+                函数: GetPlayersAll
+                常量: '|cff7777aa注意: 属性重置系统有30秒的冷却时间|r
+
+'
+            PlaySoundBJ
+                变量: gg_snd_Hint
+            TriggerSleepAction
+                常量: 30.00
+            EnableTrigger
+                变量: gg_trg_Attribute_Reset
+            DisableTrigger
+                变量: gg_trg_Attribute_Reset_CD
+        动作
+            TriggerExecute
+                变量: gg_trg_Attribute_Reset_Gain

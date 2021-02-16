@@ -1,0 +1,103 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventHeroPickUpItem
+条件
+    OrMultiple
+        条件
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I019
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I01B
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I016
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I015
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I014
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I01L
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I019
+        动作
+            SetVariable
+                变量: Cuirass
+                函数: GetManipulatedItem
+    IfThenElseMultiple
+        条件
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I01B
+        动作
+            SetVariable
+                变量: SapphiresJewel
+                函数: GetManipulatedItem
+    IfThenElseMultiple
+        条件
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I016
+        动作
+            SetVariable
+                变量: ValnPart1
+                函数: GetManipulatedItem
+    IfThenElseMultiple
+        条件
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I015
+        动作
+            SetVariable
+                变量: ValnPart2
+                函数: GetManipulatedItem
+    IfThenElseMultiple
+        条件
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I014
+        动作
+            SetVariable
+                变量: ValnPart3
+                函数: GetManipulatedItem
+    IfThenElseMultiple
+        条件
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I01L
+        动作
+            SetVariable
+                变量: Eyestone
+                函数: GetManipulatedItem

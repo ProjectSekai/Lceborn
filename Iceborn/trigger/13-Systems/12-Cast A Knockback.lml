@@ -1,0 +1,259 @@
+事件
+条件
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: IsUnitInGroup
+                    变量: KBA_TargetUnit
+                    变量: KB_KnockbackedUnits
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            GroupRemoveUnitSimple
+                变量: KBA_TargetUnit
+                变量: KB_KnockbackedUnits
+            SetVariable
+                变量: KB_CountBuffs
+                函数: OperatorInt
+                    变量: KB_CountBuffs
+                    预设: OperatorSubtract
+                    常量: 1
+            ForLoopVarMultiple
+                数组: KB_GeneralIntegers
+                    常量: 2
+                常量: 1
+                变量: KB_TotalKnockUnits
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareUnit
+                                数组: KB_Units
+                                    数组: KB_GeneralIntegers
+                                        常量: 1
+                                预设: OperatorEqualENE
+                                变量: KBA_TargetUnit
+                        动作
+                            SetVariable
+                                数组: KB_GeneralIntegers
+                                    常量: 1
+                                数组: KB_GeneralIntegers
+                                    常量: 2
+                            SetVariable
+                                数组: KB_GeneralIntegers
+                                    常量: 2
+                                变量: KB_TotalKnockUnits
+            IfThenElseMultiple
+                条件
+                    OperatorCompareInteger
+                        变量: KB_TotalKnockUnits
+                        预设: OperatorGreater
+                        数组: KB_GeneralIntegers
+                            常量: 1
+                动作
+                    SetVariable
+                        数组: KB_Levels
+                            数组: KB_GeneralIntegers
+                                常量: 1
+                        数组: KB_Levels
+                            变量: KB_TotalKnockUnits
+                    SetVariable
+                        数组: KB_Units
+                            数组: KB_GeneralIntegers
+                                常量: 1
+                        数组: KB_Units
+                            变量: KB_TotalKnockUnits
+                    SetVariable
+                        数组: KB_Angle
+                            数组: KB_GeneralIntegers
+                                常量: 1
+                        数组: KB_Angle
+                            变量: KB_TotalKnockUnits
+                    SetVariable
+                        数组: KB_MaxDistance
+                            数组: KB_GeneralIntegers
+                                常量: 1
+                        数组: KB_MaxDistance
+                            变量: KB_TotalKnockUnits
+                    SetVariable
+                        数组: KB_ReachedDistance
+                            数组: KB_GeneralIntegers
+                                常量: 1
+                        数组: KB_ReachedDistance
+                            变量: KB_TotalKnockUnits
+                    SetVariable
+                        数组: KB_ReduceSpeedReal
+                            数组: KB_GeneralIntegers
+                                常量: 1
+                        数组: KB_ReduceSpeedReal
+                            变量: KB_TotalKnockUnits
+                    SetVariable
+                        数组: KB_SpecificSpeed
+                            数组: KB_GeneralIntegers
+                                常量: 1
+                        数组: KB_SpecificSpeed
+                            变量: KB_TotalKnockUnits
+                    SetVariable
+                        数组: KB_Effects_1
+                            数组: KB_GeneralIntegers
+                                常量: 1
+                        数组: KB_Effects_1
+                            变量: KB_TotalKnockUnits
+                    SetVariable
+                        数组: KB_Effects_2
+                            数组: KB_GeneralIntegers
+                                常量: 1
+                        数组: KB_Effects_2
+                            变量: KB_TotalKnockUnits
+                    SetVariable
+                        数组: KB_DestroyTrees
+                            数组: KB_GeneralIntegers
+                                常量: 1
+                        数组: KB_DestroyTrees
+                            变量: KB_TotalKnockUnits
+                    SetVariable
+                        数组: KB_EffectCounter
+                            数组: KB_GeneralIntegers
+                                常量: 1
+                        数组: KB_EffectCounter
+                            变量: KB_TotalKnockUnits
+                    SetVariable
+                        数组: KB_EffectCounter2
+                            数组: KB_GeneralIntegers
+                                常量: 1
+                        数组: KB_EffectCounter2
+                            变量: KB_TotalKnockUnits
+                    SetVariable
+                        数组: KB_GeneralIntegers
+                            常量: 1
+                        函数: OperatorInt
+                            数组: KB_GeneralIntegers
+                                常量: 1
+                            预设: OperatorSubtract
+                            常量: 1
+            SetVariable
+                数组: KB_Units
+                    变量: KB_TotalKnockUnits
+                预设: UnitNull
+            SetVariable
+                变量: KB_TotalKnockUnits
+                函数: OperatorInt
+                    变量: KB_TotalKnockUnits
+                    预设: OperatorSubtract
+                    常量: 1
+            IfThenElseMultiple
+                条件
+                    OperatorCompareInteger
+                        变量: KB_CountBuffs
+                        预设: OperatorEqual
+                        常量: 0
+                动作
+                    SetVariable
+                        变量: KB_TotalKnockUnits
+                        常量: 0
+                    DisableTrigger
+                        变量: gg_trg_Get_Knockback
+    IfThenElseMultiple
+        条件
+            OperatorCompareInteger
+                变量: KB_CountBuffs
+                预设: OperatorEqual
+                常量: 0
+        动作
+            EnableTrigger
+                变量: gg_trg_Get_Knockback
+    SetVariable
+        变量: KB_CountBuffs
+        函数: OperatorInt
+            变量: KB_CountBuffs
+            预设: OperatorAdd
+            常量: 1
+    SetVariable
+        变量: KB_TotalKnockUnits
+        函数: OperatorInt
+            变量: KB_TotalKnockUnits
+            预设: OperatorAdd
+            常量: 1
+    SetVariable
+        数组: KB_Casters
+            变量: KB_TotalKnockUnits
+        变量: KBA_Caster
+    SetVariable
+        数组: KB_Levels
+            变量: KB_TotalKnockUnits
+        变量: KBA_Level
+    SetVariable
+        数组: KB_Units
+            变量: KB_TotalKnockUnits
+        变量: KBA_TargetUnit
+    SetVariable
+        数组: KB_StartPositions
+            变量: KB_TotalKnockUnits
+        变量: KBA_StartingPosition
+    SetVariable
+        数组: KB_TempPoint
+            变量: KB_TotalKnockUnits
+        函数: GetUnitLoc
+            变量: KBA_TargetUnit
+    SetVariable
+        数组: KB_Angle
+            变量: KB_TotalKnockUnits
+        函数: AngleBetweenPoints
+            数组: KB_StartPositions
+                变量: KB_TotalKnockUnits
+            数组: KB_TempPoint
+                变量: KB_TotalKnockUnits
+    SetVariable
+        数组: KB_MaxDistance
+            变量: KB_TotalKnockUnits
+        函数: OperatorReal
+            变量: KBA_DistancePerLevel
+            预设: OperatorMultiply
+            函数: I2R
+                变量: KBA_Level
+    SetVariable
+        数组: KB_ReachedDistance
+            变量: KB_TotalKnockUnits
+        常量: 0.00
+    SetVariable
+        数组: KB_ReduceSpeedReal
+            数组: KB_GeneralIntegers
+                常量: 1
+        常量: 0.00
+    SetVariable
+        数组: KB_SpecificSpeed
+            变量: KB_TotalKnockUnits
+        变量: KBA_Speed
+    SetVariable
+        数组: KB_Effects_1
+            变量: KB_TotalKnockUnits
+        数组: KBA_SpecialEffects
+            常量: 1
+    SetVariable
+        数组: KB_Effects_2
+            变量: KB_TotalKnockUnits
+        数组: KBA_SpecialEffects
+            常量: 2
+    SetVariable
+        数组: KB_DestroyTrees
+            变量: KB_TotalKnockUnits
+        变量: KBA_DestroyTrees
+    SetVariable
+        数组: KB_EffectCounter
+            数组: KB_GeneralIntegers
+                常量: 1
+        常量: 0
+    SetVariable
+        数组: KB_EffectCounter2
+            数组: KB_GeneralIntegers
+                常量: 1
+        常量: 0
+    GroupAddUnitSimple
+        变量: KBA_TargetUnit
+        变量: KB_KnockbackedUnits
+    CustomScriptCode
+        常量: 'call RemoveLocation (udg_KBA_StartingPosition)'
+    CustomScriptCode
+        常量: 'call RemoveLocation (udg_KB_TempPoint [udg_KB_TotalKnockUnits] )'
+    CustomScriptCode
+        常量: 'call RemoveLocation (udg_KB_StartPositions [udg_KB_TotalKnockUnits] )'

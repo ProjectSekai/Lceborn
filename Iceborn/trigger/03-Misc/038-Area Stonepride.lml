@@ -1,0 +1,20 @@
+事件
+    TriggerRegisterEnterRectSimple
+        变量: gg_rct_Region_361
+条件
+    OperatorCompareUnit
+        函数: GetTriggerUnit
+        预设: OperatorEqualENE
+        变量: Hero
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    TriggerSleepAction
+        常量: 2.00
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cffffcc00卡 乌 的 石 之 尊 严|r
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Hint

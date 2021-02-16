@@ -1,0 +1,50 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OrMultiple
+        条件
+            OperatorCompareAbilityId
+                函数: GetSpellAbilityId
+                预设: OperatorEqualENE
+                常量: A00R
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareAbilityId
+                函数: GetSpellAbilityId
+                预设: OperatorEqualENE
+                常量: A00R
+        动作
+            SetUnitAnimation
+                变量: Hero
+                常量: spell
+            SetVariable
+                变量: LashPoint
+                函数: GetSpellTargetLoc
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h00I
+                预设: Player00
+                函数: GetUnitLoc
+                    变量: Hero
+                预设: RealUnitFacing
+            SetVariable
+                变量: LashSword
+                函数: GetLastCreatedUnit
+            IssuePointOrderLoc
+                函数: GetLastCreatedUnit
+                预设: UnitOrderMove
+                变量: LashPoint
+            TriggerSleepAction
+                常量: 4.50
+            IssueImmediateOrder
+                变量: LashSword
+                预设: UnitOrderStop
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h00J
+                预设: Player00
+                函数: GetUnitLoc
+                    变量: LashSword
+                预设: RealUnitFacing

@@ -1,0 +1,82 @@
+事件
+    TriggerRegisterTimerExpireEventBJ
+        变量: TimerGlyph
+条件
+动作
+    PlaySoundBJ
+        变量: gg_snd_Explosion5
+    UnitRemoveAbilityBJ
+        常量: A03X
+        变量: Hero
+    UnitRemoveAbilityBJ
+        常量: A03Y
+        变量: Hero
+    SetVariable
+        变量: AAPOINT
+        函数: GetUnitLoc
+            变量: Hero
+    AddSpecialEffectLocBJ
+        变量: AAPOINT
+        常量: EarthMagic.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: GetUnitLoc
+            变量: Hero
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h03L
+        预设: Player00
+        变量: AAPOINT
+        预设: RealUnitFacing
+    SetVariable
+        变量: GlyphMine
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: GetUnitLoc
+            变量: GlyphMine
+    SetVariable
+        变量: AAGROUP
+        函数: GetUnitsInRangeOfLocAll
+            常量: 100.00
+            变量: AAPOINT
+    ForGroupMultiple
+        变量: AAGROUP
+        动作
+            IfThenElseMultiple
+                条件
+                    AndMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: IsUnitEnemy
+                                    函数: GetEnumUnit
+                                    预设: Player00
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitAliveBJ
+                                    函数: GetEnumUnit
+                                预设: OperatorEqualENE
+                                常量: true
+                动作
+                    TriggerExecute
+                        变量: gg_trg_Glyph_Approach
+    CustomScriptCode
+        常量: 'call DestroyGroup(udg_AAGROUP)'
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    AddTriggerEvent
+        变量: gg_trg_Glyph_Approach
+        事件: TriggerRegisterUnitInRangeSimple
+            常量: 25.00
+            变量: GlyphMine
+    TriggerSleepAction
+        常量: 10.00
+    RemoveUnit
+        变量: GlyphMine

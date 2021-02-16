@@ -1,0 +1,111 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventDeath
+条件
+    OperatorCompareUnit
+        函数: GetDyingUnit
+        预设: OperatorEqualENE
+        变量: gg_unit_H06F_0415
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    ClearMapMusicBJ
+    EndThematicMusicBJ
+    StopMusicBJ
+        预设: FadeDontDont
+    PlayMusicBJ
+        变量: gg_snd_LichKing_Icy
+    DisableTrigger
+        变量: gg_trg_Blizzard_Effect_1
+    DisableTrigger
+        变量: gg_trg_Blizzard_Effect_2
+    CameraClearNoiseForPlayer
+        预设: Player00
+    UnitRemoveAbilityBJ
+        常量: A070
+        变量: gg_unit_H06F_0415
+    PauseUnitBJ
+        预设: PauseUnpauseOptionUnpause
+        变量: gg_unit_H06F_0415
+    SetTerrainFogExBJ
+        预设: FogStyleLinear
+        常量: 500.00
+        常量: 3500.00
+        常量: 0.50
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+    RemoveWeatherEffectBJ
+        变量: BlizzardSnow
+    RemoveWeatherEffectBJ
+        变量: BlizzardWind
+    DisableTrigger
+        变量: gg_trg_Summon_Crawlers
+    DisableTrigger
+        变量: gg_trg_Reflecting_Shield
+    DisableTrigger
+        变量: gg_trg_Frost_Circles
+    DisableTrigger
+        变量: gg_trg_Blizzard
+    DisableTrigger
+        变量: gg_trg_Electric_Balls
+    DisableTrigger
+        变量: gg_trg_Reflecting_Shield_Effect_1
+    DisableTrigger
+        变量: gg_trg_Reflecting_Shield_Effect_2
+    DisableTrigger
+        变量: gg_trg_Blizzard_Effect_1
+    DisableTrigger
+        变量: gg_trg_Blizzard_Effect_2
+    DisableTrigger
+        变量: gg_trg_Spawn_Ally
+    DisableTrigger
+        变量: gg_trg_Spawn_Hostile
+    DisableTrigger
+        变量: gg_trg_Spawn_Hostile_2
+    DisableTrigger
+        变量: gg_trg_Cleansing_Tower
+    DisableTrigger
+        变量: gg_trg_Urathol_Order
+    KillUnit
+        变量: gg_unit_H06N_0376
+    KillUnit
+        变量: gg_unit_H03Q_0374
+    SetUnitLifePercentBJ
+        变量: gg_unit_H06O_0377
+        常量: 100.00
+    SetUnitLifePercentBJ
+        变量: gg_unit_H00C_0419
+        常量: 100.00
+    IssueImmediateOrder
+        变量: gg_unit_H06O_0377
+        预设: UnitOrderStop
+    ForGroup
+        变量: Hostile
+        动作: KillUnit
+            函数: GetEnumUnit
+    ForGroup
+        变量: Ally
+        动作: IssueImmediateOrder
+            函数: GetEnumUnit
+            预设: UnitOrderStop
+    QuestItemSetCompletedBJ
+        变量: QuestMainReq1
+        预设: CompletionOptionCompleted
+    QuestSetCompletedBJ
+        变量: QuestMain
+        预设: CompletionOptionCompleted
+    TriggerSleepAction
+        常量: 10.00
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeOut
+        常量: 4.00
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    TriggerSleepAction
+        常量: 4.00
+    TriggerExecute
+        变量: gg_trg_A4_Finale

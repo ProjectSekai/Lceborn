@@ -1,0 +1,51 @@
+事件
+    TriggerRegisterPlayerChatEvent
+        预设: Player00
+        常量: Reset
+        预设: ChatMatchTypeExact
+条件
+动作
+    ModifyHeroStat
+        预设: HeroStatStr
+        变量: Hero
+        预设: ModifyMethodSet
+        函数: OperatorInt
+            函数: GetHeroStatBJ
+                预设: HeroStatStr
+                变量: Hero
+                预设: InclusionExclude
+            预设: OperatorSubtract
+            变量: VitalityPool
+    ModifyHeroStat
+        预设: HeroStatAgi
+        变量: Hero
+        预设: ModifyMethodSet
+        函数: OperatorInt
+            函数: GetHeroStatBJ
+                预设: HeroStatAgi
+                变量: Hero
+                预设: InclusionExclude
+            预设: OperatorSubtract
+            变量: ProtectionPool
+    ModifyHeroStat
+        预设: HeroStatInt
+        变量: Hero
+        预设: ModifyMethodSet
+        函数: OperatorInt
+            函数: GetHeroStatBJ
+                预设: HeroStatInt
+                变量: Hero
+                预设: InclusionExclude
+            预设: OperatorSubtract
+            变量: WillpowerPool
+    SetVariable
+        变量: VitalityPool
+        常量: 0
+    SetVariable
+        变量: WillpowerPool
+        常量: 0
+    SetVariable
+        变量: ProtectionPool
+        常量: 0
+    TriggerExecute
+        变量: gg_trg_Attribute_Reset_Gain

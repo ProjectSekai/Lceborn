@@ -1,0 +1,23 @@
+事件
+    TriggerRegisterTimerEventPeriodic
+        常量: 1.00
+条件
+动作
+    CustomScriptCode
+        常量: 'if(IsUnitInRange(udg_Sargon, udg_Hero, 600)) then'
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: IsUnitDeadBJ
+                    变量: Sargon
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            DisableTrigger
+                函数: GetTriggeringTrigger
+            ReturnAction
+    IssueImmediateOrder
+        变量: Sargon
+        预设: UnitOrderThunderClap
+    CustomScriptCode
+        常量: endif

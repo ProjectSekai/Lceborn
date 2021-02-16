@@ -1,0 +1,15 @@
+事件
+条件
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    KillUnit
+        变量: MirrorLowerHint
+    KillUnit
+        变量: MirrorUpperHint
+    CreateItemLoc
+        常量: I01Q
+        函数: GetRectCenter
+            变量: gg_rct_Region_205
+    ShowUnitShow
+        变量: gg_unit_h04L_0286

@@ -1,0 +1,133 @@
+事件
+条件
+动作
+    SetVariable
+        变量: WandererSpawn1
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_011
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h00L
+        预设: PlayerNP
+        变量: WandererSpawn1
+        预设: RealUnitFacing
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Wanderers
+    SetVariable
+        变量: WandererSpawnPoint1
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+    AddSpecialEffectLocBJ
+        变量: WandererSpawnPoint1
+        常量: Abilities\Spells\NightElf\Blink\BlinkCaster.mdl
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    SetVariable
+        变量: WandererSpawn2
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_012
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h00L
+        预设: PlayerNP
+        变量: WandererSpawn2
+        预设: RealUnitFacing
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Wanderers
+    SetVariable
+        变量: WandererSpawnPoint2
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+    AddSpecialEffectLocBJ
+        变量: WandererSpawnPoint2
+        常量: Abilities\Spells\NightElf\Blink\BlinkCaster.mdl
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    SetVariable
+        变量: WandererSpawn3
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_010
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h00L
+        预设: PlayerNP
+        变量: WandererSpawn3
+        预设: RealUnitFacing
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Wanderers
+    SetVariable
+        变量: WandererSpawnPoint3
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+    AddSpecialEffectLocBJ
+        变量: WandererSpawnPoint3
+        常量: Abilities\Spells\NightElf\Blink\BlinkCaster.mdl
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    SetVariable
+        变量: WandererSpawn4
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_009
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h00L
+        预设: PlayerNP
+        变量: WandererSpawn4
+        预设: RealUnitFacing
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Wanderers
+    SetVariable
+        变量: WandererSpawnPoint4
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+    AddSpecialEffectLocBJ
+        变量: WandererSpawnPoint4
+        常量: Abilities\Spells\NightElf\Blink\BlinkCaster.mdl
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    SetVariable
+        变量: WandererSpawn5
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_008
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h00L
+        预设: PlayerNP
+        变量: WandererSpawn5
+        预设: RealUnitFacing
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Wanderers
+    SetVariable
+        变量: WandererSpawnPoint5
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+    AddSpecialEffectLocBJ
+        变量: WandererSpawnPoint5
+        常量: Abilities\Spells\NightElf\Blink\BlinkCaster.mdl
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_WandererSpawn1)'
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_WandererSpawn2)'
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_WandererSpawn3)'
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_WandererSpawn4)'
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_WandererSpawn5)'
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_WandererSpawnPoint1)'
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_WandererSpawnPoint2)'
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_WandererSpawnPoint3)'
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_WandererSpawnPoint4)'
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_WandererSpawnPoint5)'

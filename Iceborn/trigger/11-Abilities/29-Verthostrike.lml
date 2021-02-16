@@ -1,0 +1,1560 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OrMultiple
+        条件
+            OperatorCompareAbilityId
+                函数: GetSpellAbilityId
+                预设: OperatorEqualENE
+                常量: A02U
+            OperatorCompareAbilityId
+                函数: GetSpellAbilityId
+                预设: OperatorEqualENE
+                常量: A05P
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareReal
+                函数: OperatorReal
+                    函数: GetUnitStateSwap
+                        预设: UnitStateMana
+                        变量: Hero
+                    预设: OperatorSubtract
+                    函数: OperatorReal
+                        函数: GetUnitStateSwap
+                            预设: UnitStateMaxMana
+                            变量: Hero
+                        预设: OperatorMultiply
+                        函数: OperatorReal
+                            常量: 0.15
+                            预设: OperatorSubtract
+                            函数: OperatorReal
+                                变量: AetrisEffect
+                                预设: OperatorAdd
+                                变量: BoethNeckEffect
+                预设: OperatorLessEq
+                常量: 0.00
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: ScrollSpellcaster
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareReal
+                                函数: GetRandomReal
+                                    常量: 0
+                                    常量: 100.00
+                                预设: OperatorLessEq
+                                常量: 25.00
+                        动作
+                        动作
+                            SetUnitManaPercentBJ
+                                变量: Hero
+                                常量: 0.00
+                            ReturnAction
+                动作
+                    SetUnitManaPercentBJ
+                        变量: Hero
+                        常量: 0.00
+                    ReturnAction
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: ScrollSpellcaster
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareReal
+                                函数: GetRandomReal
+                                    常量: 0
+                                    常量: 100.00
+                                预设: OperatorLessEq
+                                常量: 25.00
+                        动作
+                        动作
+                            SetUnitManaBJ
+                                变量: Hero
+                                函数: OperatorReal
+                                    函数: GetUnitStateSwap
+                                        预设: UnitStateMana
+                                        变量: Hero
+                                    预设: OperatorSubtract
+                                    函数: OperatorReal
+                                        函数: GetUnitStateSwap
+                                            预设: UnitStateMaxMana
+                                            变量: Hero
+                                        预设: OperatorMultiply
+                                        函数: OperatorReal
+                                            常量: 0.15
+                                            预设: OperatorSubtract
+                                            函数: OperatorReal
+                                                变量: AetrisEffect
+                                                预设: OperatorAdd
+                                                变量: BoethNeckEffect
+                动作
+                    SetUnitManaBJ
+                        变量: Hero
+                        函数: OperatorReal
+                            函数: GetUnitStateSwap
+                                预设: UnitStateMana
+                                变量: Hero
+                            预设: OperatorSubtract
+                            函数: OperatorReal
+                                函数: GetUnitStateSwap
+                                    预设: UnitStateMaxMana
+                                    变量: Hero
+                                预设: OperatorMultiply
+                                函数: OperatorReal
+                                    常量: 0.15
+                                    预设: OperatorSubtract
+                                    函数: OperatorReal
+                                        变量: AetrisEffect
+                                        预设: OperatorAdd
+                                        变量: BoethNeckEffect
+    SetVariable
+        变量: OrbsTarget
+        函数: GetSpellTargetUnit
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: Hero
+            函数: GetRandomReal
+                常量: 50.00
+                常量: 200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h02G
+        预设: Player00
+        变量: AAPOINT
+        预设: RealUnitFacing
+    SetVariable
+        变量: SpellOrb1
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: Hero
+            函数: GetRandomReal
+                常量: 50.00
+                常量: 200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h02G
+        预设: Player00
+        变量: AAPOINT
+        预设: RealUnitFacing
+    SetVariable
+        变量: SpellOrb2
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: Hero
+            函数: GetRandomReal
+                常量: 50.00
+                常量: 200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h02G
+        预设: Player00
+        变量: AAPOINT
+        预设: RealUnitFacing
+    SetVariable
+        变量: SpellOrb3
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: Hero
+            函数: GetRandomReal
+                常量: 50.00
+                常量: 200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h02G
+        预设: Player00
+        变量: AAPOINT
+        预设: RealUnitFacing
+    SetVariable
+        变量: SpellOrb4
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    IssueTargetOrder
+        变量: SpellOrb1
+        预设: UnitOrderThunderBolt
+        变量: OrbsTarget
+    IssueTargetOrder
+        变量: SpellOrb2
+        预设: UnitOrderThunderBolt
+        变量: OrbsTarget
+    IssueTargetOrder
+        变量: SpellOrb3
+        预设: UnitOrderThunderBolt
+        变量: OrbsTarget
+    IssueTargetOrder
+        变量: SpellOrb4
+        预设: UnitOrderThunderBolt
+        变量: OrbsTarget
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: UnitHasBuffBJ
+                    变量: OrbsTarget
+                    常量: B001
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: ScrollCritical
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareReal
+                                函数: GetRandomReal
+                                    常量: 1.00
+                                    常量: 100.00
+                                预设: OperatorLessEq
+                                常量: 30.00
+                        动作
+                            StopSoundBJ
+                                变量: gg_snd_Explosion6
+                                预设: FadeDontDont
+                            PlaySoundBJ
+                                变量: gg_snd_Explosion6
+                            SetVariable
+                                变量: AATARGET
+                                函数: GetSpellTargetUnit
+                            AddSpecialEffectTargetUnitBJ
+                                常量: origin
+                                变量: AATARGET
+                                常量: Objects\Spawnmodels\NightElf\NEDeathSmall\NEDeathSmall.mdl
+                            DestroyEffectBJ
+                                函数: GetLastCreatedEffectBJ
+                            UnitDamageTargetBJ
+                                变量: Hero
+                                变量: OrbsTarget
+                                函数: OperatorReal
+                                    函数: GetUnitStateSwap
+                                        预设: UnitStateMana
+                                        变量: Hero
+                                    预设: OperatorMultiply
+                                    常量: 1.00
+                                预设: AttackTypeNormal
+                                预设: DamageTypeNormal
+                        动作
+                            UnitDamageTargetBJ
+                                变量: Hero
+                                变量: OrbsTarget
+                                函数: OperatorReal
+                                    函数: GetUnitStateSwap
+                                        预设: UnitStateMana
+                                        变量: Hero
+                                    预设: OperatorMultiply
+                                    常量: 0.50
+                                预设: AttackTypeNormal
+                                预设: DamageTypeNormal
+                动作
+                    UnitDamageTargetBJ
+                        变量: Hero
+                        变量: OrbsTarget
+                        函数: OperatorReal
+                            函数: GetUnitStateSwap
+                                预设: UnitStateMana
+                                变量: Hero
+                            预设: OperatorMultiply
+                            常量: 0.50
+                        预设: AttackTypeNormal
+                        预设: DamageTypeNormal
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: ScrollCritical
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareReal
+                                函数: GetRandomReal
+                                    常量: 1.00
+                                    常量: 100.00
+                                预设: OperatorLessEq
+                                常量: 30.00
+                        动作
+                            StopSoundBJ
+                                变量: gg_snd_Explosion6
+                                预设: FadeDontDont
+                            PlaySoundBJ
+                                变量: gg_snd_Explosion6
+                            SetVariable
+                                变量: AATARGET
+                                函数: GetSpellTargetUnit
+                            AddSpecialEffectTargetUnitBJ
+                                常量: origin
+                                变量: AATARGET
+                                常量: Objects\Spawnmodels\NightElf\NEDeathSmall\NEDeathSmall.mdl
+                            DestroyEffectBJ
+                                函数: GetLastCreatedEffectBJ
+                            UnitDamageTargetBJ
+                                变量: Hero
+                                变量: OrbsTarget
+                                函数: OperatorReal
+                                    函数: GetUnitStateSwap
+                                        预设: UnitStateMana
+                                        变量: Hero
+                                    预设: OperatorMultiply
+                                    常量: 0.50
+                                预设: AttackTypeNormal
+                                预设: DamageTypeNormal
+                        动作
+                            UnitDamageTargetBJ
+                                变量: Hero
+                                变量: OrbsTarget
+                                函数: OperatorReal
+                                    函数: GetUnitStateSwap
+                                        预设: UnitStateMana
+                                        变量: Hero
+                                    预设: OperatorMultiply
+                                    常量: 0.25
+                                预设: AttackTypeNormal
+                                预设: DamageTypeNormal
+                动作
+                    UnitDamageTargetBJ
+                        变量: Hero
+                        变量: OrbsTarget
+                        函数: OperatorReal
+                            函数: GetUnitStateSwap
+                                预设: UnitStateMana
+                                变量: Hero
+                            预设: OperatorMultiply
+                            常量: 0.25
+                        预设: AttackTypeNormal
+                        预设: DamageTypeNormal
+    SetVariable
+        变量: AAPOINT
+        函数: GetUnitLoc
+            变量: OrbsTarget
+    AddSpecialEffectLocBJ
+        变量: AAPOINT
+        常量: Enchantment.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    AddSpecialEffectTargetUnitBJ
+        常量: origin
+        变量: OrbsTarget
+        常量: WaterArmor2.mdx
+    SetVariable
+        变量: OrbsTargetEffect
+        函数: GetLastCreatedEffectBJ
+    SetUnitMoveSpeed
+        变量: OrbsTarget
+        常量: 50.00
+    AddSpecialEffectTargetUnitBJ
+        常量: chest
+        变量: Hero
+        常量: BluefireBolt.mdx
+    SetVariable
+        变量: BlueBallEffect
+        函数: GetLastCreatedEffectBJ
+    SetVariable
+        变量: SoulboltPowerup
+        常量: true
+    TriggerSleepAction
+        常量: 1.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: IsUnitDeadBJ
+                    变量: OrbsTarget
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            KillUnit
+                变量: SpellOrb1
+            KillUnit
+                变量: SpellOrb2
+            KillUnit
+                变量: SpellOrb3
+            KillUnit
+                变量: SpellOrb4
+            SetUnitMoveSpeed
+                变量: OrbsTarget
+                函数: GetUnitDefaultMoveSpeed
+                    变量: OrbsTarget
+            DestroyEffectBJ
+                变量: OrbsTargetEffect
+            SetVariable
+                变量: AAPOINT
+                函数: GetUnitLoc
+                    变量: OrbsTarget
+            AddSpecialEffectLocBJ
+                变量: AAPOINT
+                常量: IceNova.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            CustomScriptCode
+                常量: 'call RemoveLocation(udg_AAPOINT)'
+            SetVariable
+                变量: AAPOINT
+                函数: GetUnitLoc
+                    变量: OrbsTarget
+            AddSpecialEffectLocBJ
+                变量: AAPOINT
+                常量: ABirth_1.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            CustomScriptCode
+                常量: 'call RemoveLocation(udg_AAPOINT)'
+            TriggerSleepAction
+                常量: 1.00
+            SetVariable
+                变量: AAPOINT
+                函数: GetUnitLoc
+                    变量: OrbsTarget
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h01O
+                预设: PlayerNP
+                变量: AAPOINT
+                预设: RealUnitFacing
+            SetVariable
+                变量: GrenadeOrb
+                函数: GetLastCreatedUnit
+            CustomScriptCode
+                常量: 'call RemoveLocation(udg_AAPOINT)'
+            AddSpecialEffectLocBJ
+                函数: PolarProjectionBJ
+                    函数: GetUnitLoc
+                        变量: GrenadeOrb
+                    常量: 30.00
+                    常量: 229.00
+                常量: IonCannonBeam.mdx
+            SetVariable
+                变量: BeamOrb
+                函数: GetLastCreatedEffectBJ
+            StartTimerBJ
+                变量: TimerOrb
+                预设: PeriodicOptionOneTime
+                函数: OperatorReal
+                    常量: 5.00
+                    预设: OperatorAdd
+                    函数: OperatorReal
+                        函数: OperatorReal
+                            函数: GetUnitStateSwap
+                                预设: UnitStateMaxLife
+                                变量: Hero
+                            预设: OperatorDivide
+                            常量: 30.00
+                        预设: OperatorMultiply
+                        常量: 0.20
+            EnableTrigger
+                变量: gg_trg_Icegrenade_Timer_Orbs
+            SetVariable
+                变量: SoulboltPowerup
+                常量: false
+            DestroyEffectBJ
+                变量: BlueBallEffect
+            ReturnAction
+    IssueTargetOrder
+        变量: SpellOrb1
+        预设: UnitOrderThunderBolt
+        变量: OrbsTarget
+    IssueTargetOrder
+        变量: SpellOrb2
+        预设: UnitOrderThunderBolt
+        变量: OrbsTarget
+    IssueTargetOrder
+        变量: SpellOrb3
+        预设: UnitOrderThunderBolt
+        变量: OrbsTarget
+    IssueTargetOrder
+        变量: SpellOrb4
+        预设: UnitOrderThunderBolt
+        变量: OrbsTarget
+    SetVariable
+        变量: AAPOINT
+        函数: GetUnitLoc
+            变量: OrbsTarget
+    AddSpecialEffectLocBJ
+        变量: AAPOINT
+        常量: Enchantment.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: UnitHasBuffBJ
+                    变量: OrbsTarget
+                    常量: B001
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: ScrollCritical
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareReal
+                                函数: GetRandomReal
+                                    常量: 1.00
+                                    常量: 100.00
+                                预设: OperatorLessEq
+                                常量: 30.00
+                        动作
+                            StopSoundBJ
+                                变量: gg_snd_Explosion6
+                                预设: FadeDontDont
+                            PlaySoundBJ
+                                变量: gg_snd_Explosion6
+                            SetVariable
+                                变量: AATARGET
+                                函数: GetSpellTargetUnit
+                            AddSpecialEffectTargetUnitBJ
+                                常量: origin
+                                变量: AATARGET
+                                常量: Objects\Spawnmodels\NightElf\NEDeathSmall\NEDeathSmall.mdl
+                            DestroyEffectBJ
+                                函数: GetLastCreatedEffectBJ
+                            UnitDamageTargetBJ
+                                变量: Hero
+                                变量: OrbsTarget
+                                函数: OperatorReal
+                                    函数: GetUnitStateSwap
+                                        预设: UnitStateMana
+                                        变量: Hero
+                                    预设: OperatorMultiply
+                                    常量: 1.00
+                                预设: AttackTypeNormal
+                                预设: DamageTypeNormal
+                        动作
+                            UnitDamageTargetBJ
+                                变量: Hero
+                                变量: OrbsTarget
+                                函数: OperatorReal
+                                    函数: GetUnitStateSwap
+                                        预设: UnitStateMana
+                                        变量: Hero
+                                    预设: OperatorMultiply
+                                    常量: 0.50
+                                预设: AttackTypeNormal
+                                预设: DamageTypeNormal
+                动作
+                    UnitDamageTargetBJ
+                        变量: Hero
+                        变量: OrbsTarget
+                        函数: OperatorReal
+                            函数: GetUnitStateSwap
+                                预设: UnitStateMana
+                                变量: Hero
+                            预设: OperatorMultiply
+                            常量: 0.50
+                        预设: AttackTypeNormal
+                        预设: DamageTypeNormal
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: ScrollCritical
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareReal
+                                函数: GetRandomReal
+                                    常量: 1.00
+                                    常量: 100.00
+                                预设: OperatorLessEq
+                                常量: 30.00
+                        动作
+                            StopSoundBJ
+                                变量: gg_snd_Explosion6
+                                预设: FadeDontDont
+                            PlaySoundBJ
+                                变量: gg_snd_Explosion6
+                            SetVariable
+                                变量: AATARGET
+                                函数: GetSpellTargetUnit
+                            AddSpecialEffectTargetUnitBJ
+                                常量: origin
+                                变量: AATARGET
+                                常量: Objects\Spawnmodels\NightElf\NEDeathSmall\NEDeathSmall.mdl
+                            DestroyEffectBJ
+                                函数: GetLastCreatedEffectBJ
+                            UnitDamageTargetBJ
+                                变量: Hero
+                                变量: OrbsTarget
+                                函数: OperatorReal
+                                    函数: GetUnitStateSwap
+                                        预设: UnitStateMana
+                                        变量: Hero
+                                    预设: OperatorMultiply
+                                    常量: 0.50
+                                预设: AttackTypeNormal
+                                预设: DamageTypeNormal
+                        动作
+                            UnitDamageTargetBJ
+                                变量: Hero
+                                变量: OrbsTarget
+                                函数: OperatorReal
+                                    函数: GetUnitStateSwap
+                                        预设: UnitStateMana
+                                        变量: Hero
+                                    预设: OperatorMultiply
+                                    常量: 0.25
+                                预设: AttackTypeNormal
+                                预设: DamageTypeNormal
+                动作
+                    UnitDamageTargetBJ
+                        变量: Hero
+                        变量: OrbsTarget
+                        函数: OperatorReal
+                            函数: GetUnitStateSwap
+                                预设: UnitStateMana
+                                变量: Hero
+                            预设: OperatorMultiply
+                            常量: 0.25
+                        预设: AttackTypeNormal
+                        预设: DamageTypeNormal
+    TriggerSleepAction
+        常量: 1.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: IsUnitDeadBJ
+                    变量: OrbsTarget
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            KillUnit
+                变量: SpellOrb1
+            KillUnit
+                变量: SpellOrb2
+            KillUnit
+                变量: SpellOrb3
+            KillUnit
+                变量: SpellOrb4
+            SetUnitMoveSpeed
+                变量: OrbsTarget
+                函数: GetUnitDefaultMoveSpeed
+                    变量: OrbsTarget
+            DestroyEffectBJ
+                变量: OrbsTargetEffect
+            SetVariable
+                变量: AAPOINT
+                函数: GetUnitLoc
+                    变量: OrbsTarget
+            AddSpecialEffectLocBJ
+                变量: AAPOINT
+                常量: IceNova.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            CustomScriptCode
+                常量: 'call RemoveLocation(udg_AAPOINT)'
+            SetVariable
+                变量: AAPOINT
+                函数: GetUnitLoc
+                    变量: OrbsTarget
+            AddSpecialEffectLocBJ
+                变量: AAPOINT
+                常量: ABirth_1.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            CustomScriptCode
+                常量: 'call RemoveLocation(udg_AAPOINT)'
+            SetVariable
+                变量: SoulboltPowerup
+                常量: false
+            DestroyEffectBJ
+                变量: BlueBallEffect
+            TriggerSleepAction
+                常量: 1.00
+            SetVariable
+                变量: AAPOINT
+                函数: GetUnitLoc
+                    变量: OrbsTarget
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h01O
+                预设: PlayerNP
+                变量: AAPOINT
+                预设: RealUnitFacing
+            SetVariable
+                变量: GrenadeOrb
+                函数: GetLastCreatedUnit
+            CustomScriptCode
+                常量: 'call RemoveLocation(udg_AAPOINT)'
+            AddSpecialEffectLocBJ
+                函数: PolarProjectionBJ
+                    函数: GetUnitLoc
+                        变量: GrenadeOrb
+                    常量: 30.00
+                    常量: 229.00
+                常量: IonCannonBeam.mdx
+            SetVariable
+                变量: BeamOrb
+                函数: GetLastCreatedEffectBJ
+            StartTimerBJ
+                变量: TimerOrb
+                预设: PeriodicOptionOneTime
+                函数: OperatorReal
+                    常量: 5.00
+                    预设: OperatorAdd
+                    函数: OperatorReal
+                        函数: OperatorReal
+                            函数: GetUnitStateSwap
+                                预设: UnitStateMaxLife
+                                变量: Hero
+                            预设: OperatorDivide
+                            常量: 30.00
+                        预设: OperatorMultiply
+                        常量: 0.20
+            EnableTrigger
+                变量: gg_trg_Icegrenade_Timer_Orbs
+            ReturnAction
+    SetVariable
+        变量: SoulboltPowerup
+        常量: false
+    DestroyEffectBJ
+        变量: BlueBallEffect
+    IssueTargetOrder
+        变量: SpellOrb1
+        预设: UnitOrderThunderBolt
+        变量: OrbsTarget
+    IssueTargetOrder
+        变量: SpellOrb2
+        预设: UnitOrderThunderBolt
+        变量: OrbsTarget
+    IssueTargetOrder
+        变量: SpellOrb3
+        预设: UnitOrderThunderBolt
+        变量: OrbsTarget
+    IssueTargetOrder
+        变量: SpellOrb4
+        预设: UnitOrderThunderBolt
+        变量: OrbsTarget
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            变量: OrbsTarget
+        常量: Enchantment.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: UnitHasBuffBJ
+                    变量: OrbsTarget
+                    常量: B001
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: ScrollCritical
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareReal
+                                函数: GetRandomReal
+                                    常量: 1.00
+                                    常量: 100.00
+                                预设: OperatorLessEq
+                                常量: 30.00
+                        动作
+                            StopSoundBJ
+                                变量: gg_snd_Explosion6
+                                预设: FadeDontDont
+                            PlaySoundBJ
+                                变量: gg_snd_Explosion6
+                            SetVariable
+                                变量: AATARGET
+                                函数: GetSpellTargetUnit
+                            AddSpecialEffectTargetUnitBJ
+                                常量: origin
+                                变量: AATARGET
+                                常量: Objects\Spawnmodels\NightElf\NEDeathSmall\NEDeathSmall.mdl
+                            DestroyEffectBJ
+                                函数: GetLastCreatedEffectBJ
+                            UnitDamageTargetBJ
+                                变量: Hero
+                                变量: OrbsTarget
+                                函数: OperatorReal
+                                    函数: GetUnitStateSwap
+                                        预设: UnitStateMana
+                                        变量: Hero
+                                    预设: OperatorMultiply
+                                    常量: 1.00
+                                预设: AttackTypeNormal
+                                预设: DamageTypeNormal
+                        动作
+                            UnitDamageTargetBJ
+                                变量: Hero
+                                变量: OrbsTarget
+                                函数: OperatorReal
+                                    函数: GetUnitStateSwap
+                                        预设: UnitStateMana
+                                        变量: Hero
+                                    预设: OperatorMultiply
+                                    常量: 0.50
+                                预设: AttackTypeNormal
+                                预设: DamageTypeNormal
+                动作
+                    UnitDamageTargetBJ
+                        变量: Hero
+                        变量: OrbsTarget
+                        函数: OperatorReal
+                            函数: GetUnitStateSwap
+                                预设: UnitStateMana
+                                变量: Hero
+                            预设: OperatorMultiply
+                            常量: 0.50
+                        预设: AttackTypeNormal
+                        预设: DamageTypeNormal
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: ScrollCritical
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareReal
+                                函数: GetRandomReal
+                                    常量: 1.00
+                                    常量: 100.00
+                                预设: OperatorLessEq
+                                常量: 30.00
+                        动作
+                            StopSoundBJ
+                                变量: gg_snd_Explosion6
+                                预设: FadeDontDont
+                            PlaySoundBJ
+                                变量: gg_snd_Explosion6
+                            SetVariable
+                                变量: AATARGET
+                                函数: GetSpellTargetUnit
+                            AddSpecialEffectTargetUnitBJ
+                                常量: origin
+                                变量: AATARGET
+                                常量: Objects\Spawnmodels\NightElf\NEDeathSmall\NEDeathSmall.mdl
+                            DestroyEffectBJ
+                                函数: GetLastCreatedEffectBJ
+                            UnitDamageTargetBJ
+                                变量: Hero
+                                变量: OrbsTarget
+                                函数: OperatorReal
+                                    函数: GetUnitStateSwap
+                                        预设: UnitStateMana
+                                        变量: Hero
+                                    预设: OperatorMultiply
+                                    常量: 0.50
+                                预设: AttackTypeNormal
+                                预设: DamageTypeNormal
+                        动作
+                            UnitDamageTargetBJ
+                                变量: Hero
+                                变量: OrbsTarget
+                                函数: OperatorReal
+                                    函数: GetUnitStateSwap
+                                        预设: UnitStateMana
+                                        变量: Hero
+                                    预设: OperatorMultiply
+                                    常量: 0.25
+                                预设: AttackTypeNormal
+                                预设: DamageTypeNormal
+                动作
+                    UnitDamageTargetBJ
+                        变量: Hero
+                        变量: OrbsTarget
+                        函数: OperatorReal
+                            函数: GetUnitStateSwap
+                                预设: UnitStateMana
+                                变量: Hero
+                            预设: OperatorMultiply
+                            常量: 0.25
+                        预设: AttackTypeNormal
+                        预设: DamageTypeNormal
+    TriggerSleepAction
+        常量: 1.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: IsUnitDeadBJ
+                    变量: OrbsTarget
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            KillUnit
+                变量: SpellOrb1
+            KillUnit
+                变量: SpellOrb2
+            KillUnit
+                变量: SpellOrb3
+            KillUnit
+                变量: SpellOrb4
+            SetUnitMoveSpeed
+                变量: OrbsTarget
+                函数: GetUnitDefaultMoveSpeed
+                    变量: OrbsTarget
+            DestroyEffectBJ
+                变量: OrbsTargetEffect
+            SetVariable
+                变量: AAPOINT
+                函数: GetUnitLoc
+                    变量: OrbsTarget
+            AddSpecialEffectLocBJ
+                变量: AAPOINT
+                常量: IceNova.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            CustomScriptCode
+                常量: 'call RemoveLocation(udg_AAPOINT)'
+            SetVariable
+                变量: AAPOINT
+                函数: GetUnitLoc
+                    变量: OrbsTarget
+            AddSpecialEffectLocBJ
+                变量: AAPOINT
+                常量: ABirth_1.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            CustomScriptCode
+                常量: 'call RemoveLocation(udg_AAPOINT)'
+            TriggerSleepAction
+                常量: 1.00
+            SetVariable
+                变量: AAPOINT
+                函数: GetUnitLoc
+                    变量: OrbsTarget
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h01O
+                预设: PlayerNP
+                变量: AAPOINT
+                预设: RealUnitFacing
+            SetVariable
+                变量: GrenadeOrb
+                函数: GetLastCreatedUnit
+            CustomScriptCode
+                常量: 'call RemoveLocation(udg_AAPOINT)'
+            AddSpecialEffectLocBJ
+                函数: PolarProjectionBJ
+                    函数: GetUnitLoc
+                        变量: GrenadeOrb
+                    常量: 30.00
+                    常量: 229.00
+                常量: IonCannonBeam.mdx
+            SetVariable
+                变量: BeamOrb
+                函数: GetLastCreatedEffectBJ
+            StartTimerBJ
+                变量: TimerOrb
+                预设: PeriodicOptionOneTime
+                函数: OperatorReal
+                    常量: 5.00
+                    预设: OperatorAdd
+                    函数: OperatorReal
+                        函数: OperatorReal
+                            函数: GetUnitStateSwap
+                                预设: UnitStateMaxLife
+                                变量: Hero
+                            预设: OperatorDivide
+                            常量: 30.00
+                        预设: OperatorMultiply
+                        常量: 0.20
+            EnableTrigger
+                变量: gg_trg_Icegrenade_Timer_Orbs
+            ReturnAction
+    IssueTargetOrder
+        变量: SpellOrb1
+        预设: UnitOrderThunderBolt
+        变量: OrbsTarget
+    IssueTargetOrder
+        变量: SpellOrb2
+        预设: UnitOrderThunderBolt
+        变量: OrbsTarget
+    IssueTargetOrder
+        变量: SpellOrb3
+        预设: UnitOrderThunderBolt
+        变量: OrbsTarget
+    IssueTargetOrder
+        变量: SpellOrb4
+        预设: UnitOrderThunderBolt
+        变量: OrbsTarget
+    SetVariable
+        变量: AAPOINT
+        函数: GetUnitLoc
+            变量: OrbsTarget
+    AddSpecialEffectLocBJ
+        变量: AAPOINT
+        常量: Enchantment.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: UnitHasBuffBJ
+                    变量: OrbsTarget
+                    常量: B001
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: ScrollCritical
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareReal
+                                函数: GetRandomReal
+                                    常量: 1.00
+                                    常量: 100.00
+                                预设: OperatorLessEq
+                                常量: 30.00
+                        动作
+                            StopSoundBJ
+                                变量: gg_snd_Explosion6
+                                预设: FadeDontDont
+                            PlaySoundBJ
+                                变量: gg_snd_Explosion6
+                            SetVariable
+                                变量: AATARGET
+                                函数: GetSpellTargetUnit
+                            AddSpecialEffectTargetUnitBJ
+                                常量: origin
+                                变量: AATARGET
+                                常量: Objects\Spawnmodels\NightElf\NEDeathSmall\NEDeathSmall.mdl
+                            DestroyEffectBJ
+                                函数: GetLastCreatedEffectBJ
+                            UnitDamageTargetBJ
+                                变量: Hero
+                                变量: OrbsTarget
+                                函数: OperatorReal
+                                    函数: GetUnitStateSwap
+                                        预设: UnitStateMana
+                                        变量: Hero
+                                    预设: OperatorMultiply
+                                    常量: 1.00
+                                预设: AttackTypeNormal
+                                预设: DamageTypeNormal
+                        动作
+                            UnitDamageTargetBJ
+                                变量: Hero
+                                变量: OrbsTarget
+                                函数: OperatorReal
+                                    函数: GetUnitStateSwap
+                                        预设: UnitStateMana
+                                        变量: Hero
+                                    预设: OperatorMultiply
+                                    常量: 0.50
+                                预设: AttackTypeNormal
+                                预设: DamageTypeNormal
+                动作
+                    UnitDamageTargetBJ
+                        变量: Hero
+                        变量: OrbsTarget
+                        函数: OperatorReal
+                            函数: GetUnitStateSwap
+                                预设: UnitStateMana
+                                变量: Hero
+                            预设: OperatorMultiply
+                            常量: 0.50
+                        预设: AttackTypeNormal
+                        预设: DamageTypeNormal
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: ScrollCritical
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareReal
+                                函数: GetRandomReal
+                                    常量: 1.00
+                                    常量: 100.00
+                                预设: OperatorLessEq
+                                常量: 30.00
+                        动作
+                            StopSoundBJ
+                                变量: gg_snd_Explosion6
+                                预设: FadeDontDont
+                            PlaySoundBJ
+                                变量: gg_snd_Explosion6
+                            SetVariable
+                                变量: AATARGET
+                                函数: GetSpellTargetUnit
+                            AddSpecialEffectTargetUnitBJ
+                                常量: origin
+                                变量: AATARGET
+                                常量: Objects\Spawnmodels\NightElf\NEDeathSmall\NEDeathSmall.mdl
+                            DestroyEffectBJ
+                                函数: GetLastCreatedEffectBJ
+                            UnitDamageTargetBJ
+                                变量: Hero
+                                变量: OrbsTarget
+                                函数: OperatorReal
+                                    函数: GetUnitStateSwap
+                                        预设: UnitStateMana
+                                        变量: Hero
+                                    预设: OperatorMultiply
+                                    常量: 0.50
+                                预设: AttackTypeNormal
+                                预设: DamageTypeNormal
+                        动作
+                            UnitDamageTargetBJ
+                                变量: Hero
+                                变量: OrbsTarget
+                                函数: OperatorReal
+                                    函数: GetUnitStateSwap
+                                        预设: UnitStateMana
+                                        变量: Hero
+                                    预设: OperatorMultiply
+                                    常量: 0.25
+                                预设: AttackTypeNormal
+                                预设: DamageTypeNormal
+                动作
+                    UnitDamageTargetBJ
+                        变量: Hero
+                        变量: OrbsTarget
+                        函数: OperatorReal
+                            函数: GetUnitStateSwap
+                                预设: UnitStateMana
+                                变量: Hero
+                            预设: OperatorMultiply
+                            常量: 0.25
+                        预设: AttackTypeNormal
+                        预设: DamageTypeNormal
+    TriggerSleepAction
+        常量: 1.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: IsUnitDeadBJ
+                    变量: OrbsTarget
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            KillUnit
+                变量: SpellOrb1
+            KillUnit
+                变量: SpellOrb2
+            KillUnit
+                变量: SpellOrb3
+            KillUnit
+                变量: SpellOrb4
+            SetUnitMoveSpeed
+                变量: OrbsTarget
+                函数: GetUnitDefaultMoveSpeed
+                    变量: OrbsTarget
+            DestroyEffectBJ
+                变量: OrbsTargetEffect
+            ReturnAction
+    IssueTargetOrder
+        变量: SpellOrb1
+        预设: UnitOrderThunderBolt
+        变量: OrbsTarget
+    IssueTargetOrder
+        变量: SpellOrb2
+        预设: UnitOrderThunderBolt
+        变量: OrbsTarget
+    IssueTargetOrder
+        变量: SpellOrb3
+        预设: UnitOrderThunderBolt
+        变量: OrbsTarget
+    IssueTargetOrder
+        变量: SpellOrb4
+        预设: UnitOrderThunderBolt
+        变量: OrbsTarget
+    SetVariable
+        变量: AAPOINT
+        函数: GetUnitLoc
+            变量: OrbsTarget
+    AddSpecialEffectLocBJ
+        变量: AAPOINT
+        常量: Enchantment.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: UnitHasBuffBJ
+                    变量: OrbsTarget
+                    常量: B001
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: ScrollCritical
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareReal
+                                函数: GetRandomReal
+                                    常量: 1.00
+                                    常量: 100.00
+                                预设: OperatorLessEq
+                                常量: 30.00
+                        动作
+                            StopSoundBJ
+                                变量: gg_snd_Explosion6
+                                预设: FadeDontDont
+                            PlaySoundBJ
+                                变量: gg_snd_Explosion6
+                            SetVariable
+                                变量: AATARGET
+                                函数: GetSpellTargetUnit
+                            AddSpecialEffectTargetUnitBJ
+                                常量: origin
+                                变量: AATARGET
+                                常量: Objects\Spawnmodels\NightElf\NEDeathSmall\NEDeathSmall.mdl
+                            DestroyEffectBJ
+                                函数: GetLastCreatedEffectBJ
+                            UnitDamageTargetBJ
+                                变量: Hero
+                                变量: OrbsTarget
+                                函数: OperatorReal
+                                    函数: GetUnitStateSwap
+                                        预设: UnitStateMana
+                                        变量: Hero
+                                    预设: OperatorMultiply
+                                    常量: 1.00
+                                预设: AttackTypeNormal
+                                预设: DamageTypeNormal
+                        动作
+                            UnitDamageTargetBJ
+                                变量: Hero
+                                变量: OrbsTarget
+                                函数: OperatorReal
+                                    函数: GetUnitStateSwap
+                                        预设: UnitStateMana
+                                        变量: Hero
+                                    预设: OperatorMultiply
+                                    常量: 0.50
+                                预设: AttackTypeNormal
+                                预设: DamageTypeNormal
+                动作
+                    UnitDamageTargetBJ
+                        变量: Hero
+                        变量: OrbsTarget
+                        函数: OperatorReal
+                            函数: GetUnitStateSwap
+                                预设: UnitStateMana
+                                变量: Hero
+                            预设: OperatorMultiply
+                            常量: 0.50
+                        预设: AttackTypeNormal
+                        预设: DamageTypeNormal
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: ScrollCritical
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareReal
+                                函数: GetRandomReal
+                                    常量: 1.00
+                                    常量: 100.00
+                                预设: OperatorLessEq
+                                常量: 30.00
+                        动作
+                            StopSoundBJ
+                                变量: gg_snd_Explosion6
+                                预设: FadeDontDont
+                            PlaySoundBJ
+                                变量: gg_snd_Explosion6
+                            SetVariable
+                                变量: AATARGET
+                                函数: GetSpellTargetUnit
+                            AddSpecialEffectTargetUnitBJ
+                                常量: origin
+                                变量: AATARGET
+                                常量: Objects\Spawnmodels\NightElf\NEDeathSmall\NEDeathSmall.mdl
+                            DestroyEffectBJ
+                                函数: GetLastCreatedEffectBJ
+                            UnitDamageTargetBJ
+                                变量: Hero
+                                变量: OrbsTarget
+                                函数: OperatorReal
+                                    函数: GetUnitStateSwap
+                                        预设: UnitStateMana
+                                        变量: Hero
+                                    预设: OperatorMultiply
+                                    常量: 0.50
+                                预设: AttackTypeNormal
+                                预设: DamageTypeNormal
+                        动作
+                            UnitDamageTargetBJ
+                                变量: Hero
+                                变量: OrbsTarget
+                                函数: OperatorReal
+                                    函数: GetUnitStateSwap
+                                        预设: UnitStateMana
+                                        变量: Hero
+                                    预设: OperatorMultiply
+                                    常量: 0.25
+                                预设: AttackTypeNormal
+                                预设: DamageTypeNormal
+                动作
+                    UnitDamageTargetBJ
+                        变量: Hero
+                        变量: OrbsTarget
+                        函数: OperatorReal
+                            函数: GetUnitStateSwap
+                                预设: UnitStateMana
+                                变量: Hero
+                            预设: OperatorMultiply
+                            常量: 0.25
+                        预设: AttackTypeNormal
+                        预设: DamageTypeNormal
+    TriggerSleepAction
+        常量: 1.00
+    KillUnit
+        变量: SpellOrb1
+    KillUnit
+        变量: SpellOrb2
+    KillUnit
+        变量: SpellOrb3
+    KillUnit
+        变量: SpellOrb4
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: IsUnitAliveBJ
+                    变量: OrbsTarget
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: AAPOINT
+                函数: GetUnitLoc
+                    变量: OrbsTarget
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h02H
+                预设: PlayerNP
+                变量: AAPOINT
+                预设: RealUnitFacing
+            CustomScriptCode
+                常量: 'call RemoveLocation(udg_AAPOINT)'
+            TriggerSleepAction
+                常量: 0.75
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: UnitHasBuffBJ
+                            变量: OrbsTarget
+                            常量: B001
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareBoolean
+                                变量: ScrollCritical
+                                预设: OperatorEqualENE
+                                常量: true
+                        动作
+                            IfThenElseMultiple
+                                条件
+                                    OperatorCompareReal
+                                        函数: GetRandomReal
+                                            常量: 1.00
+                                            常量: 100.00
+                                        预设: OperatorLessEq
+                                        常量: 30.00
+                                动作
+                                    StopSoundBJ
+                                        变量: gg_snd_Explosion6
+                                        预设: FadeDontDont
+                                    PlaySoundBJ
+                                        变量: gg_snd_Explosion6
+                                    SetVariable
+                                        变量: AATARGET
+                                        函数: GetSpellTargetUnit
+                                    AddSpecialEffectTargetUnitBJ
+                                        常量: origin
+                                        变量: AATARGET
+                                        常量: Objects\Spawnmodels\NightElf\NEDeathSmall\NEDeathSmall.mdl
+                                    DestroyEffectBJ
+                                        函数: GetLastCreatedEffectBJ
+                                    UnitDamageTargetBJ
+                                        变量: Hero
+                                        变量: OrbsTarget
+                                        函数: OperatorReal
+                                            函数: GetUnitStateSwap
+                                                预设: UnitStateMana
+                                                变量: Hero
+                                            预设: OperatorMultiply
+                                            常量: 4.00
+                                        预设: AttackTypeNormal
+                                        预设: DamageTypeNormal
+                                动作
+                                    UnitDamageTargetBJ
+                                        变量: Hero
+                                        变量: OrbsTarget
+                                        函数: OperatorReal
+                                            函数: GetUnitStateSwap
+                                                预设: UnitStateMana
+                                                变量: Hero
+                                            预设: OperatorMultiply
+                                            常量: 2.00
+                                        预设: AttackTypeNormal
+                                        预设: DamageTypeNormal
+                        动作
+                            UnitDamageTargetBJ
+                                变量: Hero
+                                变量: OrbsTarget
+                                函数: OperatorReal
+                                    函数: GetUnitStateSwap
+                                        预设: UnitStateMana
+                                        变量: Hero
+                                    预设: OperatorMultiply
+                                    常量: 2.00
+                                预设: AttackTypeNormal
+                                预设: DamageTypeNormal
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareBoolean
+                                变量: ScrollCritical
+                                预设: OperatorEqualENE
+                                常量: true
+                        动作
+                            IfThenElseMultiple
+                                条件
+                                    OperatorCompareReal
+                                        函数: GetRandomReal
+                                            常量: 1.00
+                                            常量: 100.00
+                                        预设: OperatorLessEq
+                                        常量: 30.00
+                                动作
+                                    StopSoundBJ
+                                        变量: gg_snd_Explosion6
+                                        预设: FadeDontDont
+                                    PlaySoundBJ
+                                        变量: gg_snd_Explosion6
+                                    SetVariable
+                                        变量: AATARGET
+                                        函数: GetSpellTargetUnit
+                                    AddSpecialEffectTargetUnitBJ
+                                        常量: origin
+                                        变量: AATARGET
+                                        常量: Objects\Spawnmodels\NightElf\NEDeathSmall\NEDeathSmall.mdl
+                                    DestroyEffectBJ
+                                        函数: GetLastCreatedEffectBJ
+                                    UnitDamageTargetBJ
+                                        变量: Hero
+                                        变量: OrbsTarget
+                                        函数: OperatorReal
+                                            函数: GetUnitStateSwap
+                                                预设: UnitStateMana
+                                                变量: Hero
+                                            预设: OperatorMultiply
+                                            常量: 2.00
+                                        预设: AttackTypeNormal
+                                        预设: DamageTypeNormal
+                                动作
+                                    UnitDamageTargetBJ
+                                        变量: Hero
+                                        变量: OrbsTarget
+                                        函数: OperatorReal
+                                            函数: GetUnitStateSwap
+                                                预设: UnitStateMana
+                                                变量: Hero
+                                            预设: OperatorMultiply
+                                            常量: 1.00
+                                        预设: AttackTypeNormal
+                                        预设: DamageTypeNormal
+                        动作
+                            UnitDamageTargetBJ
+                                变量: Hero
+                                变量: OrbsTarget
+                                函数: OperatorReal
+                                    函数: GetUnitStateSwap
+                                        预设: UnitStateMana
+                                        变量: Hero
+                                    预设: OperatorMultiply
+                                    常量: 1.00
+                                预设: AttackTypeNormal
+                                预设: DamageTypeNormal
+            ConditionalTriggerExecute
+                变量: gg_trg_Verthostrike_Knock
+            SetUnitMoveSpeed
+                变量: OrbsTarget
+                函数: GetUnitDefaultMoveSpeed
+                    变量: OrbsTarget
+            DestroyEffectBJ
+                变量: OrbsTargetEffect
+            CameraSetEQNoiseForPlayer
+                预设: Player00
+                常量: 10.00
+            TriggerSleepAction
+                常量: 0.50
+            CameraClearNoiseForPlayer
+                预设: Player00
+    SetUnitMoveSpeed
+        变量: OrbsTarget
+        函数: GetUnitDefaultMoveSpeed
+            变量: OrbsTarget
+    DestroyEffectBJ
+        变量: OrbsTargetEffect

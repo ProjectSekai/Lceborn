@@ -1,0 +1,37 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OperatorCompareAbilityId
+        函数: GetSpellAbilityId
+        预设: OperatorEqualENE
+        常量: A04O
+动作
+    SetVariable
+        变量: DH_Caster
+        函数: GetTriggerUnit
+    SetVariable
+        变量: DH_TargetLoc
+        函数: GetSpellTargetLoc
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h04T
+        函数: GetTriggerPlayer
+        变量: DH_TargetLoc
+        预设: RealUnitFacing
+    SetVariable
+        变量: DH_Dummy
+        函数: GetLastCreatedUnit
+    UnitApplyTimedLifeBJ
+        常量: 8.00
+        预设: TimedLifeBuffCodeGeneric
+        变量: DH_Dummy
+    EnableTrigger
+        变量: gg_trg_Perpythus_Head_Loop
+    CameraSetEQNoiseForPlayer
+        预设: Player00
+        常量: 15.00
+    TriggerSleepAction
+        常量: 1.00
+    CameraClearNoiseForPlayer
+        预设: Player00

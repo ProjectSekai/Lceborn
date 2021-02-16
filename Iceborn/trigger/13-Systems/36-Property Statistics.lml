@@ -1,0 +1,88 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventHeroPickUpItem
+条件
+    OrMultiple
+        条件
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I001
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I00F
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I00G
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I00E
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I00G
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I00G
+        动作
+            SetVariable
+                变量: ItemTakenCryst
+                函数: OperatorReal
+                    变量: ItemTakenCryst
+                    预设: OperatorAdd
+                    常量: 1
+    IfThenElseMultiple
+        条件
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I00E
+        动作
+            SetVariable
+                变量: ItemTakenSphere
+                函数: OperatorReal
+                    变量: ItemTakenSphere
+                    预设: OperatorAdd
+                    常量: 1
+    IfThenElseMultiple
+        条件
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I00F
+        动作
+            SetVariable
+                变量: ItemTakenConCryst
+                函数: OperatorReal
+                    变量: ItemTakenConCryst
+                    预设: OperatorAdd
+                    常量: 1
+    IfThenElseMultiple
+        条件
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I001
+        动作
+            SetVariable
+                变量: ItemTakenEssence
+                函数: OperatorReal
+                    变量: ItemTakenEssence
+                    预设: OperatorAdd
+                    常量: 1

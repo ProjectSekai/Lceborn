@@ -1,0 +1,274 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OperatorCompareAbilityId
+        函数: GetSpellAbilityId
+        预设: OperatorEqualENE
+        常量: A04J
+动作
+    PlaySoundBJ
+        变量: gg_snd_CrushingWaveCaster1
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h043
+        预设: PlayerNP
+        函数: GetUnitLoc
+            变量: Hero
+        函数: GetRandomDirectionDeg
+    IfThenElse
+        条件: OperatorCompareBoolean
+            函数: IsUnitType
+                变量: Hero
+                预设: UnitTypeMagicImmune
+            预设: OperatorEqualENE
+            常量: true
+        动作: ReturnAction
+        动作: DoNothing
+    SetUnitMoveSpeed
+        变量: Hero
+        常量: 0.00
+    TriggerSleepAction
+        常量: 5.00
+    SetUnitMoveSpeed
+        变量: Hero
+        函数: GetUnitDefaultMoveSpeed
+            变量: Hero
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: ModeAdvanced
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            UnitDamageTargetBJ
+                变量: gg_unit_H03O_0108
+                变量: Hero
+                常量: 800.00
+                预设: AttackTypeNormal
+                预设: DamageTypeNormal
+        动作
+            UnitDamageTargetBJ
+                变量: gg_unit_H03O_0108
+                变量: Hero
+                常量: 500.00
+                预设: AttackTypeNormal
+                预设: DamageTypeNormal
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h044
+        预设: PlayerNP
+        函数: GetUnitLoc
+            变量: Hero
+        函数: GetRandomDirectionDeg
+    SetVariable
+        变量: RingPoint
+        函数: GetUnitLoc
+            变量: Hero
+    SetVariable
+        变量: AngleRing
+        常量: 360.00
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h045
+        预设: PlayerNP
+        函数: GetUnitLoc
+            变量: Hero
+        预设: RealUnitFacing
+    SetVariable
+        变量: ShockwavePoint
+        函数: PolarProjectionBJ
+            变量: RingPoint
+            常量: 400.00
+            变量: AngleRing
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderClusterRockets
+        变量: ShockwavePoint
+    SetVariable
+        变量: AngleRing
+        函数: OperatorReal
+            变量: AngleRing
+            预设: OperatorSubtract
+            常量: 30.00
+    SetVariable
+        变量: ShockwavePoint
+        函数: PolarProjectionBJ
+            变量: RingPoint
+            常量: 400.00
+            变量: AngleRing
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderClusterRockets
+        变量: ShockwavePoint
+    SetVariable
+        变量: AngleRing
+        函数: OperatorReal
+            变量: AngleRing
+            预设: OperatorSubtract
+            常量: 30.00
+    SetVariable
+        变量: ShockwavePoint
+        函数: PolarProjectionBJ
+            变量: RingPoint
+            常量: 400.00
+            变量: AngleRing
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderClusterRockets
+        变量: ShockwavePoint
+    SetVariable
+        变量: AngleRing
+        函数: OperatorReal
+            变量: AngleRing
+            预设: OperatorSubtract
+            常量: 30.00
+    SetVariable
+        变量: ShockwavePoint
+        函数: PolarProjectionBJ
+            变量: RingPoint
+            常量: 400.00
+            变量: AngleRing
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderClusterRockets
+        变量: ShockwavePoint
+    SetVariable
+        变量: AngleRing
+        函数: OperatorReal
+            变量: AngleRing
+            预设: OperatorSubtract
+            常量: 30.00
+    SetVariable
+        变量: ShockwavePoint
+        函数: PolarProjectionBJ
+            变量: RingPoint
+            常量: 400.00
+            变量: AngleRing
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderClusterRockets
+        变量: ShockwavePoint
+    SetVariable
+        变量: AngleRing
+        函数: OperatorReal
+            变量: AngleRing
+            预设: OperatorSubtract
+            常量: 30.00
+    SetVariable
+        变量: ShockwavePoint
+        函数: PolarProjectionBJ
+            变量: RingPoint
+            常量: 400.00
+            变量: AngleRing
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderClusterRockets
+        变量: ShockwavePoint
+    SetVariable
+        变量: AngleRing
+        函数: OperatorReal
+            变量: AngleRing
+            预设: OperatorSubtract
+            常量: 30.00
+    SetVariable
+        变量: ShockwavePoint
+        函数: PolarProjectionBJ
+            变量: RingPoint
+            常量: 400.00
+            变量: AngleRing
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderClusterRockets
+        变量: ShockwavePoint
+    SetVariable
+        变量: AngleRing
+        函数: OperatorReal
+            变量: AngleRing
+            预设: OperatorSubtract
+            常量: 30.00
+    SetVariable
+        变量: ShockwavePoint
+        函数: PolarProjectionBJ
+            变量: RingPoint
+            常量: 400.00
+            变量: AngleRing
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderClusterRockets
+        变量: ShockwavePoint
+    SetVariable
+        变量: AngleRing
+        函数: OperatorReal
+            变量: AngleRing
+            预设: OperatorSubtract
+            常量: 30.00
+    SetVariable
+        变量: ShockwavePoint
+        函数: PolarProjectionBJ
+            变量: RingPoint
+            常量: 400.00
+            变量: AngleRing
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderClusterRockets
+        变量: ShockwavePoint
+    SetVariable
+        变量: AngleRing
+        函数: OperatorReal
+            变量: AngleRing
+            预设: OperatorSubtract
+            常量: 30.00
+    SetVariable
+        变量: ShockwavePoint
+        函数: PolarProjectionBJ
+            变量: RingPoint
+            常量: 400.00
+            变量: AngleRing
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderClusterRockets
+        变量: ShockwavePoint
+    SetVariable
+        变量: AngleRing
+        函数: OperatorReal
+            变量: AngleRing
+            预设: OperatorSubtract
+            常量: 30.00
+    SetVariable
+        变量: ShockwavePoint
+        函数: PolarProjectionBJ
+            变量: RingPoint
+            常量: 400.00
+            变量: AngleRing
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderClusterRockets
+        变量: ShockwavePoint
+    SetVariable
+        变量: AngleRing
+        函数: OperatorReal
+            变量: AngleRing
+            预设: OperatorSubtract
+            常量: 30.00
+    SetVariable
+        变量: ShockwavePoint
+        函数: PolarProjectionBJ
+            变量: RingPoint
+            常量: 400.00
+            变量: AngleRing
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderClusterRockets
+        变量: ShockwavePoint
+    PlaySoundBJ
+        变量: gg_snd_CrushingWaveCaster1
+    CameraSetEQNoiseForPlayer
+        预设: Player00
+        常量: 10.00
+    TriggerSleepAction
+        常量: 1.00
+    CameraClearNoiseForPlayer
+        预设: Player00
+    PlaySoundBJ
+        变量: gg_snd_WaterElementalYesAttack2

@@ -1,0 +1,15 @@
+事件
+    TriggerRegisterTimerEventPeriodic
+        常量: 1.00
+条件
+动作
+    IssuePointOrderLoc
+        变量: gg_unit_H04O_0373
+        预设: UnitOrderCarrionSwarm
+        函数: GetUnitLoc
+            变量: gg_unit_H06F_0415
+    StopSoundBJ
+        变量: gg_snd_DeathknightStrike
+        预设: FadeDontDont
+    PlaySoundBJ
+        变量: gg_snd_DeathknightStrike

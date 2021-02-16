@@ -1,0 +1,100 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventDeath
+条件
+    OperatorCompareUnitCode
+        函数: GetUnitTypeId
+            函数: GetDyingUnit
+        预设: OperatorEqualENE
+        常量: h02K
+动作
+    GroupRemoveUnitSimple
+        函数: GetDyingUnit
+        变量: GhartekGroup
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            变量: gg_unit_H024_0109
+        常量: OrbitalRay.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: IsUnitGroupEmptyBJ
+                    变量: GhartekGroup
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            DisableTrigger
+                函数: GetTriggeringTrigger
+            DisableTrigger
+                变量: gg_trg_Caretra_Void_2_Enter
+            DisableTrigger
+                变量: gg_trg_Caretra_Void_2_Leave
+            DestroyEffectBJ
+                变量: VoidAura
+            CinematicFadeBJ
+                预设: FadeTypeOptionFadeIn
+                常量: 0.50
+                预设: CineFilterTextureDream
+                常量: 0.00
+                常量: 0.00
+                常量: 100.00
+                常量: 20.00
+            TriggerSleepAction
+                常量: 1.00
+            PauseUnitBJ
+                预设: PauseUnpauseOptionPause
+                变量: gg_unit_H024_0109
+            ResetUnitAnimation
+                变量: gg_unit_H024_0109
+            SetUnitAnimation
+                变量: gg_unit_H024_0109
+                常量: 'stand channel'
+            PlaySoundBJ
+                变量: gg_snd_SnapDragonReady1
+            TriggerSleepAction
+                常量: 2.60
+            PlaySoundBJ
+                变量: gg_snd_SnapDragonWhat1
+            TriggerSleepAction
+                常量: 1.60
+            PlaySoundBJ
+                变量: gg_snd_SnapDragonYes2
+            TriggerSleepAction
+                常量: 2.40
+            PauseUnitBJ
+                预设: PauseUnpauseOptionUnpause
+                变量: gg_unit_H024_0109
+            ResetUnitAnimation
+                变量: gg_unit_H024_0109
+            SetUnitAnimation
+                变量: gg_unit_H024_0109
+                常量: stand
+            TriggerSleepAction
+                常量: 1.00
+            PlaySoundBJ
+                变量: gg_snd_BanishCaster
+            AddSpecialEffectLocBJ
+                函数: GetRectCenter
+                    变量: gg_rct_Region_112
+                常量: Voidwalker_Aura.mdx
+            SetVariable
+                变量: VoidAura
+                函数: GetLastCreatedEffectBJ
+            EnableTrigger
+                变量: gg_trg_Caretra_Void_3_Enter
+            EnableTrigger
+                变量: gg_trg_Caretra_Void_3_Leave
+            EnableTrigger
+                变量: gg_trg_Caretra_Lesser_Sphere_Death_3
+            IfThenElse
+                条件: OperatorCompareBoolean
+                    函数: RectContainsUnit
+                        变量: gg_rct_Region_112
+                        变量: Hero
+                    预设: OperatorEqualENE
+                    常量: true
+                动作: TriggerExecute
+                    变量: gg_trg_Caretra_Void_3_Enter
+                动作: DoNothing

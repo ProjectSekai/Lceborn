@@ -1,0 +1,117 @@
+事件
+条件
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: RectContainsLoc
+                    变量: gg_rct_Region_233
+                    函数: GetUnitLoc
+                        变量: gg_unit_h04U_0311
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            DisableTrigger
+                变量: gg_trg_Circle_Spawns
+            EnableTrigger
+                变量: gg_trg_Circle_Spawns_Phase_2
+            ForGroup
+                函数: GetUnitsInRangeOfLocAll
+                    常量: 400.00
+                    函数: GetUnitLoc
+                        变量: gg_unit_h04U_0311
+                动作: IfThenElse
+                    条件: OperatorComparePlayer
+                        函数: GetOwningPlayer
+                            函数: GetEnumUnit
+                        预设: OperatorEqualENE
+                        预设: PlayerNA
+                    动作: KillUnit
+                        函数: GetEnumUnit
+                    动作: DoNothing
+            PauseUnitBJ
+                预设: PauseUnpauseOptionPause
+                变量: gg_unit_h04U_0311
+            SetUnitFacingToFaceLocTimed
+                变量: gg_unit_h04U_0311
+                函数: GetRectCenter
+                    变量: gg_rct_Region_233
+                常量: 1.00
+            TriggerSleepAction
+                常量: 1.00
+            SetMusicVolumeBJ
+                常量: 50.00
+            DisplayTimedTextToForce
+                函数: GetPlayersAll
+                常量: 4.00
+                常量: '|cffffcc00亚坦崔米迪俄斯:|r 看好我的后背,直到我了结了污染!
+
+'
+            StopSoundBJ
+                变量: gg_snd_Atantrimedius5
+                预设: FadeDontDont
+            PlaySoundBJ
+                变量: gg_snd_Atantrimedius6
+            TriggerSleepAction
+                常量: 5.00
+            SetMusicVolumeBJ
+                常量: 100.00
+            IfThenElse
+                条件: OperatorCompareBoolean
+                    函数: IsUnitDeadBJ
+                        变量: gg_unit_h04U_0311
+                    预设: OperatorEqualENE
+                    常量: true
+                动作: ReturnAction
+                动作: DoNothing
+            SetUnitAnimation
+                变量: gg_unit_h04U_0311
+                常量: 'spell channel'
+            ShowUnitShow
+                变量: gg_unit_h057_0367
+            PlaySoundBJ
+                变量: gg_snd_SpiritLink1
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: ModeAdvanced
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                    StartTimerBJ
+                        变量: TimerCube
+                        预设: PeriodicOptionOneTime
+                        常量: 270.00
+                动作
+                    StartTimerBJ
+                        变量: TimerCube
+                        预设: PeriodicOptionOneTime
+                        常量: 210.00
+            CreateTimerDialogBJ
+                变量: TimerCube
+                常量: '污染的净化:'
+            SetVariable
+                变量: TimerCubeWindow
+                函数: GetLastCreatedTimerDialogBJ
+        动作
+            ForGroup
+                函数: GetUnitsInRangeOfLocAll
+                    常量: 400.00
+                    函数: GetUnitLoc
+                        变量: gg_unit_h04U_0311
+                动作: IfThenElse
+                    条件: OperatorComparePlayer
+                        函数: GetOwningPlayer
+                            函数: GetEnumUnit
+                        预设: OperatorEqualENE
+                        预设: PlayerNA
+                    动作: KillUnit
+                        函数: GetEnumUnit
+                    动作: DoNothing
+            EnableTrigger
+                变量: gg_trg_Atantrimedius_Walk_Up
+            IssuePointOrderLoc
+                变量: gg_unit_h04U_0311
+                预设: UnitOrderMove
+                函数: GetRectCenter
+                    变量: gg_rct_Region_233

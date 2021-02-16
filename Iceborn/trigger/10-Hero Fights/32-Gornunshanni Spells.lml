@@ -1,0 +1,35 @@
+事件
+    TriggerRegisterTimerEventPeriodic
+        常量: 4.00
+条件
+动作
+    IfThenElse
+        条件: OperatorCompareBoolean
+            变量: CirrathoDeath
+            预设: OperatorEqualENE
+            常量: true
+        动作: DisableTrigger
+            函数: GetTriggeringTrigger
+        动作: DoNothing
+    SetUnitMoveSpeed
+        变量: gg_unit_H03O_0108
+        常量: 0.00
+    IssueImmediateOrder
+        变量: gg_unit_H03O_0108
+        预设: UnitOrderThunderClap
+    TriggerSleepAction
+        常量: 2.00
+    SetUnitMoveSpeed
+        变量: gg_unit_H03O_0108
+        常量: 0.00
+    IssueImmediateOrder
+        变量: gg_unit_H03O_0108
+        预设: UnitOrderStomp
+    TriggerSleepAction
+        常量: 1.00
+    SetUnitMoveSpeed
+        变量: gg_unit_H03O_0108
+        常量: 0.00
+    IssueImmediateOrder
+        变量: gg_unit_H03O_0108
+        预设: UnitOrderCreepThunderClap

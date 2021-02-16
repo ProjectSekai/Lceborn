@@ -1,0 +1,49 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OperatorCompareAbilityId
+        函数: GetSpellAbilityId
+        预设: OperatorEqualENE
+        常量: A068
+动作
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h06G
+        预设: PlayerNA
+        函数: GetUnitLoc
+            函数: GetTriggerUnit
+        变量: AngleRing
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderCarrionSwarm
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                函数: GetTriggerUnit
+            常量: 300.00
+            函数: GetUnitFacing
+                函数: GetTriggerUnit
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderCarrionSwarm
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                函数: GetTriggerUnit
+            常量: 300.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    函数: GetTriggerUnit
+                预设: OperatorSubtract
+                常量: 30.00
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderCarrionSwarm
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                函数: GetTriggerUnit
+            常量: 300.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    函数: GetTriggerUnit
+                预设: OperatorAdd
+                常量: 30.00

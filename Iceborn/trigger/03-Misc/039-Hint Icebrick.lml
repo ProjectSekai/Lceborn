@@ -1,0 +1,30 @@
+事件
+    TriggerRegisterEnterRectSimple
+        变量: gg_rct_Region_034
+条件
+    OperatorCompareUnit
+        函数: GetTriggerUnit
+        预设: OperatorEqualENE
+        变量: Hero
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: ModeNormal
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            DisableTrigger
+                函数: GetTriggeringTrigger
+            TriggerSleepAction
+                常量: 0.50
+            PlaySoundBJ
+                变量: gg_snd_Hint
+            DisplayTextToForce
+                函数: GetPlayersAll
+                常量: '|cff7777aa提示: 一些物体控制着门的开关|r
+
+'
+        动作
+            DisableTrigger
+                函数: GetTriggeringTrigger

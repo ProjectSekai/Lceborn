@@ -1,0 +1,19 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventHeroUseItem
+条件
+    OperatorCompareItemCode
+        函数: GetItemTypeId
+            函数: GetManipulatedItem
+        预设: OperatorEqualENE
+        常量: I00Y
+动作
+    SetUnitManaPercentBJ
+        变量: Hero
+        常量: 100.00
+    AddSpecialEffectTargetUnitBJ
+        常量: origin
+        变量: Hero
+        常量: OrbitalRay.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ

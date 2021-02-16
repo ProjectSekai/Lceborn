@@ -1,0 +1,26 @@
+事件
+条件
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: CubeBoolean3
+                预设: OperatorEqualENE
+                常量: false
+        动作
+            SetVariable
+                变量: CubeBoolean3
+                常量: true
+            AddSpecialEffectLocBJ
+                函数: GetRectCenter
+                    变量: gg_rct_Cube_Copy_2
+                常量: IonCannonBeam.mdx
+            SetVariable
+                变量: CubeEffect3
+                函数: GetLastCreatedEffectBJ
+        动作
+            SetVariable
+                变量: CubeBoolean3
+                常量: false
+            DestroyEffectBJ
+                变量: CubeEffect3

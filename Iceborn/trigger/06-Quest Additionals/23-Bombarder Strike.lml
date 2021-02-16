@@ -1,0 +1,21 @@
+事件
+    TriggerRegisterTimerEventPeriodic
+        常量: 0.60
+条件
+动作
+    IssueTargetOrder
+        变量: Bombarder
+        预设: UnitOrderAttackUnit
+        函数: GroupPickRandomUnit
+            变量: Pals
+    TriggerSleepAction
+        常量: 0.05
+    IfThenElse
+        条件: OperatorCompareBoolean
+            函数: IsUnitAliveBJ
+                变量: Bombarder
+            预设: OperatorEqualENE
+            常量: true
+        动作: DoNothing
+        动作: DisableTrigger
+            函数: GetTriggeringTrigger

@@ -1,0 +1,40 @@
+事件
+    TriggerRegisterEnterRectSimple
+        变量: gg_rct_Region_244
+条件
+    OperatorCompareUnit
+        变量: Hero
+        预设: OperatorEqualENE
+        函数: GetEnteringUnit
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: Blossoms15
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            DisableTrigger
+                函数: GetTriggeringTrigger
+            SetPlayerState
+                预设: Player00
+                预设: PlayerStateFoodUsed
+                常量: 0
+            ShowUnitShow
+                变量: gg_unit_h059_0369
+            PlaySoundBJ
+                变量: gg_snd_WaterElementalWhat4
+            CameraSetEQNoiseForPlayer
+                预设: Player00
+                常量: 5.00
+            SetUnitAnimation
+                变量: gg_unit_h04P_0312
+                常量: 'stand gold'
+            KillDestructable
+                变量: gg_dest_YTpc_9905
+            KillDestructable
+                变量: gg_dest_YTpc_9906
+            TriggerSleepAction
+                常量: 0.75
+            CameraClearNoiseForPlayer
+                预设: Player00

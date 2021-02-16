@@ -1,0 +1,29 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OperatorCompareAbilityId
+        函数: GetSpellAbilityId
+        预设: OperatorEqualENE
+        常量: A04U
+动作
+    PlaySoundBJ
+        变量: gg_snd_DragonYesAttack2
+    EnableTrigger
+        变量: gg_trg_Arazayah_Beams_Loop
+    CameraSetEQNoiseForPlayer
+        预设: Player00
+        常量: 3
+    TriggerSleepAction
+        常量: 1.00
+    CameraClearNoiseForPlayer
+        预设: Player00
+    TriggerSleepAction
+        常量: 2.30
+    DisableTrigger
+        变量: gg_trg_Arazayah_Beams_Loop
+    PlaySoundBJ
+        变量: gg_snd_DragonYesAttack3
+    IssueImmediateOrder
+        变量: Arazayah
+        预设: UnitOrderStop

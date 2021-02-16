@@ -1,0 +1,29 @@
+事件
+    TriggerRegisterEnterRectSimple
+        变量: gg_rct_Region_102
+条件
+    OperatorCompareUnit
+        函数: GetTriggerUnit
+        预设: OperatorEqualENE
+        变量: Hero
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    TriggerSleepAction
+        常量: 1.50
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cffffcc00十 二 电 塔|r
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Hint
+    TriggerSleepAction
+        常量: 2.00
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cff7777aa提示: 将电塔正确地开启,可以打开大门|r
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Hint

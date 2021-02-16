@@ -1,0 +1,92 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventDeath
+条件
+    OrMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_h06Q_0378
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_h06Q_0379
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_h06R_0380
+动作
+    PlaySoundBJ
+        变量: gg_snd_Explosion8
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_h06Q_0378
+        动作
+            GroupRemoveUnitSimple
+                变量: gg_unit_h068_0401
+                变量: NeedleGroup
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_h06Q_0379
+        动作
+            GroupRemoveUnitSimple
+                变量: gg_unit_h068_0402
+                变量: NeedleGroup
+    IfThenElseMultiple
+        条件
+            AndMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: gg_unit_h06R_0380
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: gg_unit_h06Q_0378
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: gg_unit_h06Q_0379
+                        预设: OperatorEqualENE
+                        常量: true
+        动作
+            DisableTrigger
+                函数: GetTriggeringTrigger
+            DisableTrigger
+                变量: gg_trg_Portal_Open
+            DestroyTimerDialogBJ
+                变量: TimerPortalWindow
+            QuestItemSetCompletedBJ
+                变量: QuestMainReq1
+                预设: CompletionOptionCompleted
+            TriggerSleepAction
+                常量: 5.00
+            CreateQuestItemBJ
+                变量: QuestMain
+                常量: 护送机器以消灭净化之塔
+            SetVariable
+                变量: QuestMainReq1
+                函数: GetLastCreatedQuestItemBJ
+            QuestSetDescriptionBJ
+                变量: QuestMain
+                常量: 大门目前已经关闭.是时候处理净化之塔了,好让寒霜天地的军队能够到达宫殿并关闭手下的传送门.我正在护送中和机器到净化之塔并保护其直到它被关闭.这或许会刺激到乌拉索尔.机器可以在苍蓝之左翼,要塞的西方被找到.
+            FlashQuestDialogButtonBJ
+            PlaySoundBJ
+                变量: gg_snd_QuestLog
+            DisplayTextToForce
+                函数: GetPlayersAll
+                常量: '|cffffcc00 - 护送中和机器消灭净化之塔
+ - 中和机器在塔关闭之前不得被摧毁|r
+
+'
+            EnableTrigger
+                变量: gg_trg_Machine_Turn_On

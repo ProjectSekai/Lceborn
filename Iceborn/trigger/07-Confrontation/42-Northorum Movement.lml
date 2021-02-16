@@ -1,0 +1,48 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventAttacked
+条件
+    OrMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetAttacker
+                预设: OperatorEqualENE
+                变量: gg_unit_H06F_0415
+            OperatorCompareUnit
+                函数: GetAttacker
+                预设: OperatorEqualENE
+                变量: gg_unit_H03Q_0374
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetAttackedUnitBJ
+                预设: OperatorEqualENE
+                变量: gg_unit_H06O_0377
+        动作
+            DisableTrigger
+                函数: GetTriggeringTrigger
+            IssuePointOrderLoc
+                变量: gg_unit_H06O_0377
+                预设: UnitOrderMove
+                函数: PolarProjectionBJ
+                    函数: GetUnitLoc
+                        变量: gg_unit_H06F_0415
+                    常量: 700.00
+                    函数: GetRandomDirectionDeg
+            TriggerSleepAction
+                常量: 6.00
+            IfThenElse
+                条件: OperatorCompareBoolean
+                    函数: IsUnitDeadBJ
+                        变量: gg_unit_H06F_0415
+                    预设: OperatorEqualENE
+                    常量: true
+                动作: ReturnAction
+                动作: DoNothing
+            IssueTargetOrder
+                变量: gg_unit_H06O_0377
+                预设: UnitOrderAttackUnit
+                变量: gg_unit_H06F_0415
+            EnableTrigger
+                函数: GetTriggeringTrigger

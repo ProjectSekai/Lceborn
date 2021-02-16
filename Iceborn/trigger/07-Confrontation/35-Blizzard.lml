@@ -1,0 +1,162 @@
+事件
+    TriggerRegisterTimerEventPeriodic
+        常量: 80.00
+条件
+动作
+    IfThenElse
+        条件: OperatorCompareBoolean
+            函数: IsUnitDeadBJ
+                变量: gg_unit_H06F_0415
+            预设: OperatorEqualENE
+            常量: true
+        动作: ReturnAction
+        动作: DoNothing
+    PlaySoundBJ
+        变量: gg_snd_BlizzardSound
+    AddWeatherEffectSaveLast
+        变量: gg_rct_Region_369
+        预设: WeatherNorthrendBlizzard
+    SetVariable
+        变量: BlizzardSnow
+        函数: GetLastCreatedWeatherEffect
+    EnableWeatherEffect
+        函数: GetLastCreatedWeatherEffect
+        预设: OnOffOn
+    AddWeatherEffectSaveLast
+        变量: gg_rct_Region_370
+        预设: WeatherHeavyWind
+    SetVariable
+        变量: BlizzardWind
+        函数: GetLastCreatedWeatherEffect
+    EnableWeatherEffect
+        函数: GetLastCreatedWeatherEffect
+        预设: OnOffOn
+    SetTerrainFogExBJ
+        预设: FogStyleLinear
+        常量: 0.00
+        常量: 2000.00
+        常量: 0.50
+        常量: 50.00
+        常量: 50.00
+        常量: 50.00
+    PauseUnitBJ
+        预设: PauseUnpauseOptionPause
+        变量: gg_unit_H06F_0415
+    SetUnitAnimation
+        变量: gg_unit_H06F_0415
+        常量: 'spell ready'
+    UnitAddAbilityBJ
+        常量: A070
+        变量: gg_unit_H06F_0415
+    CameraSetEQNoiseForPlayer
+        预设: Player00
+        常量: 3.00
+    EnableTrigger
+        变量: gg_trg_Blizzard_Effect_1
+    EnableTrigger
+        变量: gg_trg_Blizzard_Effect_2
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h073
+        预设: PlayerNP
+        函数: GetUnitLoc
+            变量: gg_unit_H06F_0415
+        函数: GetRandomDirectionDeg
+    TriggerSleepAction
+        常量: 23.00
+    IfThenElse
+        条件: OperatorCompareBoolean
+            函数: IsUnitDeadBJ
+                变量: gg_unit_H06F_0415
+            预设: OperatorEqualENE
+            常量: true
+        动作: ReturnAction
+        动作: DoNothing
+    ForGroupMultiple
+        函数: GetUnitsInRangeOfLocAll
+            常量: 1500.00
+            函数: GetUnitLoc
+                变量: Hero
+        动作
+            IfThenElseMultiple
+                条件
+                    AndMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: IsUnitAliveBJ
+                                    函数: GetEnumUnit
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitEnemy
+                                    函数: GetEnumUnit
+                                    预设: PlayerNA
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitType
+                                    函数: GetEnumUnit
+                                    预设: UnitTypeMagicImmune
+                                预设: OperatorEqualENE
+                                常量: false
+                动作
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h071
+                        预设: PlayerNA
+                        函数: GetUnitLoc
+                            函数: GetEnumUnit
+                        预设: RealUnitFacing
+                    IssueTargetOrder
+                        函数: GetLastCreatedUnit
+                        预设: UnitOrderSlow
+                        函数: GetEnumUnit
+    TriggerSleepAction
+        常量: 5.00
+    IfThenElse
+        条件: OperatorCompareBoolean
+            函数: IsUnitDeadBJ
+                变量: gg_unit_H06F_0415
+            预设: OperatorEqualENE
+            常量: true
+        动作: ReturnAction
+        动作: DoNothing
+    DisableTrigger
+        变量: gg_trg_Blizzard_Effect_1
+    DisableTrigger
+        变量: gg_trg_Blizzard_Effect_2
+    CameraClearNoiseForPlayer
+        预设: Player00
+    UnitRemoveAbilityBJ
+        常量: A070
+        变量: gg_unit_H06F_0415
+    PauseUnitBJ
+        预设: PauseUnpauseOptionUnpause
+        变量: gg_unit_H06F_0415
+    SetTerrainFogExBJ
+        预设: FogStyleLinear
+        常量: 500.00
+        常量: 3500.00
+        常量: 0.50
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+    RemoveWeatherEffectBJ
+        变量: BlizzardSnow
+    RemoveWeatherEffectBJ
+        变量: BlizzardWind
+    TriggerSleepAction
+        常量: 2
+    IfThenElse
+        条件: OperatorCompareBoolean
+            函数: IsUnitDeadBJ
+                变量: gg_unit_H06F_0415
+            预设: OperatorEqualENE
+            常量: true
+        动作: ReturnAction
+        动作: DoNothing
+    IssuePointOrderLoc
+        变量: gg_unit_H06F_0415
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2

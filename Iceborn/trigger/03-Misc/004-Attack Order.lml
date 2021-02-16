@@ -1,0 +1,98 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventAttacked
+条件
+    OrMultiple
+        条件
+            OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetAttacker
+                预设: OperatorEqualENE
+                常量: h02R
+            OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetAttacker
+                预设: OperatorEqualENE
+                常量: h06B
+            OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetAttacker
+                预设: OperatorEqualENE
+                常量: H00A
+            OperatorCompareUnit
+                函数: GetAttacker
+                预设: OperatorEqualENE
+                变量: gg_unit_H06O_0377
+            OperatorCompareUnit
+                函数: GetAttacker
+                预设: OperatorEqualENE
+                变量: gg_unit_H03Q_0374
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetAttacker
+                预设: OperatorEqualENE
+                变量: gg_unit_H03Q_0374
+        动作
+            IssueImmediateOrder
+                函数: GetAttacker
+                预设: UnitOrderThunderClap
+            TriggerSleepAction
+                常量: 2
+            IssueImmediateOrder
+                函数: GetAttacker
+                预设: UnitOrderFanOfKnives
+    IfThenElseMultiple
+        条件
+            AndMultiple
+                条件
+                    OperatorCompareUnitCode
+                        函数: GetUnitTypeId
+                            函数: GetAttacker
+                        预设: OperatorEqualENE
+                        常量: h02R
+                    OperatorCompareBoolean
+                        函数: IsUnitPausedBJ
+                            函数: GetAttacker
+                        预设: OperatorEqualENE
+                        常量: false
+        动作
+            IssuePointOrderLoc
+                函数: GetAttacker
+                预设: UnitOrderCarrionSwarm
+                函数: GetUnitLoc
+                    函数: GetAttackedUnitBJ
+    IfThenElseMultiple
+        条件
+            AndMultiple
+                条件
+                    OperatorCompareUnitCode
+                        函数: GetUnitTypeId
+                            函数: GetAttacker
+                        预设: OperatorEqualENE
+                        常量: h06B
+        动作
+            IssueImmediateOrder
+                函数: GetAttacker
+                预设: UnitOrderThunderClap
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetAttacker
+                预设: OperatorEqualENE
+                变量: gg_unit_H06O_0377
+        动作
+            TriggerExecute
+                变量: gg_trg_Northorum_Attack_Order
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetAttacker
+                预设: OperatorEqualENE
+                常量: H00A
+        动作
+            IssueImmediateOrder
+                函数: GetAttacker
+                预设: UnitOrderThunderClap

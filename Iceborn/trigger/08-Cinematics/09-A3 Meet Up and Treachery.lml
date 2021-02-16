@@ -1,0 +1,1142 @@
+事件
+    TriggerRegisterEnterRectSimple
+        变量: gg_rct_Region_170
+条件
+    OperatorCompareUnit
+        函数: GetTriggerUnit
+        预设: OperatorEqualENE
+        变量: Hero
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    DisableTrigger
+        变量: gg_trg_Guardian_Sounds
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeOut
+        常量: 2
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    TriggerSleepAction
+        常量: 2.00
+    ClearMapMusicBJ
+    EndThematicMusicBJ
+    StopMusicBJ
+        预设: FadeDontDont
+    PlaySoundBJ
+        变量: gg_snd_AmbienceExam1
+    DisableTrigger
+        变量: gg_trg_Hero_Lock
+    CinematicModeBJ
+        预设: OnOffOn
+        函数: GetPlayersAll
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_080
+        预设: Player00
+        常量: 0
+    EnableTrigger
+        变量: gg_trg_A3_Skip
+    TriggerSleepAction
+        常量: 2.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: CinematicSkipped3
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: CinematicSkipped3
+                常量: false
+            ReturnAction
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeOut
+        常量: 3.00
+        常量: Act3.blp
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    TriggerSleepAction
+        常量: 6.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: CinematicSkipped3
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: CinematicSkipped3
+                常量: false
+            ReturnAction
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeIn
+        常量: 2.00
+        常量: Act3.blp
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    TriggerSleepAction
+        常量: 2.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: CinematicSkipped3
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: CinematicSkipped3
+                常量: false
+            ReturnAction
+    SetSkyModel
+        预设: SkyModelSky08
+    SetUnitMoveSpeed
+        变量: gg_unit_H03Q_0153
+        常量: 50.00
+    SetUnitMoveSpeed
+        变量: gg_unit_H00D_0154
+        常量: 50.00
+    IssuePointOrderLoc
+        变量: gg_unit_H03Q_0153
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_171
+    IssuePointOrderLoc
+        变量: gg_unit_H00D_0154
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_171
+    SetUnitPositionLocFacingLocBJ
+        变量: Hero
+        函数: GetRectCenter
+            变量: gg_rct_Region_173
+        函数: GetRectCenter
+            变量: gg_rct_Region_175
+    SetUnitPositionLocFacingLocBJ
+        变量: SummonedElemental1
+        函数: GetRectCenter
+            变量: gg_rct_Region_176
+        函数: GetRectCenter
+            变量: gg_rct_Region_175
+    SetUnitPositionLocFacingLocBJ
+        变量: SummonedElemental2
+        函数: GetRectCenter
+            变量: gg_rct_Region_177
+        函数: GetRectCenter
+            变量: gg_rct_Region_175
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeOut
+        常量: 0.00
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_008
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_009
+        预设: Player00
+        常量: 30.00
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeIn
+        常量: 5.00
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    SetTerrainFogExBJ
+        预设: FogStyleLinear
+        常量: 1500.00
+        常量: 5500.00
+        常量: 0
+        常量: 100
+        常量: 100
+        常量: 100
+    TriggerSleepAction
+        常量: 8.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: CinematicSkipped3
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: CinematicSkipped3
+                常量: false
+            ReturnAction
+    SetUnitAnimation
+        变量: Hero
+        常量: 'stand ready off first'
+    IssuePointOrderLoc
+        变量: gg_unit_H03Q_0153
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_172
+    IssuePointOrderLoc
+        变量: gg_unit_H00D_0154
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_172
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cffffcc00乌 拉 索 尔 之 眼|r
+
+'
+    TriggerSleepAction
+        常量: 10.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: CinematicSkipped3
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: CinematicSkipped3
+                常量: false
+            ReturnAction
+    SetUnitPositionLocFacingLocBJ
+        变量: gg_unit_H00D_0154
+        函数: GetRectCenter
+            变量: gg_rct_Region_175
+        函数: GetRectCenter
+            变量: gg_rct_Region_173
+    SetUnitPositionLocFacingLocBJ
+        变量: gg_unit_H03Q_0153
+        函数: GetRectCenter
+            变量: gg_rct_Region_172
+        函数: GetRectCenter
+            变量: gg_rct_Region_173
+    SetUnitTimeScalePercent
+        变量: gg_unit_H03Q_0153
+        常量: 40.00
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_012
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_013
+        预设: Player00
+        常量: 20.00
+    SetTerrainFogExBJ
+        预设: FogStyleLinear
+        常量: 1000.00
+        常量: 4000.00
+        常量: 0
+        常量: 100
+        常量: 100
+        常量: 100
+    TriggerSleepAction
+        常量: 19.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: CinematicSkipped3
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: CinematicSkipped3
+                常量: false
+            ReturnAction
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_014
+        预设: Player00
+        常量: 0
+    TriggerSleepAction
+        常量: 1.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: CinematicSkipped3
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: CinematicSkipped3
+                常量: false
+            ReturnAction
+    SetUnitAnimation
+        变量: gg_unit_H00D_0154
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H00D_0154
+        常量: 乌拉索尔
+        变量: gg_snd_Urathol1
+        常量: 原来就是你啊,人们说的冰裔.多么幸运的巧合,让我终于见到你了.
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H00D_0154
+    TriggerSleepAction
+        常量: 2
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: CinematicSkipped3
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: CinematicSkipped3
+                常量: false
+            ReturnAction
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_015
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_016
+        预设: Player00
+        常量: 15.00
+    IssuePointOrderLoc
+        变量: gg_unit_H00D_0154
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_174
+    EnableTrigger
+        变量: gg_trg_Hero_Face_Order
+    TriggerSleepAction
+        常量: 19.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: CinematicSkipped3
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: CinematicSkipped3
+                常量: false
+            ReturnAction
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H00D_0154
+        常量: 乌拉索尔
+        变量: gg_snd_Urathol2
+        常量: 我想把你映入我的眼眶,看看那些邪恶的老古董波伊斯人从你的身上见到了什么.
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H00D_0154
+        常量: 乌拉索尔
+        变量: gg_snd_Urathol3
+        常量: 而你现在站在这里,我却只看到了弱小与恐惧.
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_017
+        预设: Player00
+        常量: 0
+    SetUnitFacingToFaceUnitTimed
+        变量: gg_unit_H00D_0154
+        变量: Hero
+        常量: 3.00
+    TriggerSleepAction
+        常量: 3.30
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: CinematicSkipped3
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: CinematicSkipped3
+                常量: false
+            ReturnAction
+    SetUnitAnimation
+        变量: gg_unit_H00D_0154
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H00D_0154
+        常量: 乌拉索尔
+        变量: gg_snd_Urathol4
+        常量: 我可以现在就结束你那卑微的生命.
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H00D_0154
+    TriggerSleepAction
+        常量: 1.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: CinematicSkipped3
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: CinematicSkipped3
+                常量: false
+            ReturnAction
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_018
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_019
+        预设: Player00
+        常量: 17.00
+    IssuePointOrderLoc
+        变量: gg_unit_H00D_0154
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_178
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H00D_0154
+        常量: 乌拉索尔
+        变量: gg_snd_Urathol5
+        常量: 但我很大度又或者没有我表面上那么凶残.
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    TriggerSleepAction
+        常量: 7.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: CinematicSkipped3
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: CinematicSkipped3
+                常量: false
+            ReturnAction
+    SetUnitFacingToFaceUnitTimed
+        变量: gg_unit_H00D_0154
+        变量: Hero
+        常量: 3.00
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_020
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_021
+        预设: Player00
+        常量: 20.00
+    TriggerSleepAction
+        常量: 3.50
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: CinematicSkipped3
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: CinematicSkipped3
+                常量: false
+            ReturnAction
+    SetUnitAnimation
+        变量: gg_unit_H00D_0154
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H00D_0154
+        常量: 乌拉索尔
+        变量: gg_snd_Urathol6
+        常量: 我不会对你动手的,还不会.我推荐你离开我的宫殿,因为我们两人都知道你这次袭击的结局,不是吗?
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H00D_0154
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_022
+        预设: Player00
+        常量: 0
+    TriggerSleepAction
+        常量: 3.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: CinematicSkipped3
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: CinematicSkipped3
+                常量: false
+            ReturnAction
+    SetUnitAnimation
+        变量: gg_unit_H00D_0154
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H00D_0154
+        常量: 乌拉索尔
+        变量: gg_snd_Urathol7
+        常量: 我要先行一步了,因为似乎我的同伴不能放下武器安静地站着.
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H00D_0154
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_027
+        预设: Player00
+        常量: 0
+    DisableTrigger
+        变量: gg_trg_Hero_Face_Order
+    SetUnitFacingToFaceUnitTimed
+        变量: Hero
+        变量: gg_unit_H03Q_0153
+        常量: 2.00
+    TriggerSleepAction
+        常量: 3.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: CinematicSkipped3
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: CinematicSkipped3
+                常量: false
+            ReturnAction
+    SetUnitFacingToFaceUnitTimed
+        变量: Hero
+        变量: gg_unit_H00D_0154
+        常量: 4.00
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_024
+        预设: Player00
+        常量: 0.00
+    PlaySoundBJ
+        变量: gg_snd_ObsidianStatueYes2
+    TriggerSleepAction
+        常量: 2
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: CinematicSkipped3
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: CinematicSkipped3
+                常量: false
+            ReturnAction
+    PlaySoundBJ
+        变量: gg_snd_ObsidianStatueYes3
+    TriggerSleepAction
+        常量: 3.50
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: CinematicSkipped3
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: CinematicSkipped3
+                常量: false
+            ReturnAction
+    SetUnitFacingToFaceLocTimed
+        变量: gg_unit_H00D_0154
+        函数: GetRectCenter
+            变量: gg_rct_Region_179
+        常量: 4.00
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_025
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_026
+        预设: Player00
+        常量: 19.00
+    TriggerSleepAction
+        常量: 3.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: CinematicSkipped3
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: CinematicSkipped3
+                常量: false
+            ReturnAction
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H00D_0154
+        常量: 乌拉索尔
+        变量: gg_snd_Urathol8
+        常量: 不过先让我把你介绍给我的另一个同伴.他或许会让你在我们离开后,不会感到那么寂寞.
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    TriggerSleepAction
+        常量: 2.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: CinematicSkipped3
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: CinematicSkipped3
+                常量: false
+            ReturnAction
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_028
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_029
+        预设: Player00
+        常量: 20.00
+    TriggerSleepAction
+        常量: 1.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: CinematicSkipped3
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: CinematicSkipped3
+                常量: false
+            ReturnAction
+    DisableTrigger
+        变量: gg_trg_A3_Skip
+    PlaySoundBJ
+        变量: gg_snd_Electricity
+    SetUnitFacingToFaceLocTimed
+        变量: gg_unit_H03Q_0153
+        函数: GetRectCenter
+            变量: gg_rct_Region_179
+        常量: 2.00
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h03S
+        预设: PlayerNP
+        函数: GetRectCenter
+            变量: gg_rct_Region_179
+        预设: RealUnitFacing
+    UnitAddAbilityBJ
+        常量: A04D
+        变量: gg_unit_H00D_0154
+    SetUnitAnimation
+        变量: gg_unit_H00D_0154
+        常量: 'stand channel'
+    PlaySoundBJ
+        变量: gg_snd_DarkSummoningTarget1
+    TriggerSleepAction
+        常量: 2.50
+    StopSoundBJ
+        变量: gg_snd_DarkSummoningTarget1
+        预设: FadeDontDont
+    PlaySoundBJ
+        变量: gg_snd_DarkSummoningTarget1
+    TriggerSleepAction
+        常量: 2.50
+    StopSoundBJ
+        变量: gg_snd_DarkSummoningTarget1
+        预设: FadeDontDont
+    PlaySoundBJ
+        变量: gg_snd_DarkSummoningTarget1
+    TriggerSleepAction
+        常量: 3.00
+    EnableTrigger
+        变量: gg_trg_Lightnings
+    CameraSetEQNoiseForPlayer
+        预设: Player00
+        常量: 4.00
+    StopSoundBJ
+        变量: gg_snd_DarkSummoningTarget1
+        预设: FadeDontDont
+    PlaySoundBJ
+        变量: gg_snd_DarkSummoningTarget1
+    TriggerSleepAction
+        常量: 3.50
+    StopSoundBJ
+        变量: gg_snd_DarkSummoningTarget1
+        预设: FadeDontDont
+    PlaySoundBJ
+        变量: gg_snd_DarkSummoningTarget1
+    TriggerSleepAction
+        常量: 3.50
+    DisableTrigger
+        变量: gg_trg_Lightnings
+    StopSoundBJ
+        变量: gg_snd_Electricity
+        预设: FadeDontDont
+    UnitRemoveAbilityBJ
+        常量: A04D
+        变量: gg_unit_H00D_0154
+    ResetUnitAnimation
+        变量: gg_unit_H00D_0154
+    CameraClearNoiseForPlayer
+        预设: Player00
+    CameraSetEQNoiseForPlayer
+        预设: Player00
+        常量: 15.00
+    PlaySoundBJ
+        变量: gg_snd_Explosion1
+    PlaySoundBJ
+        变量: gg_snd_Explosion8
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h03R
+        预设: PlayerNP
+        函数: GetRectCenter
+            变量: gg_rct_Region_179
+        预设: RealUnitFacing
+    ShowUnitShow
+        变量: gg_unit_H03O_0108
+    SetUnitAnimation
+        变量: gg_unit_H03O_0108
+        常量: 'spell slam'
+    PlaySoundBJ
+        变量: gg_snd_ObsidianAvengerYes1
+    TriggerSleepAction
+        常量: 1.00
+    CameraClearNoiseForPlayer
+        预设: Player00
+    TriggerSleepAction
+        常量: 0.30
+    ResetUnitAnimation
+        变量: gg_unit_H03O_0108
+    TriggerSleepAction
+        常量: 2.00
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_030
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_031
+        预设: Player00
+        常量: 6.00
+    TriggerSleepAction
+        常量: 0.20
+    SetUnitTimeScalePercent
+        变量: gg_unit_H03O_0108
+        常量: 25.00
+    SetUnitAnimation
+        变量: gg_unit_H03O_0108
+        常量: 'spell slam'
+    PlaySoundBJ
+        变量: gg_snd_MonsterRoar
+    TriggerSleepAction
+        常量: 5.00
+    ResetUnitAnimation
+        变量: gg_unit_H03O_0108
+    SetUnitTimeScalePercent
+        变量: gg_unit_H03O_0108
+        常量: 100.00
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_023
+        预设: Player00
+        常量: 0
+    SetUnitFacingToFaceUnitTimed
+        变量: gg_unit_H00D_0154
+        变量: Hero
+        常量: 3.00
+    TriggerSleepAction
+        常量: 4.00
+    SetUnitAnimation
+        变量: gg_unit_H00D_0154
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H00D_0154
+        常量: 乌拉索尔
+        变量: gg_snd_Urathol9
+        常量: 玩得高兴,你们两个!通常我不会错过可以享受粉碎敌人的机会,但现在还有一件更重大的事情等着我.
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H00D_0154
+    TriggerSleepAction
+        常量: 1.00
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_032
+        预设: Player00
+        常量: 0
+    IssuePointOrderLoc
+        变量: gg_unit_H00D_0154
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_180
+    TriggerSleepAction
+        常量: 7.00
+    SetUnitFacingToFaceLocTimed
+        变量: gg_unit_H03Q_0153
+        函数: GetUnitLoc
+            变量: gg_unit_H00D_0154
+        常量: 3.00
+    SetUnitAnimation
+        变量: gg_unit_H00D_0154
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H00D_0154
+        常量: 乌拉索尔
+        变量: gg_snd_Urathol10
+        常量: 再见,冰裔.我希望这是第一次也是最后一次目睹你的存在.
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H00D_0154
+    TriggerSleepAction
+        常量: 2.00
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_033
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_034
+        预设: Player00
+        常量: 6.00
+    TriggerSleepAction
+        常量: 1.00
+    SetUnitTimeScalePercent
+        变量: gg_unit_H03Q_0153
+        常量: 100.00
+    SetUnitAnimation
+        变量: gg_unit_H03Q_0153
+        常量: spell
+    PlaySoundBJ
+        变量: gg_snd_ObsidianStatueWhat3
+    TriggerSleepAction
+        常量: 0.50
+    PlaySoundBJ
+        变量: gg_snd_Explosion8
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h03T
+        预设: PlayerNP
+        函数: GetUnitLoc
+            变量: gg_unit_H03Q_0153
+        预设: RealUnitFacing
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            变量: gg_unit_H00D_0154
+        常量: Abilities\Spells\Human\MassTeleport\MassTeleportCaster.mdl
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    TriggerSleepAction
+        常量: 0.50
+    ResetUnitAnimation
+        变量: gg_unit_H03Q_0153
+    TriggerSleepAction
+        常量: 0.50
+    ShowUnitHide
+        变量: gg_unit_H03Q_0153
+    ShowUnitHide
+        变量: gg_unit_H00D_0154
+    TriggerSleepAction
+        常量: 2.20
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_035
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_036
+        预设: Player00
+        常量: 16.00
+    SetTerrainFogExBJ
+        预设: FogStyleLinear
+        常量: 1500.00
+        常量: 5500.00
+        常量: 0
+        常量: 100
+        常量: 100
+        常量: 100
+    TriggerSleepAction
+        常量: 3.00
+    PlaySoundBJ
+        变量: gg_snd_Explosion4
+    TriggerSleepAction
+        常量: 7.00
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeOut
+        常量: 5.00
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    TriggerSleepAction
+        常量: 6.00
+    CommentString
+        常量: PEAK
+    ClearMapMusicBJ
+    EndThematicMusicBJ
+    StopMusicBJ
+        预设: FadeDontDont
+    StopSoundBJ
+        变量: gg_snd_AmbienceExam1
+        预设: FadeDontDont
+    PlayMusicBJ
+        变量: gg_snd_UlduarGeneralWalk
+    SetTerrainFogExBJ
+        预设: FogStyleLinear
+        常量: 2000.00
+        常量: 8250.00
+        常量: 0
+        常量: 100
+        常量: 100
+        常量: 100
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_037
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_038
+        预设: Player00
+        常量: 20.00
+    ShowUnitHide
+        变量: gg_unit_H00D_0291
+    ShowUnitHide
+        变量: gg_unit_H04M_0354
+    ShowUnitHide
+        变量: gg_unit_H04M_0290
+    ShowUnitHide
+        变量: gg_unit_H03Q_0292
+    ShowUnitShow
+        变量: gg_unit_H00D_0353
+    ShowUnitShow
+        变量: gg_unit_H04N_0371
+    TriggerSleepAction
+        常量: 1.00
+    SetUnitPositionLocFacingLocBJ
+        变量: gg_unit_H00D_0353
+        函数: GetRectCenter
+            变量: gg_rct_Region_309
+        函数: GetUnitLoc
+            变量: gg_unit_H04N_0371
+    SetSkyModel
+        预设: SkyModelSky08
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeIn
+        常量: 5.00
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    TriggerSleepAction
+        常量: 15.00
+    SetTerrainFogExBJ
+        预设: FogStyleLinear
+        常量: 500.00
+        常量: 4000.00
+        常量: 0
+        常量: 100
+        常量: 100
+        常量: 100
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_139
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_140
+        预设: Player00
+        常量: 28.00
+    TriggerSleepAction
+        常量: 2
+    SetUnitAnimation
+        变量: gg_unit_H00D_0353
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H00D_0353
+        常量: 乌拉索尔
+        变量: gg_snd_Urathol24
+        常量: 我知道我可以相信你,萨德玛斯.你是他们全部中最聪明的一个.
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H00D_0353
+    TriggerSleepAction
+        常量: 2
+    SetUnitAnimation
+        变量: gg_unit_H04N_0371
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H04N_0371
+        常量: 萨德玛斯
+        变量: gg_snd_Thardomus6
+        常量: 诺索拉姆的缺失瓦解了波伊斯人的联盟.你赢了,乌拉索尔.我发誓跟随你到一切的结末.
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H04N_0371
+    TriggerSleepAction
+        常量: 2
+    SetTerrainFogExBJ
+        预设: FogStyleLinear
+        常量: 500.00
+        常量: 3500.00
+        常量: 0
+        常量: 100
+        常量: 100
+        常量: 100
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_141
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_142
+        预设: Player00
+        常量: 28.00
+    SetUnitMoveSpeed
+        变量: gg_unit_H00D_0353
+        常量: 100.00
+    TriggerSleepAction
+        常量: 1.00
+    IssuePointOrderLoc
+        变量: gg_unit_H00D_0353
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_310
+    TriggerSleepAction
+        常量: 3.00
+    SetUnitAnimation
+        变量: gg_unit_H00D_0353
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H00D_0353
+        常量: 乌拉索尔
+        变量: gg_snd_Urathol25
+        常量: 正好!我有一个任务给你,帮助我们摆平你那剩下来的垮台联盟,然后崭新的黎明就会为我们到来.
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H00D_0353
+    TriggerSleepAction
+        常量: 2.00
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_143
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_144
+        预设: Player00
+        常量: 17.00
+    TriggerSleepAction
+        常量: 10.00
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeOut
+        常量: 5.00
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    TriggerSleepAction
+        常量: 6.00
+    CommentString
+        常量: PEAK
+    ResetUnitAnimation
+        变量: Hero
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeIn
+        常量: 2.00
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    CinematicModeBJ
+        预设: OnOffOff
+        函数: GetPlayersAll
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Default
+        预设: Player00
+        常量: 0
+    SetTerrainFogExBJ
+        预设: FogStyleLinear
+        常量: 1000.00
+        常量: 3100.00
+        常量: 0.50
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+    SetCameraFieldForPlayer
+        预设: Player00
+        预设: CameraFieldFarZ
+        常量: 8000.00
+        常量: 0
+    SelectUnitSingle
+        变量: Hero
+    SetCameraTargetControllerNoZForPlayer
+        预设: Player00
+        变量: Hero
+        常量: 0
+        常量: 0
+        预设: CameraOrientationNormal
+    EnableTrigger
+        变量: gg_trg_Hero_Lock
+    TriggerExecute
+        变量: gg_trg_Gornunshanni_Set_Up

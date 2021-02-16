@@ -1,0 +1,383 @@
+事件
+条件
+动作
+    ClearMapMusicBJ
+    EndThematicMusicBJ
+    StopMusicBJ
+        预设: FadeDontDont
+    PlayMusicBJ
+        变量: gg_snd_Illidari_Music
+    DisableTrigger
+        变量: gg_trg_Guardian_Sounds
+    DisableTrigger
+        变量: gg_trg_Hero_Lock
+    DisableTrigger
+        变量: gg_trg_Hero_Lock_Confrontation
+    EnableTrigger
+        变量: gg_trg_A4_Finale_Skip
+    CinematicModeBJ
+        预设: OnOffOn
+        函数: GetPlayersAll
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: H06F
+        预设: PlayerNP
+        函数: GetRectCenter
+            变量: gg_rct_Region_375
+        常量: 270.00
+    SetVariable
+        变量: Sinister
+        函数: GetLastCreatedUnit
+    AddUnitAnimationPropertiesBJ
+        预设: AddRemoveRemove
+        常量: 'ready first'
+        变量: gg_unit_H06O_0377
+    AddUnitAnimationPropertiesBJ
+        预设: AddRemoveRemove
+        常量: fast
+        变量: gg_unit_H06O_0377
+    PauseAllUnitsBJ
+        预设: PauseUnpauseOptionPause
+    ForGroupMultiple
+        函数: GetUnitsInRectAll
+            变量: gg_rct_Region_373
+        动作
+            IfThenElseMultiple
+                条件
+                    AndMultiple
+                        条件
+                            OperatorCompareUnit
+                                函数: GetEnumUnit
+                                预设: OperatorNotEqualENE
+                                变量: gg_unit_h064_0391
+                            OperatorCompareUnit
+                                函数: GetEnumUnit
+                                预设: OperatorNotEqualENE
+                                变量: gg_unit_h066_0398
+                            OperatorCompareUnit
+                                函数: GetEnumUnit
+                                预设: OperatorNotEqualENE
+                                变量: gg_unit_h066_0397
+                动作
+                    SetUnitPositionLoc
+                        函数: GetEnumUnit
+                        函数: GetRectCenter
+                            变量: gg_rct_Region_374
+    TriggerSleepAction
+        常量: 1.00
+    UnitRemoveBuffsBJ
+        预设: BuffTypeAll
+        变量: Sinister
+    UnitRemoveBuffsBJ
+        预设: BuffTypeAll
+        变量: gg_unit_H06O_0377
+    UnitRemoveBuffsBJ
+        预设: BuffTypeAll
+        变量: gg_unit_H00C_0419
+    UnitRemoveBuffsBJ
+        预设: BuffTypeAll
+        变量: Hero
+    ShowUnitHide
+        变量: gg_unit_H06F_0415
+    ShowUnitHide
+        变量: gg_unit_H03Q_0374
+    PauseAllUnitsBJ
+        预设: PauseUnpauseOptionPause
+    SetTerrainFogExBJ
+        预设: FogStyleLinear
+        常量: 500.00
+        常量: 4000.00
+        常量: 0
+        常量: 100
+        常量: 100
+        常量: 100
+    SetSkyModel
+        预设: SkyModelSky08
+    ShowUnitHide
+        变量: gg_unit_h06S_0381
+    SetUnitPositionLocFacingLocBJ
+        变量: Hero
+        函数: GetRectCenter
+            变量: gg_rct_Region_375_Copy_3
+        函数: GetRectCenter
+            变量: gg_rct_Region_375
+    SetUnitPositionLocFacingLocBJ
+        变量: gg_unit_H06O_0377
+        函数: GetRectCenter
+            变量: gg_rct_Region_375_Copy_2
+        函数: GetRectCenter
+            变量: gg_rct_Region_375
+    SetUnitPositionLocFacingLocBJ
+        变量: gg_unit_H00C_0419
+        函数: GetRectCenter
+            变量: gg_rct_Region_375_Copy
+        函数: GetRectCenter
+            变量: gg_rct_Region_375
+    SetUnitPositionLocFacingBJ
+        变量: Sinister
+        函数: GetRectCenter
+            变量: gg_rct_Region_375
+        常量: 270.00
+    UnitAddAbilityBJ
+        常量: A06D
+        变量: Sinister
+    SetUnitAnimation
+        变量: Sinister
+        常量: death
+    TriggerSleepAction
+        常量: 0.50
+    EnumItemsInRectBJ
+        变量: gg_rct_Region_373
+        动作: RemoveItem
+            函数: GetEnumItem
+    SetUnitTimeScalePercent
+        变量: Sinister
+        常量: 0.00
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeIn
+        常量: 4.00
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_217
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_218
+        预设: Player00
+        常量: 12.00
+    TriggerSleepAction
+        常量: 12.00
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: Sinister
+        常量: 乌拉索尔
+        变量: gg_snd_Urathol41
+        常量: 这不可能...
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    TriggerSleepAction
+        常量: 2
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_221
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_222
+        预设: Player00
+        常量: 30.00
+    TriggerSleepAction
+        常量: 2
+    SetUnitAnimation
+        变量: gg_unit_H06O_0377
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H06O_0377
+        常量: 诺索拉姆
+        变量: gg_snd_Northorum33
+        常量: 享受你的最后一刻吧,乌拉索尔.很快你的脑袋就要搬家了!
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H06O_0377
+    TriggerSleepAction
+        常量: 2
+    SetUnitAnimation
+        变量: gg_unit_H00C_0419
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H00C_0419
+        常量: 泰尔卓
+        变量: gg_snd_Tyotho12
+        常量: 等一下.不管怎么说,他都还是我的兄弟,他只是全心全意地爱着父亲而已.我想让他活着,或许总有一日会明白自己究竟错在何处.
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H00C_0419
+    TriggerSleepAction
+        常量: 2
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_223
+        预设: Player00
+        常量: 0
+    TriggerSleepAction
+        常量: 2
+    SetUnitAnimation
+        变量: gg_unit_H06O_0377
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H06O_0377
+        常量: 诺索拉姆
+        变量: gg_snd_Northorum34
+        常量: 你今天夺走的生命太多,包括阿娜拉的.无论惩罚是什么都绝不会有一点仁慈!
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H06O_0377
+    TriggerSleepAction
+        常量: 2
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_224
+        预设: Player00
+        常量: 0
+    TriggerSleepAction
+        常量: 2
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: Sinister
+        常量: 乌拉索尔
+        变量: gg_snd_Urathol42
+        常量: 这个宇宙中再也没有我的容身之所了.拿走我的生命并结束我的痛苦吧...我无法在知道我失败的情况下活着,父亲...
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    TriggerSleepAction
+        常量: 2
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_225
+        预设: Player00
+        常量: 0
+    TriggerSleepAction
+        常量: 2
+    SetUnitAnimation
+        变量: gg_unit_H00C_0419
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H00C_0419
+        常量: 泰尔卓
+        变量: gg_snd_Tyotho13
+        常量: 不,你会活着.随着时间所有的伤口都会愈合.你会被囚禁在波伊斯之魂的深处,只要还活着.
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H00C_0419
+    TriggerSleepAction
+        常量: 2
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_226
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_227
+        预设: Player00
+        常量: 32.00
+    TriggerSleepAction
+        常量: 2
+    SetUnitAnimation
+        变量: gg_unit_H06O_0377
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H06O_0377
+        常量: 诺索拉姆
+        变量: gg_snd_Northorum35
+        常量: 冰裔的支援是我们旅途的基础,阿娜拉做对了.现在让我们重建寒霜天地,放眼美好的未来吧.
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H06O_0377
+    TriggerSleepAction
+        常量: 5.00
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeOut
+        常量: 4.00
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    TriggerSleepAction
+        常量: 5.50
+    ForGroupMultiple
+        函数: GetUnitsInRectAll
+            变量: gg_rct_Region_370
+        动作
+            ShowUnitHide
+                函数: GetEnumUnit
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_229
+        预设: Player00
+        常量: 0
+    ClearMapMusicBJ
+    EndThematicMusicBJ
+    StopMusicBJ
+        预设: FadeDontDont
+    PlaySoundBJ
+        变量: gg_snd_Illidari_MusicSound
+    SetTerrainFogExBJ
+        预设: FogStyleLinear
+        常量: 500.00
+        常量: 10500.00
+        常量: 0
+        常量: 100
+        常量: 100
+        常量: 100
+    TriggerSleepAction
+        常量: 0.50
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeIn
+        常量: 4.00
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    TriggerSleepAction
+        常量: 5.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 25.00
+        常量: '|cffffcc00冰 裔 由 A P P R O J E C T 制 作
+
+开发期间: 2012 12 06   -   2014 04 15
+
+特别感谢Lordkoon测试了地图的一半事物.
+
+制作名单与更多信息可以在hiveworkshop.com被找到.
+
+感谢你的游戏!|r
+
+'
+    TriggerSleepAction
+        常量: 25.00
+    TriggerExecute
+        变量: gg_trg_Statistics_Display
+    TriggerSleepAction
+        常量: 60.00
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeOut
+        常量: 4.00
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    TriggerSleepAction
+        常量: 5.00
+    CustomVictoryBJ
+        预设: Player00
+        预设: UseSkipOptionUse
+        预设: UseSkipOptionSkip

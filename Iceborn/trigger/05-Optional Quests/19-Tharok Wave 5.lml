@@ -1,0 +1,292 @@
+事件
+条件
+动作
+    SetVariable
+        变量: AAPOINT
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_163
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h038
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: TharokWaveGroup
+    SetVariable
+        变量: AAPOINT
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_160
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        变量: AAPOINT
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    AddSpecialEffectTargetUnitBJ
+        常量: origin
+        函数: GetLastCreatedUnit
+        常量: 'Arcane Nova.mdx'
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    SetVariable
+        变量: AAPOINT
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_163
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h038
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: TharokWaveGroup
+    SetVariable
+        变量: AAPOINT
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_160
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        变量: AAPOINT
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    AddSpecialEffectTargetUnitBJ
+        常量: origin
+        函数: GetLastCreatedUnit
+        常量: 'Arcane Nova.mdx'
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    SetVariable
+        变量: AAPOINT
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_163
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h038
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: TharokWaveGroup
+    SetVariable
+        变量: AAPOINT
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_160
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        变量: AAPOINT
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    AddSpecialEffectTargetUnitBJ
+        常量: origin
+        函数: GetLastCreatedUnit
+        常量: 'Arcane Nova.mdx'
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    SetVariable
+        变量: AAPOINT
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_163
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h038
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: TharokWaveGroup
+    SetVariable
+        变量: AAPOINT
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_160
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        变量: AAPOINT
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    AddSpecialEffectTargetUnitBJ
+        常量: origin
+        函数: GetLastCreatedUnit
+        常量: 'Arcane Nova.mdx'
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    SetVariable
+        变量: AAPOINT
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_163
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h038
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: TharokWaveGroup
+    SetVariable
+        变量: AAPOINT
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_160
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        变量: AAPOINT
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    AddSpecialEffectTargetUnitBJ
+        常量: origin
+        函数: GetLastCreatedUnit
+        常量: 'Arcane Nova.mdx'
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CommentString
+        常量: 'Another Side'
+    SetVariable
+        变量: AAPOINT
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_163_Copy
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h02O
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: ModeAdvanced
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            UnitAddAbilityBJ
+                常量: A075
+                函数: GetLastCreatedUnit
+            UnitAddAbilityBJ
+                常量: A078
+                函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: TharokWaveGroup
+    SetVariable
+        变量: AAPOINT
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_160
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        变量: AAPOINT
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    AddSpecialEffectTargetUnitBJ
+        常量: origin
+        函数: GetLastCreatedUnit
+        常量: 'Arcane Nova.mdx'
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    SetVariable
+        变量: AAPOINT
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_163_Copy
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h037
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: ModeAdvanced
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            UnitAddAbilityBJ
+                常量: A074
+                函数: GetLastCreatedUnit
+            UnitAddAbilityBJ
+                常量: A078
+                函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: TharokWaveGroup
+    SetVariable
+        变量: AAPOINT
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_160
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        变量: AAPOINT
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    AddSpecialEffectTargetUnitBJ
+        常量: origin
+        函数: GetLastCreatedUnit
+        常量: 'Arcane Nova.mdx'
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    SetVariable
+        变量: AAPOINT
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_163_Copy
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h037
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: ModeAdvanced
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            UnitAddAbilityBJ
+                常量: A074
+                函数: GetLastCreatedUnit
+            UnitAddAbilityBJ
+                常量: A078
+                函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: TharokWaveGroup
+    SetVariable
+        变量: AAPOINT
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_160
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        变量: AAPOINT
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    AddSpecialEffectTargetUnitBJ
+        常量: origin
+        函数: GetLastCreatedUnit
+        常量: 'Arcane Nova.mdx'
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ

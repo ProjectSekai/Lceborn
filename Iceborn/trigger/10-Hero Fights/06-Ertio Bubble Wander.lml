@@ -1,0 +1,24 @@
+事件
+    TriggerRegisterTimerEventPeriodic
+        常量: 2.00
+条件
+动作
+    IssuePointOrderLoc
+        变量: Bubble1
+        预设: UnitOrderMove
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_316
+    TriggerSleepAction
+        常量: 0.66
+    IssuePointOrderLoc
+        变量: Bubble2
+        预设: UnitOrderMove
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_316
+    TriggerSleepAction
+        常量: 0.66
+    IssuePointOrderLoc
+        变量: Bubble3
+        预设: UnitOrderMove
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_316

@@ -1,0 +1,75 @@
+事件
+    TriggerRegisterDialogEventBJ
+        变量: Dialog
+条件
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    IfThenElseMultiple
+        条件
+            OperatorCompareButton
+                函数: GetClickedButtonBJ
+                预设: OperatorEqualENE
+                变量: DialogButton1
+        动作
+            DisableTrigger
+                变量: gg_trg_Atantrimedius_Dialog_Checkup
+            TriggerSleepAction
+                常量: 1.00
+            SelectUnitSingle
+                变量: gg_unit_h04U_0311
+            SetMusicVolumeBJ
+                常量: 50.00
+            DisplayTimedTextToForce
+                函数: GetPlayersAll
+                常量: 2.00
+                常量: '|cffffcc00亚坦崔米迪俄斯:|r 跟我来..
+
+'
+            PlaySoundBJ
+                变量: gg_snd_Atantrimedius4
+            TriggerSleepAction
+                常量: 3.00
+            SetMusicVolumeBJ
+                常量: 100.00
+            SetUnitOwner
+                变量: gg_unit_h04U_0311
+                预设: Player01
+                预设: ChangeColorFalse
+            TriggerSleepAction
+                常量: 1.00
+            RemoveUnit
+                变量: gg_unit_h03M_0366
+            KillDestructable
+                变量: gg_dest_YTpc_11090
+            KillDestructable
+                变量: gg_dest_YTpc_11091
+            KillDestructable
+                变量: gg_dest_YTpc_11092
+            CreateQuestBJ
+                预设: QuestTypeReqDiscovered
+                常量: 被污染的方块
+                常量: 我遇见了面具所在地的看门人,亚坦崔米迪俄斯.如果我想要到达面具的所在处,我就要用15个冰棘花充满亚坦崔米迪俄斯身后的发生器并协助他移除维久方块的污染.他必须在这次任务中存活,否则大门将永不会被开启.
+                常量: ReplaceableTextures\CommandButtons\BTNCircle.blp
+            SetVariable
+                变量: QuestMainAdditional
+                函数: GetLastCreatedQuestBJ
+            CreateQuestItemBJ
+                变量: QuestMainAdditional
+                常量: 协助亚坦崔米迪俄斯解决维久方块的污染
+            SetVariable
+                变量: QuestMainAdditionalReq1
+                函数: GetLastCreatedQuestItemBJ
+            FlashQuestDialogButtonBJ
+            PlaySoundBJ
+                变量: gg_snd_QuestLog
+            DisplayTextToForce
+                函数: GetPlayersAll
+                常量: '|cffffcc00 - 协助亚坦崔米迪俄斯解决维久方块的污染. (亚坦崔米迪俄斯必须存活)|r
+
+'
+            IssuePointOrderLoc
+                变量: gg_unit_h04U_0311
+                预设: UnitOrderMove
+                函数: GetRectCenter
+                    变量: gg_rct_Region_231

@@ -1,0 +1,21 @@
+事件
+    TriggerRegisterEnterRectSimple
+        变量: gg_rct_Region_061
+条件
+    OperatorCompareUnit
+        函数: GetEnteringUnit
+        预设: OperatorEqualENE
+        变量: gg_unit_h01R_0083
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    AddSpecialEffectTargetUnitBJ
+        常量: origin
+        变量: gg_unit_h01R_0083
+        常量: Abilities\Spells\Human\MassTeleport\MassTeleportCaster.mdl
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    TriggerSleepAction
+        常量: 1.00
+    RemoveUnit
+        变量: gg_unit_h01R_0083

@@ -1,0 +1,45 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OperatorCompareAbilityId
+        函数: GetSpellAbilityId
+        预设: OperatorEqualENE
+        常量: A00L
+动作
+    EnableTrigger
+        变量: gg_trg_Teleportation_Itself_Siege
+    DialogClearBJ
+        变量: Dialog
+    DialogSetMessageBJ
+        变量: Dialog
+        常量: '传送到:'
+    DialogAddButtonBJ
+        变量: Dialog
+        常量: |CFF7EBFF1苍蓝要塞|R
+    SetVariable
+        变量: DialogButton1
+        函数: GetLastCreatedButtonBJ
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: VulruStar
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            DialogAddButtonBJ
+                变量: Dialog
+                常量: |CFF7EBFF1瓦尔鲁之星|R
+            SetVariable
+                变量: DialogButton2
+                函数: GetLastCreatedButtonBJ
+    DialogAddButtonBJ
+        变量: Dialog
+        常量: 取消
+    SetVariable
+        变量: DialogButtonCancel
+        函数: GetLastCreatedButtonBJ
+    DialogDisplayBJ
+        预设: ShowHideShow
+        变量: Dialog
+        预设: Player00

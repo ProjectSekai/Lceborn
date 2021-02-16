@@ -1,0 +1,16 @@
+事件
+    TriggerRegisterTimerEventPeriodic
+        常量: 1.00
+条件
+动作
+    CustomScriptCode
+        常量: 'if not(IsUnitInRange(udg_Hero, udg_Arazayah, 1500)) then'
+    IssuePointOrderLoc
+        变量: Arazayah
+        预设: UnitOrderMove
+        函数: GetUnitLoc
+            变量: Hero
+    PlaySoundBJ
+        变量: gg_snd_DragonWhat1
+    CustomScriptCode
+        常量: endif

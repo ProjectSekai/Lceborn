@@ -1,0 +1,39 @@
+事件
+    TriggerRegisterTimerEventPeriodic
+        常量: 6.00
+条件
+动作
+    PlaySoundOnUnitBJ
+        变量: gg_snd_SeaGiantWhat1
+        常量: 80.00
+        函数: GroupPickRandomUnit
+            变量: SancGolem
+    PlaySoundOnUnitBJ
+        变量: gg_snd_FurbolgWhat1
+        常量: 80.00
+        函数: GroupPickRandomUnit
+            变量: SancLion
+    TriggerSleepAction
+        常量: 1.00
+    PlaySoundOnUnitBJ
+        变量: gg_snd_SeaGiantYes2
+        常量: 80.00
+        函数: GroupPickRandomUnit
+            变量: SancGolem
+    PlaySoundOnUnitBJ
+        变量: gg_snd_FurbolgYes3
+        常量: 80.00
+        函数: GroupPickRandomUnit
+            变量: SancLion
+    TriggerSleepAction
+        常量: 1.00
+    PlaySoundOnUnitBJ
+        变量: gg_snd_SeaGiantYes3
+        常量: 80.00
+        函数: GroupPickRandomUnit
+            变量: SancGolem
+    PlaySoundOnUnitBJ
+        变量: gg_snd_FurbolgYesAttack3
+        常量: 80.00
+        函数: GroupPickRandomUnit
+            变量: SancLion

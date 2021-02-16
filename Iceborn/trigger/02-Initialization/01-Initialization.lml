@@ -1,0 +1,745 @@
+事件
+    MapInitializationEvent
+条件
+动作
+    ClearMapMusicBJ
+    EndThematicMusicBJ
+    StopMusicBJ
+        预设: FadeDontDont
+    SetAmbientDaySound
+        预设: AmbientThemeDayI
+    EnableDawnDusk
+        预设: EnableDisableDisable
+    SetVariable
+        变量: Hero
+        变量: gg_unit_H000_0001
+    SetVariable
+        变量: HeroBorn
+        变量: gg_unit_h00K_0025
+    SetVariable
+        变量: RotatorOrb1
+        常量: true
+    SetVariable
+        变量: RotatorT21
+        常量: true
+    SetVariable
+        变量: RotatorT31
+        常量: true
+    SetVariable
+        变量: RotatorT41
+        常量: true
+    SetVariable
+        变量: RotationAngleT1
+        常量: 1.00
+    SetVariable
+        变量: RotationAngleT2
+        常量: 1.00
+    SetVariable
+        变量: RotationAngleT3
+        常量: 1.00
+    SetVariable
+        变量: RotationAngleT4
+        常量: 1.00
+    SetVariable
+        变量: Bubble1
+        变量: gg_unit_h01D_0053
+    SetVariable
+        变量: Bubble2
+        变量: gg_unit_h01D_0054
+    SetVariable
+        变量: Bubble3
+        变量: gg_unit_h01D_0059
+    SetVariable
+        变量: Pylon21Unit
+        变量: gg_unit_h01Z_0094
+    SetVariable
+        变量: Pylon22Unit
+        变量: gg_unit_h01Z_0093
+    SetVariable
+        变量: Pylon23Unit
+        变量: gg_unit_h01Z_0104
+    SetVariable
+        变量: Pylon24Unit
+        变量: gg_unit_h01Z_0103
+    SetVariable
+        变量: Pylon11Unit
+        变量: gg_unit_h01Z_0095
+    SetVariable
+        变量: Pylon12Unit
+        变量: gg_unit_h01Z_0096
+    SetVariable
+        变量: Pylon13Unit
+        变量: gg_unit_h01Z_0097
+    SetVariable
+        变量: Pylon14Unit
+        变量: gg_unit_h01Z_0098
+    SetVariable
+        变量: Pylon31Unit
+        变量: gg_unit_h01Z_0099
+    SetVariable
+        变量: Pylon32Unit
+        变量: gg_unit_h01Z_0100
+    SetVariable
+        变量: Pylon33Unit
+        变量: gg_unit_h01Z_0101
+    SetVariable
+        变量: Pylon34Unit
+        变量: gg_unit_h01Z_0102
+    SetVariable
+        变量: Jar1
+        变量: gg_unit_h02B_0142
+    SetVariable
+        变量: Jar2
+        变量: gg_unit_h02B_0144
+    SetVariable
+        变量: Jar3
+        变量: gg_unit_h02B_0143
+    SetVariable
+        变量: Syon1
+        变量: gg_unit_h02M_0163
+    SetVariable
+        变量: Syon2
+        变量: gg_unit_h02M_0164
+    SetVariable
+        变量: Syon3
+        变量: gg_unit_h02M_0165
+    SetVariable
+        变量: MirrorUpperTrigger
+        变量: gg_unit_h04D_0260
+    SetVariable
+        变量: MirrorLowerTrigger
+        变量: gg_unit_h04D_0261
+    SetVariable
+        变量: MirrorPurpleLowerBool
+        常量: true
+    SetVariable
+        变量: MirrorPurpleUpperBool
+        常量: true
+    SetVariable
+        变量: AetrisEffect
+        常量: 0.00
+    SetVariable
+        变量: AetrisEffectSoul
+        常量: 0.00
+    SetVariable
+        变量: Generator1
+        常量: 100.00
+    SetVariable
+        变量: Generator2
+        常量: 100.00
+    SetVariable
+        变量: Generator3
+        常量: 100.00
+    SetVariable
+        变量: Generator4
+        常量: 100.00
+    SetVariable
+        变量: Arazayah
+        变量: gg_unit_H04Y_0332
+    SetVariable
+        变量: MirrorUpperRed
+        变量: gg_unit_h04A_0250
+    SetVariable
+        变量: MirrorUpperGreen
+        变量: gg_unit_h049_0251
+    SetVariable
+        变量: MirrorUpperYellow
+        变量: gg_unit_h048_0252
+    SetVariable
+        变量: MirrorUpperPurple
+        变量: gg_unit_h04B_0253
+    SetVariable
+        变量: MirrorLowerRed
+        变量: gg_unit_h04A_0254
+    SetVariable
+        变量: MirrorLowerGreen
+        变量: gg_unit_h049_0255
+    SetVariable
+        变量: MirrorLowerYellow
+        变量: gg_unit_h048_0256
+    SetVariable
+        变量: MirrorLowerPurple
+        变量: gg_unit_h04B_0257
+    SetVariable
+        变量: TrapTrigger1
+        变量: gg_unit_h050_0342
+    SetVariable
+        变量: TrapTrigger2
+        变量: gg_unit_h050_0341
+    SetVariable
+        变量: TrapTrigger3
+        变量: gg_unit_h050_0343
+    SetVariable
+        变量: TrapTrigger4
+        变量: gg_unit_h050_0344
+    SetVariable
+        变量: TrapTrigger5
+        变量: gg_unit_h050_0345
+    SetVariable
+        变量: TrapTrigger6
+        变量: gg_unit_h050_0346
+    SetVariable
+        变量: TrapTrigger7
+        变量: gg_unit_h050_0347
+    SetVariable
+        变量: TrapTrigger8
+        变量: gg_unit_h050_0349
+    SetVariable
+        变量: TrapTrigger9
+        变量: gg_unit_h050_0348
+    SetVariable
+        变量: CubeTrigger1
+        变量: gg_unit_h056_0360
+    SetVariable
+        变量: CubeTrigger2
+        变量: gg_unit_h056_0363
+    SetVariable
+        变量: CubeTrigger3
+        变量: gg_unit_h056_0362
+    SetVariable
+        变量: CubeTrigger4
+        变量: gg_unit_h056_0361
+    SetVariable
+        变量: RotatorTrigger1
+        变量: gg_unit_h05H_0234
+    SetVariable
+        变量: RotatorTrigger2
+        变量: gg_unit_h05H_0240
+    SetVariable
+        变量: RotatorTrigger3
+        变量: gg_unit_h05H_0264
+    SetVariable
+        变量: RotatorTrigger4
+        变量: gg_unit_h05H_0307
+    SetVariable
+        变量: Marun
+        变量: gg_unit_h04L_0286
+    SetVariable
+        变量: Sargon
+        变量: gg_unit_h04Q_0298
+    SetVariable
+        变量: OrbGates1
+        变量: gg_unit_h04S_0299
+    SetVariable
+        变量: OrbGates5
+        变量: gg_unit_h04S_0304
+    SetVariable
+        变量: OrbGates2
+        变量: gg_unit_h04S_0303
+    SetVariable
+        变量: OrbGates3
+        变量: gg_unit_h04S_0300
+    SetVariable
+        变量: OrbGates6
+        变量: gg_unit_h04S_0302
+    SetVariable
+        变量: OrbGates4
+        变量: gg_unit_h04S_0301
+    SetVariable
+        变量: AvatarCounter
+        常量: 0.00
+    SetVariable
+        变量: VitalityPool
+        常量: 0
+    SetVariable
+        变量: WillpowerPool
+        常量: 0
+    SetVariable
+        变量: ProtectionPool
+        常量: 0
+    SetVariable
+        变量: AttributePool
+        常量: 0
+    SetVariable
+        变量: AttributePoolMemory
+        常量: 0
+    SetVariable
+        变量: Khnartho
+        变量: gg_unit_H05O_0043
+    AddSpecialEffectTargetUnitBJ
+        常量: overhead
+        变量: gg_unit_h021_0113
+        常量: Abilities\Spells\Other\TalkToMe\TalkToMe.mdl
+    SetVariable
+        变量: Exclamation1
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectTargetUnitBJ
+        常量: overhead
+        变量: gg_unit_h01R_0083
+        常量: Abilities\Spells\Other\TalkToMe\TalkToMe.mdl
+    SetVariable
+        变量: Exclamation2
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectTargetUnitBJ
+        常量: overhead
+        变量: gg_unit_h025_0110
+        常量: Abilities\Spells\Other\TalkToMe\TalkToMe.mdl
+    SetVariable
+        变量: Exclamation3
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectTargetUnitBJ
+        常量: overhead
+        变量: gg_unit_h02R_0172
+        常量: Abilities\Spells\Other\TalkToMe\TalkToMe.mdl
+    SetVariable
+        变量: Exclamation4
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectTargetUnitBJ
+        常量: overhead
+        变量: gg_unit_h04X_0330
+        常量: Abilities\Spells\Other\TalkToMe\TalkToMe.mdl
+    SetVariable
+        变量: Exclamation5
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectTargetUnitBJ
+        常量: overhead
+        变量: gg_unit_h04U_0311
+        常量: Abilities\Spells\Other\TalkToMe\TalkToMe.mdl
+    SetVariable
+        变量: Exclamation6
+        函数: GetLastCreatedEffectBJ
+    SetTimeOfDay
+        常量: 18.00
+    UseTimeOfDayBJ
+        预设: OnOffOff
+    SetCreepCampFilterState
+        预设: ShowHideHide
+    SetPlayerState
+        预设: Player00
+        预设: PlayerStateFoodCap
+        常量: 15
+    ForGroup
+        函数: GetUnitsInRectAll
+            变量: gg_rct_Region_326
+        动作: IfThenElse
+            条件: OperatorComparePlayer
+                函数: GetOwningPlayer
+                    函数: GetEnumUnit
+                预设: OperatorEqualENE
+                预设: PlayerNA
+            动作: GroupAddUnitSimple
+                函数: GetEnumUnit
+                变量: Hostile
+            动作: DoNothing
+    IssuePointOrderLoc
+        变量: gg_unit_h02J_0148
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_112_Copy
+    IssuePointOrderLoc
+        变量: gg_unit_h02J_0149
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_112_Copy_2
+    IssuePointOrderLoc
+        变量: gg_unit_h02J_0150
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_112
+    SetPlayerAbilityAvailableBJ
+        预设: EnableDisableDisable
+        常量: A00C
+        预设: Player00
+    SetPlayerAbilityAvailableBJ
+        预设: EnableDisableDisable
+        常量: A03X
+        预设: Player00
+    SetUnitAnimation
+        变量: gg_unit_h009_0002
+        常量: 'stand alternate'
+    SetUnitAnimation
+        变量: gg_unit_h027_0112
+        常量: 'stand alternate'
+    SetUnitAnimation
+        变量: gg_unit_h027_0118
+        常量: 'stand alternate'
+    SetUnitAnimation
+        变量: gg_unit_h027_0119
+        常量: 'stand alternate'
+    SetUnitAnimation
+        变量: gg_unit_h027_0127
+        常量: 'stand alternate'
+    SetUnitAnimation
+        变量: gg_unit_h027_0128
+        常量: 'stand alternate'
+    SetUnitAnimation
+        变量: gg_unit_h027_0129
+        常量: 'stand alternate'
+    SetUnitAnimation
+        变量: gg_unit_h027_0173
+        常量: 'stand alternate'
+    SetUnitAnimation
+        变量: gg_unit_h027_0106
+        常量: 'stand alternate'
+    SetUnitAnimation
+        变量: gg_unit_H01N_0241
+        常量: 'stand alternate'
+    CreateFogModifierRectBJ
+        预设: EnabledDisabledEnabled
+        预设: Player00
+        预设: FogStateVisible
+        变量: gg_rct_Region_227
+    PauseUnitBJ
+        预设: PauseUnpauseOptionPause
+        变量: gg_unit_H00C_0011
+    ShowUnitHide
+        变量: gg_unit_H024_0109
+    ShowUnitHide
+        变量: gg_unit_H04Y_0332
+    ShowUnitHide
+        变量: gg_unit_H03O_0108
+    ShowUnitHide
+        变量: gg_unit_h02J_0148
+    ShowUnitHide
+        变量: gg_unit_h02J_0149
+    ShowUnitHide
+        变量: gg_unit_h02J_0150
+    ShowUnitHide
+        变量: gg_unit_h03U_0151
+    ShowUnitHide
+        变量: gg_unit_h03U_0152
+    ShowUnitHide
+        变量: gg_unit_h03U_0155
+    ShowUnitHide
+        变量: gg_unit_h03W_0237
+    ShowUnitHide
+        变量: gg_unit_h03W_0157
+    ShowUnitHide
+        变量: gg_unit_h03W_0158
+    ShowUnitHide
+        变量: gg_unit_h03W_0159
+    ShowUnitHide
+        变量: gg_unit_h03W_0160
+    ShowUnitHide
+        变量: gg_unit_h03W_0161
+    ShowUnitHide
+        变量: gg_unit_h03W_0223
+    ShowUnitHide
+        变量: gg_unit_h03W_0225
+    ShowUnitHide
+        变量: gg_unit_h03W_0227
+    ShowUnitHide
+        变量: gg_unit_h03W_0235
+    ShowUnitHide
+        变量: gg_unit_h03W_0236
+    ShowUnitHide
+        变量: gg_unit_h046_0239
+    ShowUnitHide
+        变量: gg_unit_h04L_0286
+    ShowUnitHide
+        变量: gg_unit_h04Q_0298
+    ShowUnitHide
+        变量: gg_unit_H03Q_0292
+    ShowUnitHide
+        变量: TrapTrigger1
+    ShowUnitHide
+        变量: TrapTrigger2
+    ShowUnitHide
+        变量: TrapTrigger3
+    ShowUnitHide
+        变量: TrapTrigger4
+    ShowUnitHide
+        变量: TrapTrigger5
+    ShowUnitHide
+        变量: TrapTrigger6
+    ShowUnitHide
+        变量: TrapTrigger7
+    ShowUnitHide
+        变量: TrapTrigger8
+    ShowUnitHide
+        变量: TrapTrigger9
+    ShowUnitHide
+        变量: gg_unit_H01N_0352
+    ShowUnitHide
+        变量: gg_unit_H04O_0351
+    ShowUnitHide
+        变量: gg_unit_h057_0367
+    ShowUnitHide
+        变量: gg_unit_H05O_0043
+    ShowUnitHide
+        变量: gg_unit_H04M_0354
+    ShowUnitHide
+        变量: gg_unit_H00D_0353
+    ShowUnitHide
+        变量: gg_unit_H05R_0356
+    ShowUnitHide
+        变量: gg_unit_H00D_0370
+    ShowUnitHide
+        变量: gg_unit_H01N_0355
+    ShowUnitHide
+        变量: gg_unit_H04N_0371
+    ShowUnitHide
+        变量: gg_unit_H06N_0376
+    SetUnitMoveSpeed
+        变量: gg_unit_H024_0109
+        常量: 0.00
+    SetUnitMoveSpeed
+        变量: gg_unit_H00C_0419
+        常量: 0.00
+    SetUnitMoveSpeed
+        变量: gg_unit_H06O_0377
+        常量: 0.00
+    UnitRemoveAbilityBJ
+        常量: Avul
+        变量: gg_unit_H00C_0419
+    GroupAddUnitSimple
+        变量: gg_unit_h05Y_0388
+        变量: NeedleGroup
+    GroupAddUnitSimple
+        变量: gg_unit_h05Y_0387
+        变量: NeedleGroup
+    GroupAddUnitSimple
+        变量: gg_unit_h068_0401
+        变量: NeedleGroup
+    GroupAddUnitSimple
+        变量: gg_unit_h068_0402
+        变量: NeedleGroup
+    SetPlayerHandicapXPBJ
+        预设: Player00
+        常量: 0.00
+    SetPlayerHandicapXPBJ
+        预设: Player01
+        常量: 0.00
+    SetPlayerHandicapXPBJ
+        预设: PlayerNA
+        常量: 0.00
+    SetUnitMoveSpeed
+        变量: gg_unit_h00Y_0036
+        常量: 0.00
+    IssuePointOrderLoc
+        变量: gg_unit_h00B_0007
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_001
+    IssuePointOrderLoc
+        变量: gg_unit_h00B_0004
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_001
+    IssuePointOrderLoc
+        变量: gg_unit_h00B_0005
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_002
+    IssuePointOrderLoc
+        变量: gg_unit_h00B_0008
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_004
+    IssuePointOrderLoc
+        变量: gg_unit_h00B_0006
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_003
+    GroupAddUnitSimple
+        变量: gg_unit_h00B_0009
+        变量: SancGolem
+    GroupAddUnitSimple
+        变量: gg_unit_h00B_0010
+        变量: SancGolem
+    GroupAddUnitSimple
+        变量: gg_unit_h00B_0005
+        变量: SancGolem
+    GroupAddUnitSimple
+        变量: gg_unit_h00B_0004
+        变量: SancGolem
+    GroupAddUnitSimple
+        变量: gg_unit_h00B_0008
+        变量: SancGolem
+    GroupAddUnitSimple
+        变量: gg_unit_h00B_0006
+        变量: SancGolem
+    GroupAddUnitSimple
+        变量: gg_unit_h00B_0007
+        变量: SancGolem
+    GroupAddUnitSimple
+        变量: gg_unit_h00F_0013
+        变量: SancLion
+    GroupAddUnitSimple
+        变量: gg_unit_h00F_0014
+        变量: SancLion
+    GroupAddUnitSimple
+        变量: gg_unit_h00F_0016
+        变量: SancLion
+    GroupAddUnitSimple
+        变量: gg_unit_h00F_0017
+        变量: SancLion
+    GroupAddUnitSimple
+        变量: gg_unit_h00F_0015
+        变量: SancLion
+    ShowUnitHide
+        变量: gg_unit_h01Y_0044
+    ShowUnitHide
+        变量: gg_unit_h01Y_0058
+    ShowUnitHide
+        变量: gg_unit_h01Y_0056
+    ShowUnitHide
+        变量: gg_unit_h01Y_0057
+    ShowUnitHide
+        变量: gg_unit_h01Y_0047
+    ShowUnitHide
+        变量: gg_unit_h01Y_0049
+    ShowUnitHide
+        变量: gg_unit_h01Y_0050
+    ShowUnitHide
+        变量: gg_unit_h01Y_0055
+    ShowUnitHide
+        变量: gg_unit_h01Y_0048
+    ShowUnitHide
+        变量: gg_unit_h01Y_0065
+    ShowUnitHide
+        变量: gg_unit_h01Y_0064
+    ShowUnitHide
+        变量: gg_unit_h01Y_0063
+    ShowUnitHide
+        变量: gg_unit_h01Y_0062
+    ShowUnitHide
+        变量: gg_unit_h01Y_0061
+    ShowUnitHide
+        变量: gg_unit_h04E_0268
+    ShowUnitHide
+        变量: gg_unit_h04E_0271
+    ShowUnitHide
+        变量: gg_unit_h04E_0274
+    ShowUnitHide
+        变量: gg_unit_h04E_0267
+    ShowUnitHide
+        变量: gg_unit_h04E_0280
+    ShowUnitHide
+        变量: gg_unit_h04E_0277
+    ShowUnitHide
+        变量: gg_unit_h04E_0273
+    ShowUnitHide
+        变量: gg_unit_h04E_0066
+    ShowUnitHide
+        变量: gg_unit_h04E_0275
+    ShowUnitHide
+        变量: gg_unit_h04E_0276
+    ShowUnitHide
+        变量: gg_unit_h04E_0282
+    ShowUnitHide
+        变量: gg_unit_h04E_0278
+    ShowUnitHide
+        变量: gg_unit_h04E_0281
+    ShowUnitHide
+        变量: gg_unit_h04E_0279
+    ShowUnitHide
+        变量: gg_unit_h04E_0272
+    ShowUnitHide
+        变量: gg_unit_h04E_0266
+    ShowUnitHide
+        变量: gg_unit_h04E_0269
+    ShowUnitHide
+        变量: gg_unit_h04E_0270
+    ShowUnitHide
+        变量: gg_unit_h022_0114
+    ShowUnitHide
+        变量: gg_unit_h023_0115
+    ShowUnitHide
+        变量: gg_unit_h023_0116
+    ShowUnitHide
+        变量: gg_unit_h059_0369
+    ShowUnitHide
+        变量: gg_unit_H06F_0415
+    ShowUnitHide
+        变量: gg_unit_H03Q_0374
+    ShowUnitHide
+        变量: gg_unit_H06C_0375
+    ShowUnitHide
+        变量: gg_unit_H06O_0377
+    UnitAddAbilityBJ
+        常量: Avul
+        变量: gg_unit_h054_0358
+    ShowDestructableBJ
+        预设: ShowHideHide
+        变量: gg_dest_B000_1922
+    ShowDestructableBJ
+        预设: ShowHideHide
+        变量: gg_dest_B000_1920
+    ShowDestructableBJ
+        预设: ShowHideHide
+        变量: gg_dest_B000_1923
+    UnitAddAbilityBJ
+        常量: Avul
+        变量: gg_unit_h00W_0023
+    UnitAddAbilityBJ
+        常量: Avul
+        变量: gg_unit_h02M_0166
+    AddTriggerEvent
+        变量: gg_trg_Approach_Checkup
+        事件: TriggerRegisterUnitInRangeSimple
+            常量: 100.00
+            变量: Hero
+    AddTriggerEvent
+        变量: gg_trg_Approach_Checkup
+        事件: TriggerRegisterUnitInRangeSimple
+            常量: 200.00
+            变量: Hero
+    AddTriggerEvent
+        变量: gg_trg_Approach_Checkup
+        事件: TriggerRegisterUnitInRangeSimple
+            常量: 300.00
+            变量: Hero
+    AddTriggerEvent
+        变量: gg_trg_Approach_Checkup
+        事件: TriggerRegisterUnitInRangeSimple
+            常量: 400.00
+            变量: Hero
+    AddTriggerEvent
+        变量: gg_trg_Approach_Checkup
+        事件: TriggerRegisterUnitInRangeSimple
+            常量: 500.00
+            变量: Hero
+    AddTriggerEvent
+        变量: gg_trg_Approach_Checkup
+        事件: TriggerRegisterUnitInRangeSimple
+            常量: 600.00
+            变量: Hero
+    AddTriggerEvent
+        变量: gg_trg_Approach_Checkup
+        事件: TriggerRegisterUnitInRangeSimple
+            常量: 700.00
+            变量: Hero
+    AddTriggerEvent
+        变量: gg_trg_Approach_Checkup
+        事件: TriggerRegisterUnitInRangeSimple
+            常量: 800.00
+            变量: Hero
+    AddTriggerEvent
+        变量: gg_trg_Approach_Checkup
+        事件: TriggerRegisterUnitInRangeSimple
+            常量: 900.00
+            变量: Hero
+    AddTriggerEvent
+        变量: gg_trg_Approach_Checkup
+        事件: TriggerRegisterUnitInRangeSimple
+            常量: 1000.00
+            变量: Hero
+    AddTriggerEvent
+        变量: gg_trg_Chains_Mirror_Upper
+        事件: TriggerRegisterUnitEvent
+            变量: MirrorUpperTrigger
+            预设: UnitEventDeath
+    AddTriggerEvent
+        变量: gg_trg_Chains_Mirror_Lower
+        事件: TriggerRegisterUnitEvent
+            变量: MirrorLowerTrigger
+            预设: UnitEventDeath
+    AddTriggerEvent
+        变量: gg_trg_Chains_Marun
+        事件: TriggerRegisterUnitEvent
+            变量: Marun
+            预设: UnitEventDeath
+    AddTriggerEvent
+        变量: gg_trg_Icesoul_Loop
+        事件: TriggerRegisterUnitInRangeSimple
+            常量: 235.00
+            变量: Hero
+    StartTimerBJ
+        变量: TimeRecord
+        预设: PeriodicOptionOneTime
+        常量: 100000000.00
+    TriggerExecute
+        变量: gg_trg_A1_Beginning_Peak
+    TriggerExecute
+        变量: gg_trg_Hide_Wave

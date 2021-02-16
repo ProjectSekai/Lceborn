@@ -1,0 +1,34 @@
+事件
+    TriggerRegisterUnitLifeEvent
+        变量: gg_unit_H06F_0415
+        预设: LimitOpLessThanOrEqual
+        常量: 30000.00
+条件
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    EnableTrigger
+        变量: gg_trg_Reflecting_Shield
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cff7777aa注意: 护盾伤害攻击者.|r
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Hint
+    TriggerExecute
+        变量: gg_trg_Reflecting_Shield
+    SetMusicVolumeBJ
+        常量: 50.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 5.00
+        常量: '|cffffcc00乌拉索尔:|r 她真是个尤物,不过不再是了!
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Urathol37
+    TriggerSleepAction
+        常量: 5.00
+    SetMusicVolumeBJ
+        常量: 100.00

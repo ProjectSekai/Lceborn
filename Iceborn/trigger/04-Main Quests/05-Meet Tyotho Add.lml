@@ -1,0 +1,71 @@
+事件
+条件
+动作
+    ClearMapMusicBJ
+    EndThematicMusicBJ
+    StopMusicBJ
+        预设: FadeDontDont
+    PlayMusicBJ
+        变量: gg_snd_Joshua_Buck___Forest_Tales
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeIn
+        常量: 4.00
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    CinematicModeBJ
+        预设: OnOffOff
+        函数: GetPlayersAll
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Default
+        预设: Player00
+        常量: 0
+    SetTerrainFogExBJ
+        预设: FogStyleLinear
+        常量: 750.00
+        常量: 3000.00
+        常量: 0.50
+        常量: 40.00
+        常量: 40.00
+        常量: 100
+    SetCameraFieldForPlayer
+        预设: Player00
+        预设: CameraFieldFarZ
+        常量: 8000.00
+        常量: 0
+    SelectUnitSingle
+        变量: Hero
+    SetCameraTargetControllerNoZForPlayer
+        预设: Player00
+        变量: Hero
+        常量: 0
+        常量: 0
+        预设: CameraOrientationNormal
+    EnableTrigger
+        变量: gg_trg_Hero_Lock
+    EnableTrigger
+        变量: gg_trg_Guardian_Sounds
+    EnableTrigger
+        变量: gg_trg_Meet_Tyotho_2
+    QuestItemSetCompletedBJ
+        变量: QuestMainReq1
+        预设: CompletionOptionCompleted
+    TriggerSleepAction
+        常量: 5.00
+    CreateQuestItemBJ
+        变量: QuestMain
+        常量: 与泰尔卓对话
+    SetVariable
+        变量: QuestMainReq1
+        函数: GetLastCreatedQuestItemBJ
+    FlashQuestDialogButtonBJ
+    PlaySoundBJ
+        变量: gg_snd_QuestLog
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cffffcc00 - 与泰尔卓对话|r
+
+'

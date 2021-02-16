@@ -1,0 +1,34 @@
+事件
+    TriggerRegisterUnitLifeEvent
+        变量: gg_unit_H06F_0415
+        预设: LimitOpLessThanOrEqual
+        常量: 23000.00
+条件
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    EnableTrigger
+        变量: gg_trg_Frost_Circles
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cff7777aa注意: 寒霜之环会冻结范围内的目标.|r
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Hint
+    TriggerExecute
+        变量: gg_trg_Frost_Circles
+    SetMusicVolumeBJ
+        常量: 50.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 7.00
+        常量: '|cffffcc00乌拉索尔:|r 你得该死多少次呢? 愚蠢的真是无极限!
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Urathol40
+    TriggerSleepAction
+        常量: 7.00
+    SetMusicVolumeBJ
+        常量: 100.00

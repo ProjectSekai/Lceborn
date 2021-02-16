@@ -1,0 +1,11 @@
+事件
+    TriggerRegisterPlayerStateEvent
+        预设: Player00
+        预设: PlayerStateFoodUsed
+        预设: LimitOpGreaterThanOrEqual
+        常量: 15.00
+条件
+动作
+    CustomDefeatBJ
+        预设: Player00
+        常量: 检测到作弊代码

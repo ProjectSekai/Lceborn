@@ -1,0 +1,21 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OperatorCompareAbilityId
+        函数: GetSpellAbilityId
+        预设: OperatorEqualENE
+        常量: A06U
+动作
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetTriggerUnit
+        常量: EMPBubbleBIG.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    PlaySoundOnUnitBJ
+        变量: gg_snd_ExplosionNoise3D
+        常量: 100.00
+        变量: gg_unit_H03Q_0374
+    TriggerExecute
+        变量: gg_trg_Dread_Fan_Effect

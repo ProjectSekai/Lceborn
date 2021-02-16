@@ -1,0 +1,33 @@
+事件
+    TriggerRegisterLeaveRectSimple
+        变量: gg_rct_Region_112_Copy_2
+条件
+    OperatorCompareUnit
+        函数: GetLeavingUnit
+        预设: OperatorEqualENE
+        变量: Hero
+动作
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeIn
+        常量: 0.50
+        预设: CineFilterTextureDream
+        常量: 0.00
+        常量: 0.00
+        常量: 100.00
+        常量: 20.00
+    ShowUnitHide
+        变量: gg_unit_h02J_0150
+    ShowUnitHide
+        变量: Ghartek1
+    ShowUnitHide
+        变量: Ghartek2
+    ShowUnitHide
+        变量: Ghartek3
+    ShowUnitHide
+        变量: Ghartek4
+    ShowUnitHide
+        变量: Ghartek5
+    ShowUnitHide
+        变量: Ghartek6
+    ShowUnitHide
+        变量: Ghartek7

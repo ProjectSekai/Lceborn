@@ -1,0 +1,26 @@
+事件
+条件
+动作
+    EnableTrigger
+        变量: gg_trg_Mode_Next_Path
+    DialogClearBJ
+        变量: Dialog
+    DialogSetMessageBJ
+        变量: Dialog
+        常量: 选择游戏模式难易度
+    DialogAddButtonBJ
+        变量: Dialog
+        常量: |cffffcc00普通|r
+    SetVariable
+        变量: DialogButton1
+        函数: GetLastCreatedButtonBJ
+    DialogAddButtonBJ
+        变量: Dialog
+        常量: 进阶
+    SetVariable
+        变量: DialogButton2
+        函数: GetLastCreatedButtonBJ
+    DialogDisplayBJ
+        预设: ShowHideShow
+        变量: Dialog
+        预设: Player00

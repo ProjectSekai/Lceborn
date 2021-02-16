@@ -1,0 +1,57 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OperatorCompareAbilityId
+        函数: GetSpellAbilityId
+        预设: OperatorEqualENE
+        常量: A05M
+动作
+    SetVariable
+        变量: AvatarCounter
+        函数: OperatorReal
+            变量: AvatarCounter
+            预设: OperatorAdd
+            常量: 2.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareReal
+                函数: GetRandomReal
+                    常量: 0.00
+                    常量: 100.00
+                预设: OperatorLessEq
+                变量: AvatarCounter
+        动作
+            DisableTrigger
+                函数: GetTriggeringTrigger
+            SetVariable
+                变量: AvatarCounter
+                常量: 0.00
+            PlaySoundBJ
+                变量: gg_snd_DragonYesAttack2
+            CinematicFadeBJ
+                预设: FadeTypeOptionFadeOut
+                常量: 2
+                预设: CineFilterTextureDream
+                常量: 100.00
+                常量: 0
+                常量: 0
+                常量: 40.00
+            UnitAddAbilityBJ
+                常量: A06R
+                变量: Hero
+            TriggerSleepAction
+                常量: 12.00
+            UnitRemoveAbilityBJ
+                常量: A06R
+                变量: Hero
+            CinematicFadeBJ
+                预设: FadeTypeOptionFadeIn
+                常量: 2
+                预设: CineFilterTextureDream
+                常量: 100.00
+                常量: 0
+                常量: 0
+                常量: 40.00
+            EnableTrigger
+                函数: GetTriggeringTrigger

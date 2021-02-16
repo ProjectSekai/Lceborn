@@ -1,0 +1,62 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventDeath
+条件
+    OperatorCompareUnitCode
+        函数: GetUnitTypeId
+            函数: GetDyingUnit
+        预设: OperatorEqualENE
+        常量: h02K
+动作
+    GroupRemoveUnitSimple
+        函数: GetDyingUnit
+        变量: GhartekGroup
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            变量: gg_unit_H024_0109
+        常量: OrbitalRay.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: IsUnitGroupEmptyBJ
+                    变量: GhartekGroup
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            DisableTrigger
+                函数: GetTriggeringTrigger
+            DisableTrigger
+                变量: gg_trg_Caretra_Void_3_Enter
+            DisableTrigger
+                变量: gg_trg_Caretra_Void_3_Leave
+            DestroyEffectBJ
+                变量: VoidAura
+            CinematicFadeBJ
+                预设: FadeTypeOptionFadeIn
+                常量: 0.50
+                预设: CineFilterTextureDream
+                常量: 0.00
+                常量: 0.00
+                常量: 100.00
+                常量: 20.00
+            PlaySoundBJ
+                变量: gg_snd_SeaGiantDeath1
+            UnitRemoveAbilityBJ
+                常量: Avul
+                变量: gg_unit_H024_0109
+            KillUnit
+                变量: gg_unit_H024_0109
+            DisableTrigger
+                变量: gg_trg_Caretra_Spell
+            DisableTrigger
+                变量: gg_trg_Teleportation_Block
+            EnableTrigger
+                变量: gg_trg_Teleportation_Window
+            ClearMapMusicBJ
+            EndThematicMusicBJ
+            StopMusicBJ
+                预设: FadeDontDont
+            PlayMusicBJ
+                变量: gg_snd_Grifion_Daveram___Through_the_Icy_Mountains

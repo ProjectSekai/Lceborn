@@ -1,0 +1,17 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventAttacked
+条件
+    OperatorCompareUnit
+        函数: GetAttacker
+        预设: OperatorEqualENE
+        变量: gg_unit_H06F_0415
+动作
+    IssuePointOrderLoc
+        函数: GetAttacker
+        预设: UnitOrderCarrionSwarm
+        函数: GetUnitLoc
+            函数: GetAttackedUnitBJ
+    IssueImmediateOrder
+        函数: GetAttacker
+        预设: UnitOrderThunderClap

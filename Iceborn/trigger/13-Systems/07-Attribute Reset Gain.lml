@@ -1,0 +1,35 @@
+事件
+条件
+动作
+    EnableTrigger
+        变量: gg_trg_Attribute_Reset_Selection
+    DialogClearBJ
+        变量: Dialog
+    DialogSetMessageBJ
+        变量: Dialog
+        函数: OperatorString
+            常量: 'Attributes to set: '
+            函数: I2S
+                变量: AttributePool
+    DialogAddButtonBJ
+        变量: Dialog
+        常量: |cffffcc00活力|r
+    SetVariable
+        变量: DialogButton1
+        函数: GetLastCreatedButtonBJ
+    DialogAddButtonBJ
+        变量: Dialog
+        常量: 防御
+    SetVariable
+        变量: DialogButton2
+        函数: GetLastCreatedButtonBJ
+    DialogAddButtonBJ
+        变量: Dialog
+        常量: 念力
+    SetVariable
+        变量: DialogButton3
+        函数: GetLastCreatedButtonBJ
+    DialogDisplayBJ
+        预设: ShowHideShow
+        变量: Dialog
+        预设: Player00

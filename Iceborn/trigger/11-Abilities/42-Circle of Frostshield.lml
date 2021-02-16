@@ -1,0 +1,61 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OrMultiple
+        条件
+            OperatorCompareAbilityId
+                函数: GetSpellAbilityId
+                预设: OperatorEqualENE
+                常量: A00I
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareReal
+                函数: OperatorReal
+                    函数: GetUnitStateSwap
+                        预设: UnitStateMana
+                        变量: Hero
+                    预设: OperatorSubtract
+                    函数: OperatorReal
+                        函数: GetUnitStateSwap
+                            预设: UnitStateMaxMana
+                            变量: Hero
+                        预设: OperatorMultiply
+                        常量: 0.18
+                预设: OperatorLessEq
+                常量: 0.00
+        动作
+            SetUnitManaPercentBJ
+                变量: Hero
+                常量: 0.00
+            ReturnAction
+        动作
+            SetUnitManaBJ
+                变量: Hero
+                函数: OperatorReal
+                    函数: GetUnitStateSwap
+                        预设: UnitStateMana
+                        变量: Hero
+                    预设: OperatorSubtract
+                    函数: OperatorReal
+                        函数: GetUnitStateSwap
+                            预设: UnitStateMaxMana
+                            变量: Hero
+                        预设: OperatorMultiply
+                        常量: 0.18
+    IfThenElseMultiple
+        条件
+            OperatorCompareAbilityId
+                函数: GetSpellAbilityId
+                预设: OperatorEqualENE
+                常量: A00I
+        动作
+            SetVariable
+                变量: RingPoint
+                函数: GetSpellTargetLoc
+            SetVariable
+                变量: AngleRing
+                常量: 360.00
+            EnableTrigger
+                变量: gg_trg_Circle_of_Frostshield_Loop

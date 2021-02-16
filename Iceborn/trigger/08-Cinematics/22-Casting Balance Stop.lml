@@ -1,0 +1,13 @@
+事件
+    TriggerRegisterEnterRectSimple
+        变量: gg_rct_Region_337
+条件
+    OperatorCompareUnit
+        函数: GetEnteringUnit
+        预设: OperatorEqualENE
+        变量: gg_unit_H06F_0415
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    DisableTrigger
+        变量: gg_trg_Castings_Balance

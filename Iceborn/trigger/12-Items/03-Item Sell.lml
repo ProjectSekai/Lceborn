@@ -1,0 +1,13 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSellItem
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventPawnItem
+条件
+动作
+    DisableTrigger
+        变量: gg_trg_Anti_Cheat_1
+    TriggerSleepAction
+        常量: 0.08
+    EnableTrigger
+        变量: gg_trg_Anti_Cheat_1

@@ -1,0 +1,53 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventDeath
+条件
+    OrMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: Hero
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_H00C_0419
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_H06O_0377
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    TriggerSleepAction
+        常量: 4.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: Hero
+        动作
+            CustomDefeatBJ
+                预设: Player00
+                常量: 冰裔阵亡
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_H00C_0419
+        动作
+            CustomDefeatBJ
+                预设: Player00
+                常量: 泰尔卓阵亡
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_H06O_0377
+        动作
+            CustomDefeatBJ
+                预设: Player00
+                常量: 诺索拉姆阵亡

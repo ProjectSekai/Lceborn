@@ -1,0 +1,14 @@
+v1.7
+
+Glyph of Tremorfrost is now run by a different trigger avoiding Wait confusion
+Blossoms in panel now has PAS icon instead of BTN
+Glyph spawned Rune's damage increased
+Removed Upkeep notice and replaced it with map's version notice
+Recoded Thun'Tharok battle scene's quest
+Thun'Tharok's battle scene now may take 9 minutes
+Sonic Orbs at Thun'Tharok area no longer credit Player 1 for dealing damage
+Improved Sonic Orbs at Thun'Tharok area
+Crystarachnid's abilities won't loop after its death
+Crystarachnid's spawned glyph cause much more harm
+Cirratho Elemental's death should stop creep spawns
+Cirratho Elemental's water tentacle spell will not work while immune to magic

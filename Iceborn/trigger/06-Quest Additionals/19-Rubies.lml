@@ -1,0 +1,163 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventDeath
+条件
+    OrMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_h023_0115
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_h022_0114
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_h023_0116
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_h023_0115
+        动作
+            CreateItemLoc
+                常量: I017
+                函数: GetRectCenter
+                    变量: gg_rct_Region_001_Copy
+            SetVariable
+                变量: Ruby1
+                函数: GetLastCreatedItem
+            ForGroupMultiple
+                函数: GetUnitsInRangeOfLocAll
+                    常量: 1000.00
+                    函数: GetUnitLoc
+                        函数: GetDyingUnit
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareUnitCode
+                                函数: GetUnitTypeId
+                                    函数: GetEnumUnit
+                                预设: OperatorEqualENE
+                                常量: h00B
+                        动作
+                            ForGroupMultiple
+                                函数: GetUnitsInRangeOfLocAll
+                                    常量: 10000.00
+                                    函数: GetUnitLoc
+                                        函数: GetDyingUnit
+                                动作
+                                    IfThenElseMultiple
+                                        条件
+                                            OperatorCompareUnitCode
+                                                函数: GetUnitTypeId
+                                                    函数: GetEnumUnit
+                                                预设: OperatorEqualENE
+                                                常量: h00B
+                                        动作
+                                            SetUnitOwner
+                                                函数: GetEnumUnit
+                                                预设: PlayerNA
+                                                预设: ChangeColorFalse
+                                            PlaySoundBJ
+                                                变量: gg_snd_SeaGiantPissed1
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_h022_0114
+        动作
+            CreateItemLoc
+                常量: I017
+                函数: GetRectCenter
+                    变量: gg_rct_Region_001_Copy_3
+            SetVariable
+                变量: Ruby2
+                函数: GetLastCreatedItem
+            ForGroupMultiple
+                函数: GetUnitsInRangeOfLocAll
+                    常量: 1000.00
+                    函数: GetUnitLoc
+                        函数: GetDyingUnit
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareUnitCode
+                                函数: GetUnitTypeId
+                                    函数: GetEnumUnit
+                                预设: OperatorEqualENE
+                                常量: h00B
+                        动作
+                            ForGroupMultiple
+                                函数: GetUnitsInRangeOfLocAll
+                                    常量: 10000.00
+                                    函数: GetUnitLoc
+                                        函数: GetDyingUnit
+                                动作
+                                    IfThenElseMultiple
+                                        条件
+                                            OperatorCompareUnitCode
+                                                函数: GetUnitTypeId
+                                                    函数: GetEnumUnit
+                                                预设: OperatorEqualENE
+                                                常量: h00B
+                                        动作
+                                            SetUnitOwner
+                                                函数: GetEnumUnit
+                                                预设: PlayerNA
+                                                预设: ChangeColorFalse
+                                            PlaySoundBJ
+                                                变量: gg_snd_SeaGiantPissed1
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_h023_0116
+        动作
+            CreateItemLoc
+                常量: I017
+                函数: GetRectCenter
+                    变量: gg_rct_Region_001_Copy_2
+            SetVariable
+                变量: Ruby3
+                函数: GetLastCreatedItem
+            ForGroupMultiple
+                函数: GetUnitsInRangeOfLocAll
+                    常量: 1000.00
+                    函数: GetUnitLoc
+                        函数: GetDyingUnit
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareUnitCode
+                                函数: GetUnitTypeId
+                                    函数: GetEnumUnit
+                                预设: OperatorEqualENE
+                                常量: h00B
+                        动作
+                            ForGroupMultiple
+                                函数: GetUnitsInRangeOfLocAll
+                                    常量: 10000.00
+                                    函数: GetUnitLoc
+                                        函数: GetDyingUnit
+                                动作
+                                    IfThenElseMultiple
+                                        条件
+                                            OperatorCompareUnitCode
+                                                函数: GetUnitTypeId
+                                                    函数: GetEnumUnit
+                                                预设: OperatorEqualENE
+                                                常量: h00B
+                                        动作
+                                            SetUnitOwner
+                                                函数: GetEnumUnit
+                                                预设: PlayerNA
+                                                预设: ChangeColorFalse
+                                            PlaySoundBJ
+                                                变量: gg_snd_SeaGiantPissed1

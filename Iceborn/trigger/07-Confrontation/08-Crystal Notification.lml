@@ -1,0 +1,58 @@
+事件
+    TriggerRegisterTimerEventPeriodic
+        常量: 10.00
+条件
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: IsTriggerEnabled
+                    变量: gg_trg_P3_Portal_Shut
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: gg_unit_h06R_0380
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                动作
+                    PingMinimapLocForForce
+                        函数: GetPlayersAll
+                        函数: GetRectCenter
+                            变量: gg_rct_Region_353
+                        常量: 8.00
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: gg_unit_h06Q_0378
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                动作
+                    PingMinimapLocForForce
+                        函数: GetPlayersAll
+                        函数: GetRectCenter
+                            变量: gg_rct_Region_352
+                        常量: 8.00
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: gg_unit_h06Q_0379
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                动作
+                    PingMinimapLocForForce
+                        函数: GetPlayersAll
+                        函数: GetRectCenter
+                            变量: gg_rct_Region_354
+                        常量: 8.00
+        动作
+            DisableTrigger
+                函数: GetTriggeringTrigger

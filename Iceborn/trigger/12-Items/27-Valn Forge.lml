@@ -1,0 +1,56 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventHeroUseItem
+条件
+    OperatorCompareItemCode
+        函数: GetItemTypeId
+            函数: GetManipulatedItem
+        预设: OperatorEqualENE
+        常量: I016
+动作
+    IfThenElseMultiple
+        条件
+            AndMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: IsItemOwned
+                            变量: ValnPart1
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsItemOwned
+                            变量: ValnPart2
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsItemOwned
+                            变量: ValnPart3
+                        预设: OperatorEqualENE
+                        常量: true
+        动作
+            DisableTrigger
+                函数: GetTriggeringTrigger
+            RemoveItem
+                函数: GetItemOfTypeFromUnitBJ
+                    变量: Hero
+                    常量: I014
+            RemoveItem
+                函数: GetItemOfTypeFromUnitBJ
+                    变量: Hero
+                    常量: I015
+            RemoveItem
+                函数: GetItemOfTypeFromUnitBJ
+                    变量: Hero
+                    常量: I016
+            CreateItemLoc
+                常量: I00M
+                函数: GetUnitLoc
+                    变量: Hero
+            PlaySoundBJ
+                变量: gg_snd_Explosion3
+            QuestSetCompletedBJ
+                变量: QuestOptional1
+                预设: CompletionOptionCompleted
+            QuestItemSetCompletedBJ
+                变量: QuestOptional1Req1
+                预设: CompletionOptionCompleted

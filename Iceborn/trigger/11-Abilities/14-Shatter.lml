@@ -1,0 +1,87 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OrMultiple
+        条件
+            OperatorCompareAbilityId
+                函数: GetSpellAbilityId
+                预设: OperatorEqualENE
+                常量: A00F
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareAbilityId
+                函数: GetSpellAbilityId
+                预设: OperatorEqualENE
+                常量: A00F
+        动作
+            StopSoundBJ
+                变量: gg_snd_FrostBoltLaunch1
+                预设: FadeDontDont
+            PlaySoundBJ
+                变量: gg_snd_FrostBoltLaunch1
+            SetVariable
+                变量: AAPOINT
+                函数: GetSpellTargetLoc
+            AddSpecialEffectLocBJ
+                变量: AAPOINT
+                常量: LightningNova.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            CustomScriptCode
+                常量: 'call RemoveLocation(udg_AAPOINT)'
+            SetVariable
+                变量: AAPOINT
+                函数: GetSpellTargetLoc
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h010
+                预设: Player00
+                变量: AAPOINT
+                预设: RealUnitFacing
+            CustomScriptCode
+                常量: 'call RemoveLocation(udg_AAPOINT)'
+            SetUnitAnimation
+                函数: GetLastCreatedUnit
+                常量: birth
+            SetVariable
+                变量: AAPOINT
+                函数: GetSpellTargetLoc
+            SetVariable
+                变量: AAGROUP
+                函数: GetUnitsInRangeOfLocAll
+                    常量: 250.00
+                    变量: AAPOINT
+            ForGroupMultiple
+                变量: AAGROUP
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: UnitHasBuffBJ
+                                    函数: GetEnumUnit
+                                    常量: B001
+                                预设: OperatorEqualENE
+                                常量: true
+                        动作
+                            GroupAddUnitSimple
+                                函数: GetEnumUnit
+                                变量: ShatterGroup
+                            TriggerExecute
+                                变量: gg_trg_Shatter_Damage
+                            AddSpecialEffectTargetUnitBJ
+                                常量: origin
+                                函数: GetEnumUnit
+                                常量: DevilSlam.mdx
+                            DestroyEffectBJ
+                                函数: GetLastCreatedEffectBJ
+                            StopSoundBJ
+                                变量: gg_snd_IceBreak
+                                预设: FadeDontDont
+                            PlaySoundBJ
+                                变量: gg_snd_IceBreak
+            CustomScriptCode
+                常量: 'call RemoveLocation(udg_AAPOINT)'
+            CustomScriptCode
+                常量: 'call DestroyGroup(udg_AAGROUP)'

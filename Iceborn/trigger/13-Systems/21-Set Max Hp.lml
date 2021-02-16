@@ -1,0 +1,174 @@
+事件
+条件
+动作
+    SetVariable
+        变量: Max_Hp
+        函数: OperatorInt
+            变量: Max_Hp
+            预设: OperatorSubtract
+            函数: R2I
+                函数: GetUnitStateSwap
+                    预设: UnitStateMaxLife
+                    变量: Some_Unit
+    IfThenElseMultiple
+        条件
+            OperatorCompareInteger
+                变量: Max_Hp
+                预设: OperatorGreater
+                常量: 0
+        动作
+            SetVariable
+                变量: Loop_Integer
+                函数: OperatorInt
+                    函数: OperatorInt
+                        变量: Max_Hp
+                        预设: OperatorSubtract
+                        函数: ModuloInteger
+                            变量: Max_Hp
+                            常量: 100
+                    预设: OperatorDivide
+                    常量: 100
+            ForLoopAMultiple
+                常量: 1
+                变量: Loop_Integer
+                动作
+                    UnitAddAbilityBJ
+                        常量: A008
+                        变量: Some_Unit
+                    SetUnitAbilityLevelSwapped
+                        常量: A008
+                        变量: Some_Unit
+                        常量: 4
+                    UnitRemoveAbilityBJ
+                        常量: A008
+                        变量: Some_Unit
+            SetVariable
+                变量: Max_Hp
+                函数: ModuloInteger
+                    变量: Max_Hp
+                    常量: 100
+            SetVariable
+                变量: Loop_Integer
+                函数: OperatorInt
+                    函数: OperatorInt
+                        变量: Max_Hp
+                        预设: OperatorSubtract
+                        函数: ModuloInteger
+                            变量: Max_Hp
+                            常量: 10
+                    预设: OperatorDivide
+                    常量: 10
+            ForLoopAMultiple
+                常量: 1
+                变量: Loop_Integer
+                动作
+                    UnitAddAbilityBJ
+                        常量: A008
+                        变量: Some_Unit
+                    SetUnitAbilityLevelSwapped
+                        常量: A008
+                        变量: Some_Unit
+                        常量: 3
+                    UnitRemoveAbilityBJ
+                        常量: A008
+                        变量: Some_Unit
+            SetVariable
+                变量: Max_Hp
+                函数: ModuloInteger
+                    变量: Max_Hp
+                    常量: 10
+            ForLoopAMultiple
+                常量: 1
+                变量: Max_Hp
+                动作
+                    UnitAddAbilityBJ
+                        常量: A008
+                        变量: Some_Unit
+                    SetUnitAbilityLevelSwapped
+                        常量: A008
+                        变量: Some_Unit
+                        常量: 2
+                    UnitRemoveAbilityBJ
+                        常量: A008
+                        变量: Some_Unit
+        动作
+            SetVariable
+                变量: Max_Hp
+                函数: OperatorInt
+                    常量: 0
+                    预设: OperatorSubtract
+                    变量: Max_Hp
+            SetVariable
+                变量: Loop_Integer
+                函数: OperatorInt
+                    函数: OperatorInt
+                        变量: Max_Hp
+                        预设: OperatorSubtract
+                        函数: ModuloInteger
+                            变量: Max_Hp
+                            常量: 100
+                    预设: OperatorDivide
+                    常量: 100
+            ForLoopAMultiple
+                常量: 1
+                变量: Loop_Integer
+                动作
+                    UnitAddAbilityBJ
+                        常量: A008
+                        变量: Some_Unit
+                    SetUnitAbilityLevelSwapped
+                        常量: A008
+                        变量: Some_Unit
+                        常量: 7
+                    UnitRemoveAbilityBJ
+                        常量: A008
+                        变量: Some_Unit
+            SetVariable
+                变量: Max_Hp
+                函数: ModuloInteger
+                    变量: Max_Hp
+                    常量: 100
+            SetVariable
+                变量: Loop_Integer
+                函数: OperatorInt
+                    函数: OperatorInt
+                        变量: Max_Hp
+                        预设: OperatorSubtract
+                        函数: ModuloInteger
+                            变量: Max_Hp
+                            常量: 10
+                    预设: OperatorDivide
+                    常量: 10
+            ForLoopAMultiple
+                常量: 1
+                变量: Loop_Integer
+                动作
+                    UnitAddAbilityBJ
+                        常量: A008
+                        变量: Some_Unit
+                    SetUnitAbilityLevelSwapped
+                        常量: A008
+                        变量: Some_Unit
+                        常量: 6
+                    UnitRemoveAbilityBJ
+                        常量: A008
+                        变量: Some_Unit
+            SetVariable
+                变量: Max_Hp
+                函数: ModuloInteger
+                    变量: Max_Hp
+                    常量: 10
+            ForLoopAMultiple
+                常量: 1
+                变量: Max_Hp
+                动作
+                    UnitAddAbilityBJ
+                        常量: A008
+                        变量: Some_Unit
+                    SetUnitAbilityLevelSwapped
+                        常量: A008
+                        变量: Some_Unit
+                        常量: 5
+                    UnitRemoveAbilityBJ
+                        常量: A008
+                        变量: Some_Unit

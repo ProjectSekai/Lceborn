@@ -1,0 +1,74 @@
+事件
+    TriggerRegisterEnterRectSimple
+        变量: gg_rct_Region_128
+条件
+    OperatorCompareUnit
+        函数: GetTriggerUnit
+        预设: OperatorEqualENE
+        变量: Hero
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    DisableTrigger
+        变量: gg_trg_Teleportation_Window
+    EnableTrigger
+        变量: gg_trg_Teleportation_Block
+    ClearMapMusicBJ
+    EndThematicMusicBJ
+    StopMusicBJ
+        预设: FadeDontDont
+    PlayMusicBJ
+        变量: gg_snd_Joshua_Buck___Vanguard
+    PauseUnitBJ
+        预设: PauseUnpauseOptionPause
+        变量: gg_unit_H024_0109
+    SetUnitAnimation
+        变量: gg_unit_H024_0109
+        常量: birth
+    TriggerSleepAction
+        常量: 0.10
+    ShowUnitShow
+        变量: gg_unit_H024_0109
+    TriggerSleepAction
+        常量: 3.00
+    PlaySoundBJ
+        变量: gg_snd_Hint
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cff7777aa提示: 进入光环并摧毁球体以对毒蛇造成伤害|r
+
+'
+    AddSpecialEffectLocBJ
+        函数: GetRectCenter
+            变量: gg_rct_Region_112_Copy
+        常量: Voidwalker_Aura.mdx
+    SetVariable
+        变量: VoidAura
+        函数: GetLastCreatedEffectBJ
+    EnableTrigger
+        变量: gg_trg_Caretra_Void_1_Enter
+    EnableTrigger
+        变量: gg_trg_Caretra_Void_1_Leave
+    IfThenElse
+        条件: OperatorCompareBoolean
+            函数: RectContainsUnit
+                变量: gg_rct_Region_112_Copy
+                变量: Hero
+            预设: OperatorEqualENE
+            常量: true
+        动作: TriggerExecute
+            变量: gg_trg_Caretra_Void_1_Enter
+        动作: DoNothing
+    PlaySoundBJ
+        变量: gg_snd_BanishCaster
+    TriggerSleepAction
+        常量: 0.90
+    ResetUnitAnimation
+        变量: gg_unit_H024_0109
+    TriggerSleepAction
+        常量: 1.00
+    PauseUnitBJ
+        预设: PauseUnpauseOptionUnpause
+        变量: gg_unit_H024_0109
+    EnableTrigger
+        变量: gg_trg_Caretra_Spell

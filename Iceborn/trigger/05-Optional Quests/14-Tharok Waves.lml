@@ -1,0 +1,323 @@
+事件
+条件
+动作
+    IfThenElseMultiple
+        条件
+            OrMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: gg_unit_h02R_0172
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsQuestCompleted
+                            变量: QuestOptional4
+                        预设: OperatorEqualENE
+                        常量: true
+        动作
+            ReturnAction
+    TriggerExecute
+        变量: gg_trg_Tharok_Wave_1
+    TriggerSleepAction
+        常量: 40.00
+    IfThenElseMultiple
+        条件
+            OrMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: gg_unit_h02R_0172
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsQuestCompleted
+                            变量: QuestOptional4
+                        预设: OperatorEqualENE
+                        常量: true
+        动作
+            ReturnAction
+    TriggerExecute
+        变量: gg_trg_Tharok_Wave_1
+    TriggerExecute
+        变量: gg_trg_Tharok_Wave_1
+    TriggerSleepAction
+        常量: 40.00
+    IfThenElseMultiple
+        条件
+            OrMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: gg_unit_h02R_0172
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsQuestCompleted
+                            变量: QuestOptional4
+                        预设: OperatorEqualENE
+                        常量: true
+        动作
+            ReturnAction
+    TriggerExecute
+        变量: gg_trg_Tharok_Wave_2
+    TriggerSleepAction
+        常量: 40.00
+    IfThenElseMultiple
+        条件
+            OrMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: gg_unit_h02R_0172
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsQuestCompleted
+                            变量: QuestOptional4
+                        预设: OperatorEqualENE
+                        常量: true
+        动作
+            ReturnAction
+    TriggerExecute
+        变量: gg_trg_Tharok_Wave_2
+    TriggerSleepAction
+        常量: 40.00
+    IfThenElseMultiple
+        条件
+            OrMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: gg_unit_h02R_0172
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsQuestCompleted
+                            变量: QuestOptional4
+                        预设: OperatorEqualENE
+                        常量: true
+        动作
+            ReturnAction
+    TriggerExecute
+        变量: gg_trg_Tharok_Wave_2
+    TriggerSleepAction
+        常量: 40.00
+    IfThenElseMultiple
+        条件
+            OrMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: gg_unit_h02R_0172
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsQuestCompleted
+                            变量: QuestOptional4
+                        预设: OperatorEqualENE
+                        常量: true
+        动作
+            ReturnAction
+    TriggerExecute
+        变量: gg_trg_Tharok_Wave_3
+    TriggerSleepAction
+        常量: 40.00
+    IfThenElseMultiple
+        条件
+            OrMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: gg_unit_h02R_0172
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsQuestCompleted
+                            变量: QuestOptional4
+                        预设: OperatorEqualENE
+                        常量: true
+        动作
+            ReturnAction
+    TriggerExecute
+        变量: gg_trg_Tharok_Wave_3
+    TriggerSleepAction
+        常量: 40.00
+    IfThenElseMultiple
+        条件
+            OrMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: gg_unit_h02R_0172
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsQuestCompleted
+                            变量: QuestOptional4
+                        预设: OperatorEqualENE
+                        常量: true
+        动作
+            ReturnAction
+    TriggerExecute
+        变量: gg_trg_Tharok_Wave_3
+    TriggerSleepAction
+        常量: 40.00
+    IfThenElseMultiple
+        条件
+            OrMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: gg_unit_h02R_0172
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsQuestCompleted
+                            变量: QuestOptional4
+                        预设: OperatorEqualENE
+                        常量: true
+        动作
+            ReturnAction
+    TriggerExecute
+        变量: gg_trg_Tharok_Wave_4
+    TriggerSleepAction
+        常量: 40.00
+    IfThenElseMultiple
+        条件
+            OrMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: gg_unit_h02R_0172
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsQuestCompleted
+                            变量: QuestOptional4
+                        预设: OperatorEqualENE
+                        常量: true
+        动作
+            ReturnAction
+    TriggerExecute
+        变量: gg_trg_Tharok_Wave_4
+    TriggerSleepAction
+        常量: 40.00
+    IfThenElseMultiple
+        条件
+            OrMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: gg_unit_h02R_0172
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsQuestCompleted
+                            变量: QuestOptional4
+                        预设: OperatorEqualENE
+                        常量: true
+        动作
+            ReturnAction
+    TriggerExecute
+        变量: gg_trg_Tharok_Wave_4
+    TriggerSleepAction
+        常量: 40.00
+    IfThenElseMultiple
+        条件
+            OrMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: gg_unit_h02R_0172
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsQuestCompleted
+                            变量: QuestOptional4
+                        预设: OperatorEqualENE
+                        常量: true
+        动作
+            ReturnAction
+    TriggerExecute
+        变量: gg_trg_Tharok_Wave_5
+    TriggerSleepAction
+        常量: 40.00
+    IfThenElseMultiple
+        条件
+            OrMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: gg_unit_h02R_0172
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsQuestCompleted
+                            变量: QuestOptional4
+                        预设: OperatorEqualENE
+                        常量: true
+        动作
+            ReturnAction
+    TriggerExecute
+        变量: gg_trg_Tharok_Wave_5
+    TriggerSleepAction
+        常量: 40.00
+    IfThenElseMultiple
+        条件
+            OrMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: gg_unit_h02R_0172
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsQuestCompleted
+                            变量: QuestOptional4
+                        预设: OperatorEqualENE
+                        常量: true
+        动作
+            ReturnAction
+    TriggerExecute
+        变量: gg_trg_Tharok_Wave_5
+    TriggerSleepAction
+        常量: 20.00
+    IfThenElseMultiple
+        条件
+            OrMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: gg_unit_h02R_0172
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsQuestCompleted
+                            变量: QuestOptional4
+                        预设: OperatorEqualENE
+                        常量: true
+        动作
+            ReturnAction
+    TriggerExecute
+        变量: gg_trg_Tharok_Wave_5
+    TriggerSleepAction
+        常量: 20.00
+    IfThenElseMultiple
+        条件
+            OrMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: gg_unit_h02R_0172
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsQuestCompleted
+                            变量: QuestOptional4
+                        预设: OperatorEqualENE
+                        常量: true
+        动作
+            ReturnAction
+    TriggerExecute
+        变量: gg_trg_Tharok_Wave_5

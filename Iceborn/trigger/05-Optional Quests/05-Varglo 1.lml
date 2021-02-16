@@ -1,0 +1,83 @@
+事件
+    TriggerRegisterUnitInRangeSimple
+        常量: 200.00
+        变量: gg_unit_h025_0110
+条件
+    OperatorCompareUnit
+        函数: GetTriggerUnit
+        预设: OperatorEqualENE
+        变量: Hero
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    SelectUnitSingle
+        变量: gg_unit_h025_0110
+    DestroyEffectBJ
+        变量: Exclamation3
+    SetMusicVolumeBJ
+        常量: 50.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 22.00
+        常量: '|cffffcc00瓦格罗:|r 什么?你在这做什么?你不应该在这里,除非你想要早点见到你的末日,嘿嘿嘿.如果是这样,我能帮你.我打算去见见并再次解放我那在铁栏后的朋友们.
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Varglo1
+    TriggerSleepAction
+        常量: 23.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 23.00
+        常量: '|cffffcc00瓦格罗:|r 你明白吗,我把自己弄到一个糟糕的困境里,那是因为瓦格罗不老实,还引来了麻烦,然后瓦格罗打算救走自己的皮囊,但是我的朋友却不这么打算!现在变成他们承担责任,我感觉到了我该为此做点什么的责任.
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Varglo2
+    TriggerSleepAction
+        常量: 24.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 12.00
+        常量: '|cffffcc00瓦格罗:|r 跟我来,那里的储藏室关了我的朋友,在没把我们惹进麻烦之前能拿多少拿多少.你怎么看?
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Varglo3
+    TriggerSleepAction
+        常量: 13.00
+    SetMusicVolumeBJ
+        常量: 100.00
+    TriggerSleepAction
+        常量: 1.00
+    EnableTrigger
+        变量: gg_trg_Varglo_2
+    EnableTrigger
+        变量: gg_trg_Varglo_Dialog_Checkup
+    DialogClearBJ
+        变量: Dialog
+    DialogSetMessageBJ
+        变量: Dialog
+        常量: '你的答复是:'
+    DialogAddButtonBJ
+        变量: Dialog
+        常量: |CFF7EBFF1带路|R
+    SetVariable
+        变量: DialogButton1
+        函数: GetLastCreatedButtonBJ
+    DialogAddButtonBJ
+        变量: Dialog
+        常量: |CFF7EBFF1还不到时候|R
+    SetVariable
+        变量: DialogButton2
+        函数: GetLastCreatedButtonBJ
+    DialogAddButtonBJ
+        变量: Dialog
+        常量: |CFF7EBFF1我不想参与|R
+    SetVariable
+        变量: DialogButton3
+        函数: GetLastCreatedButtonBJ
+    DialogDisplayBJ
+        预设: ShowHideShow
+        变量: Dialog
+        预设: Player00

@@ -1,0 +1,469 @@
+事件
+条件
+动作
+    SetTerrainFogExBJ
+        预设: FogStyleLinear
+        常量: 500.00
+        常量: 3500.00
+        常量: 0
+        常量: 100
+        常量: 100
+        常量: 100
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_177
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_178
+        预设: Player00
+        常量: 32.00
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeIn
+        常量: 3.00
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    SetUnitMoveSpeed
+        变量: gg_unit_H04N_0368
+        常量: 150.00
+    SetUnitMoveSpeed
+        变量: gg_unit_H04O_0373
+        常量: 150.00
+    IssuePointOrderLoc
+        变量: gg_unit_H04N_0368
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_333
+    IssuePointOrderLoc
+        变量: gg_unit_H04O_0373
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_334
+    TriggerSleepAction
+        常量: 5.00
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cffffcc0净 化 之 地|r
+
+'
+    TriggerSleepAction
+        常量: 13.00
+    SetUnitFacingToFaceLocTimed
+        变量: gg_unit_H04O_0373
+        函数: GetUnitLoc
+            变量: gg_unit_H04N_0368
+        常量: 2.00
+    SetUnitAnimation
+        变量: gg_unit_H04O_0373
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H04O_0373
+        常量: 阿娜拉
+        变量: gg_snd_Anara9
+        常量: 萨德玛斯,为什么我们在这?我相信诺索拉姆正在等我们,而且这地方绝不会很安全.
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H04O_0373
+    ShowUnitShow
+        变量: gg_unit_H06F_0415
+    TriggerSleepAction
+        常量: 3.00
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_179
+        预设: Player00
+        常量: 0
+    SetUnitPositionLocFacingLocBJ
+        变量: gg_unit_H06F_0415
+        函数: GetRectCenter
+            变量: gg_rct_Region_335
+        函数: GetUnitLoc
+            变量: gg_unit_H04O_0373
+    SetUnitMoveSpeed
+        变量: gg_unit_H06F_0415
+        常量: 150.00
+    TriggerSleepAction
+        常量: 0.00
+    IssuePointOrderLoc
+        变量: gg_unit_H06F_0415
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_336
+    TriggerSleepAction
+        常量: 3.00
+    SetUnitFacingToFaceLocTimed
+        变量: gg_unit_H04O_0373
+        函数: GetRectCenter
+            变量: gg_rct_Region_336
+        常量: 2.00
+    SetUnitFacingToFaceLocTimed
+        变量: gg_unit_H04N_0368
+        函数: GetRectCenter
+            变量: gg_rct_Region_336
+        常量: 2.00
+    TriggerSleepAction
+        常量: 3.00
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H04O_0373
+        常量: 阿娜拉
+        变量: gg_snd_Anara10
+        常量: '这是谁? 乌拉索尔?'
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    SetUnitFacingToFaceLocTimed
+        变量: gg_unit_H04N_0368
+        函数: GetUnitLoc
+            变量: gg_unit_H04O_0373
+        常量: 2.00
+    TriggerSleepAction
+        常量: 1.00
+    SetUnitFacingToFaceLocTimed
+        变量: gg_unit_H04O_0373
+        函数: GetUnitLoc
+            变量: gg_unit_H04N_0368
+        常量: 1.00
+    SetUnitAnimation
+        变量: gg_unit_H04N_0368
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H04N_0368
+        常量: 萨德玛斯
+        变量: gg_snd_Thardomus7
+        常量: 结束了,阿娜拉.
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H04N_0368
+    TriggerSleepAction
+        常量: 1.00
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_180
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_181
+        预设: Player00
+        常量: 10.00
+    TriggerSleepAction
+        常量: 1.00
+    SetUnitAnimation
+        变量: gg_unit_H04O_0373
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H04O_0373
+        常量: 阿娜拉
+        变量: gg_snd_Anara11
+        常量: '什么? 萨德玛斯,让我们一起了结了他!'
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H04O_0373
+    TriggerSleepAction
+        常量: 1.00
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_182
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_183
+        预设: Player00
+        常量: 11.00
+    TriggerSleepAction
+        常量: 1.00
+    SetUnitFacingToFaceLocTimed
+        变量: gg_unit_H04O_0373
+        函数: GetRectCenter
+            变量: gg_rct_Region_336
+        常量: 1.00
+    SetUnitAnimation
+        变量: gg_unit_H06F_0415
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H06F_0415
+        常量: 乌拉索尔
+        变量: gg_snd_Urathol29
+        常量: 没用的,女孩.
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H06F_0415
+    TriggerSleepAction
+        常量: 1.00
+    SetUnitFacingToFaceLocTimed
+        变量: gg_unit_H04O_0373
+        函数: GetUnitLoc
+            变量: gg_unit_H04N_0368
+        常量: 1.00
+    TriggerSleepAction
+        常量: 1.00
+    SetUnitAnimation
+        变量: gg_unit_H04O_0373
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H04O_0373
+        常量: 阿娜拉
+        变量: gg_snd_Anara12
+        常量: '你疯了?!   [对萨德玛斯]'
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H04O_0373
+    TriggerSleepAction
+        常量: 2.00
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_184
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_185
+        预设: Player00
+        常量: 27.00
+    SetUnitFacingToFaceLocTimed
+        变量: gg_unit_H04O_0373
+        函数: GetRectCenter
+            变量: gg_rct_Region_336
+        常量: 2.00
+    TriggerSleepAction
+        常量: 2.00
+    SetUnitAnimation
+        变量: gg_unit_H04O_0373
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H04O_0373
+        常量: 阿娜拉
+        变量: gg_snd_Anara13
+        常量: '这还没完!你们会为你们罪行付出代价,你们两个都! 波伊斯面具已经是我们的了,他们会为了从你们手中守护寒霜天地流干最后一滴血!'
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H04O_0373
+    TriggerSleepAction
+        常量: 1.00
+    SetUnitAnimation
+        变量: gg_unit_H06F_0415
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H06F_0415
+        常量: 乌拉索尔
+        变量: gg_snd_Urathol30
+        常量: 我真希望他们会那么做,我可不打算一场都不打就算了.
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H06F_0415
+    TriggerSleepAction
+        常量: 1.00
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_186
+        预设: Player00
+        常量: 0
+    TriggerSleepAction
+        常量: 1.00
+    SetUnitAnimation
+        变量: gg_unit_H04O_0373
+        常量: 'stand channel throw'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H04O_0373
+        常量: 阿娜拉
+        变量: gg_snd_Anara14
+        常量: 而我就是第一个奋战的人!
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    TriggerSleepAction
+        常量: 1.00
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_187
+        预设: Player00
+        常量: 0
+    TriggerSleepAction
+        常量: 1.00
+    SetUnitAnimation
+        变量: gg_unit_H06F_0415
+        常量: 'stand ready'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H06F_0415
+        常量: 乌拉索尔
+        变量: gg_snd_Urathol31
+        常量: 自不量力啊,女孩!
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    TriggerSleepAction
+        常量: 1.00
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_188
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_189
+        预设: Player00
+        常量: 8.00
+    SetUnitMoveSpeed
+        变量: gg_unit_H06F_0415
+        常量: 200.00
+    SetUnitMoveSpeed
+        变量: gg_unit_H04O_0373
+        常量: 225.00
+    EnableTrigger
+        变量: gg_trg_Castings_Balance
+    IssuePointOrderLoc
+        变量: gg_unit_H06F_0415
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_337
+    UnitAddAbilityBJ
+        常量: A06J
+        变量: gg_unit_H06F_0415
+    TriggerSleepAction
+        常量: 7.00
+    IssuePointOrderLoc
+        变量: gg_unit_H06F_0415
+        预设: UnitOrderCarrionSwarm
+        函数: GetRectCenter
+            变量: gg_rct_Region_334
+    IssuePointOrderLoc
+        变量: gg_unit_H04O_0373
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_338
+    PlaySoundBJ
+        变量: gg_snd_EnergyExplosion
+    PlaySoundBJ
+        变量: gg_snd_Explosion6
+    TriggerSleepAction
+        常量: 2
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_190
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_191
+        预设: Player00
+        常量: 7.00
+    ShowUnitHide
+        变量: gg_unit_H04N_0368
+    SetUnitAnimation
+        变量: gg_unit_H04O_0373
+        常量: 'stand channel throw'
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h03T
+        预设: PlayerNP
+        函数: GetRectCenter
+            变量: gg_rct_Region_334
+        预设: RealUnitFacing
+    SetUnitPositionLocFacingLocBJ
+        变量: gg_unit_H06F_0415
+        函数: GetRectCenter
+            变量: gg_rct_Region_334
+        函数: GetUnitLoc
+            变量: gg_unit_H04O_0373
+    SetUnitFacingToFaceLocTimed
+        变量: gg_unit_H04O_0373
+        函数: GetRectCenter
+            变量: gg_rct_Region_334
+        常量: 1.00
+    TriggerSleepAction
+        常量: 1.00
+    StopSoundBJ
+        变量: gg_snd_EnergyExplosion
+        预设: FadeDontDont
+    PlaySoundBJ
+        变量: gg_snd_EnergyExplosion
+    PlaySoundBJ
+        变量: gg_snd_Explosion6
+    IssuePointOrderLoc
+        变量: gg_unit_H06F_0415
+        预设: UnitOrderCarrionSwarm
+        函数: GetUnitLoc
+            变量: gg_unit_H06F_0415
+    AddSpecialEffectTargetUnitBJ
+        常量: origin
+        变量: gg_unit_H04O_0373
+        常量: Energy_Release.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    SetUnitAnimation
+        变量: gg_unit_H04O_0373
+        常量: death
+    TriggerSleepAction
+        常量: 1.90
+    SetUnitTimeScalePercent
+        变量: gg_unit_H04O_0373
+        常量: 0.00
+    ResetUnitAnimation
+        变量: gg_unit_H06F_0415
+    TriggerSleepAction
+        常量: 3.00
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_192
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_193
+        预设: Player00
+        常量: 23.00
+    ShowUnitShow
+        变量: gg_unit_H04N_0368
+    SetUnitFacingToFaceLocTimed
+        变量: gg_unit_H04N_0368
+        函数: GetRectCenter
+            变量: gg_rct_Region_338
+        常量: 0.00
+    TriggerSleepAction
+        常量: 13.00
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeOut
+        常量: 4.00
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    TriggerSleepAction
+        常量: 5.00
+    RemoveUnit
+        变量: gg_unit_H04O_0373
+    UnitRemoveAbilityBJ
+        常量: A06J
+        变量: gg_unit_H06F_0415
+    TriggerExecute
+        变量: gg_trg_A4_Treachery

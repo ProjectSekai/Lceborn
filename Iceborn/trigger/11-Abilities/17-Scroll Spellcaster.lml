@@ -1,0 +1,67 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OrMultiple
+        条件
+            OperatorCompareAbilityId
+                函数: GetSpellAbilityId
+                预设: OperatorEqualENE
+                常量: A000
+            OperatorCompareAbilityId
+                函数: GetSpellAbilityId
+                预设: OperatorEqualENE
+                常量: A001
+            OperatorCompareAbilityId
+                函数: GetSpellAbilityId
+                预设: OperatorEqualENE
+                常量: A002
+            OperatorCompareAbilityId
+                函数: GetSpellAbilityId
+                预设: OperatorEqualENE
+                常量: A02S
+            OperatorCompareAbilityId
+                函数: GetSpellAbilityId
+                预设: OperatorEqualENE
+                常量: A02U
+            OperatorCompareAbilityId
+                函数: GetSpellAbilityId
+                预设: OperatorEqualENE
+                常量: A03Q
+            OperatorCompareAbilityId
+                函数: GetSpellAbilityId
+                预设: OperatorEqualENE
+                常量: A05B
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareReal
+                函数: GetRandomReal
+                    常量: 0.00
+                    常量: 100.00
+                预设: OperatorLessEq
+                常量: 20.00
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: ScrollSpellcasterMana
+                        预设: OperatorEqualENE
+                        常量: false
+                动作
+                    SetVariable
+                        变量: ScrollSpellcasterMana
+                        常量: true
+                    PlaySoundBJ
+                        变量: gg_snd_Explosion5
+                    UnitAddAbilityBJ
+                        常量: A03R
+                        变量: Hero
+                    TriggerSleepAction
+                        常量: 10.00
+                    UnitRemoveAbilityBJ
+                        常量: A03R
+                        变量: Hero
+                    SetVariable
+                        变量: ScrollSpellcasterMana
+                        常量: false

@@ -1,0 +1,68 @@
+事件
+    TriggerRegisterUnitInRangeSimple
+        常量: 200.00
+        变量: gg_unit_h021_0113
+条件
+    OperatorCompareUnit
+        函数: GetTriggerUnit
+        预设: OperatorEqualENE
+        变量: Hero
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    ShowUnitShow
+        变量: gg_unit_h023_0116
+    ShowUnitShow
+        变量: gg_unit_h023_0115
+    ShowUnitShow
+        变量: gg_unit_h022_0114
+    SelectUnitSingle
+        变量: gg_unit_h021_0113
+    DestroyEffectBJ
+        变量: Exclamation1
+    SetMusicVolumeBJ
+        常量: 50.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 24.00
+        常量: '|cffffcc00小偷欧塔克:|r 嗨!嗨,你!我曾因为从圣地偷东西而被捕,不过我幸运地活着跑了出来,但是工作并没有完成,可是我再也不能涉足那里了.格罗姆看起来对此一点也不高兴,当第二个小偷光顾的时候或许就不会有那么仁慈了.
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Ortuk1
+    TriggerSleepAction
+        常量: 25.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 36.00
+        常量: '|cffffcc00小偷欧塔克:|r 怎么样?你愿意完成我的工作吗?我当然也会给你东西作为回报了.工作的内容是从玻璃雕像的脖子上偷取寒霜天地的三块红宝石.好好想想,抓紧时间,拿着三块回来,好运就会降临.噢,还有小心那些抓狂的格罗姆,别让他们看到你的手指有碰到.
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Ortuk2
+    TriggerSleepAction
+        常量: 37.00
+    SetMusicVolumeBJ
+        常量: 100.00
+    CreateQuestBJ
+        预设: QuestTypeOptDiscovered
+        常量: 搜索中
+        常量: 我遇见一个叫欧塔克的小偷,要我偷寒霜天地圣域的雕像上的三颗红宝石,然后会给我一个特别的东西.他还警告我说,在偷东西的时候不要被格罗姆察觉.
+        常量: ReplaceableTextures\CommandButtons\BTNThunderfury2.blp
+    SetVariable
+        变量: QuestOptional1
+        函数: GetLastCreatedQuestBJ
+    CreateQuestItemBJ
+        变量: QuestOptional1
+        常量: 偷走寒霜天地的3颗红宝石并带给欧塔克
+    SetVariable
+        变量: QuestOptional1Req1
+        函数: GetLastCreatedQuestItemBJ
+    FlashQuestDialogButtonBJ
+    PlaySoundBJ
+        变量: gg_snd_QuestLog
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cffffcc00 - 偷走寒霜天地的3颗红宝石并带给欧塔克|r
+
+'

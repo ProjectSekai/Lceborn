@@ -1,0 +1,77 @@
+事件
+    TriggerRegisterUnitInRangeSimple
+        常量: 250.00
+        变量: gg_unit_h04U_0311
+条件
+    OperatorCompareUnit
+        函数: GetTriggerUnit
+        预设: OperatorEqualENE
+        变量: Hero
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    SelectUnitSingle
+        变量: gg_unit_h04U_0311
+    DestroyEffectBJ
+        变量: Exclamation6
+    SetMusicVolumeBJ
+        常量: 50.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 35.00
+        常量: '|cffffcc00亚坦崔米迪俄斯:|r 献给你最真挚的问候,冰裔.我是亚坦崔米迪俄斯,加修恩的儿子与波伊斯之魂阿尔卡泽的看守.我知道你至此的理由和想要波伊斯面具的正当目的,也是为什么让你通行这道门并进入面具坐落的阿尔卡泽的原因.
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Atantrimedius1
+    TriggerSleepAction
+        常量: 36.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 23.00
+        常量: '|cffffcc00亚坦崔米迪俄斯:|r 但是大门只会在波伊斯之心充能到满点的时候才能够开启,而乌拉索尔的召唤物拿走了维持整个深处平衡的维久方块,还用不平衡的宇宙能量污染了它.
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Atantrimedius2
+    TriggerSleepAction
+        常量: 24.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 30.00
+        常量: '|cffffcc00亚坦崔米迪俄斯:|r 我需要你的帮助回复维久方块的形态,消除乌拉索尔的污染.你需要15个冰棘花才能够充满波伊斯之心,够吗?不要在意,目前的焦点在于方块,你准备好了吗?
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Atantrimedius3
+    TriggerSleepAction
+        常量: 31.00
+    SetMusicVolumeBJ
+        常量: 100.00
+    TriggerSleepAction
+        常量: 1.00
+    EnableTrigger
+        变量: gg_trg_Atantrimedius_2
+    EnableTrigger
+        变量: gg_trg_Atantrimedius_Dialog_Checkup
+    DialogClearBJ
+        变量: Dialog
+    DialogSetMessageBJ
+        变量: Dialog
+        常量: 'Your Answer:'
+    DialogAddButtonBJ
+        变量: Dialog
+        常量: '|CFF7EBFF1I am ready|R'
+    SetVariable
+        变量: DialogButton1
+        函数: GetLastCreatedButtonBJ
+    DialogAddButtonBJ
+        变量: Dialog
+        常量: '|CFF7EBFF1Not yet|R'
+    SetVariable
+        变量: DialogButton2
+        函数: GetLastCreatedButtonBJ
+    DialogDisplayBJ
+        预设: ShowHideShow
+        变量: Dialog
+        预设: Player00

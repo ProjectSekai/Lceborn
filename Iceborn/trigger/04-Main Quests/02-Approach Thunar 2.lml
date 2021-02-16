@@ -1,0 +1,158 @@
+事件
+    TriggerRegisterUnitInRangeSimple
+        常量: 200.00
+        变量: gg_unit_H00E_0012
+条件
+    OperatorCompareUnit
+        函数: GetTriggerUnit
+        预设: OperatorEqualENE
+        变量: HeroBorn
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    UnitRemoveAbilityBJ
+        常量: A00V
+        变量: HeroBorn
+    UnitAddAbilityBJ
+        常量: A014
+        变量: HeroBorn
+    ShowDestructableBJ
+        预设: ShowHideShow
+        变量: gg_dest_B000_1922
+    ShowDestructableBJ
+        预设: ShowHideShow
+        变量: gg_dest_B000_1920
+    ShowDestructableBJ
+        预设: ShowHideShow
+        变量: gg_dest_B000_1923
+    SetVariable
+        变量: Orb1Fire
+        常量: true
+    SetVariable
+        变量: Orb2Frost
+        常量: true
+    SetVariable
+        变量: Orb3Poison
+        常量: true
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h00N
+        预设: PlayerNP
+        函数: GetRectCenter
+            变量: gg_rct_Region_013
+        预设: RealUnitFacing
+    SetVariable
+        变量: Orb21
+        函数: GetLastCreatedUnit
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h00N
+        预设: PlayerNP
+        函数: GetRectCenter
+            变量: gg_rct_Region_013_Copy_4
+        预设: RealUnitFacing
+    SetVariable
+        变量: Orb11
+        函数: GetLastCreatedUnit
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h00N
+        预设: PlayerNP
+        函数: GetRectCenter
+            变量: gg_rct_Region_013_Copy_7
+        预设: RealUnitFacing
+    SetVariable
+        变量: Orb31
+        函数: GetLastCreatedUnit
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h00O
+        预设: PlayerNP
+        函数: GetRectCenter
+            变量: gg_rct_Region_013_Copy
+        预设: RealUnitFacing
+    SetVariable
+        变量: Orb22
+        函数: GetLastCreatedUnit
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h00O
+        预设: PlayerNP
+        函数: GetRectCenter
+            变量: gg_rct_Region_013_Copy_3
+        预设: RealUnitFacing
+    SetVariable
+        变量: Orb12
+        函数: GetLastCreatedUnit
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h00O
+        预设: PlayerNP
+        函数: GetRectCenter
+            变量: gg_rct_Region_013_Copy_8
+        预设: RealUnitFacing
+    SetVariable
+        变量: Orb32
+        函数: GetLastCreatedUnit
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h00P
+        预设: PlayerNP
+        函数: GetRectCenter
+            变量: gg_rct_Region_013_Copy_6
+        预设: RealUnitFacing
+    SetVariable
+        变量: Orb33
+        函数: GetLastCreatedUnit
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h00P
+        预设: PlayerNP
+        函数: GetRectCenter
+            变量: gg_rct_Region_013_Copy_5
+        预设: RealUnitFacing
+    SetVariable
+        变量: Orb13
+        函数: GetLastCreatedUnit
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h00P
+        预设: PlayerNP
+        函数: GetRectCenter
+            变量: gg_rct_Region_013_Copy_2
+        预设: RealUnitFacing
+    SetVariable
+        变量: Orb23
+        函数: GetLastCreatedUnit
+    TriggerSleepAction
+        常量: 0.50
+    SelectUnitSingle
+        变量: gg_unit_H00E_0012
+    SetMusicVolumeBJ
+        常量: 50.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 19.00
+        常量: '|cffffcc00萨那尔:|r 啊啊..你成长之快真是引人注目.寻找并带来两个波伊斯兆示,给我看了之后会结束你现在的形态,赋予你冰裔真正的姿态.
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Thunar3
+    TriggerSleepAction
+        常量: 19.00
+    SetMusicVolumeBJ
+        常量: 100.00
+    CreateQuestItemBJ
+        变量: QuestMain
+        常量: 获得二个波伊斯兆示并带给萨那尔
+    SetVariable
+        变量: QuestMainReq1
+        函数: GetLastCreatedQuestItemBJ
+    FlashQuestDialogButtonBJ
+    PlaySoundBJ
+        变量: gg_snd_QuestLog
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cffffcc00 - 得到两个波伊斯兆示并带给萨那尔|r
+
+'

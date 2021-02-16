@@ -1,0 +1,60 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventHeroUseItem
+条件
+    OperatorCompareItemCode
+        函数: GetItemTypeId
+            函数: GetManipulatedItem
+        预设: OperatorEqualENE
+        常量: I013
+动作
+    StopSoundBJ
+        变量: gg_snd_Shockwave
+        预设: FadeDontDont
+    PlaySoundBJ
+        变量: gg_snd_Shockwave
+    ShowUnitShow
+        变量: gg_unit_h01Y_0057
+    ShowUnitShow
+        变量: gg_unit_h01Y_0044
+    ShowUnitShow
+        变量: gg_unit_h01Y_0058
+    SetUnitAnimation
+        变量: gg_unit_h01Y_0057
+        常量: birth
+    SetUnitAnimation
+        变量: gg_unit_h01Y_0044
+        常量: birth
+    SetUnitAnimation
+        变量: gg_unit_h01Y_0058
+        常量: birth
+    TriggerSleepAction
+        常量: 1.00
+    SetUnitAnimation
+        变量: gg_unit_h01Y_0057
+        常量: stand
+    SetUnitAnimation
+        变量: gg_unit_h01Y_0044
+        常量: stand
+    SetUnitAnimation
+        变量: gg_unit_h01Y_0058
+        常量: stand
+    TriggerSleepAction
+        常量: 20.00
+    SetUnitAnimation
+        变量: gg_unit_h01Y_0057
+        常量: birth
+    SetUnitAnimation
+        变量: gg_unit_h01Y_0044
+        常量: birth
+    SetUnitAnimation
+        变量: gg_unit_h01Y_0058
+        常量: birth
+    TriggerSleepAction
+        常量: 1.00
+    ShowUnitHide
+        变量: gg_unit_h01Y_0044
+    ShowUnitHide
+        变量: gg_unit_h01Y_0058
+    ShowUnitHide
+        变量: gg_unit_h01Y_0057

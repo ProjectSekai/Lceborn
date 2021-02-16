@@ -1,0 +1,24 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OperatorCompareAbilityId
+        函数: GetSpellAbilityId
+        预设: OperatorEqualENE
+        常量: A06W
+动作
+    SetVariable
+        变量: UraSwarmPoint
+        函数: GetSpellTargetLoc
+    SetVariable
+        变量: UrsSwarmPosition
+        函数: GetUnitLoc
+            函数: GetTriggerUnit
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetTriggerUnit
+        常量: EvilWave_EffectEdited.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    TriggerExecute
+        变量: gg_trg_Urathol_Swarm_Effect

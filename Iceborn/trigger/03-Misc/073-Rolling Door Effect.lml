@@ -1,0 +1,23 @@
+事件
+    TriggerRegisterTimerEventPeriodic
+        常量: 0.25
+条件
+动作
+    AddSpecialEffectLocBJ
+        函数: GetRectCenter
+            变量: gg_rct_Region_155
+        常量: Objects\Spawnmodels\Undead\ImpaleTargetDust\ImpaleTargetDust.mdl
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: GetRectCenter
+            变量: gg_rct_Region_155_Copy_2
+        常量: Objects\Spawnmodels\Undead\ImpaleTargetDust\ImpaleTargetDust.mdl
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: GetRectCenter
+            变量: gg_rct_Region_155_Copy
+        常量: Objects\Spawnmodels\Undead\ImpaleTargetDust\ImpaleTargetDust.mdl
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ

@@ -1,0 +1,199 @@
+事件
+条件
+动作
+    IssuePointOrderLoc
+        变量: gg_unit_h05M_0422
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_328
+    IssuePointOrderLoc
+        变量: gg_unit_h05M_0421
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_329
+    IssuePointOrderLoc
+        变量: gg_unit_h05M_0423
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_327
+    IssuePointOrderLoc
+        变量: gg_unit_h05M_0424
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_330
+    RemoveUnit
+        变量: gg_unit_H04N_0368
+    RemoveUnit
+        变量: gg_unit_H01N_0420
+    RemoveUnit
+        变量: gg_unit_H04O_0373
+    RemoveUnit
+        变量: gg_unit_H00D_0432
+    RemoveUnit
+        变量: gg_unit_H04M_0416
+    ShowUnitShow
+        变量: gg_unit_H06F_0415
+    SetUnitPositionLocFacingLocBJ
+        变量: gg_unit_H06F_0415
+        函数: GetRectCenter
+            变量: gg_rct_Region_343
+        函数: GetRectCenter
+            变量: gg_rct_Region_344
+    SetUnitPositionLocFacingLocBJ
+        变量: Hero
+        函数: GetRectCenter
+            变量: gg_rct_Region_312
+        函数: GetRectCenter
+            变量: gg_rct_Region_339_Copy
+    ShowUnitShow
+        变量: gg_unit_H03Q_0374
+    ShowUnitShow
+        变量: gg_unit_H06N_0376
+    ShowUnitShow
+        变量: gg_unit_H06O_0377
+    SetUnitPositionLoc
+        变量: gg_unit_H03Q_0374
+        函数: GetRectCenter
+            变量: gg_rct_Region_351
+    RemoveUnit
+        变量: gg_unit_H06C_0375
+    PauseUnitBJ
+        预设: PauseUnpauseOptionPause
+        变量: gg_unit_H03Q_0374
+    PauseUnitBJ
+        预设: PauseUnpauseOptionPause
+        变量: gg_unit_H06F_0415
+    AddUnitAnimationPropertiesBJ
+        预设: AddRemoveAdd
+        常量: 'ready first'
+        变量: gg_unit_H06O_0377
+    AddUnitAnimationPropertiesBJ
+        预设: AddRemoveAdd
+        常量: fast
+        变量: gg_unit_H06O_0377
+    AddUnitAnimationPropertiesBJ
+        预设: AddRemoveAdd
+        常量: alternate
+        变量: gg_unit_h06S_0381
+    ConditionalTriggerExecute
+        变量: gg_trg_Unhide_Wave
+    EnableTrigger
+        变量: gg_trg_Constant_P1
+    EnableTrigger
+        变量: gg_trg_Farazeth_Movement
+    EnableTrigger
+        变量: gg_trg_Teleportation_Window_Siege
+    DisableTrigger
+        变量: gg_trg_Teleportation_Window
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeIn
+        常量: 2.00
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    CinematicModeBJ
+        预设: OnOffOff
+        函数: GetPlayersAll
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Default
+        预设: Player00
+        常量: 0
+    SetTerrainFogExBJ
+        预设: FogStyleLinear
+        常量: 500.00
+        常量: 3500.00
+        常量: 0.50
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+    SetSkyModel
+        预设: SkyModelSky08
+    SetCameraFieldForPlayer
+        预设: Player00
+        预设: CameraFieldFarZ
+        常量: 8000.00
+        常量: 0
+    SelectUnitSingle
+        变量: Hero
+    SetCameraTargetControllerNoZForPlayer
+        预设: Player00
+        变量: Hero
+        常量: 0
+        常量: 0
+        预设: CameraOrientationNormal
+    DisableTrigger
+        变量: gg_trg_Hero_Lock
+    EnableTrigger
+        变量: gg_trg_Hero_Lock_Confrontation
+    ClearMapMusicBJ
+    EndThematicMusicBJ
+    StopMusicBJ
+        预设: FadeDontDont
+    PlayMusicBJ
+        变量: gg_snd_LichKing_Icy
+    QuestItemSetCompletedBJ
+        变量: QuestMainReq1
+        预设: CompletionOptionCompleted
+    QuestSetCompletedBJ
+        变量: QuestMain
+        预设: CompletionOptionCompleted
+    TriggerSleepAction
+        常量: 2
+    SetUnitOwner
+        变量: gg_unit_H03Q_0374
+        预设: PlayerNA
+        预设: ChangeColorFalse
+    SetUnitOwner
+        变量: gg_unit_H06F_0415
+        预设: PlayerNA
+        预设: ChangeColorFalse
+    ForGroup
+        变量: Hostile
+        动作: IssuePointOrderLoc
+            函数: GetEnumUnit
+            预设: UnitOrderPatrol
+            函数: GetRectCenter
+                变量: gg_rct_Region_313_Copy_2
+    CreateQuestBJ
+        预设: QuestTypeReqDiscovered
+        常量: 算账
+        常量: 苍蓝要塞已经被乌拉索尔的手下攻击,他们的第一波军势着实庞大.我必须帮助我的同盟保护被所有人作为的目标的统治者泰尔卓.泰尔卓与诺索拉姆不能死亡.
+        常量: ReplaceableTextures\CommandButtons\BTNCrystallya.blp
+    SetVariable
+        变量: QuestMain
+        函数: GetLastCreatedQuestBJ
+    CreateQuestItemBJ
+        变量: QuestMain
+        常量: 撑住第一波
+    SetVariable
+        变量: QuestMainReq1
+        函数: GetLastCreatedQuestItemBJ
+    FlashQuestDialogButtonBJ
+    PlaySoundBJ
+        变量: gg_snd_QuestLog
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cffffcc00 - 撑住第一波
+ - 泰尔卓&诺索拉姆必须存活|r
+
+'
+    TriggerSleepAction
+        常量: 2
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cff7777aa提示: 推荐保存游戏.|r
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Hint
+    EnableTrigger
+        变量: gg_trg_Spawn_Hostile
+    EnableTrigger
+        变量: gg_trg_Spawn_Ally
+    ConditionalTriggerExecute
+        变量: gg_trg_Spawn_Ally
+    ConditionalTriggerExecute
+        变量: gg_trg_Spawn_Hostile

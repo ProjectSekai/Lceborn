@@ -1,0 +1,27 @@
+事件
+    TriggerRegisterUnitLifeEvent
+        变量: gg_unit_H06F_0415
+        预设: LimitOpLessThanOrEqual
+        常量: 15000.00
+条件
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    EnableTrigger
+        变量: gg_trg_Blizzard
+    TriggerExecute
+        变量: gg_trg_Blizzard
+    SetMusicVolumeBJ
+        常量: 50.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 3.00
+        常量: '|cffffcc00乌拉索尔:|r 不要认为你能戏弄我!
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Urathol38
+    TriggerSleepAction
+        常量: 3.00
+    SetMusicVolumeBJ
+        常量: 100.00

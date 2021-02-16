@@ -1,0 +1,35 @@
+事件
+    TriggerRegisterEnterRectSimple
+        变量: gg_rct_Region_112
+条件
+    OperatorCompareUnit
+        函数: GetEnteringUnit
+        预设: OperatorEqualENE
+        变量: Hero
+动作
+    PlaySoundBJ
+        变量: gg_snd_BanishCaster
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeOut
+        常量: 0.50
+        预设: CineFilterTextureDream
+        常量: 0.00
+        常量: 0.00
+        常量: 100.00
+        常量: 20.00
+    ShowUnitShow
+        变量: gg_unit_h02J_0148
+    ShowUnitShow
+        变量: Ghartek1
+    ShowUnitShow
+        变量: Ghartek2
+    ShowUnitShow
+        变量: Ghartek3
+    ShowUnitShow
+        变量: Ghartek4
+    ShowUnitShow
+        变量: Ghartek5
+    ShowUnitShow
+        变量: Ghartek6
+    ShowUnitShow
+        变量: Ghartek7

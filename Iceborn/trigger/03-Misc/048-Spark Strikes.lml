@@ -1,0 +1,22 @@
+事件
+    TriggerRegisterTimerEventPeriodic
+        常量: 0.50
+条件
+动作
+    IssueTargetOrder
+        变量: gg_unit_h020_0105
+        预设: UnitOrderChainLightning
+        变量: Hero
+    IssueTargetOrder
+        变量: gg_unit_h020_0105
+        预设: UnitOrderChainLightning
+        变量: SummonedElemental1
+    IfThenElse
+        条件: OperatorCompareBoolean
+            函数: IsUnitDeadBJ
+                变量: gg_unit_h020_0105
+            预设: OperatorEqualENE
+            常量: true
+        动作: DisableTrigger
+            函数: GetTriggeringTrigger
+        动作: DoNothing

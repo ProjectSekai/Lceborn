@@ -1,0 +1,80 @@
+事件
+    TriggerRegisterTimerEventPeriodic
+        常量: 11.00
+条件
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: UnitHasItemOfTypeBJ
+                    变量: Hero
+                    常量: I00P
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: AAPOINT
+                函数: GetUnitLoc
+                    变量: Hero
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h012
+                预设: Player00
+                变量: AAPOINT
+                预设: RealUnitFacing
+            CustomScriptCode
+                常量: 'call RemoveLocation(udg_AAPOINT)'
+            SetVariable
+                变量: AAPOINT
+                函数: GetUnitLoc
+                    变量: Hero
+            SetVariable
+                变量: AAGROUP
+                函数: GetUnitsInRangeOfLocAll
+                    常量: 280.00
+                    变量: AAPOINT
+            ForGroupMultiple
+                变量: AAGROUP
+                动作
+                    IfThenElseMultiple
+                        条件
+                            AndMultiple
+                                条件
+                                    OperatorCompareBoolean
+                                        函数: IsUnitEnemy
+                                            函数: GetEnumUnit
+                                            预设: Player00
+                                        预设: OperatorEqualENE
+                                        常量: true
+                                    OperatorCompareBoolean
+                                        函数: IsUnitType
+                                            函数: GetEnumUnit
+                                            预设: UnitTypeHero
+                                        预设: OperatorEqualENE
+                                        常量: false
+                                    OperatorCompareBoolean
+                                        函数: IsUnitAliveBJ
+                                            函数: GetEnumUnit
+                                        预设: OperatorEqualENE
+                                        常量: true
+                                    OperatorCompareBoolean
+                                        函数: IsUnitType
+                                            函数: GetEnumUnit
+                                            预设: UnitTypeMagicImmune
+                                        预设: OperatorEqualENE
+                                        常量: false
+                        动作
+                            GroupAddUnitSimple
+                                函数: GetEnumUnit
+                                变量: GuardFreezeGroup
+            CustomScriptCode
+                常量: 'call DestroyGroup(udg_AAGROUP)'
+            CustomScriptCode
+                常量: 'call RemoveLocation(udg_AAPOINT)'
+            IssueTargetOrder
+                函数: GetLastCreatedUnit
+                预设: UnitOrderSlow
+                函数: GroupPickRandomUnit
+                    变量: GuardFreezeGroup
+            GroupClear
+                变量: GuardFreezeGroup

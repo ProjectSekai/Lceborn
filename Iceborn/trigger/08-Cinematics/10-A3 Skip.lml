@@ -1,0 +1,77 @@
+事件
+    TriggerRegisterPlayerEventEndCinematic
+        预设: Player00
+条件
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    CinematicModeBJ
+        预设: OnOffOff
+        函数: GetPlayersAll
+    SetVariable
+        变量: CinematicSkipped3
+        常量: true
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeOut
+        常量: 0.50
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    TriggerSleepAction
+        常量: 0.70
+    ShowUnitShow
+        变量: gg_unit_H03O_0108
+    SetUnitTimeScalePercent
+        变量: gg_unit_H03O_0108
+        常量: 100.00
+    ShowUnitHide
+        变量: gg_unit_H03Q_0153
+    ShowUnitHide
+        变量: gg_unit_H00D_0154
+    ResetUnitAnimation
+        变量: Hero
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeIn
+        常量: 2.00
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    CinematicModeBJ
+        预设: OnOffOff
+        函数: GetPlayersAll
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Default
+        预设: Player00
+        常量: 0
+    SetTerrainFogExBJ
+        预设: FogStyleLinear
+        常量: 1000.00
+        常量: 3100.00
+        常量: 0.50
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+    SetCameraFieldForPlayer
+        预设: Player00
+        预设: CameraFieldFarZ
+        常量: 8000.00
+        常量: 0
+    SelectUnitSingle
+        变量: Hero
+    SetCameraTargetControllerNoZForPlayer
+        预设: Player00
+        变量: Hero
+        常量: 0
+        常量: 0
+        预设: CameraOrientationNormal
+    DisableTrigger
+        变量: gg_trg_Hero_Face_Order
+    EnableTrigger
+        变量: gg_trg_Hero_Lock
+    TriggerExecute
+        变量: gg_trg_Gornunshanni_Set_Up

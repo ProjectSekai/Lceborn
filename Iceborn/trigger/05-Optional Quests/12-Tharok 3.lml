@@ -1,0 +1,53 @@
+事件
+条件
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    IssuePointOrderLoc
+        变量: gg_unit_h02R_0172
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_160
+    SetMusicVolumeBJ
+        常量: 50.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 4.00
+        常量: '|cffffcc00山萨洛克:|r 让我们尽快把石头拿到手,走!
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Tharok5
+    UnitRemoveAbilityBJ
+        常量: Avul
+        变量: gg_unit_h02R_0172
+    EnableTrigger
+        变量: gg_trg_Tharok_Order
+    CreateFogModifierRectBJ
+        预设: EnabledDisabledEnabled
+        预设: Player01
+        预设: FogStateVisible
+        变量: gg_rct_Region_381
+    FogModifierStart
+        函数: GetLastCreatedFogModifier
+    TriggerSleepAction
+        常量: 5.00
+    SetMusicVolumeBJ
+        常量: 100.00
+    QuestItemSetCompletedBJ
+        变量: QuestOptional4Req1
+        预设: CompletionOptionCompleted
+    CreateQuestItemBJ
+        变量: QuestOptional4
+        常量: 打倒乌拉索尔的军队并到达预知之石处
+    SetVariable
+        变量: QuestOptional4Req1
+        函数: GetLastCreatedQuestItemBJ
+    FlashQuestDialogButtonBJ
+    PlaySoundBJ
+        变量: gg_snd_QuestLog
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cffffcc00 - 打倒乌拉索尔的军队并到达预知之石处|r
+
+'

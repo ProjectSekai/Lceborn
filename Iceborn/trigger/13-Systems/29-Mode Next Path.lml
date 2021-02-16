@@ -1,0 +1,23 @@
+事件
+    TriggerRegisterDialogEventBJ
+        变量: Dialog
+条件
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    IfThenElse
+        条件: OperatorCompareButton
+            函数: GetClickedButtonBJ
+            预设: OperatorEqualENE
+            变量: DialogButton1
+        动作: TriggerExecute
+            变量: gg_trg_Normal_Mode
+        动作: DoNothing
+    IfThenElse
+        条件: OperatorCompareButton
+            函数: GetClickedButtonBJ
+            预设: OperatorEqualENE
+            变量: DialogButton2
+        动作: TriggerExecute
+            变量: gg_trg_Advanced_Mode
+        动作: DoNothing

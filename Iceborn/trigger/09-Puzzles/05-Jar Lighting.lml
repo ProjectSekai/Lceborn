@@ -1,0 +1,43 @@
+事件
+条件
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: JarLighting
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            ReturnAction
+        动作
+            SetVariable
+                变量: JarLighting
+                常量: true
+    SetUnitAnimation
+        变量: gg_unit_h027_0112
+        常量: stand
+    SetUnitAnimation
+        变量: gg_unit_h027_0127
+        常量: stand
+    SetUnitAnimation
+        变量: gg_unit_h027_0119
+        常量: stand
+    SetUnitAnimation
+        变量: gg_unit_h027_0129
+        常量: stand
+    KillDestructable
+        变量: gg_dest_YTpc_6744
+    KillDestructable
+        变量: gg_dest_YTpc_6745
+    KillDestructable
+        变量: gg_dest_YTpc_6746
+    KillDestructable
+        变量: gg_dest_YTpc_6750
+    KillDestructable
+        变量: gg_dest_YTpc_6751
+    KillDestructable
+        变量: gg_dest_YTpc_6752
+    PlaySoundBJ
+        变量: gg_snd_UnholyFrenzyBirth1
+    TriggerExecute
+        变量: gg_trg_Varglo_4

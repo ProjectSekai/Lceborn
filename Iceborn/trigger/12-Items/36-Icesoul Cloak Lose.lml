@@ -1,0 +1,12 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventHeroDropItem
+条件
+    OperatorCompareItemCode
+        函数: GetItemTypeId
+            函数: GetManipulatedItem
+        预设: OperatorEqualENE
+        常量: I01A
+动作
+    DisableTrigger
+        变量: gg_trg_Icesoul_Loop

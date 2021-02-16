@@ -1,0 +1,22 @@
+事件
+    TriggerRegisterLeaveRectSimple
+        变量: gg_rct_Region_139_Copy_3
+    TriggerRegisterLeaveRectSimple
+        变量: gg_rct_Region_139_Copy_2
+    TriggerRegisterLeaveRectSimple
+        变量: gg_rct_Region_139_Copy
+    TriggerRegisterLeaveRectSimple
+        变量: gg_rct_Region_139
+    TriggerRegisterLeaveRectSimple
+        变量: gg_rct_Region_143
+    TriggerRegisterLeaveRectSimple
+        变量: gg_rct_Region_152
+条件
+    OperatorCompareUnit
+        函数: GetLeavingUnit
+        预设: OperatorEqualENE
+        变量: Hero
+动作
+    StopSoundBJ
+        变量: gg_snd_Electricity
+        预设: FadeDontDont

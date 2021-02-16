@@ -1,0 +1,65 @@
+事件
+    TriggerRegisterUnitInRangeSimple
+        常量: 200.00
+        变量: gg_unit_h01R_0083
+条件
+    OperatorCompareUnit
+        函数: GetTriggerUnit
+        预设: OperatorEqualENE
+        变量: Hero
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    SelectUnitSingle
+        变量: gg_unit_h01R_0083
+    DestroyEffectBJ
+        变量: Exclamation2
+    SetMusicVolumeBJ
+        常量: 50.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 32.00
+        常量: '|cffffcc00博尔:|r 热烈欢迎你,冰裔.我没有敌意,而且我和你期待的事情一样.我在这里度过了许多年,时日已经不多了,唯一的愿望就是离开这里,去看看这些冰冷的墙壁背后的世界,温暖我年迈又冰凉的心.
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Bor1
+    TriggerSleepAction
+        常量: 33.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 31.00
+        常量: '|cffffcc00博尔:|r 我已经老到不能为自己开一条路了,而我更愿意买一条通路,但我并没有暗夜水晶,不如从我这里买枚戒指吧.拜托,买了它或许我就不用腐烂在这里了.这枚戒指并不是寻常的珠宝,买了我就会告诉你,它背后的故事与能够获得巨大的力量的秘密.
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Bor2
+    TriggerSleepAction
+        常量: 32.00
+    SetMusicVolumeBJ
+        常量: 100.00
+    UnitAddAbilityBJ
+        常量: Aneu
+        变量: gg_unit_h01R_0083
+    CreateQuestBJ
+        预设: QuestTypeOptDiscovered
+        常量: 马纳索利克
+        常量: 我用暗夜水晶买博尔的戒指会使他从这个地方离开的通路顺畅,而他会告诉我戒指的故事和藏在其背后的力量的后续.
+        常量: 'ReplaceableTextures\CommandButtons\BTNColdFire Ring.blp'
+    SetVariable
+        变量: QuestOptional2
+        函数: GetLastCreatedQuestBJ
+    CreateQuestItemBJ
+        变量: QuestOptional2
+        常量: 买博尔的戒指
+    SetVariable
+        变量: QuestOptional2Req1
+        函数: GetLastCreatedQuestItemBJ
+    FlashQuestDialogButtonBJ
+    PlaySoundBJ
+        变量: gg_snd_QuestLog
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cffffcc00 - 买博尔的戒指|r
+
+'

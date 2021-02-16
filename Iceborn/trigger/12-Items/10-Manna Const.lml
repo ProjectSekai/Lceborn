@@ -1,0 +1,20 @@
+事件
+    TriggerRegisterTimerEventPeriodic
+        常量: 10.00
+条件
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: UnitHasItemOfTypeBJ
+                    变量: Hero
+                    常量: I00Y
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            UnitAddItemByIdSwapped
+                常量: I00Z
+                变量: Hero
+        动作
+            DisableTrigger
+                函数: GetTriggeringTrigger

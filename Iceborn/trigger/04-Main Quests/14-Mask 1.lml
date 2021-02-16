@@ -1,0 +1,195 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OperatorCompareAbilityId
+        函数: GetSpellAbilityId
+        预设: OperatorEqualENE
+        常量: A05L
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    SetVariable
+        变量: MaskON
+        常量: true
+    AddSpecialEffectTargetUnitBJ
+        常量: origin
+        变量: Hero
+        常量: ABirth_1.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    PlaySoundBJ
+        变量: gg_snd_EnergyExplosion
+    PlaySoundBJ
+        变量: gg_snd_ExplosionNoise
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeOutIn
+        常量: 2
+        预设: CineFilterTextureDream
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    UnitAddAbilityBJ
+        常量: A03B
+        变量: Hero
+    UnitRemoveAbilityBJ
+        常量: A000
+        变量: Hero
+    UnitAddAbilityBJ
+        常量: A05M
+        变量: Hero
+    UnitRemoveAbilityBJ
+        常量: A002
+        变量: Hero
+    UnitAddAbilityBJ
+        常量: A05N
+        变量: Hero
+    UnitRemoveAbilityBJ
+        常量: A001
+        变量: Hero
+    UnitAddAbilityBJ
+        常量: A05O
+        变量: Hero
+    UnitRemoveAbilityBJ
+        常量: A02U
+        变量: Hero
+    UnitAddAbilityBJ
+        常量: A05P
+        变量: Hero
+    CameraSetEQNoiseForPlayer
+        预设: Player00
+        常量: 5.00
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h03T
+        预设: PlayerNP
+        函数: GetRectCenter
+            变量: gg_rct_Region_271
+        预设: RealUnitFacing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h03T
+        预设: PlayerNP
+        函数: GetRectCenter
+            变量: gg_rct_Region_273_Copy
+        预设: RealUnitFacing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h03T
+        预设: PlayerNP
+        函数: GetRectCenter
+            变量: gg_rct_Region_273
+        预设: RealUnitFacing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h03T
+        预设: PlayerNP
+        函数: GetRectCenter
+            变量: gg_rct_Region_273_Copy_3
+        预设: RealUnitFacing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h03T
+        预设: PlayerNP
+        函数: GetRectCenter
+            变量: gg_rct_Region_273_Copy_2
+        预设: RealUnitFacing
+    TriggerSleepAction
+        常量: 1.00
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05N
+        预设: PlayerNP
+        函数: GetRectCenter
+            变量: gg_rct_Region_271
+        常量: 240.00
+    SetVariable
+        变量: BoethguardTalking
+        函数: GetLastCreatedUnit
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05M
+        预设: PlayerNP
+        函数: GetRectCenter
+            变量: gg_rct_Region_273_Copy
+        常量: 225.00
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05M
+        预设: PlayerNP
+        函数: GetRectCenter
+            变量: gg_rct_Region_273
+        常量: 225.00
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05M
+        预设: PlayerNP
+        函数: GetRectCenter
+            变量: gg_rct_Region_273_Copy_3
+        常量: 225.00
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05M
+        预设: PlayerNP
+        函数: GetRectCenter
+            变量: gg_rct_Region_273_Copy_2
+        常量: 225.00
+    CameraClearNoiseForPlayer
+        预设: Player00
+    TriggerSleepAction
+        常量: 4.00
+    SelectUnitForPlayerSingle
+        变量: BoethguardTalking
+        预设: Player00
+    SetMusicVolumeBJ
+        常量: 50.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 23.00
+        常量: '|cffffcc00波伊斯守卫:|r 我们是波伊斯守卫,我们发誓跟随携有面具的那个人直至最后一口气.我们是寒冷与生长的力量,无论是谁掌握着面具的力量,尽管命令我们.
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Boethguard1
+    TriggerSleepAction
+        常量: 25.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 30.00
+        常量: '|cffffcc00波伊斯守卫:|r 波伊斯人发觉了乌拉索尔狡猾的计划,一旦你准备完毕就会开始进攻.我们将你传送到那里之后就没有办法再回来了.你是否准备好加入战场,将我们的铁锤放到任务上.你准备好了?
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Boethguard2
+    TriggerSleepAction
+        常量: 31.00
+    SetMusicVolumeBJ
+        常量: 100.00
+    TriggerSleepAction
+        常量: 2
+    EnableTrigger
+        变量: gg_trg_Mask_2
+    EnableTrigger
+        变量: gg_trg_Mask_Dialog_Checkup
+    DialogClearBJ
+        变量: Dialog
+    DialogSetMessageBJ
+        变量: Dialog
+        常量: 你准备好了吗?
+    DialogAddButtonBJ
+        变量: Dialog
+        常量: |CFF7EBFF1让我们开战吧|R
+    SetVariable
+        变量: DialogButton1
+        函数: GetLastCreatedButtonBJ
+    DialogAddButtonBJ
+        变量: Dialog
+        常量: |CFF7EBFF1还不行|R
+    SetVariable
+        变量: DialogButton2
+        函数: GetLastCreatedButtonBJ
+    DialogDisplayBJ
+        预设: ShowHideShow
+        变量: Dialog
+        预设: Player00

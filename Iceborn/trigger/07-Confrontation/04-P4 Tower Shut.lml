@@ -1,0 +1,117 @@
+事件
+    TriggerRegisterEnterRectSimple
+        变量: gg_rct_Region_362
+条件
+    OperatorCompareUnit
+        函数: GetEnteringUnit
+        预设: OperatorEqualENE
+        变量: gg_unit_h06S_0381
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    IssueImmediateOrder
+        变量: gg_unit_h06S_0381
+        预设: UnitOrderStop
+    PauseUnitBJ
+        预设: PauseUnpauseOptionPause
+        变量: gg_unit_h06S_0381
+    TriggerSleepAction
+        常量: 0.20
+    SetUnitFacingToFaceLocTimed
+        变量: gg_unit_h06S_0381
+        函数: GetRectCenter
+            变量: gg_rct_Region_363
+        常量: 2.00
+    SetUnitAnimation
+        变量: gg_unit_h06S_0381
+        常量: 'spell channel'
+    PlaySoundBJ
+        变量: gg_snd_TranquilityHealLoop1
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h00H
+        预设: Player01
+        函数: GetUnitLoc
+            变量: gg_unit_h06S_0381
+        函数: GetUnitFacing
+            变量: Hero
+    SetVariable
+        变量: TeleProg2
+        函数: GetLastCreatedUnit
+    SetUnitTimeScalePercent
+        变量: TeleProg2
+        常量: 7.00
+    TriggerSleepAction
+        常量: 13.00
+    KillUnit
+        变量: TeleProg2
+    SetUnitTimeScalePercent
+        变量: TeleProg2
+        常量: 1000.00
+    ResetUnitAnimation
+        变量: gg_unit_h06S_0381
+    IfThenElse
+        条件: OperatorCompareBoolean
+            函数: IsUnitDeadBJ
+                变量: gg_unit_h06S_0381
+            预设: OperatorEqualENE
+            常量: true
+        动作: ReturnAction
+        动作: DoNothing
+    PauseUnitBJ
+        预设: PauseUnpauseOptionUnpause
+        变量: gg_unit_h06S_0381
+    DisableTrigger
+        变量: gg_trg_Machine_Death
+    DisableTrigger
+        变量: gg_trg_Cleansing_Tower
+    DisableTrigger
+        变量: gg_trg_Premature_Provoke_1
+    DisableTrigger
+        变量: gg_trg_Premature_Provoke_2
+    DisableTrigger
+        变量: gg_trg_Spawn_Hostile
+    PlaySoundBJ
+        变量: gg_snd_Minigun
+    PlaySoundBJ
+        变量: gg_snd_Explosion8
+    QuestItemSetCompletedBJ
+        变量: QuestMainReq1
+        预设: CompletionOptionCompleted
+    TriggerSleepAction
+        常量: 2
+    IssuePointOrderLoc
+        变量: gg_unit_h06S_0381
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_364
+    CreateQuestItemBJ
+        变量: QuestMain
+        常量: 打倒乌拉索尔
+    SetVariable
+        变量: QuestMainReq1
+        函数: GetLastCreatedQuestItemBJ
+    QuestSetDescriptionBJ
+        变量: QuestMain
+        常量: 乌拉索尔已经被激怒,一场寒霜天地与乌拉索尔的决战即将发生.这场战斗是我作为冰裔的最后一场挑战.
+    FlashQuestDialogButtonBJ
+    PlaySoundBJ
+        变量: gg_snd_QuestLog
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cffffcc00 - 打倒乌拉索尔
+ - 泰尔卓与诺索拉姆不能阵亡|r
+
+'
+    TriggerSleepAction
+        常量: 2
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: IsTriggerEnabled
+                    变量: gg_trg_P5_Provocation
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            TriggerExecute
+                变量: gg_trg_P5_Provocation

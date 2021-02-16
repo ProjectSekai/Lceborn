@@ -1,0 +1,119 @@
+事件
+条件
+动作
+    DisableTrigger
+        变量: gg_trg_A1_Skip
+    CustomScriptCode
+        常量: 'call StopSound(bj_nightAmbientSound, true, false)'
+    CustomScriptCode
+        常量: 'call StopSound(bj_dayAmbientSound, true, false)'
+    CinematicModeBJ
+        预设: OnOffOff
+        函数: GetPlayersAll
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Default
+        预设: Player00
+        常量: 0
+    SetCameraTargetControllerNoZForPlayer
+        预设: Player00
+        变量: gg_unit_h00K_0025
+        常量: 0
+        常量: 0
+        预设: CameraOrientationNormal
+    EnableTrigger
+        变量: gg_trg_HeroBorn_Lock
+    SetTerrainFogExBJ
+        预设: FogStyleLinear
+        常量: 750.00
+        常量: 3000.00
+        常量: 0.50
+        常量: 40.00
+        常量: 40.00
+        常量: 100
+    StopMusicBJ
+        预设: FadeDontDont
+    PlayMusicBJ
+        变量: gg_snd_Joshua_Buck___Forest_Tales
+    SetCameraFieldForPlayer
+        预设: Player00
+        预设: CameraFieldFarZ
+        常量: 8000.00
+        常量: 0
+    SelectUnitSingle
+        变量: HeroBorn
+    EnableTrigger
+        变量: gg_trg_Guardian_Sounds
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeIn
+        常量: 0.50
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    SetMusicVolumeBJ
+        常量: 20.00
+    IssuePointOrderLoc
+        变量: gg_unit_h00F_0017
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_005
+    TriggerSleepAction
+        常量: 1.00
+    SetMusicVolumeBJ
+        常量: 40.00
+    ConditionalTriggerExecute
+        变量: gg_trg_Mode_Selection
+    SetSkyModel
+        预设: SkyModelSky04
+    TriggerSleepAction
+        常量: 2.00
+    SetMusicVolumeBJ
+        常量: 60.00
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cffffcc00波 伊 斯 天 空|r
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Hint
+    TriggerSleepAction
+        常量: 3.00
+    SetMusicVolumeBJ
+        常量: 80.00
+    CreateQuestBJ
+        预设: QuestTypeReqDiscovered
+        常量: 世界之雏
+        常量: 崭新鲜生的存在觉醒在严峻却又迷人的冰雪世界.身体还没有成形,需要被赋予完整的的姿态.
+        常量: ReplaceableTextures\CommandButtons\BTNSpiritIce.blp
+    SetVariable
+        变量: QuestMain
+        函数: GetLastCreatedQuestBJ
+    CreateQuestItemBJ
+        变量: QuestMain
+        常量: 寻找萨那尔
+    SetVariable
+        变量: QuestMainReq1
+        函数: GetLastCreatedQuestItemBJ
+    FlashQuestDialogButtonBJ
+    PlaySoundBJ
+        变量: gg_snd_QuestLog
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cffffcc00 - 寻找萨那尔|r
+
+'
+    TriggerSleepAction
+        常量: 2.00
+    SetMusicVolumeBJ
+        常量: 100.00
+    TriggerSleepAction
+        常量: 5.00
+    PlaySoundBJ
+        变量: gg_snd_Hint
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cff7777aa注意: 在游戏崩溃之后试图读取保存的游戏,请尝试重新打开游戏.不断保存至少3个存档文件以避免数据丢失.|r
+
+'

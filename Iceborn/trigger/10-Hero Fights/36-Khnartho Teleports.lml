@@ -1,0 +1,14 @@
+事件
+    TriggerRegisterTimerEventPeriodic
+        常量: 2
+条件
+动作
+    CustomScriptCode
+        常量: 'if not(IsUnitInRange(udg_Hero, udg_Khnartho, 500)) then'
+    IssuePointOrderLoc
+        变量: Khnartho
+        预设: UnitOrderBlink
+        函数: GetUnitLoc
+            变量: Hero
+    CustomScriptCode
+        常量: endif

@@ -1,0 +1,799 @@
+事件
+条件
+动作
+    ClearMapMusicBJ
+    EndThematicMusicBJ
+    StopMusicBJ
+        预设: FadeDontDont
+    PlaySoundBJ
+        变量: gg_snd_Joshua_Buck___Death_s_ChantSOUND
+    PlaySoundBJ
+        变量: gg_snd_ObsidianAvengerYes1
+    IssuePointOrderLoc
+        变量: gg_unit_H05R_0356
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_286
+    SetUnitTimeScalePercent
+        变量: gg_unit_H05R_0356
+        常量: 100
+    PolledWait
+        常量: 2.00
+    SetTerrainFogExBJ
+        预设: FogStyleLinear
+        常量: 500.00
+        常量: 4500.00
+        常量: 0
+        常量: 100
+        常量: 100
+        常量: 100
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_115
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_116
+        预设: Player00
+        常量: 7.00
+    PlaySoundBJ
+        变量: gg_snd_Northorum19Shout
+    SetUnitAnimation
+        变量: gg_unit_H01N_0355
+        常量: 'spell channel throw'
+    UnitAddAbilityBJ
+        常量: A05Q
+        变量: gg_unit_H01N_0355
+    PlaySoundBJ
+        变量: gg_snd_SpiritLink1
+    TriggerSleepAction
+        常量: 2
+    ResetUnitAnimation
+        变量: gg_unit_H01N_0355
+    SetUnitAnimation
+        变量: gg_unit_H01N_0355
+        常量: spell
+    IssueImmediateOrder
+        变量: gg_unit_H05R_0356
+        预设: UnitOrderStop
+    SetUnitTimeScalePercent
+        变量: gg_unit_H05R_0356
+        常量: 0.00
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05S
+        预设: PlayerNP
+        函数: GetUnitLoc
+            变量: gg_unit_H05R_0356
+        常量: 180.00
+    SetVariable
+        变量: Icing
+        函数: GetLastCreatedUnit
+    CameraSetEQNoiseForPlayer
+        预设: Player00
+        常量: 10.00
+    PlaySoundBJ
+        变量: gg_snd_IceCrackLoud
+    PlaySoundBJ
+        变量: gg_snd_DeathknightStrikeLoud
+    TriggerSleepAction
+        常量: 0.30
+    SetUnitTimeScalePercent
+        变量: Icing
+        常量: 0.00
+    TriggerSleepAction
+        常量: 0.20
+    CameraClearNoiseForPlayer
+        预设: Player00
+    TriggerSleepAction
+        常量: 0.90
+    AddUnitAnimationPropertiesBJ
+        预设: AddRemoveAdd
+        常量: fast
+        变量: gg_unit_H01N_0355
+    SetUnitMoveSpeed
+        变量: gg_unit_H01N_0355
+        常量: 300.00
+    IssuePointOrderLoc
+        变量: gg_unit_H01N_0355
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_285_Copy
+    UnitRemoveAbilityBJ
+        常量: A05Q
+        变量: gg_unit_H01N_0355
+    TriggerSleepAction
+        常量: 2.00
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_117
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_118
+        预设: Player00
+        常量: 7.00
+    TriggerSleepAction
+        常量: 2.70
+    SetUnitFacingToFaceUnitTimed
+        变量: gg_unit_H01N_0355
+        变量: gg_unit_H05R_0356
+        常量: 0.50
+    PlaySoundBJ
+        变量: gg_snd_Northorum19Shout
+    SetUnitAnimation
+        变量: gg_unit_H01N_0355
+        常量: 'spell channel throw'
+    UnitAddAbilityBJ
+        常量: A05Q
+        变量: gg_unit_H01N_0355
+    PlaySoundBJ
+        变量: gg_snd_SpiritLink1
+    TriggerSleepAction
+        常量: 3.00
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_119
+        预设: Player00
+        常量: 0
+    TriggerSleepAction
+        常量: 0.50
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05T
+        预设: Player00
+        函数: GetUnitLoc
+            变量: gg_unit_H05R_0356
+        预设: RealUnitFacing
+    CameraSetEQNoiseForPlayer
+        预设: Player00
+        常量: 15.00
+    PlaySoundBJ
+        变量: gg_snd_IceCrack
+    PlaySoundBJ
+        变量: gg_snd_ObsidianStatueYes2
+    TriggerSleepAction
+        常量: 0.30
+    SetUnitTimeScalePercent
+        变量: Icing
+        常量: 100.00
+    CameraClearNoiseForPlayer
+        预设: Player00
+    KillUnit
+        变量: Icing
+    SetUnitTimeScalePercent
+        变量: gg_unit_H05R_0356
+        常量: 100.00
+    SetUnitFacingToFaceUnitTimed
+        变量: gg_unit_H05R_0356
+        变量: gg_unit_H01N_0355
+        常量: 0.75
+    TriggerSleepAction
+        常量: 1.00
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_120
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_121
+        预设: Player00
+        常量: 5.00
+    SetUnitPositionLocFacingLocBJ
+        变量: gg_unit_H05R_0356
+        函数: GetRectCenter
+            变量: gg_rct_Region_286
+        函数: GetUnitLoc
+            变量: gg_unit_H01N_0355
+    TriggerSleepAction
+        常量: 0.50
+    ResetUnitAnimation
+        变量: gg_unit_H01N_0355
+    SetUnitAnimation
+        变量: gg_unit_H01N_0355
+        常量: 'spell slam'
+    TriggerSleepAction
+        常量: 0.50
+    CameraSetEQNoiseForPlayer
+        预设: Player00
+        常量: 25.00
+    PlaySoundBJ
+        变量: gg_snd_FrostNovaTarget1
+    PlaySoundBJ
+        变量: gg_snd_FreezingBreathTarget1
+    PlaySoundBJ
+        变量: gg_snd_IceCrack
+    PlaySoundBJ
+        变量: gg_snd_DeathknightStrikeLoud
+    PlaySoundBJ
+        变量: gg_snd_Shockwave
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05U
+        预设: Player01
+        函数: GetRectCenter
+            变量: gg_rct_Region_288
+        函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05U
+        预设: Player01
+        函数: GetRectCenter
+            变量: gg_rct_Region_288_Copy
+        函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05U
+        预设: Player01
+        函数: GetRectCenter
+            变量: gg_rct_Region_288_Copy_2
+        函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05U
+        预设: Player01
+        函数: GetRectCenter
+            变量: gg_rct_Region_288_Copy_3
+        函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05U
+        预设: Player01
+        函数: GetRectCenter
+            变量: gg_rct_Region_288_Copy_4
+        函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05U
+        预设: Player01
+        函数: GetRectCenter
+            变量: gg_rct_Region_288_Copy_5
+        函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05U
+        预设: Player01
+        函数: GetRectCenter
+            变量: gg_rct_Region_288_Copy_6
+        函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05U
+        预设: Player01
+        函数: GetRectCenter
+            变量: gg_rct_Region_288_Copy_6_Copy
+        函数: GetRandomDirectionDeg
+    AddSpecialEffectLocBJ
+        函数: GetRectCenter
+            变量: gg_rct_Region_288
+        常量: IceSlam.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: GetRectCenter
+            变量: gg_rct_Region_288_Copy
+        常量: IceSlam.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: GetRectCenter
+            变量: gg_rct_Region_288_Copy_2
+        常量: IceSlam.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: GetRectCenter
+            变量: gg_rct_Region_288_Copy_3
+        常量: IceSlam.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: GetRectCenter
+            变量: gg_rct_Region_288_Copy_4
+        常量: IceSlam.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: GetRectCenter
+            变量: gg_rct_Region_288_Copy_5
+        常量: IceSlam.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: GetRectCenter
+            变量: gg_rct_Region_288_Copy_6
+        常量: IceSlam.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: GetRectCenter
+            变量: gg_rct_Region_288_Copy_6_Copy
+        常量: IceSlam.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    TriggerSleepAction
+        常量: 0.50
+    PlaySoundBJ
+        变量: gg_snd_IceCrackLoud
+    PlaySoundBJ
+        变量: gg_snd_IceCrackBig
+    UnitRemoveAbilityBJ
+        常量: A05Q
+        变量: gg_unit_H01N_0355
+    SetUnitTimeScalePercent
+        变量: gg_unit_H05R_0356
+        常量: 0.00
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05V
+        预设: PlayerNP
+        函数: GetUnitLoc
+            变量: gg_unit_H05R_0356
+        函数: GetRandomDirectionDeg
+    SetVariable
+        变量: Icing
+        函数: GetLastCreatedUnit
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            变量: gg_unit_H05R_0356
+        常量: Frost_Nova_areaEMedium.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    TriggerSleepAction
+        常量: 0.50
+    CameraClearNoiseForPlayer
+        预设: Player00
+    TriggerSleepAction
+        常量: 0.50
+    ResetUnitAnimation
+        变量: gg_unit_H01N_0355
+    AddUnitAnimationPropertiesBJ
+        预设: AddRemoveRemove
+        常量: fast
+        变量: gg_unit_H01N_0355
+    TriggerSleepAction
+        常量: 1.50
+    SetUnitMoveSpeed
+        变量: gg_unit_H01N_0355
+        常量: 120.00
+    IssuePointOrderLoc
+        变量: gg_unit_H01N_0355
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_277
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_122
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_123
+        预设: Player00
+        常量: 9.00
+    TriggerSleepAction
+        常量: 8.00
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_124
+        预设: Player00
+        常量: 0
+    PlaySoundBJ
+        变量: gg_snd_Electricity
+    SetUnitFacingToFaceUnitTimed
+        变量: gg_unit_H01N_0355
+        变量: gg_unit_H05R_0356
+        常量: 3.00
+    TriggerSleepAction
+        常量: 3.00
+    PlaySoundBJ
+        变量: gg_snd_Northorum20Shout
+    TriggerSleepAction
+        常量: 1.00
+    RemoveUnit
+        变量: Icing
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_128
+        预设: Player00
+        常量: 0
+    CameraSetEQNoiseForPlayer
+        预设: Player00
+        常量: 20.00
+    StopSoundBJ
+        变量: gg_snd_Electricity
+        预设: FadeDontDont
+    PlaySoundBJ
+        变量: gg_snd_Explosion10Extended
+    PlaySoundBJ
+        变量: gg_snd_FrostNovaTarget1
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05W
+        预设: PlayerNP
+        函数: GetUnitLoc
+            变量: gg_unit_H05R_0356
+        预设: RealUnitFacing
+    SetVariable
+        变量: Icing
+        函数: GetLastCreatedUnit
+    IssueImmediateOrder
+        函数: GetLastCreatedUnit
+        预设: UnitOrderThunderClap
+    ResetUnitAnimation
+        变量: gg_unit_H01N_0355
+    SetUnitAnimation
+        变量: gg_unit_H01N_0355
+        常量: 'stand hit critical first'
+    SetUnitTimeScalePercent
+        变量: gg_unit_H01N_0355
+        常量: 10.00
+    QueueUnitAnimationBJ
+        变量: gg_unit_H01N_0355
+        常量: 'stand ready'
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeOut
+        常量: 0.20
+        预设: CineFilterTextureDream
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 30.00
+    TriggerSleepAction
+        常量: 0.50
+    SetUnitTimeScalePercent
+        变量: Icing
+        常量: 0.00
+    PlaySoundBJ
+        变量: gg_snd_FreezingBreathTarget1
+    TriggerSleepAction
+        常量: 4.00
+    PlaySoundBJ
+        变量: gg_snd_FreezingBreathTarget1
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeIn
+        常量: 0.20
+        预设: CineFilterTextureDream
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 30.00
+    CameraClearNoiseForPlayer
+        预设: Player00
+    IssueImmediateOrder
+        函数: GetLastCreatedUnit
+        预设: UnitOrderThunderClap
+    SetUnitTimeScalePercent
+        变量: gg_unit_H05R_0356
+        常量: 100
+    SetUnitTimeScalePercent
+        变量: gg_unit_H01N_0355
+        常量: 100.00
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_134
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_135
+        预设: Player00
+        常量: 5.00
+    SetUnitPositionLoc
+        变量: gg_unit_H01N_0355
+        函数: GetRectCenter
+            变量: gg_rct_Region_285_Copy_2
+    SetUnitFacingToFaceUnitTimed
+        变量: gg_unit_H05R_0356
+        变量: gg_unit_H01N_0355
+        常量: 0.75
+    TriggerSleepAction
+        常量: 0.10
+    RemoveUnit
+        变量: Icing
+    TriggerSleepAction
+        常量: 1.00
+    PlaySoundBJ
+        变量: gg_snd_ObsidianStatueYes3
+    PlaySoundBJ
+        变量: gg_snd_EnergyExplosion
+    SetUnitAnimation
+        变量: gg_unit_H05R_0356
+        常量: spell
+    QueueUnitAnimationBJ
+        变量: gg_unit_H05R_0356
+        常量: stand
+    AddSpecialEffectLocBJ
+        函数: GetRectCenter
+            变量: gg_rct_Region_288_Copy_6_Copy_2
+        常量: MeteorStrikeBlue.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    TriggerSleepAction
+        常量: 0.05
+    AddSpecialEffectLocBJ
+        函数: GetRectCenter
+            变量: gg_rct_Region_288_Copy_6_Copy_2_Copy
+        常量: MeteorStrikeBlue.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    TriggerSleepAction
+        常量: 0.05
+    AddSpecialEffectLocBJ
+        函数: GetRectCenter
+            变量: gg_rct_Region_288_Copy_6_Copy_2_Copy_2
+        常量: MeteorStrikeBlue.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    TriggerSleepAction
+        常量: 0.05
+    AddSpecialEffectLocBJ
+        函数: GetRectCenter
+            变量: gg_rct_Region_288_Copy_6_Copy_2_Copy_3
+        常量: MeteorStrikeBlue.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    TriggerSleepAction
+        常量: 0.05
+    StopSoundBJ
+        变量: gg_snd_BuildingDeathLargeOrc
+        预设: FadeDontDont
+    PlaySoundBJ
+        变量: gg_snd_BuildingDeathLargeOrc
+    AddSpecialEffectLocBJ
+        函数: GetRectCenter
+            变量: gg_rct_Region_288_Copy_6_Copy_2_Copy_4
+        常量: MeteorStrikeBlue.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    TriggerSleepAction
+        常量: 0.05
+    CameraSetEQNoiseForPlayer
+        预设: Player00
+        常量: 10.00
+    AddSpecialEffectLocBJ
+        函数: GetRectCenter
+            变量: gg_rct_Region_288_Copy_6_Copy_2_Copy_5
+        常量: MeteorStrikeBlue.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    TriggerSleepAction
+        常量: 0.05
+    AddSpecialEffectLocBJ
+        函数: GetRectCenter
+            变量: gg_rct_Region_288_Copy_6_Copy_2_Copy_6
+        常量: MeteorStrikeBlue.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    TriggerSleepAction
+        常量: 0.05
+    AddSpecialEffectLocBJ
+        函数: GetRectCenter
+            变量: gg_rct_Region_288_Copy_6_Copy_2_Copy_7
+        常量: MeteorStrikeBlue.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    TriggerSleepAction
+        常量: 0.05
+    AddSpecialEffectLocBJ
+        函数: GetRectCenter
+            变量: gg_rct_Region_288_Copy_6_Copy_2_Copy_8
+        常量: MeteorStrikeBlue.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    TriggerSleepAction
+        常量: 0.05
+    StopSoundBJ
+        变量: gg_snd_BuildingDeathLargeOrc
+        预设: FadeDontDont
+    PlaySoundBJ
+        变量: gg_snd_BuildingDeathLargeOrc
+    ResetUnitAnimation
+        变量: gg_unit_H01N_0355
+    SetUnitAnimation
+        变量: gg_unit_H01N_0355
+        常量: 'stand hit defend'
+    QueueUnitAnimationBJ
+        变量: gg_unit_H01N_0355
+        常量: 'stand ready'
+    TriggerSleepAction
+        常量: 0.50
+    StopSoundBJ
+        变量: gg_snd_BuildingDeathLargeOrc
+        预设: FadeDontDont
+    PlaySoundBJ
+        变量: gg_snd_BuildingDeathLargeOrc
+    SetUnitTimeScalePercent
+        变量: gg_unit_H01N_0355
+        常量: 0.00
+    TriggerSleepAction
+        常量: 0.50
+    StopSoundBJ
+        变量: gg_snd_BuildingDeathLargeOrc
+        预设: FadeDontDont
+    PlaySoundBJ
+        变量: gg_snd_BuildingDeathLargeOrc
+    TriggerSleepAction
+        常量: 0.50
+    StopSoundBJ
+        变量: gg_snd_BuildingDeathLargeOrc
+        预设: FadeDontDont
+    PlaySoundBJ
+        变量: gg_snd_BuildingDeathLargeOrc
+    CameraClearNoiseForPlayer
+        预设: Player00
+    SetUnitTimeScalePercent
+        变量: gg_unit_H01N_0355
+        常量: 100.00
+    TriggerSleepAction
+        常量: 1.00
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_129
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_133
+        预设: Player00
+        常量: 3.30
+    IssuePointOrderLoc
+        变量: gg_unit_H05R_0356
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_285_Copy_2_Copy
+    PlaySoundBJ
+        变量: gg_snd_ObsidianStatueYes2
+    TriggerSleepAction
+        常量: 2.50
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_132
+        预设: Player00
+        常量: 0
+    SetUnitPositionLocFacingLocBJ
+        变量: gg_unit_H05R_0356
+        函数: GetRectCenter
+            变量: gg_rct_Region_285_Copy_2_Copy
+        函数: GetRectCenter
+            变量: gg_rct_Region_285_Copy_2
+    SetUnitFacingToFaceUnitTimed
+        变量: gg_unit_H01N_0355
+        变量: gg_unit_H05R_0356
+        常量: 0.00
+    StopSoundBJ
+        变量: gg_snd_EnergyExplosion
+        预设: FadeDontDont
+    PlaySoundBJ
+        变量: gg_snd_ObsidianAvengerYes1
+    PlaySoundBJ
+        变量: gg_snd_Northorum19Shout
+    PlaySoundBJ
+        变量: gg_snd_EnergyExplosion
+    SetUnitTimeScalePercent
+        变量: gg_unit_H01N_0355
+        常量: 8.00
+    SetUnitTimeScalePercent
+        变量: gg_unit_H05R_0356
+        常量: 15.00
+    SetUnitAnimation
+        变量: gg_unit_H05R_0356
+        常量: attack
+    ResetUnitAnimation
+        变量: gg_unit_H01N_0355
+    SetUnitAnimation
+        变量: gg_unit_H01N_0355
+        常量: 'stand hit first'
+    TriggerSleepAction
+        常量: 2.00
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeOut
+        常量: 3.50
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    TriggerSleepAction
+        常量: 3.50
+    PlaySoundBJ
+        变量: gg_snd_MetalHeavySliceFlesh2
+    PlaySoundBJ
+        变量: gg_snd_Northorum21Shout
+    TriggerSleepAction
+        常量: 0.50
+    SetUnitTimeScalePercent
+        变量: gg_unit_H01N_0355
+        常量: 100.00
+    SetUnitTimeScalePercent
+        变量: gg_unit_H05R_0356
+        常量: 50.00
+    ResetUnitAnimation
+        变量: gg_unit_H01N_0355
+    ResetUnitAnimation
+        变量: gg_unit_H05R_0356
+    TriggerSleepAction
+        常量: 1.50
+    SetUnitPositionLocFacingLocBJ
+        变量: gg_unit_H05R_0356
+        函数: GetRectCenter
+            变量: gg_rct_Region_285_Copy_2_Copy_Copy
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H01N_0355
+            常量: 256
+            常量: -30.00
+    SetUnitPositionLocFacingLocBJ
+        变量: gg_unit_H00D_0370
+        函数: GetRectCenter
+            变量: gg_rct_Region_285_Copy_2_Copy_Copy_Copy
+        函数: GetUnitLoc
+            变量: gg_unit_H01N_0355
+    SetUnitAnimation
+        变量: gg_unit_H01N_0355
+        常量: morph
+    TriggerSleepAction
+        常量: 0.01
+    SetUnitTimeScalePercent
+        变量: gg_unit_H01N_0355
+        常量: 0.00
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeIn
+        常量: 5.00
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_136
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_137
+        预设: Player00
+        常量: 40.00
+    TriggerSleepAction
+        常量: 7.00
+    SetUnitAnimation
+        变量: gg_unit_H00D_0370
+        常量: 'portrait talk'
+    SetSoundVolumeBJ
+        变量: gg_snd_Joshua_Buck___Death_s_ChantSOUND
+        常量: 50.00
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H00D_0370
+        常量: 乌拉索尔
+        变量: gg_snd_Urathol23
+        常量: 我们的决定锻造出我们的命运.你选择了你的,诺索拉姆.我会一个接一个地粉碎你的同类,直到再无反抗为止.那时,我将会看到寒霜天空升到未知未来的至高点.
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    SetSoundVolumeBJ
+        变量: gg_snd_Joshua_Buck___Death_s_ChantSOUND
+        常量: 100.00
+    ResetUnitAnimation
+        变量: gg_unit_H00D_0370
+    TriggerSleepAction
+        常量: 3.00
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeOut
+        常量: 5.00
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    TriggerSleepAction
+        常量: 10.00
+    StopSoundBJ
+        变量: gg_snd_Joshua_Buck___Death_s_ChantSOUND
+        预设: FadeDontDont
+    TriggerExecute
+        变量: gg_trg_Meet_Tyotho_Add

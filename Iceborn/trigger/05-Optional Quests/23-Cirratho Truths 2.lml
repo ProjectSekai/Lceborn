@@ -1,0 +1,256 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OperatorCompareAbilityId
+        函数: GetSpellAbilityId
+        预设: OperatorEqualENE
+        常量: A03Z
+动作
+    AddSpecialEffectLocBJ
+        函数: GetSpellTargetLoc
+        常量: Abilities\Spells\Items\AItb\AItbTarget.mdl
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    IfThenElseMultiple
+        条件
+            AndMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: RectContainsLoc
+                            变量: gg_rct_Region_165_Copy_3
+                            函数: GetSpellTargetLoc
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        变量: Generator1End
+                        预设: OperatorEqualENE
+                        常量: false
+        动作
+            SetVariable
+                变量: Generator1
+                函数: OperatorReal
+                    变量: Generator1
+                    预设: OperatorSubtract
+                    常量: 28.00
+            IfThenElseMultiple
+                条件
+                    OperatorCompareReal
+                        变量: Generator1
+                        预设: OperatorLessEq
+                        常量: 0.00
+                动作
+                    PlaySoundBJ
+                        变量: gg_snd_Explosion8
+                    DisplayTextToForce
+                        函数: GetPlayersAll
+                        函数: OperatorString
+                            函数: OperatorString
+                                常量: '|cffffcc00Generator''s Overcharge Level: '
+                                常量: 'Low on Energy|r'
+                            常量: 
+                    SetVariable
+                        变量: Generator1End
+                        常量: true
+                动作
+                    PlaySoundBJ
+                        变量: gg_snd_Hint
+                    DisplayTextToForce
+                        函数: GetPlayersAll
+                        函数: OperatorString
+                            函数: OperatorString
+                                常量: '|cffffcc00Generator''s Overcharge Level: '
+                                函数: R2S
+                                    变量: Generator1
+                            常量: /100|r
+    IfThenElseMultiple
+        条件
+            AndMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: RectContainsLoc
+                            变量: gg_rct_Region_165
+                            函数: GetSpellTargetLoc
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        变量: Generator2End
+                        预设: OperatorEqualENE
+                        常量: false
+        动作
+            SetVariable
+                变量: Generator2
+                函数: OperatorReal
+                    变量: Generator2
+                    预设: OperatorSubtract
+                    常量: 21.00
+            IfThenElseMultiple
+                条件
+                    OperatorCompareReal
+                        变量: Generator2
+                        预设: OperatorLessEq
+                        常量: 0.00
+                动作
+                    PlaySoundBJ
+                        变量: gg_snd_Explosion8
+                    DisplayTextToForce
+                        函数: GetPlayersAll
+                        函数: OperatorString
+                            函数: OperatorString
+                                常量: '|cffffcc00Generator''s Overcharge Level: '
+                                常量: 'Low on Energy|r'
+                            常量: 
+                    SetVariable
+                        变量: Generator2End
+                        常量: true
+                动作
+                    PlaySoundBJ
+                        变量: gg_snd_Hint
+                    DisplayTextToForce
+                        函数: GetPlayersAll
+                        函数: OperatorString
+                            函数: OperatorString
+                                常量: '|cffffcc00Generator''s Overcharge Level: '
+                                函数: R2S
+                                    变量: Generator2
+                            常量: /100|r
+    IfThenElseMultiple
+        条件
+            AndMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: RectContainsLoc
+                            变量: gg_rct_Region_165_Copy
+                            函数: GetSpellTargetLoc
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        变量: Generator3End
+                        预设: OperatorEqualENE
+                        常量: false
+        动作
+            SetVariable
+                变量: Generator3
+                函数: OperatorReal
+                    变量: Generator3
+                    预设: OperatorSubtract
+                    常量: 39.00
+            IfThenElseMultiple
+                条件
+                    OperatorCompareReal
+                        变量: Generator3
+                        预设: OperatorLessEq
+                        常量: 0.00
+                动作
+                    PlaySoundBJ
+                        变量: gg_snd_Explosion8
+                    DisplayTextToForce
+                        函数: GetPlayersAll
+                        函数: OperatorString
+                            函数: OperatorString
+                                常量: '|cffffcc00Generator''s Overcharge Level: '
+                                常量: 'Low on Energy|r'
+                            常量: 
+                    SetVariable
+                        变量: Generator3End
+                        常量: true
+                动作
+                    PlaySoundBJ
+                        变量: gg_snd_Hint
+                    DisplayTextToForce
+                        函数: GetPlayersAll
+                        函数: OperatorString
+                            函数: OperatorString
+                                常量: '|cffffcc00Generator''s Overcharge Level: '
+                                函数: R2S
+                                    变量: Generator3
+                            常量: /100|r
+    IfThenElseMultiple
+        条件
+            AndMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: RectContainsLoc
+                            变量: gg_rct_Region_165_Copy_2
+                            函数: GetSpellTargetLoc
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        变量: Generator4End
+                        预设: OperatorEqualENE
+                        常量: false
+        动作
+            SetVariable
+                变量: Generator4
+                函数: OperatorReal
+                    变量: Generator4
+                    预设: OperatorSubtract
+                    常量: 18.00
+            IfThenElseMultiple
+                条件
+                    OperatorCompareReal
+                        变量: Generator4
+                        预设: OperatorLessEq
+                        常量: 0.00
+                动作
+                    PlaySoundBJ
+                        变量: gg_snd_Explosion8
+                    DisplayTextToForce
+                        函数: GetPlayersAll
+                        函数: OperatorString
+                            函数: OperatorString
+                                常量: '|cffffcc00Generator''s Overcharge Level: '
+                                常量: 'Low on Energy|r'
+                            常量: 
+                    SetVariable
+                        变量: Generator4End
+                        常量: true
+                动作
+                    PlaySoundBJ
+                        变量: gg_snd_Hint
+                    DisplayTextToForce
+                        函数: GetPlayersAll
+                        函数: OperatorString
+                            函数: OperatorString
+                                常量: '|cffffcc00Generator''s Overcharge Level: '
+                                函数: R2S
+                                    变量: Generator4
+                            常量: /100|r
+    IfThenElseMultiple
+        条件
+            AndMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: Generator4End
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        变量: Generator3End
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        变量: Generator2End
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        变量: Generator1End
+                        预设: OperatorEqualENE
+                        常量: true
+        动作
+            DisableTrigger
+                函数: GetTriggeringTrigger
+            QuestItemSetCompletedBJ
+                变量: QuestOptional5Req1
+                预设: CompletionOptionCompleted
+            QuestSetCompletedBJ
+                变量: QuestOptional5
+                预设: CompletionOptionCompleted
+            FlashQuestDialogButtonBJ
+            KillDestructable
+                变量: gg_dest_YTpc_8052
+            KillDestructable
+                变量: gg_dest_YTpc_8053
+            KillDestructable
+                变量: gg_dest_YTpc_8054
+            RemoveUnit
+                变量: gg_unit_h03M_0117

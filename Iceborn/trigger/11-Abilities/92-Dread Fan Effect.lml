@@ -1,0 +1,193 @@
+事件
+条件
+动作
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h06V
+        预设: PlayerNA
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03Q_0374
+            常量: 0.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H03Q_0374
+                预设: OperatorAdd
+                常量: 0.00
+        预设: RealUnitFacing
+    TriggerSleepAction
+        常量: 0.25
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h06V
+        预设: PlayerNA
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03Q_0374
+            常量: 200.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H03Q_0374
+                预设: OperatorAdd
+                常量: 0.00
+        预设: RealUnitFacing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h06V
+        预设: PlayerNA
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03Q_0374
+            常量: 200.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H03Q_0374
+                预设: OperatorSubtract
+                常量: 120.00
+        预设: RealUnitFacing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h06V
+        预设: PlayerNA
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03Q_0374
+            常量: 200.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H03Q_0374
+                预设: OperatorAdd
+                常量: 120.00
+        预设: RealUnitFacing
+    TriggerSleepAction
+        常量: 0.25
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h06V
+        预设: PlayerNA
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03Q_0374
+            常量: 400.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H03Q_0374
+                预设: OperatorAdd
+                常量: 10.00
+        预设: RealUnitFacing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h06V
+        预设: PlayerNA
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03Q_0374
+            常量: 400.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H03Q_0374
+                预设: OperatorSubtract
+                常量: 110.00
+        预设: RealUnitFacing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h06V
+        预设: PlayerNA
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03Q_0374
+            常量: 400.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H03Q_0374
+                预设: OperatorAdd
+                常量: 130.00
+        预设: RealUnitFacing
+    TriggerSleepAction
+        常量: 0.25
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h06V
+        预设: PlayerNA
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03Q_0374
+            常量: 600.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H03Q_0374
+                预设: OperatorSubtract
+                常量: 5.00
+        预设: RealUnitFacing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h06V
+        预设: PlayerNA
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03Q_0374
+            常量: 600.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H03Q_0374
+                预设: OperatorSubtract
+                常量: 125.00
+        预设: RealUnitFacing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h06V
+        预设: PlayerNA
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03Q_0374
+            常量: 600.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H03Q_0374
+                预设: OperatorAdd
+                常量: 115.00
+        预设: RealUnitFacing
+    TriggerSleepAction
+        常量: 0.25
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h06V
+        预设: PlayerNA
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03Q_0374
+            常量: 800.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H03Q_0374
+                预设: OperatorAdd
+                常量: 0.00
+        预设: RealUnitFacing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h06V
+        预设: PlayerNA
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03Q_0374
+            常量: 800.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H03Q_0374
+                预设: OperatorSubtract
+                常量: 120.00
+        预设: RealUnitFacing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h06V
+        预设: PlayerNA
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03Q_0374
+            常量: 800.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H03Q_0374
+                预设: OperatorAdd
+                常量: 120.00
+        预设: RealUnitFacing

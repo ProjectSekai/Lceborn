@@ -1,0 +1,23 @@
+事件
+    TriggerRegisterTimerEventPeriodic
+        常量: 3.00
+条件
+动作
+    IfThenElse
+        条件: OperatorCompareBoolean
+            函数: IsUnitDeadBJ
+                变量: gg_unit_H06F_0415
+            预设: OperatorEqualENE
+            常量: true
+        动作: ReturnAction
+        动作: DoNothing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h072
+        预设: PlayerNA
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: Hero
+            常量: 0.00
+            常量: 0.00
+        函数: GetRandomDirectionDeg

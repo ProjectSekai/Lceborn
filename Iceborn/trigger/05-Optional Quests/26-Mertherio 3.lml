@@ -1,0 +1,87 @@
+事件
+    TriggerRegisterUnitInRangeSimple
+        常量: 200.00
+        变量: gg_unit_h04X_0330
+条件
+    OperatorCompareUnit
+        函数: GetTriggerUnit
+        预设: OperatorEqualENE
+        变量: Hero
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    DisableTrigger
+        变量: gg_trg_Arazayah_Death_for_Q
+    DisableTrigger
+        变量: gg_trg_Dragon_Borders
+    DestroyEffectBJ
+        变量: TrapEff1
+    DestroyEffectBJ
+        变量: TrapEff2
+    PauseUnitBJ
+        预设: PauseUnpauseOptionUnpause
+        变量: Arazayah
+    SetUnitOwner
+        变量: Arazayah
+        预设: Player01
+        预设: ChangeColorTrue
+    UnitRemoveAbilityBJ
+        常量: A04X
+        变量: Arazayah
+    UnitRemoveAbilityBJ
+        常量: A04Z
+        变量: Arazayah
+    UnitAddAbilityBJ
+        常量: A04W
+        变量: Arazayah
+    UnitAddAbilityBJ
+        常量: A04Y
+        变量: Arazayah
+    ShowUnitHide
+        变量: Arazayah
+    SelectUnitSingle
+        变量: gg_unit_h04X_0330
+    SetMusicVolumeBJ
+        常量: 50.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 26.00
+        常量: '|cffffcc00摩西里奥:|r 你做到了,更重要的是我的陷阱运作得完美.龙不知怎么似乎被你吸引住了.你可以收留它作为你的伙伴,尽管把它带离这个地方,我再也不想见到它了.作笔交易?
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Mertherio7
+    TriggerSleepAction
+        常量: 27.00
+    SetMusicVolumeBJ
+        常量: 100.00
+    QuestItemSetCompletedBJ
+        变量: QuestOptional6Req1
+        预设: CompletionOptionCompleted
+    QuestSetCompletedBJ
+        变量: QuestOptional6
+        预设: CompletionOptionCompleted
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: H051
+        预设: Player00
+        函数: GetRectCenter
+            变量: gg_rct_Region_227
+        预设: RealUnitFacing
+    SetVariable
+        变量: ArazayahCallUp
+        函数: GetLastCreatedUnit
+    SetHeroLevel
+        函数: GetLastCreatedUnit
+        常量: 20
+        预设: ShowHideHide
+    AddTriggerEvent
+        变量: gg_trg_Arazayah_Call_Up
+        事件: TriggerRegisterUnitEvent
+            变量: ArazayahCallUp
+            预设: UnitEventSelected
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cff7777aaNOTICE: If Arazayah dies, it can no longer be summoned.|r
+
+'

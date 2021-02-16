@@ -1,0 +1,49 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OrMultiple
+        条件
+            OperatorCompareAbilityId
+                函数: GetSpellAbilityId
+                预设: OperatorEqualENE
+                常量: A00H
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareAbilityId
+                函数: GetSpellAbilityId
+                预设: OperatorEqualENE
+                常量: A00H
+        动作
+            PlaySoundBJ
+                变量: gg_snd_Feedback
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h006
+                预设: Player00
+                函数: GetSpellTargetLoc
+                预设: RealUnitFacing
+            SetVariable
+                变量: ColdBomb
+                函数: GetLastCreatedUnit
+            SetUnitAnimation
+                函数: GetLastCreatedUnit
+                常量: birth
+            UnitApplyTimedLifeBJ
+                函数: OperatorReal
+                    常量: 12.00
+                    预设: OperatorSubtract
+                    函数: OperatorReal
+                        函数: OperatorReal
+                            函数: GetUnitStateSwap
+                                预设: UnitStateMaxLife
+                                变量: Hero
+                            预设: OperatorDivide
+                            常量: 30.00
+                        预设: OperatorMultiply
+                        常量: 0.20
+                预设: TimedLifeBuffCodeGeneric
+                函数: GetLastCreatedUnit
+            EnableTrigger
+                变量: gg_trg_Cold_Bomb_Death

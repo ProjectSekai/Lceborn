@@ -1,0 +1,47 @@
+事件
+    TriggerRegisterDeathEvent
+        变量: gg_dest_B000_1922
+条件
+动作
+    TriggerSleepAction
+        常量: 0.01
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    EnableTrigger
+        变量: gg_trg_Statue_1_3_Trigger
+    StopSoundBJ
+        变量: gg_snd_Elemental
+        预设: FadeDontDont
+    PlaySoundBJ
+        变量: gg_snd_Elemental
+    IssuePointOrderLoc
+        变量: Orb12
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_013_Copy_4
+    IssuePointOrderLoc
+        变量: Orb13
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_013_Copy_3
+    IssuePointOrderLoc
+        变量: Orb11
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_013_Copy_5
+    SetVariable
+        变量: Orb1Fire
+        常量: false
+    SetVariable
+        变量: Orb1Frost
+        常量: false
+    SetVariable
+        变量: Orb1Poison
+        常量: true
+    TriggerSleepAction
+        常量: 0.50
+    DestructableRestoreLife
+        函数: GetDyingDestructable
+        函数: GetDestructableMaxLife
+            函数: GetDyingDestructable
+        预设: ShowHideHide

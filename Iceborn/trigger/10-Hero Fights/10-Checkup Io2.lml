@@ -1,0 +1,31 @@
+事件
+    TriggerRegisterTimerEventPeriodic
+        常量: 2.20
+条件
+动作
+    IfThenElse
+        条件: OperatorCompareBoolean
+            函数: IsUnitAliveBJ
+                变量: Io2
+            预设: OperatorEqualENE
+            常量: false
+        动作: DisableTrigger
+            函数: GetTriggeringTrigger
+        动作: DoNothing
+    ForGroupMultiple
+        函数: GetUnitsInRangeOfLocAll
+            常量: 900.00
+            函数: GetUnitLoc
+                变量: Io2
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorComparePlayer
+                        函数: GetOwningPlayer
+                            函数: GetEnumUnit
+                        预设: OperatorEqualENE
+                        预设: Player00
+                动作
+                    IssueImmediateOrder
+                        变量: Io2
+                        预设: UnitOrderThunderClap

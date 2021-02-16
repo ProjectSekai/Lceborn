@@ -1,0 +1,74 @@
+事件
+    TriggerRegisterDeathEvent
+        变量: gg_dest_B000_1923
+条件
+动作
+    TriggerSleepAction
+        常量: 0.01
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    EnableTrigger
+        变量: gg_trg_Statue_3_3_Trigger
+    StopSoundBJ
+        变量: gg_snd_Elemental
+        预设: FadeDontDont
+    PlaySoundBJ
+        变量: gg_snd_Elemental
+    IssuePointOrderLoc
+        变量: Orb33
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_013_Copy_8
+    IssuePointOrderLoc
+        变量: Orb31
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_013_Copy_6
+    IssuePointOrderLoc
+        变量: Orb32
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_013_Copy_7
+    SetVariable
+        变量: Orb3Poison
+        常量: false
+    SetVariable
+        变量: Orb3Fire
+        常量: false
+    SetVariable
+        变量: Orb3Frost
+        常量: true
+    TriggerSleepAction
+        常量: 0.50
+    DestructableRestoreLife
+        函数: GetDyingDestructable
+        函数: GetDestructableMaxLife
+            函数: GetDyingDestructable
+        预设: ShowHideHide
+    IfThenElseMultiple
+        条件
+            AndMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: Orb1Frost
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        变量: Orb2Frost
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        变量: Orb3Frost
+                        预设: OperatorEqualENE
+                        常量: true
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: IsTriggerEnabled
+                            变量: gg_trg_Statue_Check_Frost
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                    ConditionalTriggerExecute
+                        变量: gg_trg_Statue_Check_Frost

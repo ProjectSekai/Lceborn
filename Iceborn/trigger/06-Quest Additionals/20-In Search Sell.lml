@@ -1,0 +1,34 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventPawnItem
+条件
+    OrMultiple
+        条件
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetSoldItem
+                预设: OperatorEqualENE
+                常量: I017
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetSoldItem
+                预设: OperatorEqualENE
+                常量: I015
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetSoldItem
+                预设: OperatorEqualENE
+                常量: I014
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetSoldItem
+                预设: OperatorEqualENE
+                常量: I016
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    QuestSetFailedBJ
+        变量: QuestOptional1
+        预设: FailureOptionFailed
+    PlaySoundBJ
+        变量: gg_snd_QuestFailed

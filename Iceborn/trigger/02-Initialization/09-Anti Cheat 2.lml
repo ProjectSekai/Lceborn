@@ -1,0 +1,12 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventDeath
+条件
+    OperatorCompareUnit
+        函数: GetDyingUnit
+        预设: OperatorEqualENE
+        变量: gg_unit_h01M_0074
+动作
+    CustomDefeatBJ
+        预设: Player00
+        常量: 检测到作弊代码

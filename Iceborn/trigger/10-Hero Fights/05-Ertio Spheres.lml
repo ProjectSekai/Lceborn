@@ -1,0 +1,24 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventHeroPickUpItem
+条件
+    OperatorCompareItem
+        函数: GetManipulatedItem
+        预设: OperatorEqualENE
+        变量: ErtioSphere
+动作
+    TriggerSleepAction
+        常量: 10.00
+    CreateItemLoc
+        常量: I00E
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_315
+    SetVariable
+        变量: ErtioSphere
+        函数: GetLastCreatedItem
+    AddSpecialEffectLocBJ
+        函数: GetItemLoc
+            函数: GetLastCreatedItem
+        常量: Objects\Spawnmodels\Other\ToonBoom\ToonBoom.mdl
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ

@@ -1,0 +1,52 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OperatorCompareAbilityId
+        函数: GetSpellAbilityId
+        预设: OperatorEqualENE
+        常量: A05I
+动作
+    AddSpecialEffectLocBJ
+        函数: GetSpellTargetLoc
+        常量: 'Falling LightE.mdx'
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    SetVariable
+        变量: KharSwarm
+        函数: GetSpellTargetLoc
+    IfThenElseMultiple
+        条件
+            OperatorCompareReal
+                函数: GetRandomReal
+                    常量: 0
+                    常量: 100.00
+                预设: OperatorLessEq
+                常量: 40.00
+        动作
+            StopSoundBJ
+                变量: gg_snd_Khnartho3
+                预设: FadeDontDont
+            StopSoundBJ
+                变量: gg_snd_Khnartho4
+                预设: FadeDontDont
+            StopSoundBJ
+                变量: gg_snd_Khnartho5
+                预设: FadeDontDont
+            PlaySoundBJ
+                变量: gg_snd_Khnartho2
+    UnitDamagePointLoc
+        变量: Khnartho
+        常量: 2.00
+        常量: 350.00
+        函数: GetSpellTargetLoc
+        常量: 2000.00
+        预设: AttackTypeNormal
+        预设: DamageTypeNormal
+    TriggerSleepAction
+        常量: 2.00
+    StopSoundBJ
+        变量: gg_snd_ExplosionNoise
+        预设: FadeDontDont
+    PlaySoundBJ
+        变量: gg_snd_ExplosionNoise

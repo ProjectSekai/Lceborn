@@ -1,0 +1,96 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSellItem
+条件
+    OperatorCompareItemCode
+        函数: GetItemTypeId
+            函数: GetSoldItem
+        预设: OperatorEqualENE
+        常量: I00N
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    EnableTrigger
+        变量: gg_trg_Spawn_9
+    QuestItemSetCompletedBJ
+        变量: QuestOptional2Req1
+        预设: CompletionOptionCompleted
+    SelectUnitSingle
+        变量: gg_unit_h01R_0083
+    UnitRemoveAbilityBJ
+        常量: Aneu
+        变量: gg_unit_h01R_0083
+    SetMusicVolumeBJ
+        常量: 50.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 33.00
+        常量: '|cffffcc00博尔:|r 祝你被全能的瓦尔鲁保佑,冰裔.你慷慨的记忆也会被带到另一个世界的.你刚刚买的戒指至今都曾是一个谜团,它是艾尔图番,曾在这个世界生活过的伟大巫师的所有物,只有波伊斯人才能够与他相提并论.
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Bor3
+    TriggerSleepAction
+        常量: 34.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 29.00
+        常量: '|cffffcc00博尔:|r 乌拉索尔,泰尔卓的兄弟侵入了他的家中,正是我正在说话的这个地方,用未知的手段打败了巫师,将这个地方化作爪牙的巢穴.最近这里手下的数量不断增加,或许他们在保护着什么有价值的东西,不过我不在乎.
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Bor4
+    TriggerSleepAction
+        常量: 30.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 32.00
+        常量: '|cffffcc00博尔:|r 我从艾尔图番的手中摘下这枚戒指的同时,它的光芒也消失了.据说它需要巨大的能量才能够活性化.持有戒指的人接近有着不断在两个柱子之上闪耀着蓝色光芒的冰花,再通过戒指的力量可以召唤出来自另一个世界的存在.
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Bor5
+    TriggerSleepAction
+        常量: 33.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 30.00
+        常量: '|cffffcc00博尔:|r 那个存在必须要被杀死,戒指才能充能.我从未成功召唤出任何人物,但你是冰裔,你一定能够完成我从未完成过的这件事.现在我要走了,永远感激你.再会了,冰裔.
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Bor6
+    TriggerSleepAction
+        常量: 31.00
+    SetMusicVolumeBJ
+        常量: 100.00
+    IssuePointOrderLoc
+        变量: gg_unit_h01R_0083
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_061
+    CreateQuestItemBJ
+        变量: QuestOptional2
+        常量: 'Charge the ring'
+    SetVariable
+        变量: QuestOptional2Req1
+        函数: GetLastCreatedQuestItemBJ
+    FlashQuestDialogButtonBJ
+    PlaySoundBJ
+        变量: gg_snd_QuestLog
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cffffcc00 - 充能戒指r
+
+'
+    EnableTrigger
+        变量: gg_trg_Being_Summon_1
+    TriggerSleepAction
+        常量: 3.00
+    PlaySoundBJ
+        变量: gg_snd_Hint
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cff7777aa提示: 有两个存在要被杀死以充能戒指|r
+
+'

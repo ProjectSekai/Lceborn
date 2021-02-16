@@ -1,0 +1,40 @@
+事件
+    TriggerRegisterTimerEventPeriodic
+        常量: 5.00
+条件
+动作
+    IssueImmediateOrder
+        变量: gg_unit_H06O_0377
+        预设: UnitOrderStop
+    IssuePointOrderLoc
+        变量: gg_unit_H00A_0404
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    IssuePointOrderLoc
+        变量: gg_unit_H00A_0430
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    IfThenElseMultiple
+        条件
+            AndMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: gg_unit_H00A_0430
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: gg_unit_H00A_0404
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsTriggerEnabled
+                            变量: gg_trg_P2_Wave_Defeat
+                        预设: OperatorEqualENE
+                        常量: true
+        动作
+            TriggerExecute
+                变量: gg_trg_P2_Wave_Defeat

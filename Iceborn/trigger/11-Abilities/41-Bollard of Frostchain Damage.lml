@@ -1,0 +1,141 @@
+事件
+条件
+动作
+    PlaySoundBJ
+        变量: gg_snd_IceBreak
+    SetVariable
+        变量: AAPOINT
+        函数: OffsetLocation
+            变量: PointPower
+            常量: 0
+            常量: 0
+    AddSpecialEffectLocBJ
+        变量: AAPOINT
+        常量: IceSlam.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: OffsetLocation
+            变量: PointPower
+            常量: 0
+            常量: 0
+    AddSpecialEffectLocBJ
+        变量: AAPOINT
+        常量: EvilWave_EffectEdited.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: OffsetLocation
+            变量: PointPower
+            常量: 0
+            常量: 0
+    SetVariable
+        变量: AAGROUP
+        函数: GetUnitsInRangeOfLocAll
+            常量: 600.00
+            变量: AAPOINT
+    ForGroupMultiple
+        变量: AAGROUP
+        动作
+            IfThenElseMultiple
+                条件
+                    AndMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: UnitHasBuffBJ
+                                    函数: GetEnumUnit
+                                    常量: B001
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorComparePlayer
+                                函数: GetOwningPlayer
+                                    函数: GetEnumUnit
+                                预设: OperatorEqualENE
+                                预设: PlayerNA
+                动作
+                    SetVariable
+                        变量: BOLLARDPOINT
+                        函数: GetUnitLoc
+                            函数: GetEnumUnit
+                    AddSpecialEffectLocBJ
+                        变量: BOLLARDPOINT
+                        常量: 'Crystal ImpaleNoSmokeHigher.mdx'
+                    DestroyEffectBJ
+                        函数: GetLastCreatedEffectBJ
+                    SetVariable
+                        变量: BOLLARDPOINT
+                        函数: PolarProjectionBJ
+                            函数: GetUnitLoc
+                                函数: GetEnumUnit
+                            函数: GetRandomReal
+                                常量: 50.00
+                                常量: 150.00
+                            函数: GetRandomDirectionDeg
+                    AddSpecialEffectLocBJ
+                        变量: BOLLARDPOINT
+                        常量: 'Crystal ImpaleNoSmokeHigher.mdx'
+                    DestroyEffectBJ
+                        函数: GetLastCreatedEffectBJ
+                    SetVariable
+                        变量: BOLLARDPOINT
+                        函数: PolarProjectionBJ
+                            函数: GetUnitLoc
+                                函数: GetEnumUnit
+                            函数: GetRandomReal
+                                常量: 50.00
+                                常量: 150.00
+                            函数: GetRandomDirectionDeg
+                    AddSpecialEffectLocBJ
+                        变量: BOLLARDPOINT
+                        常量: 'Crystal ImpaleNoSmokeHigher.mdx'
+                    DestroyEffectBJ
+                        函数: GetLastCreatedEffectBJ
+                    SetVariable
+                        变量: BOLLARDPOINT
+                        函数: PolarProjectionBJ
+                            函数: GetUnitLoc
+                                函数: GetEnumUnit
+                            函数: GetRandomReal
+                                常量: 50.00
+                                常量: 150.00
+                            函数: GetRandomDirectionDeg
+                    AddSpecialEffectLocBJ
+                        变量: BOLLARDPOINT
+                        常量: 'Crystal ImpaleNoSmokeHigher.mdx'
+                    DestroyEffectBJ
+                        函数: GetLastCreatedEffectBJ
+                    SetVariable
+                        变量: BollardMana
+                        函数: OperatorReal
+                            常量: 0.20
+                            预设: OperatorMultiply
+                            函数: GetUnitStateSwap
+                                预设: UnitStateMana
+                                变量: Hero
+                    UnitDamageTargetBJ
+                        变量: Hero
+                        函数: GetEnumUnit
+                        函数: OperatorReal
+                            变量: BollardMana
+                            预设: OperatorAdd
+                            函数: OperatorReal
+                                常量: 0.30
+                                预设: OperatorMultiply
+                                函数: GetUnitStateSwap
+                                    预设: UnitStateLife
+                                    函数: GetEnumUnit
+                        预设: AttackTypeNormal
+                        预设: DamageTypeNormal
+                    UnitRemoveBuffBJ
+                        常量: B001
+                        函数: GetEnumUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    CustomScriptCode
+        常量: 'call DestroyGroup(udg_AAGROUP)'

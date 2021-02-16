@@ -1,0 +1,112 @@
+事件
+条件
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    PlaySoundBJ
+        变量: gg_snd_Explosion8
+    QuestItemSetCompletedBJ
+        变量: QuestMainReq1
+        预设: CompletionOptionCompleted
+    QuestSetCompletedBJ
+        变量: QuestMain
+        预设: CompletionOptionCompleted
+    ShowUnitHide
+        变量: gg_unit_h047_0243
+    ShowUnitHide
+        变量: gg_unit_h047_0242
+    ShowUnitHide
+        变量: gg_unit_h047_0245
+    ShowUnitHide
+        变量: gg_unit_h047_0249
+    ShowUnitHide
+        变量: gg_unit_h047_0248
+    ShowUnitHide
+        变量: gg_unit_h047_0246
+    ShowUnitHide
+        变量: gg_unit_h047_0247
+    ShowUnitHide
+        变量: gg_unit_h04K_0285
+    KillDestructable
+        变量: gg_dest_YTpc_8686
+    KillDestructable
+        变量: gg_dest_YTpc_8600
+    KillDestructable
+        变量: gg_dest_YTpc_8688
+    KillDestructable
+        变量: gg_dest_YTpc_8689
+    ResetUnitAnimation
+        变量: gg_unit_H01N_0241
+    SetUnitAnimation
+        变量: gg_unit_H01N_0241
+        常量: stand
+    TriggerSleepAction
+        常量: 3.00
+    IssuePointOrderLoc
+        变量: gg_unit_H01N_0241
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_206
+    TriggerSleepAction
+        常量: 3.00
+    SelectUnitSingle
+        变量: gg_unit_H01N_0241
+    SetMusicVolumeBJ
+        常量: 50.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 30.00
+        常量: '|cffffcc00诺索拉姆:|r 我果然没看错人,冰裔.乌拉索尔应该只会想到你只是一个小威胁,直至事情已经到了对他而言无可挽回的地步为止,这对我们有利.他或许曾经用肮脏的手段打败过我,但不会再有了.我们要灵活起来并避免乌拉索尔所犯下的小看别人的错误.
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Northorum1
+    TriggerSleepAction
+        常量: 32.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 35.00
+        常量: '|cffffcc00诺索拉姆:|r 无论有多么艰难,我都想要在全面战争中面对乌拉索尔,现在还剩下一个必要的任务需要完成.我把你送去寻找波伊斯面具,那块地方不像其他的地方一样,也并非波伊斯人可以涉足的场所.你依旧很虚弱,不过波伊斯面具可以将你极寒的力量提升三倍,或会让你掌握波伊斯人力量的一个片段.
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Northorum2
+    TriggerSleepAction
+        常量: 37.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 23.00
+        常量: '|cffffcc00诺索拉姆:|r 这个面具使你可以对乌拉索尔与他的部队造成严重的损害.剩下的只有,你站在我这方向着这场疯狂的战争的胜利进军而已.快点行动,不要犹豫,一切即将结束.
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Northorum3
+    TriggerSleepAction
+        常量: 24.00
+    SetMusicVolumeBJ
+        常量: 100.00
+    CreateQuestBJ
+        预设: QuestTypeReqDiscovered
+        常量: 波伊斯面具
+        常量: 我解放了被囚禁的诺索拉姆,他还给了我另一个任务,要我去拿到可以提升我的力量的波伊斯面具,然后就可以正面对决乌拉索尔了.
+        常量: ReplaceableTextures\CommandButtons\BTNGodFace.blp
+    SetVariable
+        变量: QuestMain
+        函数: GetLastCreatedQuestBJ
+    CreateQuestItemBJ
+        变量: QuestMain
+        常量: 找到并戴上波伊斯面具
+    SetVariable
+        变量: QuestMainReq1
+        函数: GetLastCreatedQuestItemBJ
+    FlashQuestDialogButtonBJ
+    PlaySoundBJ
+        变量: gg_snd_QuestLog
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cffffcc00 - 找到并戴上位于波伊斯之魂深处的波伊斯面具|r
+
+'
+    SetVariable
+        变量: BoethsoulDeeps
+        常量: true

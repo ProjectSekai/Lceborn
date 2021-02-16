@@ -1,0 +1,17 @@
+事件
+    TriggerRegisterTimerEventPeriodic
+        常量: 2
+条件
+动作
+    IssuePointOrderLoc
+        变量: gg_unit_H013_0039
+        预设: UnitOrderBreathOfFire
+        函数: GetUnitLoc
+            变量: Hero
+    TriggerSleepAction
+        常量: 1.00
+    IssuePointOrderLoc
+        变量: gg_unit_H013_0039
+        预设: UnitOrderBreathOfFrost
+        函数: GetUnitLoc
+            变量: Hero

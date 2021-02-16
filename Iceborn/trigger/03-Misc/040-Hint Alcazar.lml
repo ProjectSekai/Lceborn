@@ -1,0 +1,20 @@
+事件
+    TriggerRegisterEnterRectSimple
+        变量: gg_rct_Region_246
+条件
+    OperatorCompareUnit
+        函数: GetTriggerUnit
+        预设: OperatorEqualENE
+        变量: Hero
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    TriggerSleepAction
+        常量: 5.00
+    PlaySoundBJ
+        变量: gg_snd_Hint
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cff7777aa提示: 你必须消灭中枢旋转器周围的4个大型球体,通过操纵旁边的3个旋转器并对其输入正确的指令.中枢旋转器选择一个球体消灭.推荐保存游戏.|r
+
+'

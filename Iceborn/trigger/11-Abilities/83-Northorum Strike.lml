@@ -1,0 +1,110 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OperatorCompareAbilityId
+        函数: GetSpellAbilityId
+        预设: OperatorEqualENE
+        常量: A06M
+动作
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetTriggerUnit
+        常量: Frost_Nova_areaEMedium.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h06P
+        预设: Player01
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                函数: GetTriggerUnit
+            常量: 200.00
+            函数: GetUnitFacing
+                函数: GetTriggerUnit
+        预设: RealUnitFacing
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: IceSlam.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h06P
+        预设: Player01
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                函数: GetTriggerUnit
+            常量: 400.00
+            函数: GetUnitFacing
+                函数: GetTriggerUnit
+        预设: RealUnitFacing
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: IceSlam.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h06P
+        预设: Player01
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                函数: GetTriggerUnit
+            常量: 600.00
+            函数: GetUnitFacing
+                函数: GetTriggerUnit
+        预设: RealUnitFacing
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: IceSlam.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h06P
+        预设: Player01
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                函数: GetTriggerUnit
+            常量: 800.00
+            函数: GetUnitFacing
+                函数: GetTriggerUnit
+        预设: RealUnitFacing
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: IceSlam.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h06P
+        预设: Player01
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                函数: GetTriggerUnit
+            常量: 1000.00
+            函数: GetUnitFacing
+                函数: GetTriggerUnit
+        预设: RealUnitFacing
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: IceSlam.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: Frost_Nova_areaEMedium.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    PlaySoundOnUnitBJ
+        变量: gg_snd_IceCrackBig3D
+        常量: 100.00
+        变量: gg_unit_H06O_0377

@@ -1,0 +1,67 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventDeath
+条件
+    OperatorCompareUnitCode
+        函数: GetUnitTypeId
+            函数: GetDyingUnit
+        预设: OperatorEqualENE
+        常量: h00U
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: ModeNormal
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            IfThenElseMultiple
+                条件
+                    AndMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: IsUnitDeadBJ
+                                    变量: gg_unit_h00U_0018
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitDeadBJ
+                                    变量: gg_unit_h00U_0019
+                                预设: OperatorEqualENE
+                                常量: true
+                动作
+                    SetUnitAnimation
+                        变量: gg_unit_h009_0002
+                        常量: stand
+                    KillDestructable
+                        变量: gg_dest_YTpc_1881
+                    KillDestructable
+                        变量: gg_dest_YTpc_1882
+        动作
+            IfThenElseMultiple
+                条件
+                    AndMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: IsUnitDeadBJ
+                                    变量: gg_unit_h00U_0018
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitDeadBJ
+                                    变量: gg_unit_h00U_0019
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitDeadBJ
+                                    变量: gg_unit_h00U_0020
+                                预设: OperatorEqualENE
+                                常量: true
+                动作
+                    SetUnitAnimation
+                        变量: gg_unit_h009_0002
+                        常量: stand
+                    KillDestructable
+                        变量: gg_dest_YTpc_1881
+                    KillDestructable
+                        变量: gg_dest_YTpc_1882

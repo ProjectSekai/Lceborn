@@ -1,0 +1,79 @@
+事件
+    TriggerRegisterUnitInRangeSimple
+        常量: 200.00
+        变量: gg_unit_H00E_0012
+条件
+    OperatorCompareUnit
+        函数: GetTriggerUnit
+        预设: OperatorEqualENE
+        变量: HeroBorn
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    QuestItemSetCompletedBJ
+        变量: QuestMainReq1
+        预设: CompletionOptionCompleted
+    SelectUnitSingle
+        变量: gg_unit_H00E_0012
+    SetMusicVolumeBJ
+        常量: 50.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 27.00
+        常量: '|cffffcc00萨那尔:|r 我是萨那尔,这个地方的波伊斯人.你被带到这里来,是为了给你指出通往未知世界的路线.你的身体还很虚弱,勉强可以承受或造成任何伤害.这是在这个环境恶劣的世界中生存的不可或缺的力量.
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Thunar1
+    TriggerSleepAction
+        常量: 27.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 24.00
+        常量: '|cffffcc00萨那尔:|r 让我们别再磨蹭了,把言语化作行动,将存在的力量与意志聚在一起,不久它就会从柔弱的寒冷征服者之中升起.去吸收并这些未曾见识过的彷徨者的精华吧.
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Thunar2
+    TriggerSleepAction
+        常量: 25.00
+    SetMusicVolumeBJ
+        常量: 100.00
+    CreateQuestItemBJ
+        变量: QuestMain
+        常量: 通过灵魂子弹吸收30个彷徨者的精华
+    SetVariable
+        变量: QuestMainReq1
+        函数: GetLastCreatedQuestItemBJ
+    FlashQuestDialogButtonBJ
+    PlaySoundBJ
+        变量: gg_snd_QuestLog
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cffffcc00 - 通过灵魂子弹吸收30个彷徨者的精华|r
+
+'
+    TriggerExecute
+        变量: gg_trg_Spawn_Wnderers
+    EnableTrigger
+        变量: gg_trg_Wanderer_Order
+    TriggerSleepAction
+        常量: 0.50
+    TriggerExecute
+        变量: gg_trg_Spawn_Wnderers
+    TriggerSleepAction
+        常量: 0.50
+    TriggerExecute
+        变量: gg_trg_Spawn_Wnderers
+    TriggerSleepAction
+        常量: 0.50
+    TriggerExecute
+        变量: gg_trg_Spawn_Wnderers
+    TriggerSleepAction
+        常量: 0.50
+    TriggerExecute
+        变量: gg_trg_Spawn_Wnderers
+    TriggerSleepAction
+        常量: 0.50
+    TriggerExecute
+        变量: gg_trg_Spawn_Wnderers

@@ -1,0 +1,508 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OperatorCompareAbilityId
+        函数: GetSpellAbilityId
+        预设: OperatorEqualENE
+        常量: A03H
+动作
+    SetVariable
+        变量: HeroFaceCrystal
+        函数: GetUnitFacing
+            变量: gg_unit_h02R_0172
+    SetVariable
+        变量: HeroPathCrystal
+        常量: 125.00
+    SetVariable
+        变量: HeroLocationCrystal
+        函数: GetUnitLoc
+            变量: gg_unit_h02R_0172
+    SetVariable
+        变量: CrystalOffset
+        函数: PolarProjectionBJ
+            变量: HeroLocationCrystal
+            变量: HeroPathCrystal
+            变量: HeroFaceCrystal
+    SetVariable
+        变量: HeroPathCrystal
+        函数: OperatorReal
+            变量: HeroPathCrystal
+            预设: OperatorAdd
+            常量: 125.00
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h039
+        预设: Player01
+        变量: CrystalOffset
+        函数: GetRandomReal
+            常量: 0
+            常量: 360.00
+    ForGroupMultiple
+        函数: GetUnitsInRangeOfLocAll
+            常量: 150.00
+            函数: GetUnitLoc
+                函数: GetLastCreatedUnit
+        动作
+            IfThenElseMultiple
+                条件
+                    AndMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: IsUnitEnemy
+                                    函数: GetEnumUnit
+                                    预设: Player00
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitType
+                                    函数: GetEnumUnit
+                                    预设: UnitTypeHero
+                                预设: OperatorEqualENE
+                                常量: false
+                            OperatorCompareBoolean
+                                函数: IsUnitAliveBJ
+                                    函数: GetEnumUnit
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitType
+                                    函数: GetEnumUnit
+                                    预设: UnitTypeMagicImmune
+                                预设: OperatorEqualENE
+                                常量: false
+                动作
+                    GroupAddUnitSimple
+                        函数: GetEnumUnit
+                        变量: TharokStrikeGroup
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h03A
+        预设: Player01
+        函数: GetUnitLoc
+            变量: gg_unit_h02R_0172
+        预设: RealUnitFacing
+    SetVariable
+        变量: TharokStrikeTarget1
+        函数: GroupPickRandomUnit
+            变量: TharokStrikeGroup
+    IssueTargetOrder
+        函数: GetLastCreatedUnit
+        预设: UnitOrderSlow
+        变量: TharokStrikeTarget1
+    GroupRemoveUnitSimple
+        变量: TharokStrikeTarget1
+        变量: TharokStrikeGroup
+    SetVariable
+        变量: TharokStrikeTarget2
+        函数: GroupPickRandomUnit
+            变量: TharokStrikeGroup
+    IssueTargetOrder
+        函数: GetLastCreatedUnit
+        预设: UnitOrderSlow
+        变量: TharokStrikeTarget2
+    GroupRemoveUnitSimple
+        变量: TharokStrikeTarget2
+        变量: TharokStrikeGroup
+    SetVariable
+        变量: TharokStrikeTarget3
+        函数: GroupPickRandomUnit
+            变量: TharokStrikeGroup
+    IssueTargetOrder
+        函数: GetLastCreatedUnit
+        预设: UnitOrderSlow
+        变量: TharokStrikeTarget3
+    GroupClear
+        变量: TharokStrikeGroup
+    TriggerSleepAction
+        常量: 0.20
+    SetVariable
+        变量: CrystalOffset
+        函数: PolarProjectionBJ
+            变量: HeroLocationCrystal
+            变量: HeroPathCrystal
+            变量: HeroFaceCrystal
+    SetVariable
+        变量: HeroPathCrystal
+        函数: OperatorReal
+            变量: HeroPathCrystal
+            预设: OperatorAdd
+            常量: 125.00
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h039
+        预设: Player01
+        变量: CrystalOffset
+        函数: GetRandomReal
+            常量: 0
+            常量: 360.00
+    ForGroupMultiple
+        函数: GetUnitsInRangeOfLocAll
+            常量: 150.00
+            函数: GetUnitLoc
+                函数: GetLastCreatedUnit
+        动作
+            IfThenElseMultiple
+                条件
+                    AndMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: IsUnitEnemy
+                                    函数: GetEnumUnit
+                                    预设: Player00
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitType
+                                    函数: GetEnumUnit
+                                    预设: UnitTypeHero
+                                预设: OperatorEqualENE
+                                常量: false
+                            OperatorCompareBoolean
+                                函数: IsUnitAliveBJ
+                                    函数: GetEnumUnit
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitType
+                                    函数: GetEnumUnit
+                                    预设: UnitTypeMagicImmune
+                                预设: OperatorEqualENE
+                                常量: false
+                动作
+                    GroupAddUnitSimple
+                        函数: GetEnumUnit
+                        变量: TharokStrikeGroup
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h03A
+        预设: Player01
+        函数: GetUnitLoc
+            变量: gg_unit_h02R_0172
+        预设: RealUnitFacing
+    SetVariable
+        变量: TharokStrikeTarget1
+        函数: GroupPickRandomUnit
+            变量: TharokStrikeGroup
+    IssueTargetOrder
+        函数: GetLastCreatedUnit
+        预设: UnitOrderSlow
+        变量: TharokStrikeTarget1
+    GroupRemoveUnitSimple
+        变量: TharokStrikeTarget1
+        变量: TharokStrikeGroup
+    SetVariable
+        变量: TharokStrikeTarget2
+        函数: GroupPickRandomUnit
+            变量: TharokStrikeGroup
+    IssueTargetOrder
+        函数: GetLastCreatedUnit
+        预设: UnitOrderSlow
+        变量: TharokStrikeTarget2
+    GroupRemoveUnitSimple
+        变量: TharokStrikeTarget2
+        变量: TharokStrikeGroup
+    SetVariable
+        变量: TharokStrikeTarget3
+        函数: GroupPickRandomUnit
+            变量: TharokStrikeGroup
+    IssueTargetOrder
+        函数: GetLastCreatedUnit
+        预设: UnitOrderSlow
+        变量: TharokStrikeTarget3
+    GroupClear
+        变量: TharokStrikeGroup
+    TriggerSleepAction
+        常量: 0.20
+    SetVariable
+        变量: CrystalOffset
+        函数: PolarProjectionBJ
+            变量: HeroLocationCrystal
+            变量: HeroPathCrystal
+            变量: HeroFaceCrystal
+    SetVariable
+        变量: HeroPathCrystal
+        函数: OperatorReal
+            变量: HeroPathCrystal
+            预设: OperatorAdd
+            常量: 125.00
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h039
+        预设: Player01
+        变量: CrystalOffset
+        函数: GetRandomReal
+            常量: 0
+            常量: 360.00
+    ForGroupMultiple
+        函数: GetUnitsInRangeOfLocAll
+            常量: 150.00
+            函数: GetUnitLoc
+                函数: GetLastCreatedUnit
+        动作
+            IfThenElseMultiple
+                条件
+                    AndMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: IsUnitEnemy
+                                    函数: GetEnumUnit
+                                    预设: Player00
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitType
+                                    函数: GetEnumUnit
+                                    预设: UnitTypeHero
+                                预设: OperatorEqualENE
+                                常量: false
+                            OperatorCompareBoolean
+                                函数: IsUnitAliveBJ
+                                    函数: GetEnumUnit
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitType
+                                    函数: GetEnumUnit
+                                    预设: UnitTypeMagicImmune
+                                预设: OperatorEqualENE
+                                常量: false
+                动作
+                    GroupAddUnitSimple
+                        函数: GetEnumUnit
+                        变量: TharokStrikeGroup
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h03A
+        预设: Player01
+        函数: GetUnitLoc
+            变量: gg_unit_h02R_0172
+        预设: RealUnitFacing
+    SetVariable
+        变量: TharokStrikeTarget1
+        函数: GroupPickRandomUnit
+            变量: TharokStrikeGroup
+    IssueTargetOrder
+        函数: GetLastCreatedUnit
+        预设: UnitOrderSlow
+        变量: TharokStrikeTarget1
+    GroupRemoveUnitSimple
+        变量: TharokStrikeTarget1
+        变量: TharokStrikeGroup
+    SetVariable
+        变量: TharokStrikeTarget2
+        函数: GroupPickRandomUnit
+            变量: TharokStrikeGroup
+    IssueTargetOrder
+        函数: GetLastCreatedUnit
+        预设: UnitOrderSlow
+        变量: TharokStrikeTarget2
+    GroupRemoveUnitSimple
+        变量: TharokStrikeTarget2
+        变量: TharokStrikeGroup
+    SetVariable
+        变量: TharokStrikeTarget3
+        函数: GroupPickRandomUnit
+            变量: TharokStrikeGroup
+    IssueTargetOrder
+        函数: GetLastCreatedUnit
+        预设: UnitOrderSlow
+        变量: TharokStrikeTarget3
+    GroupClear
+        变量: TharokStrikeGroup
+    TriggerSleepAction
+        常量: 0.20
+    SetVariable
+        变量: CrystalOffset
+        函数: PolarProjectionBJ
+            变量: HeroLocationCrystal
+            变量: HeroPathCrystal
+            变量: HeroFaceCrystal
+    SetVariable
+        变量: HeroPathCrystal
+        函数: OperatorReal
+            变量: HeroPathCrystal
+            预设: OperatorAdd
+            常量: 125.00
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h039
+        预设: Player01
+        变量: CrystalOffset
+        函数: GetRandomReal
+            常量: 0
+            常量: 360.00
+    ForGroupMultiple
+        函数: GetUnitsInRangeOfLocAll
+            常量: 150.00
+            函数: GetUnitLoc
+                函数: GetLastCreatedUnit
+        动作
+            IfThenElseMultiple
+                条件
+                    AndMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: IsUnitEnemy
+                                    函数: GetEnumUnit
+                                    预设: Player00
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitType
+                                    函数: GetEnumUnit
+                                    预设: UnitTypeHero
+                                预设: OperatorEqualENE
+                                常量: false
+                            OperatorCompareBoolean
+                                函数: IsUnitAliveBJ
+                                    函数: GetEnumUnit
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitType
+                                    函数: GetEnumUnit
+                                    预设: UnitTypeMagicImmune
+                                预设: OperatorEqualENE
+                                常量: false
+                动作
+                    GroupAddUnitSimple
+                        函数: GetEnumUnit
+                        变量: TharokStrikeGroup
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h03A
+        预设: Player01
+        函数: GetUnitLoc
+            变量: gg_unit_h02R_0172
+        预设: RealUnitFacing
+    SetVariable
+        变量: TharokStrikeTarget1
+        函数: GroupPickRandomUnit
+            变量: TharokStrikeGroup
+    IssueTargetOrder
+        函数: GetLastCreatedUnit
+        预设: UnitOrderSlow
+        变量: TharokStrikeTarget1
+    GroupRemoveUnitSimple
+        变量: TharokStrikeTarget1
+        变量: TharokStrikeGroup
+    SetVariable
+        变量: TharokStrikeTarget2
+        函数: GroupPickRandomUnit
+            变量: TharokStrikeGroup
+    IssueTargetOrder
+        函数: GetLastCreatedUnit
+        预设: UnitOrderSlow
+        变量: TharokStrikeTarget2
+    GroupRemoveUnitSimple
+        变量: TharokStrikeTarget2
+        变量: TharokStrikeGroup
+    SetVariable
+        变量: TharokStrikeTarget3
+        函数: GroupPickRandomUnit
+            变量: TharokStrikeGroup
+    IssueTargetOrder
+        函数: GetLastCreatedUnit
+        预设: UnitOrderSlow
+        变量: TharokStrikeTarget3
+    GroupClear
+        变量: TharokStrikeGroup
+    TriggerSleepAction
+        常量: 0.20
+    SetVariable
+        变量: CrystalOffset
+        函数: PolarProjectionBJ
+            变量: HeroLocationCrystal
+            变量: HeroPathCrystal
+            变量: HeroFaceCrystal
+    SetVariable
+        变量: HeroPathCrystal
+        函数: OperatorReal
+            变量: HeroPathCrystal
+            预设: OperatorAdd
+            常量: 125.00
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h039
+        预设: Player01
+        变量: CrystalOffset
+        函数: GetRandomReal
+            常量: 0
+            常量: 360.00
+    ForGroupMultiple
+        函数: GetUnitsInRangeOfLocAll
+            常量: 150.00
+            函数: GetUnitLoc
+                函数: GetLastCreatedUnit
+        动作
+            IfThenElseMultiple
+                条件
+                    AndMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: IsUnitEnemy
+                                    函数: GetEnumUnit
+                                    预设: Player00
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitType
+                                    函数: GetEnumUnit
+                                    预设: UnitTypeHero
+                                预设: OperatorEqualENE
+                                常量: false
+                            OperatorCompareBoolean
+                                函数: IsUnitAliveBJ
+                                    函数: GetEnumUnit
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitType
+                                    函数: GetEnumUnit
+                                    预设: UnitTypeMagicImmune
+                                预设: OperatorEqualENE
+                                常量: false
+                动作
+                    GroupAddUnitSimple
+                        函数: GetEnumUnit
+                        变量: TharokStrikeGroup
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h03A
+        预设: Player01
+        函数: GetUnitLoc
+            变量: gg_unit_h02R_0172
+        预设: RealUnitFacing
+    SetVariable
+        变量: TharokStrikeTarget1
+        函数: GroupPickRandomUnit
+            变量: TharokStrikeGroup
+    IssueTargetOrder
+        函数: GetLastCreatedUnit
+        预设: UnitOrderSlow
+        变量: TharokStrikeTarget1
+    GroupRemoveUnitSimple
+        变量: TharokStrikeTarget1
+        变量: TharokStrikeGroup
+    SetVariable
+        变量: TharokStrikeTarget2
+        函数: GroupPickRandomUnit
+            变量: TharokStrikeGroup
+    IssueTargetOrder
+        函数: GetLastCreatedUnit
+        预设: UnitOrderSlow
+        变量: TharokStrikeTarget2
+    GroupRemoveUnitSimple
+        变量: TharokStrikeTarget2
+        变量: TharokStrikeGroup
+    SetVariable
+        变量: TharokStrikeTarget3
+        函数: GroupPickRandomUnit
+            变量: TharokStrikeGroup
+    IssueTargetOrder
+        函数: GetLastCreatedUnit
+        预设: UnitOrderSlow
+        变量: TharokStrikeTarget3
+    GroupClear
+        变量: TharokStrikeGroup

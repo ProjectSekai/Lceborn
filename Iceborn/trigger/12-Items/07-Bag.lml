@@ -1,0 +1,18 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventHeroPickUpItem
+条件
+    OperatorCompareItemCode
+        函数: GetItemTypeId
+            函数: GetManipulatedItem
+        预设: OperatorEqualENE
+        常量: I00L
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    UnitRemoveAbilityBJ
+        常量: A007
+        变量: Hero
+    UnitAddAbilityBJ
+        常量: A00E
+        变量: Hero

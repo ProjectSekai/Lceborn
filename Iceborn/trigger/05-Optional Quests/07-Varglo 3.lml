@@ -1,0 +1,40 @@
+事件
+    TriggerRegisterEnterRectSimple
+        变量: gg_rct_Region_109
+条件
+    OperatorCompareUnit
+        函数: GetEnteringUnit
+        预设: OperatorEqualENE
+        变量: gg_unit_h025_0110
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    SetMusicVolumeBJ
+        常量: 50.00
+    ForGroup
+        函数: GetUnitsInRectAll
+            变量: gg_rct_Region_111
+        动作: IfThenElse
+            条件: OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetEnumUnit
+                预设: OperatorEqualENE
+                常量: h028
+            动作: SetUnitFacingToFaceLocTimed
+                函数: GetEnumUnit
+                函数: GetRectCenter
+                    变量: gg_rct_Region_110
+                常量: 4.00
+            动作: DoNothing
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 19.00
+        常量: '|cffffcc00瓦格罗:|r 我们到了,就是这里.这些门被魔法锁所封印,瓦格罗不聪明,没办法进去.或许你的才智可以足够快地营救我的朋友,在我们被抓被杀之前!
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Varglo7
+    TriggerSleepAction
+        常量: 20.00
+    SetMusicVolumeBJ
+        常量: 100.00

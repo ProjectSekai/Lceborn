@@ -1,0 +1,39 @@
+事件
+    TriggerRegisterUnitInRangeSimple
+        常量: 200.00
+        变量: gg_unit_h02R_0172
+条件
+    OperatorCompareUnit
+        函数: GetTriggerUnit
+        预设: OperatorEqualENE
+        变量: Hero
+动作
+    EnableTrigger
+        变量: gg_trg_Tharok_2
+    DialogClearBJ
+        变量: Dialog
+    DialogSetMessageBJ
+        变量: Dialog
+        常量: '你的答复是:'
+    DialogAddButtonBJ
+        变量: Dialog
+        常量: |CFF7EBFF1好的,我帮助你|R
+    SetVariable
+        变量: DialogButton1
+        函数: GetLastCreatedButtonBJ
+    DialogAddButtonBJ
+        变量: Dialog
+        常量: |CFF7EBFF1现在不行|R
+    SetVariable
+        变量: DialogButton2
+        函数: GetLastCreatedButtonBJ
+    DialogAddButtonBJ
+        变量: Dialog
+        常量: |CFF7EBFF1我有更重要的事去做|R
+    SetVariable
+        变量: DialogButton3
+        函数: GetLastCreatedButtonBJ
+    DialogDisplayBJ
+        预设: ShowHideShow
+        变量: Dialog
+        预设: Player00

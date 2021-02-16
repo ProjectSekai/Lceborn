@@ -1,0 +1,75 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OperatorCompareAbilityId
+        函数: GetSpellAbilityId
+        预设: OperatorEqualENE
+        常量: A05R
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    CommentString
+        常量: 'This are spell effects. They don´t affect the knockback.'
+    SetVariable
+        变量: Sample_Point
+        函数: GetUnitLoc
+            函数: GetTriggerUnit
+    SetVariable
+        变量: Sample_Group
+        函数: GetUnitsInRangeOfLocMatching
+            常量: 1000.00
+            变量: Sample_Point
+            条件: OperatorCompareUnit
+                函数: GetEnumUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_H01N_0355
+    CommentString
+        常量: ' '
+    CommentString
+        常量: 'This are the applied actions of the ''Actions to apply'' trigger. They are in a loop to affect more than one unit.'
+    ForGroupMultiple
+        变量: Sample_Group
+        动作
+            SetVariable
+                变量: KBA_Caster
+                函数: GetTriggerUnit
+            SetVariable
+                变量: KBA_TargetUnit
+                函数: GetEnumUnit
+            SetVariable
+                变量: KBA_Level
+                常量: 1
+            SetVariable
+                变量: KBA_StartingPosition
+                函数: GetUnitLoc
+                    函数: GetTriggerUnit
+            SetVariable
+                变量: KBA_Speed
+                常量: 0.50
+            SetVariable
+                变量: KBA_DistancePerLevel
+                常量: 50.00
+            SetVariable
+                数组: KBA_SpecialEffects
+                    常量: 1
+                常量: none.mdl
+            SetVariable
+                数组: KBA_SpecialEffects
+                    常量: 2
+                常量: none.mdl
+            SetVariable
+                变量: KBA_DestroyTrees
+                常量: false
+            ConditionalTriggerExecute
+                变量: gg_trg_Cast_A_Knockback
+    CommentString
+        常量: ' '
+    CustomScriptCode
+        常量: 'call RemoveLocation (udg_Sample_Point)'
+    CustomScriptCode
+        常量: 'call DestroyGroup (udg_Sample_Group)'
+    TriggerSleepAction
+        常量: 1.00
+    EnableTrigger
+        变量: gg_trg_Clap_71_Phase_2

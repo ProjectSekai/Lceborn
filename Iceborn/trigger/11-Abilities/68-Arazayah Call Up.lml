@@ -1,0 +1,130 @@
+事件
+条件
+动作
+    IfThenElse
+        条件: OperatorCompareBoolean
+            函数: IsUnitDeadBJ
+                变量: Arazayah
+            预设: OperatorEqualENE
+            常量: true
+        动作: ReturnAction
+        动作: DoNothing
+    SelectUnitSingle
+        变量: Hero
+    RemoveUnit
+        变量: ArazayahCallUp
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: H052
+        预设: Player00
+        函数: GetRectCenter
+            变量: gg_rct_Region_227
+        预设: RealUnitFacing
+    SetVariable
+        变量: ArazayahCallUpCD
+        函数: GetLastCreatedUnit
+    SetHeroLevel
+        函数: GetLastCreatedUnit
+        常量: 20
+        预设: ShowHideHide
+    AddTriggerEvent
+        变量: gg_trg_Arazayah_CD_Deselect
+        事件: TriggerRegisterUnitEvent
+            变量: ArazayahCallUpCD
+            预设: UnitEventSelected
+    PlaySoundBJ
+        变量: gg_snd_DragonPissed1
+    CameraSetEQNoiseForPlayer
+        预设: Player00
+        常量: 5.00
+    ShowUnitShow
+        变量: Arazayah
+    SetUnitOwner
+        变量: Arazayah
+        预设: Player01
+        预设: ChangeColorTrue
+    SetUnitPositionLoc
+        变量: Arazayah
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: Hero
+            常量: 2000.00
+            函数: GetRandomDirectionDeg
+    IssuePointOrderLoc
+        变量: Arazayah
+        预设: UnitOrderMove
+        函数: GetUnitLoc
+            变量: Hero
+    SetVariable
+        变量: DragonOn
+        常量: true
+    TriggerSleepAction
+        常量: 1.00
+    EnableTrigger
+        变量: gg_trg_Arazayah_Detection
+    CameraClearNoiseForPlayer
+        预设: Player00
+    TriggerSleepAction
+        常量: 59.00
+    SetVariable
+        变量: DragonOn
+        常量: false
+    DisableTrigger
+        变量: gg_trg_Arazayah_Detection
+    IfThenElse
+        条件: OperatorCompareBoolean
+            函数: IsUnitDeadBJ
+                变量: Arazayah
+            预设: OperatorEqualENE
+            常量: true
+        动作: ReturnAction
+        动作: DoNothing
+    SetUnitOwner
+        变量: Arazayah
+        预设: PlayerNP
+        预设: ChangeColorTrue
+    IssuePointOrderLoc
+        变量: Arazayah
+        预设: UnitOrderMove
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: Hero
+            常量: 4000.00
+            函数: GetRandomDirectionDeg
+    PlaySoundBJ
+        变量: gg_snd_DragonPissed1
+    TriggerSleepAction
+        常量: 10.00
+    ShowUnitHide
+        变量: Arazayah
+    TriggerSleepAction
+        常量: 80.00
+    IfThenElse
+        条件: OperatorCompareBoolean
+            函数: IsUnitDeadBJ
+                变量: Arazayah
+            预设: OperatorEqualENE
+            常量: true
+        动作: ReturnAction
+        动作: DoNothing
+    RemoveUnit
+        变量: ArazayahCallUpCD
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: H051
+        预设: Player00
+        函数: GetRectCenter
+            变量: gg_rct_Region_227
+        预设: RealUnitFacing
+    SetVariable
+        变量: ArazayahCallUp
+        函数: GetLastCreatedUnit
+    SetHeroLevel
+        函数: GetLastCreatedUnit
+        常量: 20
+        预设: ShowHideHide
+    AddTriggerEvent
+        变量: gg_trg_Arazayah_Call_Up
+        事件: TriggerRegisterUnitEvent
+            变量: ArazayahCallUp
+            预设: UnitEventSelected

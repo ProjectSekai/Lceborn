@@ -1,0 +1,14 @@
+事件
+    TriggerRegisterPlayerChatEvent
+        预设: Player00
+        常量: Reset
+        预设: ChatMatchTypeExact
+条件
+动作
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cff7777aa注意: 属性重置系统仍处于冷却中|r
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Hint

@@ -1,0 +1,90 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OperatorCompareAbilityId
+        函数: GetSpellAbilityId
+        预设: OperatorEqualENE
+        常量: A00L
+动作
+    EnableTrigger
+        变量: gg_trg_Teleportation_Itself
+    DialogClearBJ
+        变量: Dialog
+    DialogSetMessageBJ
+        变量: Dialog
+        常量: '传送到:'
+    DialogAddButtonBJ
+        变量: Dialog
+        常量: |CFF7EBFF1水晶树之丘|R
+    SetVariable
+        变量: DialogButton1
+        函数: GetLastCreatedButtonBJ
+    DialogAddButtonBJ
+        变量: Dialog
+        常量: |CFF7EBFF1波伊斯天空|R
+    SetVariable
+        变量: DialogButton2
+        函数: GetLastCreatedButtonBJ
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: Horthodamus
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            DialogAddButtonBJ
+                变量: Dialog
+                常量: |CFF7EBFF1霍索达慕斯|R
+            SetVariable
+                变量: DialogButton3
+                函数: GetLastCreatedButtonBJ
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: Narsetrodamus
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            DialogAddButtonBJ
+                变量: Dialog
+                常量: '|CFF7EBFF1纳谢特罗达慕斯: 底层|R'
+            SetVariable
+                变量: DialogButton4
+                函数: GetLastCreatedButtonBJ
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: Rockwonder
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            DialogAddButtonBJ
+                变量: Dialog
+                常量: |CFF7EBFF1奇岩城|R
+            SetVariable
+                变量: DialogButton5
+                函数: GetLastCreatedButtonBJ
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: BoethsoulDeeps
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            DialogAddButtonBJ
+                变量: Dialog
+                常量: |CFF7EBFF1波伊斯之魂的深处|R
+            SetVariable
+                变量: DialogButton6
+                函数: GetLastCreatedButtonBJ
+    DialogAddButtonBJ
+        变量: Dialog
+        常量: 取消
+    SetVariable
+        变量: DialogButtonCancel
+        函数: GetLastCreatedButtonBJ
+    DialogDisplayBJ
+        预设: ShowHideShow
+        变量: Dialog
+        预设: Player00

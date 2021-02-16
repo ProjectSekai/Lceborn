@@ -1,0 +1,104 @@
+事件
+    TriggerRegisterPlayerChatEvent
+        预设: Player00
+        常量: acumen
+        预设: ChatMatchTypeExact
+条件
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    TriggerSleepAction
+        常量: 2.00
+    PlaySoundBJ
+        变量: gg_snd_Explosion3
+    KillUnit
+        变量: gg_unit_h02X_0179
+    KillUnit
+        变量: gg_unit_h02U_0176
+    KillUnit
+        变量: gg_unit_h02V_0177
+    KillUnit
+        变量: gg_unit_h02W_0178
+    KillUnit
+        变量: gg_unit_h02Y_0180
+    KillUnit
+        变量: gg_unit_h02Y_0183
+    KillUnit
+        变量: gg_unit_h02Z_0185
+    KillUnit
+        变量: gg_unit_h031_0186
+    KillUnit
+        变量: gg_unit_h02Y_0184
+    KillUnit
+        变量: gg_unit_h02Z_0181
+    KillUnit
+        变量: gg_unit_h02Z_0182
+    KillUnit
+        变量: gg_unit_h030_0189
+    KillUnit
+        变量: gg_unit_h030_0188
+    KillUnit
+        变量: gg_unit_h030_0187
+    KillUnit
+        变量: gg_unit_h033_0192
+    KillUnit
+        变量: gg_unit_h032_0190
+    KillUnit
+        变量: gg_unit_h032_0191
+    KillUnit
+        变量: gg_unit_h030_0193
+    KillUnit
+        变量: gg_unit_h030_0194
+    KillUnit
+        变量: gg_unit_h030_0195
+    KillUnit
+        变量: gg_unit_h030_0196
+    TriggerSleepAction
+        常量: 4.00
+    ShowUnitHide
+        变量: gg_unit_h02T_0175
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h034
+        预设: PlayerNP
+        函数: GetUnitLoc
+            变量: gg_unit_h02T_0175
+        常量: 225.00
+    SetVariable
+        变量: RollingDoor
+        函数: GetLastCreatedUnit
+    SetUnitFlyHeightBJ
+        函数: GetLastCreatedUnit
+        常量: 0.00
+        常量: 50.00
+    EnableTrigger
+        变量: gg_trg_Rolling_Door_Effect
+    PlaySoundBJ
+        变量: gg_snd_RockSlide
+    CameraSetEQNoiseForPlayer
+        预设: Player00
+        常量: 4.00
+    TriggerSleepAction
+        常量: 9.00
+    KillDestructable
+        变量: gg_dest_YTpc_7624
+    KillDestructable
+        变量: gg_dest_YTpc_7623
+    KillDestructable
+        变量: gg_dest_YTpc_7622
+    CameraClearNoiseForPlayer
+        预设: Player00
+    StopSoundBJ
+        变量: gg_snd_RockSlide
+        预设: FadeDontDont
+    UnitRemoveAbilityBJ
+        常量: Avul
+        变量: RollingDoor
+    KillUnit
+        变量: RollingDoor
+    DisableTrigger
+        变量: gg_trg_Rolling_Door_Effect
+    TriggerSleepAction
+        常量: 1.00
+    TriggerExecute
+        变量: gg_trg_Tharok_3

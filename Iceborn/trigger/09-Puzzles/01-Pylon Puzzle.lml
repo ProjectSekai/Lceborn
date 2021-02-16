@@ -1,0 +1,853 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventDeath
+条件
+    OrMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: Pylon11Unit
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: Pylon12Unit
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: Pylon13Unit
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: Pylon14Unit
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: Pylon21Unit
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: Pylon22Unit
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: Pylon23Unit
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: Pylon24Unit
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: Pylon31Unit
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: Pylon32Unit
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: Pylon33Unit
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: Pylon34Unit
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: Pylon21Unit
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: Pylon21
+                        预设: OperatorEqualENE
+                        常量: false
+                动作
+                    StopSoundBJ
+                        变量: gg_snd_AncestralSpirit
+                        预设: FadeDontDont
+                    PlaySoundBJ
+                        变量: gg_snd_AncestralSpirit
+                    SetVariable
+                        变量: Pylon21
+                        常量: true
+                    AddSpecialEffectLocBJ
+                        函数: GetRectCenter
+                            变量: gg_rct_Region_088_Copy
+                        常量: IonCannonBeam.mdx
+                    SetVariable
+                        变量: Pylon21Effect
+                        函数: GetLastCreatedEffectBJ
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h01Z
+                        预设: PlayerNP
+                        函数: GetUnitLoc
+                            函数: GetDyingUnit
+                        预设: RealUnitFacing
+                    SetVariable
+                        变量: Pylon21Unit
+                        函数: GetLastCreatedUnit
+                动作
+                    StopSoundBJ
+                        变量: gg_snd_SpiritLink1
+                        预设: FadeDontDont
+                    PlaySoundBJ
+                        变量: gg_snd_SpiritLink1
+                    SetVariable
+                        变量: Pylon21
+                        常量: false
+                    DestroyEffectBJ
+                        变量: Pylon21Effect
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h01Z
+                        预设: PlayerNP
+                        函数: GetUnitLoc
+                            函数: GetDyingUnit
+                        预设: RealUnitFacing
+                    SetVariable
+                        变量: Pylon21Unit
+                        函数: GetLastCreatedUnit
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: Pylon22Unit
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: Pylon22
+                        预设: OperatorEqualENE
+                        常量: false
+                动作
+                    StopSoundBJ
+                        变量: gg_snd_AncestralSpirit
+                        预设: FadeDontDont
+                    PlaySoundBJ
+                        变量: gg_snd_AncestralSpirit
+                    SetVariable
+                        变量: Pylon22
+                        常量: true
+                    AddSpecialEffectLocBJ
+                        函数: GetRectCenter
+                            变量: gg_rct_Region_088
+                        常量: IonCannonBeam.mdx
+                    SetVariable
+                        变量: Pylon22Effect
+                        函数: GetLastCreatedEffectBJ
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h01Z
+                        预设: PlayerNP
+                        函数: GetUnitLoc
+                            函数: GetDyingUnit
+                        预设: RealUnitFacing
+                    SetVariable
+                        变量: Pylon22Unit
+                        函数: GetLastCreatedUnit
+                动作
+                    StopSoundBJ
+                        变量: gg_snd_SpiritLink1
+                        预设: FadeDontDont
+                    PlaySoundBJ
+                        变量: gg_snd_SpiritLink1
+                    SetVariable
+                        变量: Pylon22
+                        常量: false
+                    DestroyEffectBJ
+                        变量: Pylon22Effect
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h01Z
+                        预设: PlayerNP
+                        函数: GetUnitLoc
+                            函数: GetDyingUnit
+                        预设: RealUnitFacing
+                    SetVariable
+                        变量: Pylon22Unit
+                        函数: GetLastCreatedUnit
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: Pylon23Unit
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: Pylon23
+                        预设: OperatorEqualENE
+                        常量: false
+                动作
+                    StopSoundBJ
+                        变量: gg_snd_AncestralSpirit
+                        预设: FadeDontDont
+                    PlaySoundBJ
+                        变量: gg_snd_AncestralSpirit
+                    SetVariable
+                        变量: Pylon23
+                        常量: true
+                    AddSpecialEffectLocBJ
+                        函数: GetRectCenter
+                            变量: gg_rct_Region_088_Copy_11
+                        常量: IonCannonBeam.mdx
+                    SetVariable
+                        变量: Pylon23Effect
+                        函数: GetLastCreatedEffectBJ
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h01Z
+                        预设: PlayerNP
+                        函数: GetUnitLoc
+                            函数: GetDyingUnit
+                        预设: RealUnitFacing
+                    SetVariable
+                        变量: Pylon23Unit
+                        函数: GetLastCreatedUnit
+                动作
+                    StopSoundBJ
+                        变量: gg_snd_SpiritLink1
+                        预设: FadeDontDont
+                    PlaySoundBJ
+                        变量: gg_snd_SpiritLink1
+                    SetVariable
+                        变量: Pylon23
+                        常量: false
+                    DestroyEffectBJ
+                        变量: Pylon23Effect
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h01Z
+                        预设: PlayerNP
+                        函数: GetUnitLoc
+                            函数: GetDyingUnit
+                        预设: RealUnitFacing
+                    SetVariable
+                        变量: Pylon23Unit
+                        函数: GetLastCreatedUnit
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: Pylon24Unit
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: Pylon24
+                        预设: OperatorEqualENE
+                        常量: false
+                动作
+                    StopSoundBJ
+                        变量: gg_snd_AncestralSpirit
+                        预设: FadeDontDont
+                    PlaySoundBJ
+                        变量: gg_snd_AncestralSpirit
+                    SetVariable
+                        变量: Pylon24
+                        常量: true
+                    AddSpecialEffectLocBJ
+                        函数: GetRectCenter
+                            变量: gg_rct_Region_088_Copy_10
+                        常量: IonCannonBeam.mdx
+                    SetVariable
+                        变量: Pylon24Effect
+                        函数: GetLastCreatedEffectBJ
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h01Z
+                        预设: PlayerNP
+                        函数: GetUnitLoc
+                            函数: GetDyingUnit
+                        预设: RealUnitFacing
+                    SetVariable
+                        变量: Pylon24Unit
+                        函数: GetLastCreatedUnit
+                动作
+                    StopSoundBJ
+                        变量: gg_snd_SpiritLink1
+                        预设: FadeDontDont
+                    PlaySoundBJ
+                        变量: gg_snd_SpiritLink1
+                    SetVariable
+                        变量: Pylon24
+                        常量: false
+                    DestroyEffectBJ
+                        变量: Pylon24Effect
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h01Z
+                        预设: PlayerNP
+                        函数: GetUnitLoc
+                            函数: GetDyingUnit
+                        预设: RealUnitFacing
+                    SetVariable
+                        变量: Pylon24Unit
+                        函数: GetLastCreatedUnit
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: Pylon11Unit
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: Pylon11
+                        预设: OperatorEqualENE
+                        常量: false
+                动作
+                    StopSoundBJ
+                        变量: gg_snd_AncestralSpirit
+                        预设: FadeDontDont
+                    PlaySoundBJ
+                        变量: gg_snd_AncestralSpirit
+                    SetVariable
+                        变量: Pylon11
+                        常量: true
+                    AddSpecialEffectLocBJ
+                        函数: GetRectCenter
+                            变量: gg_rct_Region_088_Copy_2
+                        常量: IonCannonBeam.mdx
+                    SetVariable
+                        变量: Pylon11Effect
+                        函数: GetLastCreatedEffectBJ
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h01Z
+                        预设: PlayerNP
+                        函数: GetUnitLoc
+                            函数: GetDyingUnit
+                        预设: RealUnitFacing
+                    SetVariable
+                        变量: Pylon11Unit
+                        函数: GetLastCreatedUnit
+                动作
+                    StopSoundBJ
+                        变量: gg_snd_SpiritLink1
+                        预设: FadeDontDont
+                    PlaySoundBJ
+                        变量: gg_snd_SpiritLink1
+                    SetVariable
+                        变量: Pylon11
+                        常量: false
+                    DestroyEffectBJ
+                        变量: Pylon11Effect
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h01Z
+                        预设: PlayerNP
+                        函数: GetUnitLoc
+                            函数: GetDyingUnit
+                        预设: RealUnitFacing
+                    SetVariable
+                        变量: Pylon11Unit
+                        函数: GetLastCreatedUnit
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: Pylon12Unit
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: Pylon12
+                        预设: OperatorEqualENE
+                        常量: false
+                动作
+                    StopSoundBJ
+                        变量: gg_snd_AncestralSpirit
+                        预设: FadeDontDont
+                    PlaySoundBJ
+                        变量: gg_snd_AncestralSpirit
+                    SetVariable
+                        变量: Pylon12
+                        常量: true
+                    AddSpecialEffectLocBJ
+                        函数: GetRectCenter
+                            变量: gg_rct_Region_088_Copy_3
+                        常量: IonCannonBeam.mdx
+                    SetVariable
+                        变量: Pylon12Effect
+                        函数: GetLastCreatedEffectBJ
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h01Z
+                        预设: PlayerNP
+                        函数: GetUnitLoc
+                            函数: GetDyingUnit
+                        预设: RealUnitFacing
+                    SetVariable
+                        变量: Pylon12Unit
+                        函数: GetLastCreatedUnit
+                动作
+                    StopSoundBJ
+                        变量: gg_snd_SpiritLink1
+                        预设: FadeDontDont
+                    PlaySoundBJ
+                        变量: gg_snd_SpiritLink1
+                    SetVariable
+                        变量: Pylon12
+                        常量: false
+                    DestroyEffectBJ
+                        变量: Pylon12Effect
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h01Z
+                        预设: PlayerNP
+                        函数: GetUnitLoc
+                            函数: GetDyingUnit
+                        预设: RealUnitFacing
+                    SetVariable
+                        变量: Pylon12Unit
+                        函数: GetLastCreatedUnit
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: Pylon13Unit
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: Pylon13
+                        预设: OperatorEqualENE
+                        常量: false
+                动作
+                    StopSoundBJ
+                        变量: gg_snd_AncestralSpirit
+                        预设: FadeDontDont
+                    PlaySoundBJ
+                        变量: gg_snd_AncestralSpirit
+                    SetVariable
+                        变量: Pylon13
+                        常量: true
+                    AddSpecialEffectLocBJ
+                        函数: GetRectCenter
+                            变量: gg_rct_Region_088_Copy_4
+                        常量: IonCannonBeam.mdx
+                    SetVariable
+                        变量: Pylon13Effect
+                        函数: GetLastCreatedEffectBJ
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h01Z
+                        预设: PlayerNP
+                        函数: GetUnitLoc
+                            函数: GetDyingUnit
+                        预设: RealUnitFacing
+                    SetVariable
+                        变量: Pylon13Unit
+                        函数: GetLastCreatedUnit
+                动作
+                    StopSoundBJ
+                        变量: gg_snd_SpiritLink1
+                        预设: FadeDontDont
+                    PlaySoundBJ
+                        变量: gg_snd_SpiritLink1
+                    SetVariable
+                        变量: Pylon13
+                        常量: false
+                    DestroyEffectBJ
+                        变量: Pylon13Effect
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h01Z
+                        预设: PlayerNP
+                        函数: GetUnitLoc
+                            函数: GetDyingUnit
+                        预设: RealUnitFacing
+                    SetVariable
+                        变量: Pylon13Unit
+                        函数: GetLastCreatedUnit
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: Pylon14Unit
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: Pylon14
+                        预设: OperatorEqualENE
+                        常量: false
+                动作
+                    StopSoundBJ
+                        变量: gg_snd_AncestralSpirit
+                        预设: FadeDontDont
+                    PlaySoundBJ
+                        变量: gg_snd_AncestralSpirit
+                    SetVariable
+                        变量: Pylon14
+                        常量: true
+                    AddSpecialEffectLocBJ
+                        函数: GetRectCenter
+                            变量: gg_rct_Region_088_Copy_5
+                        常量: IonCannonBeam.mdx
+                    SetVariable
+                        变量: Pylon14Effect
+                        函数: GetLastCreatedEffectBJ
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h01Z
+                        预设: PlayerNP
+                        函数: GetUnitLoc
+                            函数: GetDyingUnit
+                        预设: RealUnitFacing
+                    SetVariable
+                        变量: Pylon14Unit
+                        函数: GetLastCreatedUnit
+                动作
+                    StopSoundBJ
+                        变量: gg_snd_SpiritLink1
+                        预设: FadeDontDont
+                    PlaySoundBJ
+                        变量: gg_snd_SpiritLink1
+                    SetVariable
+                        变量: Pylon14
+                        常量: false
+                    DestroyEffectBJ
+                        变量: Pylon14Effect
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h01Z
+                        预设: PlayerNP
+                        函数: GetUnitLoc
+                            函数: GetDyingUnit
+                        预设: RealUnitFacing
+                    SetVariable
+                        变量: Pylon14Unit
+                        函数: GetLastCreatedUnit
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: Pylon31Unit
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: Pylon31
+                        预设: OperatorEqualENE
+                        常量: false
+                动作
+                    StopSoundBJ
+                        变量: gg_snd_AncestralSpirit
+                        预设: FadeDontDont
+                    PlaySoundBJ
+                        变量: gg_snd_AncestralSpirit
+                    SetVariable
+                        变量: Pylon31
+                        常量: true
+                    AddSpecialEffectLocBJ
+                        函数: GetRectCenter
+                            变量: gg_rct_Region_088_Copy_6
+                        常量: IonCannonBeam.mdx
+                    SetVariable
+                        变量: Pylon31Effect
+                        函数: GetLastCreatedEffectBJ
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h01Z
+                        预设: PlayerNP
+                        函数: GetUnitLoc
+                            函数: GetDyingUnit
+                        预设: RealUnitFacing
+                    SetVariable
+                        变量: Pylon31Unit
+                        函数: GetLastCreatedUnit
+                动作
+                    StopSoundBJ
+                        变量: gg_snd_SpiritLink1
+                        预设: FadeDontDont
+                    PlaySoundBJ
+                        变量: gg_snd_SpiritLink1
+                    SetVariable
+                        变量: Pylon31
+                        常量: false
+                    DestroyEffectBJ
+                        变量: Pylon31Effect
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h01Z
+                        预设: PlayerNP
+                        函数: GetUnitLoc
+                            函数: GetDyingUnit
+                        预设: RealUnitFacing
+                    SetVariable
+                        变量: Pylon31Unit
+                        函数: GetLastCreatedUnit
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: Pylon32Unit
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: Pylon32
+                        预设: OperatorEqualENE
+                        常量: false
+                动作
+                    StopSoundBJ
+                        变量: gg_snd_AncestralSpirit
+                        预设: FadeDontDont
+                    PlaySoundBJ
+                        变量: gg_snd_AncestralSpirit
+                    SetVariable
+                        变量: Pylon32
+                        常量: true
+                    AddSpecialEffectLocBJ
+                        函数: GetRectCenter
+                            变量: gg_rct_Region_088_Copy_7
+                        常量: IonCannonBeam.mdx
+                    SetVariable
+                        变量: Pylon32Effect
+                        函数: GetLastCreatedEffectBJ
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h01Z
+                        预设: PlayerNP
+                        函数: GetUnitLoc
+                            函数: GetDyingUnit
+                        预设: RealUnitFacing
+                    SetVariable
+                        变量: Pylon32Unit
+                        函数: GetLastCreatedUnit
+                动作
+                    StopSoundBJ
+                        变量: gg_snd_SpiritLink1
+                        预设: FadeDontDont
+                    PlaySoundBJ
+                        变量: gg_snd_SpiritLink1
+                    SetVariable
+                        变量: Pylon32
+                        常量: false
+                    DestroyEffectBJ
+                        变量: Pylon32Effect
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h01Z
+                        预设: PlayerNP
+                        函数: GetUnitLoc
+                            函数: GetDyingUnit
+                        预设: RealUnitFacing
+                    SetVariable
+                        变量: Pylon32Unit
+                        函数: GetLastCreatedUnit
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: Pylon33Unit
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: Pylon33
+                        预设: OperatorEqualENE
+                        常量: false
+                动作
+                    StopSoundBJ
+                        变量: gg_snd_AncestralSpirit
+                        预设: FadeDontDont
+                    PlaySoundBJ
+                        变量: gg_snd_AncestralSpirit
+                    SetVariable
+                        变量: Pylon33
+                        常量: true
+                    AddSpecialEffectLocBJ
+                        函数: GetRectCenter
+                            变量: gg_rct_Region_088_Copy_8
+                        常量: IonCannonBeam.mdx
+                    SetVariable
+                        变量: Pylon33Effect
+                        函数: GetLastCreatedEffectBJ
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h01Z
+                        预设: PlayerNP
+                        函数: GetUnitLoc
+                            函数: GetDyingUnit
+                        预设: RealUnitFacing
+                    SetVariable
+                        变量: Pylon33Unit
+                        函数: GetLastCreatedUnit
+                动作
+                    StopSoundBJ
+                        变量: gg_snd_SpiritLink1
+                        预设: FadeDontDont
+                    PlaySoundBJ
+                        变量: gg_snd_SpiritLink1
+                    SetVariable
+                        变量: Pylon33
+                        常量: false
+                    DestroyEffectBJ
+                        变量: Pylon33Effect
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h01Z
+                        预设: PlayerNP
+                        函数: GetUnitLoc
+                            函数: GetDyingUnit
+                        预设: RealUnitFacing
+                    SetVariable
+                        变量: Pylon33Unit
+                        函数: GetLastCreatedUnit
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: Pylon34Unit
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: Pylon34
+                        预设: OperatorEqualENE
+                        常量: false
+                动作
+                    StopSoundBJ
+                        变量: gg_snd_AncestralSpirit
+                        预设: FadeDontDont
+                    PlaySoundBJ
+                        变量: gg_snd_AncestralSpirit
+                    SetVariable
+                        变量: Pylon34
+                        常量: true
+                    AddSpecialEffectLocBJ
+                        函数: GetRectCenter
+                            变量: gg_rct_Region_088_Copy_9
+                        常量: IonCannonBeam.mdx
+                    SetVariable
+                        变量: Pylon34Effect
+                        函数: GetLastCreatedEffectBJ
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h01Z
+                        预设: PlayerNP
+                        函数: GetUnitLoc
+                            函数: GetDyingUnit
+                        预设: RealUnitFacing
+                    SetVariable
+                        变量: Pylon34Unit
+                        函数: GetLastCreatedUnit
+                动作
+                    StopSoundBJ
+                        变量: gg_snd_SpiritLink1
+                        预设: FadeDontDont
+                    PlaySoundBJ
+                        变量: gg_snd_SpiritLink1
+                    SetVariable
+                        变量: Pylon34
+                        常量: false
+                    DestroyEffectBJ
+                        变量: Pylon34Effect
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h01Z
+                        预设: PlayerNP
+                        函数: GetUnitLoc
+                            函数: GetDyingUnit
+                        预设: RealUnitFacing
+                    SetVariable
+                        变量: Pylon34Unit
+                        函数: GetLastCreatedUnit
+    IfThenElseMultiple
+        条件
+            AndMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: Pylon11
+                        预设: OperatorEqualENE
+                        常量: false
+                    OperatorCompareBoolean
+                        变量: Pylon12
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        变量: Pylon13
+                        预设: OperatorEqualENE
+                        常量: false
+                    OperatorCompareBoolean
+                        变量: Pylon14
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        变量: Pylon21
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        变量: Pylon22
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        变量: Pylon23
+                        预设: OperatorEqualENE
+                        常量: false
+                    OperatorCompareBoolean
+                        变量: Pylon24
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        变量: Pylon31
+                        预设: OperatorEqualENE
+                        常量: false
+                    OperatorCompareBoolean
+                        变量: Pylon32
+                        预设: OperatorEqualENE
+                        常量: false
+                    OperatorCompareBoolean
+                        变量: Pylon33
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        变量: Pylon34
+                        预设: OperatorEqualENE
+                        常量: false
+        动作
+            EnableTrigger
+                变量: gg_trg_Teleport_Nars_2
+            StopSoundBJ
+                变量: gg_snd_Shockwave
+                预设: FadeDontDont
+            PlaySoundBJ
+                变量: gg_snd_Shockwave
+            AddSpecialEffectLocBJ
+                函数: GetRectCenter
+                    变量: gg_rct_Region_100
+                常量: IceNova.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            AddSpecialEffectLocBJ
+                函数: GetRectCenter
+                    变量: gg_rct_Region_100
+                常量: HarvestMana.mdx
+            SetVariable
+                变量: PylonTele
+                函数: GetLastCreatedEffectBJ
+        动作
+            DisableTrigger
+                变量: gg_trg_Teleport_Nars_2
+            DestroyEffectBJ
+                变量: PylonTele

@@ -1,0 +1,35 @@
+事件
+    TriggerRegisterUnitLifeEvent
+        变量: gg_unit_H06F_0415
+        预设: LimitOpLessThanOrEqual
+        常量: 38000.00
+条件
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    UnitAddAbilityBJ
+        常量: A06Y
+        变量: gg_unit_H06F_0415
+    SetMusicVolumeBJ
+        常量: 50.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 7.00
+        常量: '|cffffcc00乌拉索尔:|r 来啊!你死之前我会再和你跳一支舞!
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Urathol36
+    TriggerSleepAction
+        常量: 7.00
+    SetMusicVolumeBJ
+        常量: 100.00
+    TriggerSleepAction
+        常量: 2
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cff7777aaNOTICE: Summoned orb can be killed.|r
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Hint

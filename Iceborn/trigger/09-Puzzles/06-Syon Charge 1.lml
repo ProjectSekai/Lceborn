@@ -1,0 +1,127 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventDeath
+条件
+    OperatorCompareUnit
+        函数: GetDyingUnit
+        预设: OperatorEqualENE
+        变量: Syon1
+动作
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h02M
+        预设: PlayerNP
+        函数: GetUnitLoc
+            函数: GetDyingUnit
+        预设: RealUnitFacing
+    SetVariable
+        变量: Syon1
+        函数: GetLastCreatedUnit
+    IssueImmediateOrder
+        变量: Hero
+        预设: UnitOrderStop
+    EnableTrigger
+        变量: gg_trg_Syon_Cast_1
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            变量: Hero
+        常量: DivineRing.mdx
+    SetVariable
+        变量: Ring1
+        函数: GetLastCreatedEffectBJ
+    SetUnitAnimation
+        变量: Hero
+        常量: 'spell channel'
+    PlaySoundBJ
+        变量: gg_snd_TranquilityHealLoop1
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h00H
+        预设: Player00
+        函数: GetUnitLoc
+            变量: Hero
+        函数: GetUnitFacing
+            变量: Hero
+    SetVariable
+        变量: Ring1Prog
+        函数: GetLastCreatedUnit
+    SetUnitTimeScalePercent
+        变量: Ring1Prog
+        常量: 7.00
+    TriggerSleepAction
+        常量: 13.00
+    KillUnit
+        变量: Ring1Prog
+    SetUnitTimeScalePercent
+        变量: Ring1Prog
+        常量: 1000.00
+    ResetUnitAnimation
+        变量: Hero
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: IsTriggerEnabled
+                    变量: gg_trg_Syon_Cast_1
+                预设: OperatorEqualENE
+                常量: false
+        动作
+            ReturnAction
+        动作
+            DisableTrigger
+                变量: gg_trg_Syon_Cast_1
+    DestroyEffectBJ
+        变量: Ring1
+    StopSoundBJ
+        变量: gg_snd_TranquilityHealLoop1
+        预设: FadeDontDont
+    UnitAddAbilityBJ
+        常量: Avul
+        变量: Syon1
+    UnitAddAbilityBJ
+        常量: ACmi
+        变量: Syon1
+    IssueTargetOrder
+        变量: Syon1
+        预设: UnitOrderFingerOfDeath
+        变量: gg_unit_h02M_0166
+    IfThenElseMultiple
+        条件
+            AndMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: IsUnitType
+                            变量: Syon1
+                            预设: UnitTypeMagicImmune
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsUnitType
+                            变量: Syon2
+                            预设: UnitTypeMagicImmune
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsUnitType
+                            变量: Syon3
+                            预设: UnitTypeMagicImmune
+                        预设: OperatorEqualENE
+                        常量: true
+        动作
+            TriggerSleepAction
+                常量: 3.00
+            RemoveUnit
+                变量: Syon1
+            RemoveUnit
+                变量: Syon2
+            RemoveUnit
+                变量: Syon3
+            RemoveUnit
+                变量: gg_unit_h02M_0166
+            AddSpecialEffectLocBJ
+                函数: GetRectCenter
+                    变量: gg_rct_Region_133
+                常量: HarvestMana.mdx
+            PlaySoundBJ
+                变量: gg_snd_BigBadVoodooSpellBirth1
+            EnableTrigger
+                变量: gg_trg_Teleport_Nars_4

@@ -1,0 +1,82 @@
+事件
+    TriggerRegisterUnitInRangeSimple
+        常量: 200.00
+        变量: gg_unit_h021_0113
+条件
+    OperatorCompareUnit
+        函数: GetTriggerUnit
+        预设: OperatorEqualENE
+        变量: Hero
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: IsItemOwned
+                    变量: Ruby1
+                预设: OperatorEqualENE
+                常量: true
+            OperatorCompareBoolean
+                函数: IsItemOwned
+                    变量: Ruby2
+                预设: OperatorEqualENE
+                常量: true
+            OperatorCompareBoolean
+                函数: IsItemOwned
+                    变量: Ruby3
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            DisableTrigger
+                函数: GetTriggeringTrigger
+            RemoveItem
+                函数: GetItemOfTypeFromUnitBJ
+                    变量: Hero
+                    常量: I017
+            RemoveItem
+                函数: GetItemOfTypeFromUnitBJ
+                    变量: Hero
+                    常量: I017
+            RemoveItem
+                函数: GetItemOfTypeFromUnitBJ
+                    变量: Hero
+                    常量: I017
+            QuestItemSetCompletedBJ
+                变量: QuestOptional1Req1
+                预设: CompletionOptionCompleted
+            SelectUnitSingle
+                变量: gg_unit_h021_0113
+            CreateItemLoc
+                常量: I016
+                函数: GetRectCenter
+                    变量: gg_rct_Region_108
+            SetMusicVolumeBJ
+                常量: 50.00
+            DisplayTimedTextToForce
+                函数: GetPlayersAll
+                常量: 13.00
+                常量: '|cffffcc00小偷欧塔克:|r 喔,太好了!你真是耍了这些抓狂的格罗姆,哈哈!拿走这个,就如我承诺的,我不知道这个废物上写着的什么意思也无所谓.
+
+'
+            PlaySoundBJ
+                变量: gg_snd_Ortuk3
+            TriggerSleepAction
+                常量: 14.00
+            SetMusicVolumeBJ
+                常量: 100.00
+            CreateQuestItemBJ
+                变量: QuestOptional1
+                常量: 找到其余两块失踪的部分并融合成一个工艺品
+            SetVariable
+                变量: QuestOptional1Req1
+                函数: GetLastCreatedQuestItemBJ
+            FlashQuestDialogButtonBJ
+            QuestSetDescriptionBJ
+                变量: QuestOptional1
+                常量: 我得到了某个工艺品的把柄部分.我该搜索并合并其他两个部分.那些部分散落在整个寒霜天地中,也许有朝一日我能在哪里凑齐.
+            PlaySoundBJ
+                变量: gg_snd_QuestLog
+            DisplayTextToForce
+                函数: GetPlayersAll
+                常量: '|cffffcc00 - 找到其余两块失踪的部分并融合成一个工艺品|r
+
+'

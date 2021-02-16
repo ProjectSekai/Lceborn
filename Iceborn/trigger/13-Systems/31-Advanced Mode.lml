@@ -1,0 +1,55 @@
+事件
+条件
+动作
+    SetVariable
+        变量: ModeAdvanced
+        常量: true
+    SetPlayerHandicapBJ
+        预设: PlayerNA
+        常量: 125.00
+    AddTriggerEvent
+        变量: gg_trg_Ertio_Crystal_Loop
+        事件: TriggerRegisterTimerEventPeriodic
+            常量: 0.10
+    UnitAddAbilityBJ
+        常量: A075
+        变量: gg_unit_H013_0039
+    UnitAddAbilityBJ
+        常量: A03K
+        变量: gg_unit_h020_0105
+    UnitAddAbilityBJ
+        常量: A074
+        变量: gg_unit_H024_0109
+    UnitAddAbilityBJ
+        常量: A078
+        变量: gg_unit_H03N_0107
+    UnitAddAbilityBJ
+        常量: A074
+        变量: gg_unit_H03O_0108
+    UnitAddAbilityBJ
+        常量: A074
+        变量: gg_unit_h04Q_0298
+    UnitAddAbilityBJ
+        常量: A074
+        变量: gg_unit_H05O_0043
+    UnitAddAbilityBJ
+        常量: A077
+        变量: gg_unit_H06N_0376
+    UnitAddAbilityBJ
+        常量: A077
+        变量: gg_unit_H03Q_0374
+    UnitAddAbilityBJ
+        常量: A077
+        变量: gg_unit_H06F_0415
+    UnitAddAbilityBJ
+        常量: A077
+        变量: gg_unit_H00A_0404
+    UnitAddAbilityBJ
+        常量: A077
+        变量: gg_unit_H00A_0430
+    UnitAddAbilityBJ
+        常量: A078
+        变量: gg_unit_H03Q_0374
+    UnitAddAbilityBJ
+        常量: A03K
+        变量: gg_unit_H06N_0376

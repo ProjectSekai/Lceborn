@@ -1,0 +1,110 @@
+事件
+    TriggerRegisterTimerExpireEventBJ
+        变量: TimerFarsight
+条件
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    UnitRemoveAbilityBJ
+        常量: Avul
+        变量: EnergyOrb
+    UnitRemoveAbilityBJ
+        常量: Avul
+        变量: gg_unit_h036_0201
+    KillUnit
+        变量: EnergyOrb
+    KillUnit
+        变量: gg_unit_h036_0201
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: IsUnitAliveBJ
+                    变量: gg_unit_h02R_0172
+                预设: OperatorEqualENE
+                常量: true
+        动作
+        动作
+            ReturnAction
+    QuestItemSetCompletedBJ
+        变量: QuestOptional4Req1
+        预设: CompletionOptionCompleted
+    QuestSetCompletedBJ
+        变量: QuestOptional4
+        预设: CompletionOptionCompleted
+    SetVariable
+        变量: Rockwonder
+        常量: true
+    UnitAddAbilityBJ
+        常量: Avul
+        变量: gg_unit_h02R_0172
+    UnitRemoveAbilityBJ
+        常量: A03H
+        变量: gg_unit_h02R_0172
+    SetUnitFacingToFaceLocTimed
+        变量: gg_unit_h02R_0172
+        函数: GetRectCenter
+            变量: gg_rct_Region_162
+        常量: 2.00
+    ResetUnitAnimation
+        变量: gg_unit_h02R_0172
+    SetUnitAnimation
+        变量: gg_unit_h02R_0172
+        常量: stand
+    DestroyTimerDialogBJ
+        变量: TimerFarsightWindow
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeOut
+        常量: 2.00
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0.00
+    TriggerSleepAction
+        常量: 2.00
+    PlaySoundBJ
+        变量: gg_snd_Explosion2
+    ForGroup
+        变量: TharokWaveGroup
+        动作: KillUnit
+            函数: GetEnumUnit
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeIn
+        常量: 2.00
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0.00
+    TriggerSleepAction
+        常量: 3.00
+    PauseUnitBJ
+        预设: PauseUnpauseOptionUnpause
+        变量: gg_unit_h02R_0172
+    SetUnitMoveSpeed
+        变量: gg_unit_h02R_0172
+        常量: 0.00
+    SetMusicVolumeBJ
+        常量: 50.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 16.00
+        常量: '|cffffcc00山萨洛克:|r 我很感激你,预知之石意味着寒霜天地圣域的巨大优势.我会为你提供最上等的货物,因为我们都在对抗着乌拉索尔.
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Tharok7
+    TriggerSleepAction
+        常量: 17.00
+    SetMusicVolumeBJ
+        常量: 100.00
+    SetUnitOwner
+        变量: gg_unit_h02R_0172
+        预设: PlayerNP
+        预设: ChangeColorFalse
+    UnitAddAbilityBJ
+        常量: Apit
+        变量: gg_unit_h02R_0172
+    UnitAddAbilityBJ
+        常量: Aneu
+        变量: gg_unit_h02R_0172

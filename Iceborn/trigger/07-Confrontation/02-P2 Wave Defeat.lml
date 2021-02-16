@@ -1,0 +1,114 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventDeath
+条件
+    OrMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_H00A_0404
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_H00A_0430
+动作
+    IfThenElseMultiple
+        条件
+            AndMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: gg_unit_H00A_0404
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: gg_unit_H00A_0430
+                        预设: OperatorEqualENE
+                        常量: true
+        动作
+            DisableTrigger
+                函数: GetTriggeringTrigger
+            QuestItemSetCompletedBJ
+                变量: QuestMainReq1
+                预设: CompletionOptionCompleted
+            TriggerSleepAction
+                常量: 10.00
+            CreateQuestItemBJ
+                变量: QuestMain
+                常量: 摧毁3个水晶以关闭大门
+            SetVariable
+                变量: QuestMainReq1
+                函数: GetLastCreatedQuestItemBJ
+            QuestSetDescriptionBJ
+                变量: QuestMain
+                常量: 我正要去摧毁供给恐惧之门能量的3块水晶,其中的两块位于这个地方的侧边,另一个在乌拉索尔所在的宫殿里.我需要通过会释放出毁灭性能量脉冲的净化之塔.在大门没有被处理之前,我必须要不刺激到乌拉索尔.
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: ModeNormal
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                    StartTimerBJ
+                        变量: TimerPortal
+                        预设: PeriodicOptionOneTime
+                        常量: 840.00
+                动作
+                    StartTimerBJ
+                        变量: TimerPortal
+                        预设: PeriodicOptionOneTime
+                        常量: 660.00
+            CreateTimerDialogBJ
+                变量: TimerPortal
+                常量: '距离大门开启:'
+            EnableTrigger
+                变量: gg_trg_Crystal_Notification
+            DisableTrigger
+                变量: gg_trg_Constant_P1
+            SetVariable
+                变量: TimerPortalWindow
+                函数: GetLastCreatedTimerDialogBJ
+            SetMusicVolumeBJ
+                常量: 50.00
+            DisplayTimedTextToForce
+                函数: GetPlayersAll
+                常量: 22.00
+                常量: '|cffffcc00诺索拉姆:|r 冰裔,门虽然还未得以开启,但还在不断吸收着三个水晶的能量.我需要你去关闭水晶并阻止门的开启.水晶中的一个位于宫殿中的门的附近.
+
+'
+            PlaySoundBJ
+                变量: gg_snd_Northorum29
+            TriggerSleepAction
+                常量: 23.00
+            DisplayTimedTextToForce
+                函数: GetPlayersAll
+                常量: 18.00
+                常量: '|cffffcc00诺索拉姆:|r  去的途中会经过净化之塔,小心它会释放出毁灭周围一切的能量脉冲.你到达了之后,不要过早地刺激乌拉索尔.
+
+'
+            PlaySoundBJ
+                变量: gg_snd_Northorum30
+            TriggerSleepAction
+                常量: 19.00
+            DisplayTimedTextToForce
+                函数: GetPlayersAll
+                常量: 19.00
+                常量: '|cffffcc00诺索拉姆:|r 一旦门不再危险,你就要护卫前往净化之塔中和机器,关闭净化之塔激怒乌拉索尔,好让我们能够走得更远.我一定会从他的胸口撕裂他的心脏,以阿娜拉的名义起誓!
+
+'
+            PlaySoundBJ
+                变量: gg_snd_Northorum31
+            TriggerSleepAction
+                常量: 21.00
+            SetMusicVolumeBJ
+                常量: 100.00
+            FlashQuestDialogButtonBJ
+            PlaySoundBJ
+                变量: gg_snd_QuestLog
+            DisplayTextToForce
+                函数: GetPlayersAll
+                常量: '|cffffcc00 - 摧毁3个水晶以关闭大门|r
+
+'

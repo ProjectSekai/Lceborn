@@ -1,0 +1,18 @@
+事件
+条件
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    CreateItemLoc
+        常量: I00D
+        函数: GetRectCenter
+            变量: gg_rct_Region_022
+    SetVariable
+        变量: GO
+        函数: GetLastCreatedItem
+    AddSpecialEffectLocBJ
+        函数: GetRectCenter
+            变量: gg_rct_Region_022
+        常量: ABirth_1.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ

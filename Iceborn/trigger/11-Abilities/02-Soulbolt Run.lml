@@ -1,0 +1,20 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OrMultiple
+        条件
+            OperatorCompareAbilityId
+                函数: GetSpellAbilityId
+                预设: OperatorEqualENE
+                常量: A000
+            OperatorCompareAbilityId
+                函数: GetSpellAbilityId
+                预设: OperatorEqualENE
+                常量: A05M
+动作
+    SetVariable
+        变量: SOULBOLTTARGET
+        函数: GetSpellTargetUnit
+    ConditionalTriggerExecute
+        变量: gg_trg_Soulbolt

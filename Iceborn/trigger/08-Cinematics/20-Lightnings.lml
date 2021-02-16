@@ -1,0 +1,11 @@
+事件
+    TriggerRegisterTimerEventPeriodic
+        常量: 0.30
+条件
+动作
+    AddSpecialEffectLocBJ
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_179
+        常量: LightningGreat.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ

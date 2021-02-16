@@ -1,0 +1,356 @@
+事件
+条件
+动作
+    StopSoundBJ
+        变量: gg_snd_IceBreak
+        预设: FadeDontDont
+    PlaySoundBJ
+        变量: gg_snd_IceBreak
+    SetVariable
+        变量: HeroLocationCrystal
+        函数: GetUnitLoc
+            变量: gg_unit_H013_0039
+    SetVariable
+        变量: CrystalOffset
+        函数: PolarProjectionBJ
+            变量: HeroLocationCrystal
+            变量: HeroPathCrystal
+            变量: HeroFaceCrystal
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h017
+        预设: PlayerNA
+        变量: CrystalOffset
+        函数: GetRandomReal
+            常量: 0
+            常量: 360.00
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_CrystalOffset)'
+    SetVariable
+        变量: CrystalOffset
+        函数: PolarProjectionBJ
+            变量: HeroLocationCrystal
+            变量: HeroPathCrystal
+            变量: HeroFaceCrystal
+    SetUnitColor
+        函数: GetLastCreatedUnit
+        预设: Color03
+    SetUnitAnimation
+        函数: GetLastCreatedUnit
+        常量: birth
+    CustomScriptCode
+        常量: 'set bj_wantDestroyGroup = true'
+    SetVariable
+        变量: HeroPathCrystal
+        函数: OperatorReal
+            变量: HeroPathCrystal
+            预设: OperatorAdd
+            常量: 80.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareReal
+                变量: HeroPathCrystal
+                预设: OperatorGreaterEq
+                常量: 1000.00
+        动作
+            DisableTrigger
+                函数: GetTriggeringTrigger
+            StopSoundBJ
+                变量: gg_snd_BlizzardLoop1
+                预设: FadeDontFade
+            IfThenElse
+                条件: OperatorCompareBoolean
+                    函数: IsUnitDeadBJ
+                        变量: gg_unit_H013_0039
+                    预设: OperatorEqualENE
+                    常量: true
+                动作: ReturnAction
+                动作: DoNothing
+            PlaySoundBJ
+                变量: gg_snd_SpiderYesAttack2
+            SetVariable
+                变量: AAPOINT
+                函数: PolarProjectionBJ
+                    变量: CrystalOffset
+                    函数: GetRandomReal
+                        常量: 200.00
+                        常量: 700.00
+                    函数: GetRandomDirectionDeg
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h018
+                预设: PlayerNA
+                变量: AAPOINT
+                预设: RealUnitFacing
+            CustomScriptCode
+                常量: 'call RemoveLocation(udg_AAPOINT)'
+            SetVariable
+                变量: AAPOINT
+                函数: PolarProjectionBJ
+                    变量: CrystalOffset
+                    函数: GetRandomReal
+                        常量: 200.00
+                        常量: 700.00
+                    函数: GetRandomDirectionDeg
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h018
+                预设: PlayerNA
+                变量: AAPOINT
+                预设: RealUnitFacing
+            CustomScriptCode
+                常量: 'call RemoveLocation(udg_AAPOINT)'
+            SetVariable
+                变量: AAPOINT
+                函数: PolarProjectionBJ
+                    变量: CrystalOffset
+                    函数: GetRandomReal
+                        常量: 200.00
+                        常量: 700.00
+                    函数: GetRandomDirectionDeg
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h018
+                预设: PlayerNA
+                变量: AAPOINT
+                预设: RealUnitFacing
+            CustomScriptCode
+                常量: 'call RemoveLocation(udg_AAPOINT)'
+            SetVariable
+                变量: AAPOINT
+                函数: PolarProjectionBJ
+                    变量: CrystalOffset
+                    函数: GetRandomReal
+                        常量: 200.00
+                        常量: 700.00
+                    函数: GetRandomDirectionDeg
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h018
+                预设: PlayerNA
+                变量: AAPOINT
+                预设: RealUnitFacing
+            CustomScriptCode
+                常量: 'call RemoveLocation(udg_AAPOINT)'
+            SetVariable
+                变量: AAPOINT
+                函数: PolarProjectionBJ
+                    变量: CrystalOffset
+                    函数: GetRandomReal
+                        常量: 200.00
+                        常量: 700.00
+                    函数: GetRandomDirectionDeg
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h018
+                预设: PlayerNA
+                变量: AAPOINT
+                预设: RealUnitFacing
+            CustomScriptCode
+                常量: 'call RemoveLocation(udg_AAPOINT)'
+            SetVariable
+                变量: AAPOINT
+                函数: PolarProjectionBJ
+                    变量: CrystalOffset
+                    函数: GetRandomReal
+                        常量: 200.00
+                        常量: 700.00
+                    函数: GetRandomDirectionDeg
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h018
+                预设: PlayerNA
+                变量: AAPOINT
+                预设: RealUnitFacing
+            CustomScriptCode
+                常量: 'call RemoveLocation(udg_AAPOINT)'
+            SetVariable
+                变量: AAPOINT
+                函数: PolarProjectionBJ
+                    变量: CrystalOffset
+                    函数: GetRandomReal
+                        常量: 200.00
+                        常量: 700.00
+                    函数: GetRandomDirectionDeg
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h018
+                预设: PlayerNA
+                变量: AAPOINT
+                预设: RealUnitFacing
+            CustomScriptCode
+                常量: 'call RemoveLocation(udg_AAPOINT)'
+            SetVariable
+                变量: AAPOINT
+                函数: PolarProjectionBJ
+                    变量: CrystalOffset
+                    函数: GetRandomReal
+                        常量: 200.00
+                        常量: 700.00
+                    函数: GetRandomDirectionDeg
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h018
+                预设: PlayerNA
+                变量: AAPOINT
+                预设: RealUnitFacing
+            CustomScriptCode
+                常量: 'call RemoveLocation(udg_AAPOINT)'
+            SetVariable
+                变量: AAPOINT
+                函数: PolarProjectionBJ
+                    变量: CrystalOffset
+                    函数: GetRandomReal
+                        常量: 200.00
+                        常量: 700.00
+                    函数: GetRandomDirectionDeg
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h018
+                预设: PlayerNA
+                变量: AAPOINT
+                预设: RealUnitFacing
+            CustomScriptCode
+                常量: 'call RemoveLocation(udg_AAPOINT)'
+            SetVariable
+                变量: AAPOINT
+                函数: PolarProjectionBJ
+                    变量: CrystalOffset
+                    函数: GetRandomReal
+                        常量: 200.00
+                        常量: 700.00
+                    函数: GetRandomDirectionDeg
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h018
+                预设: PlayerNA
+                变量: AAPOINT
+                预设: RealUnitFacing
+            CustomScriptCode
+                常量: 'call RemoveLocation(udg_AAPOINT)'
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: ModeAdvanced
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                    SetVariable
+                        变量: AAPOINT
+                        函数: PolarProjectionBJ
+                            变量: CrystalOffset
+                            函数: GetRandomReal
+                                常量: 200.00
+                                常量: 700.00
+                            函数: GetRandomDirectionDeg
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h018
+                        预设: PlayerNA
+                        变量: AAPOINT
+                        预设: RealUnitFacing
+                    CustomScriptCode
+                        常量: 'call RemoveLocation(udg_AAPOINT)'
+                    SetVariable
+                        变量: AAPOINT
+                        函数: PolarProjectionBJ
+                            变量: CrystalOffset
+                            函数: GetRandomReal
+                                常量: 200.00
+                                常量: 700.00
+                            函数: GetRandomDirectionDeg
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h018
+                        预设: PlayerNA
+                        变量: AAPOINT
+                        预设: RealUnitFacing
+                    CustomScriptCode
+                        常量: 'call RemoveLocation(udg_AAPOINT)'
+                    SetVariable
+                        变量: AAPOINT
+                        函数: PolarProjectionBJ
+                            变量: CrystalOffset
+                            函数: GetRandomReal
+                                常量: 200.00
+                                常量: 700.00
+                            函数: GetRandomDirectionDeg
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h018
+                        预设: PlayerNA
+                        变量: AAPOINT
+                        预设: RealUnitFacing
+                    CustomScriptCode
+                        常量: 'call RemoveLocation(udg_AAPOINT)'
+                    SetVariable
+                        变量: AAPOINT
+                        函数: PolarProjectionBJ
+                            变量: CrystalOffset
+                            函数: GetRandomReal
+                                常量: 200.00
+                                常量: 700.00
+                            函数: GetRandomDirectionDeg
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h018
+                        预设: PlayerNA
+                        变量: AAPOINT
+                        预设: RealUnitFacing
+                    CustomScriptCode
+                        常量: 'call RemoveLocation(udg_AAPOINT)'
+                    SetVariable
+                        变量: AAPOINT
+                        函数: PolarProjectionBJ
+                            变量: CrystalOffset
+                            函数: GetRandomReal
+                                常量: 200.00
+                                常量: 700.00
+                            函数: GetRandomDirectionDeg
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h018
+                        预设: PlayerNA
+                        变量: AAPOINT
+                        预设: RealUnitFacing
+                    CustomScriptCode
+                        常量: 'call RemoveLocation(udg_AAPOINT)'
+            TriggerSleepAction
+                常量: 1.00
+            SetVariable
+                变量: AAPOINT
+                变量: CrystalOffset
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h019
+                预设: PlayerNA
+                变量: AAPOINT
+                预设: RealUnitFacing
+            IssueImmediateOrder
+                函数: GetLastCreatedUnit
+                预设: UnitOrderFanOfKnives
+            CustomScriptCode
+                常量: 'call RemoveLocation(udg_AAPOINT)'
+            SetVariable
+                变量: AAPOINT
+                变量: CrystalOffset
+            AddSpecialEffectLocBJ
+                变量: AAPOINT
+                常量: ABirth_1.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            CustomScriptCode
+                常量: 'call RemoveLocation(udg_AAPOINT)'
+            CameraSetEQNoiseForPlayer
+                预设: Player00
+                常量: 15.00
+            TriggerSleepAction
+                常量: 0.50
+            CameraClearNoiseForPlayer
+                预设: Player00
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_HeroLocationCrystal)'
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_CrystalOffset)'
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_CrystalTarget)'

@@ -1,0 +1,1125 @@
+事件
+    TriggerRegisterTimerEventPeriodic
+        常量: 80.00
+条件
+动作
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05P
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317
+        常量: 225.00
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05P
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317
+        常量: 225.00
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h069
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317
+        常量: 225.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: ModeAdvanced
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            UnitAddAbilityBJ
+                常量: A077
+                函数: GetLastCreatedUnit
+            UnitAddAbilityBJ
+                常量: A03K
+                函数: GetLastCreatedUnit
+    SetUnitColor
+        函数: GetLastCreatedUnit
+        预设: Color01
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05P
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317_Copy
+        常量: 225.00
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h069
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317_Copy
+        常量: 225.00
+    SetUnitColor
+        函数: GetLastCreatedUnit
+        预设: Color01
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h069
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317_Copy
+        常量: 225.00
+    SetUnitColor
+        函数: GetLastCreatedUnit
+        预设: Color01
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    TriggerSleepAction
+        常量: 13.00
+    IfThenElse
+        条件: OperatorCompareBoolean
+            函数: IsUnitDeadBJ
+                变量: gg_unit_H06F_0415
+            预设: OperatorEqualENE
+            常量: true
+        动作: ReturnAction
+        动作: DoNothing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h069
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317
+        常量: 225.00
+    SetUnitColor
+        函数: GetLastCreatedUnit
+        预设: Color01
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h069
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317
+        常量: 225.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: ModeAdvanced
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            UnitAddAbilityBJ
+                常量: A077
+                函数: GetLastCreatedUnit
+            UnitAddAbilityBJ
+                常量: A03K
+                函数: GetLastCreatedUnit
+    SetUnitColor
+        函数: GetLastCreatedUnit
+        预设: Color01
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05P
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317
+        常量: 225.00
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05P
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317
+        常量: 225.00
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05P
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317
+        常量: 225.00
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h069
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317_Copy
+        常量: 225.00
+    SetUnitColor
+        函数: GetLastCreatedUnit
+        预设: Color01
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05P
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317_Copy
+        常量: 225.00
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05P
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317_Copy
+        常量: 225.00
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05P
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317_Copy
+        常量: 225.00
+    IssueImmediateOrder
+        函数: GetLastCreatedUnit
+        预设: UnitOrderHealOn
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    TriggerSleepAction
+        常量: 13.00
+    IfThenElse
+        条件: OperatorCompareBoolean
+            函数: IsUnitDeadBJ
+                变量: gg_unit_H06F_0415
+            预设: OperatorEqualENE
+            常量: true
+        动作: ReturnAction
+        动作: DoNothing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05P
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317
+        常量: 225.00
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h069
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317
+        常量: 225.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: ModeAdvanced
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            UnitAddAbilityBJ
+                常量: A077
+                函数: GetLastCreatedUnit
+            UnitAddAbilityBJ
+                常量: A03K
+                函数: GetLastCreatedUnit
+    SetUnitColor
+        函数: GetLastCreatedUnit
+        预设: Color01
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h069
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317
+        常量: 225.00
+    SetUnitColor
+        函数: GetLastCreatedUnit
+        预设: Color01
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05P
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317_Copy
+        常量: 225.00
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h069
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317_Copy
+        常量: 225.00
+    SetUnitColor
+        函数: GetLastCreatedUnit
+        预设: Color01
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h06B
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317_Copy
+        常量: 225.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: ModeAdvanced
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            UnitAddAbilityBJ
+                常量: A077
+                函数: GetLastCreatedUnit
+            UnitAddAbilityBJ
+                常量: A03K
+                函数: GetLastCreatedUnit
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    TriggerSleepAction
+        常量: 13.00
+    IfThenElse
+        条件: OperatorCompareBoolean
+            函数: IsUnitDeadBJ
+                变量: gg_unit_H06F_0415
+            预设: OperatorEqualENE
+            常量: true
+        动作: ReturnAction
+        动作: DoNothing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05P
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317
+        常量: 225.00
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05P
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317
+        常量: 225.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: ModeAdvanced
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            UnitAddAbilityBJ
+                常量: A077
+                函数: GetLastCreatedUnit
+            UnitAddAbilityBJ
+                常量: A03K
+                函数: GetLastCreatedUnit
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05P
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317_Copy
+        常量: 225.00
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05P
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317_Copy
+        常量: 225.00
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05P
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317_Copy
+        常量: 225.00
+    IssueImmediateOrder
+        函数: GetLastCreatedUnit
+        预设: UnitOrderHealOn
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    TriggerSleepAction
+        常量: 13.00
+    IfThenElse
+        条件: OperatorCompareBoolean
+            函数: IsUnitDeadBJ
+                变量: gg_unit_H06F_0415
+            预设: OperatorEqualENE
+            常量: true
+        动作: ReturnAction
+        动作: DoNothing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h069
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317
+        常量: 225.00
+    SetUnitColor
+        函数: GetLastCreatedUnit
+        预设: Color01
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h069
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317
+        常量: 225.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: ModeAdvanced
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            UnitAddAbilityBJ
+                常量: A077
+                函数: GetLastCreatedUnit
+            UnitAddAbilityBJ
+                常量: A03K
+                函数: GetLastCreatedUnit
+    SetUnitColor
+        函数: GetLastCreatedUnit
+        预设: Color01
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h069
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317
+        常量: 225.00
+    SetUnitColor
+        函数: GetLastCreatedUnit
+        预设: Color01
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h069
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317_Copy
+        常量: 225.00
+    SetUnitColor
+        函数: GetLastCreatedUnit
+        预设: Color01
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h069
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317_Copy
+        常量: 225.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: ModeAdvanced
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            UnitAddAbilityBJ
+                常量: A077
+                函数: GetLastCreatedUnit
+            UnitAddAbilityBJ
+                常量: A03K
+                函数: GetLastCreatedUnit
+    SetUnitColor
+        函数: GetLastCreatedUnit
+        预设: Color01
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h069
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317_Copy
+        常量: 225.00
+    SetUnitColor
+        函数: GetLastCreatedUnit
+        预设: Color01
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h069
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317_Copy
+        常量: 225.00
+    SetUnitColor
+        函数: GetLastCreatedUnit
+        预设: Color01
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    TriggerSleepAction
+        常量: 13.00
+    IfThenElse
+        条件: OperatorCompareBoolean
+            函数: IsUnitDeadBJ
+                变量: gg_unit_H06F_0415
+            预设: OperatorEqualENE
+            常量: true
+        动作: ReturnAction
+        动作: DoNothing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h06B
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317
+        常量: 225.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: ModeAdvanced
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            UnitAddAbilityBJ
+                常量: A077
+                函数: GetLastCreatedUnit
+            UnitAddAbilityBJ
+                常量: A03K
+                函数: GetLastCreatedUnit
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05P
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317
+        常量: 225.00
+    IssueImmediateOrder
+        函数: GetLastCreatedUnit
+        预设: UnitOrderHealOn
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05P
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317
+        常量: 225.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: ModeAdvanced
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            UnitAddAbilityBJ
+                常量: A077
+                函数: GetLastCreatedUnit
+            UnitAddAbilityBJ
+                常量: A03K
+                函数: GetLastCreatedUnit
+    IssueImmediateOrder
+        函数: GetLastCreatedUnit
+        预设: UnitOrderHealOn
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h069
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317
+        常量: 225.00
+    SetUnitColor
+        函数: GetLastCreatedUnit
+        预设: Color01
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h069
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317
+        常量: 225.00
+    SetUnitColor
+        函数: GetLastCreatedUnit
+        预设: Color01
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05P
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317_Copy
+        常量: 225.00
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h069
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317_Copy
+        常量: 225.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: ModeAdvanced
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            UnitAddAbilityBJ
+                常量: A077
+                函数: GetLastCreatedUnit
+            UnitAddAbilityBJ
+                常量: A03K
+                函数: GetLastCreatedUnit
+    SetUnitColor
+        函数: GetLastCreatedUnit
+        预设: Color01
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h069
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_317_Copy
+        常量: 225.00
+    SetUnitColor
+        函数: GetLastCreatedUnit
+        预设: Color01
+    GroupAddUnitSimple
+        函数: GetLastCreatedUnit
+        变量: Hostile
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: MassTeleportCaster.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    ForGroup
+        变量: Hostile
+        动作: IssuePointOrderLoc
+            函数: GetEnumUnit
+            预设: UnitOrderPatrol
+            函数: GetRectCenter
+                变量: gg_rct_Region_313_Copy_2

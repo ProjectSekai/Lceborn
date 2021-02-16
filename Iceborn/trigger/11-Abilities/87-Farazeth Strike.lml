@@ -1,0 +1,53 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OperatorCompareAbilityId
+        函数: GetSpellAbilityId
+        预设: OperatorEqualENE
+        常量: A06P
+动作
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h06T
+        预设: PlayerNA
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                函数: GetTriggerUnit
+            函数: GetRandomReal
+                常量: 100.00
+                常量: 600.00
+            函数: GetRandomDirectionDeg
+        预设: RealUnitFacing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h06T
+        预设: PlayerNA
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                函数: GetTriggerUnit
+            函数: GetRandomReal
+                常量: 100.00
+                常量: 600.00
+            函数: GetRandomDirectionDeg
+        预设: RealUnitFacing
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: ModeNormal
+                预设: OperatorEqualENE
+                常量: true
+        动作
+        动作
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h06T
+                预设: PlayerNA
+                函数: PolarProjectionBJ
+                    函数: GetUnitLoc
+                        函数: GetTriggerUnit
+                    函数: GetRandomReal
+                        常量: 100.00
+                        常量: 600.00
+                    函数: GetRandomDirectionDeg
+                预设: RealUnitFacing

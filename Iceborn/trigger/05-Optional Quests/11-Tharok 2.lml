@@ -1,0 +1,107 @@
+事件
+    TriggerRegisterDialogEventBJ
+        变量: Dialog
+条件
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    IfThenElseMultiple
+        条件
+            OperatorCompareButton
+                函数: GetClickedButtonBJ
+                预设: OperatorEqualENE
+                变量: DialogButton1
+        动作
+            DisableTrigger
+                变量: gg_trg_Tharok_Dialog_Checkup
+            TriggerSleepAction
+                常量: 1.00
+            SetMusicVolumeBJ
+                常量: 50.00
+            DisplayTimedTextToForce
+                函数: GetPlayersAll
+                常量: 24.00
+                常量: '|cffffcc00山萨洛克:|r 好,让我来打开大门.但还是有个小问题.通路被给石头建造这个地方的土著所保护着.由于手下是被召唤在奇岩的内部并在他们无防备的状态下进行袭击,也是为什么乌拉索尔还未解开谜题的原因.
+
+'
+            PlaySoundBJ
+                变量: gg_snd_Tharok3
+            TriggerSleepAction
+                常量: 3.00
+            KillDestructable
+                变量: gg_dest_YTpc_7595
+            KillDestructable
+                变量: gg_dest_YTpc_7596
+            SetUnitAnimation
+                变量: gg_unit_h027_0173
+                常量: stand
+            IssuePointOrderLoc
+                变量: gg_unit_h02R_0172
+                预设: UnitOrderMove
+                函数: GetRectCenter
+                    变量: gg_rct_Region_159
+            TriggerSleepAction
+                常量: 22.00
+            DisplayTimedTextToForce
+                函数: GetPlayersAll
+                常量: 25.00
+                常量: '|cffffcc00山萨洛克:|r 在石门上你可以看到一些记号,一定是某种开门的密码.我不确定该怎么做,或许密码就在这些记号和颜色中,得对它们做些什么.切换这些位置或许能够达到目的,我把它留给你.
+
+'
+            PlaySoundBJ
+                变量: gg_snd_Tharok4
+            TriggerSleepAction
+                常量: 26.00
+            SetMusicVolumeBJ
+                常量: 100.00
+            TriggerSleepAction
+                常量: 1.00
+            CreateQuestBJ
+                预设: QuestTypeOptDiscovered
+                常量: 预知之石
+                常量: 我遇到了山萨洛克,他邀我一起去夺回可以让乌拉索尔显现未开拓地区并召唤其爪牙到那里的预知之石.
+                常量: ReplaceableTextures\CommandButtons\BTNGrenade.blp
+            SetVariable
+                变量: QuestOptional4
+                函数: GetLastCreatedQuestBJ
+            CreateQuestItemBJ
+                变量: QuestOptional4
+                常量: 解决谜题并开启石门
+            SetVariable
+                变量: QuestOptional4Req1
+                函数: GetLastCreatedQuestItemBJ
+            FlashQuestDialogButtonBJ
+            PlaySoundBJ
+                变量: gg_snd_QuestLog
+            DisplayTextToForce
+                函数: GetPlayersAll
+                常量: '|cffffcc00 - 解决谜题并开启石门|r
+
+'
+            EnableTrigger
+                变量: gg_trg_Circle_Wall
+            TriggerSleepAction
+                常量: 2
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: ModeNormal
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                    PlaySoundBJ
+                        变量: gg_snd_Hint
+                    DisplayTextToForce
+                        函数: GetPlayersAll
+                        常量: '|cff7777aa提示: 按下|r |cffffcc00回车|r |cff7777aa仅输入一个|r |cffffcc00关键词|r |cff7777aa那个可以打开门的|r
+
+'
+    IfThenElseMultiple
+        条件
+            OperatorCompareButton
+                函数: GetClickedButtonBJ
+                预设: OperatorEqualENE
+                变量: DialogButton3
+        动作
+            DisableTrigger
+                变量: gg_trg_Tharok_Dialog_Checkup

@@ -1,0 +1,9 @@
+事件
+    TriggerRegisterTimerEventPeriodic
+        常量: 1.00
+条件
+动作
+    SetUnitFacingToFaceUnitTimed
+        变量: Hero
+        变量: gg_unit_H00D_0154
+        常量: 1.00

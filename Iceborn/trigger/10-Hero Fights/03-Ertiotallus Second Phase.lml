@@ -1,0 +1,12 @@
+事件
+    TriggerRegisterUnitLifeEvent
+        变量: gg_unit_H013_0039
+        预设: LimitOpLessThanOrEqual
+        常量: 1500.00
+条件
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    UnitAddAbilityBJ
+        常量: A01S
+        变量: gg_unit_H013_0039

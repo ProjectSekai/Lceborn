@@ -1,0 +1,237 @@
+事件
+    TriggerRegisterTimerEventPeriodic
+        常量: 1.28
+条件
+动作
+    StopSoundBJ
+        变量: gg_snd_LightningBoltNotLoud
+        预设: FadeDontDont
+    PlaySoundBJ
+        变量: gg_snd_LightningBoltNotLoud
+    IssuePointOrderLoc
+        变量: BubbleShock1
+        预设: UnitOrderMove
+        函数: PolarProjectionBJ
+            函数: GetRectCenter
+                变量: gg_rct_Region_056
+            函数: GetRandomReal
+                常量: 200.00
+                常量: 700.00
+            函数: GetRandomReal
+                常量: 0
+                常量: 360.00
+    TriggerSleepAction
+        常量: 0.08
+    IssuePointOrderLoc
+        变量: BubbleShock2
+        预设: UnitOrderMove
+        函数: PolarProjectionBJ
+            函数: GetRectCenter
+                变量: gg_rct_Region_056
+            函数: GetRandomReal
+                常量: 200.00
+                常量: 700.00
+            函数: GetRandomReal
+                常量: 0
+                常量: 360.00
+    TriggerSleepAction
+        常量: 0.08
+    IssuePointOrderLoc
+        变量: BubbleShock3
+        预设: UnitOrderMove
+        函数: PolarProjectionBJ
+            函数: GetRectCenter
+                变量: gg_rct_Region_056
+            函数: GetRandomReal
+                常量: 200.00
+                常量: 700.00
+            函数: GetRandomReal
+                常量: 0
+                常量: 360.00
+    TriggerSleepAction
+        常量: 0.08
+    IssuePointOrderLoc
+        变量: BubbleShock4
+        预设: UnitOrderMove
+        函数: PolarProjectionBJ
+            函数: GetRectCenter
+                变量: gg_rct_Region_056
+            函数: GetRandomReal
+                常量: 200.00
+                常量: 700.00
+            函数: GetRandomReal
+                常量: 0
+                常量: 360.00
+    TriggerSleepAction
+        常量: 0.08
+    IssuePointOrderLoc
+        变量: BubbleShock5
+        预设: UnitOrderMove
+        函数: PolarProjectionBJ
+            函数: GetRectCenter
+                变量: gg_rct_Region_056
+            函数: GetRandomReal
+                常量: 200.00
+                常量: 700.00
+            函数: GetRandomReal
+                常量: 0
+                常量: 360.00
+    TriggerSleepAction
+        常量: 0.08
+    IssuePointOrderLoc
+        变量: BubbleShock6
+        预设: UnitOrderMove
+        函数: PolarProjectionBJ
+            函数: GetRectCenter
+                变量: gg_rct_Region_056
+            函数: GetRandomReal
+                常量: 200.00
+                常量: 700.00
+            函数: GetRandomReal
+                常量: 0
+                常量: 360.00
+    TriggerSleepAction
+        常量: 0.08
+    IssuePointOrderLoc
+        变量: BubbleShock7
+        预设: UnitOrderMove
+        函数: PolarProjectionBJ
+            函数: GetRectCenter
+                变量: gg_rct_Region_056
+            函数: GetRandomReal
+                常量: 200.00
+                常量: 700.00
+            函数: GetRandomReal
+                常量: 0
+                常量: 360.00
+    TriggerSleepAction
+        常量: 0.08
+    IssuePointOrderLoc
+        变量: BubbleShock8
+        预设: UnitOrderMove
+        函数: PolarProjectionBJ
+            函数: GetRectCenter
+                变量: gg_rct_Region_056
+            函数: GetRandomReal
+                常量: 200.00
+                常量: 700.00
+            函数: GetRandomReal
+                常量: 0
+                常量: 360.00
+    TriggerSleepAction
+        常量: 0.08
+    IssuePointOrderLoc
+        变量: BubbleShock9
+        预设: UnitOrderMove
+        函数: PolarProjectionBJ
+            函数: GetRectCenter
+                变量: gg_rct_Region_056
+            函数: GetRandomReal
+                常量: 200.00
+                常量: 700.00
+            函数: GetRandomReal
+                常量: 0
+                常量: 360.00
+    StopSoundBJ
+        变量: gg_snd_LightningBoltNotLoud
+        预设: FadeDontDont
+    PlaySoundBJ
+        变量: gg_snd_LightningBoltNotLoud
+    TriggerSleepAction
+        常量: 0.08
+    IssuePointOrderLoc
+        变量: BubbleShock10
+        预设: UnitOrderMove
+        函数: PolarProjectionBJ
+            函数: GetRectCenter
+                变量: gg_rct_Region_056
+            函数: GetRandomReal
+                常量: 200.00
+                常量: 700.00
+            函数: GetRandomReal
+                常量: 0
+                常量: 360.00
+    TriggerSleepAction
+        常量: 0.08
+    IssuePointOrderLoc
+        变量: BubbleShock11
+        预设: UnitOrderMove
+        函数: PolarProjectionBJ
+            函数: GetRectCenter
+                变量: gg_rct_Region_056
+            函数: GetRandomReal
+                常量: 200.00
+                常量: 700.00
+            函数: GetRandomReal
+                常量: 0
+                常量: 360.00
+    TriggerSleepAction
+        常量: 0.08
+    IssuePointOrderLoc
+        变量: BubbleShock12
+        预设: UnitOrderMove
+        函数: PolarProjectionBJ
+            函数: GetRectCenter
+                变量: gg_rct_Region_056
+            函数: GetRandomReal
+                常量: 200.00
+                常量: 700.00
+            函数: GetRandomReal
+                常量: 0
+                常量: 360.00
+    TriggerSleepAction
+        常量: 0.08
+    IssuePointOrderLoc
+        变量: BubbleShock13
+        预设: UnitOrderMove
+        函数: PolarProjectionBJ
+            函数: GetRectCenter
+                变量: gg_rct_Region_056
+            函数: GetRandomReal
+                常量: 200.00
+                常量: 700.00
+            函数: GetRandomReal
+                常量: 0
+                常量: 360.00
+    TriggerSleepAction
+        常量: 0.08
+    IssuePointOrderLoc
+        变量: BubbleShock14
+        预设: UnitOrderMove
+        函数: PolarProjectionBJ
+            函数: GetRectCenter
+                变量: gg_rct_Region_056
+            函数: GetRandomReal
+                常量: 200.00
+                常量: 700.00
+            函数: GetRandomReal
+                常量: 0
+                常量: 360.00
+    TriggerSleepAction
+        常量: 0.08
+    IssuePointOrderLoc
+        变量: BubbleShock15
+        预设: UnitOrderMove
+        函数: PolarProjectionBJ
+            函数: GetRectCenter
+                变量: gg_rct_Region_056
+            函数: GetRandomReal
+                常量: 200.00
+                常量: 700.00
+            函数: GetRandomReal
+                常量: 0
+                常量: 360.00
+    TriggerSleepAction
+        常量: 0.08
+    IssuePointOrderLoc
+        变量: BubbleShock16
+        预设: UnitOrderMove
+        函数: PolarProjectionBJ
+            函数: GetRectCenter
+                变量: gg_rct_Region_056
+            函数: GetRandomReal
+                常量: 200.00
+                常量: 700.00
+            函数: GetRandomReal
+                常量: 0
+                常量: 360.00

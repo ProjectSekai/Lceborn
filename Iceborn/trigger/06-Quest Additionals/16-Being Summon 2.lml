@@ -1,0 +1,204 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventHeroUseItem
+条件
+    OperatorCompareItemCode
+        函数: GetItemTypeId
+            函数: GetManipulatedItem
+        预设: OperatorEqualENE
+        常量: I00N
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: RectContainsUnit
+                    变量: IoRegion
+                    变量: Hero
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            ReturnAction
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: RectContainsUnit
+                    变量: gg_rct_Region_084
+                    变量: Hero
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            DisableTrigger
+                函数: GetTriggeringTrigger
+            SetVariable
+                变量: IoRegion
+                变量: gg_rct_Region_084
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: H01S
+                预设: PlayerNA
+                函数: GetRandomLocInRect
+                    变量: IoRegion
+                预设: RealUnitFacing
+            SetVariable
+                变量: Io2
+                函数: GetLastCreatedUnit
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: ModeAdvanced
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                    UnitAddAbilityBJ
+                        常量: A075
+                        函数: GetLastCreatedUnit
+            AddSpecialEffectTargetUnitBJ
+                常量: origin
+                变量: Io2
+                常量: ABirth_1.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            SetHeroLevel
+                变量: Io2
+                常量: 5
+                预设: ShowHideHide
+            EnableTrigger
+                变量: gg_trg_Checkup_Io2
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: RectContainsUnit
+                    变量: gg_rct_Region_081
+                    变量: Hero
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            DisableTrigger
+                函数: GetTriggeringTrigger
+            SetVariable
+                变量: IoRegion
+                变量: gg_rct_Region_081
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: H01S
+                预设: PlayerNA
+                函数: GetRandomLocInRect
+                    变量: IoRegion
+                预设: RealUnitFacing
+            SetVariable
+                变量: Io2
+                函数: GetLastCreatedUnit
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: ModeAdvanced
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                    UnitAddAbilityBJ
+                        常量: A075
+                        函数: GetLastCreatedUnit
+            AddSpecialEffectTargetUnitBJ
+                常量: origin
+                变量: Io2
+                常量: ABirth_1.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            SetHeroLevel
+                变量: Io2
+                常量: 5
+                预设: ShowHideHide
+            EnableTrigger
+                变量: gg_trg_Checkup_Io2
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: RectContainsUnit
+                    变量: gg_rct_Region_082
+                    变量: Hero
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            DisableTrigger
+                函数: GetTriggeringTrigger
+            SetVariable
+                变量: IoRegion
+                变量: gg_rct_Region_082
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: H01S
+                预设: PlayerNA
+                函数: GetRandomLocInRect
+                    变量: IoRegion
+                预设: RealUnitFacing
+            SetVariable
+                变量: Io2
+                函数: GetLastCreatedUnit
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: ModeAdvanced
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                    UnitAddAbilityBJ
+                        常量: A075
+                        函数: GetLastCreatedUnit
+            AddSpecialEffectTargetUnitBJ
+                常量: origin
+                变量: Io2
+                常量: ABirth_1.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            SetHeroLevel
+                变量: Io2
+                常量: 5
+                预设: ShowHideHide
+            EnableTrigger
+                变量: gg_trg_Checkup_Io2
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: RectContainsUnit
+                    变量: gg_rct_Region_083
+                    变量: Hero
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            DisableTrigger
+                函数: GetTriggeringTrigger
+            SetVariable
+                变量: IoRegion
+                变量: gg_rct_Region_083
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: H01S
+                预设: PlayerNA
+                函数: GetRandomLocInRect
+                    变量: IoRegion
+                预设: RealUnitFacing
+            SetVariable
+                变量: Io2
+                函数: GetLastCreatedUnit
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: ModeAdvanced
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                    UnitAddAbilityBJ
+                        常量: A075
+                        函数: GetLastCreatedUnit
+            AddSpecialEffectTargetUnitBJ
+                常量: origin
+                变量: Io2
+                常量: ABirth_1.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            SetHeroLevel
+                变量: Io2
+                常量: 5
+                预设: ShowHideHide
+            EnableTrigger
+                变量: gg_trg_Checkup_Io2

@@ -1,0 +1,29 @@
+事件
+    TriggerRegisterPlayerEventEndCinematic
+        预设: Player00
+条件
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    CinematicModeBJ
+        预设: OnOffOff
+        函数: GetPlayersAll
+    SetVariable
+        变量: CinematicSkipped2
+        常量: true
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeOut
+        常量: 0.50
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    TriggerSleepAction
+        常量: 0.70
+    ShowUnitHide
+        变量: gg_unit_H04O_0351
+    ShowUnitHide
+        变量: gg_unit_H01N_0352
+    TriggerExecute
+        变量: gg_trg_Meet_Tyotho_Add

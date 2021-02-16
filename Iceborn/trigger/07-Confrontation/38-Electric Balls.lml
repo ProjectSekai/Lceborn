@@ -1,0 +1,35 @@
+事件
+    TriggerRegisterTimerEventPeriodic
+        常量: 20.00
+条件
+动作
+    IfThenElse
+        条件: OperatorCompareBoolean
+            函数: IsUnitDeadBJ
+                变量: gg_unit_H06F_0415
+            预设: OperatorEqualENE
+            常量: true
+        动作: ReturnAction
+        动作: DoNothing
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            变量: gg_unit_H06F_0415
+        常量: 'ShadowSlam(Normal Size).mdx'
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    PlaySoundBJ
+        变量: gg_snd_Explosion15
+    SetVariable
+        变量: RingPoint
+        函数: GetUnitLoc
+            变量: gg_unit_H06F_0415
+    SetVariable
+        变量: AngleRing
+        常量: 360.00
+    TriggerExecute
+        变量: gg_trg_Electric_Balls_Effect
+    TriggerSleepAction
+        常量: 3.50
+    StopSoundBJ
+        变量: gg_snd_Explosion15
+        预设: FadeDontFade

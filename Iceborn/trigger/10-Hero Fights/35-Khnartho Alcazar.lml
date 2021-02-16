@@ -1,0 +1,122 @@
+事件
+条件
+动作
+    DisableTrigger
+        变量: gg_trg_Alcazar_Trigger_1
+    DisableTrigger
+        变量: gg_trg_Alcazar_Trigger_2
+    DisableTrigger
+        变量: gg_trg_Alcazar_Trigger_3
+    DisableTrigger
+        变量: gg_trg_Alcazar_Trigger_4
+    DisableTrigger
+        变量: gg_trg_Teleportation_Window
+    EnableTrigger
+        变量: gg_trg_Teleportation_Block
+    KillUnit
+        变量: gg_unit_h05G_0229
+    KillUnit
+        变量: gg_unit_h05G_0233
+    KillUnit
+        变量: gg_unit_h05G_0232
+    KillUnit
+        变量: gg_unit_h05G_0231
+    RemoveUnit
+        变量: RotatorTrigger1
+    RemoveUnit
+        变量: RotatorTrigger2
+    RemoveUnit
+        变量: RotatorTrigger3
+    RemoveUnit
+        变量: RotatorTrigger4
+    RemoveUnit
+        变量: gg_unit_h05E_0092
+    SetUnitAnimation
+        变量: gg_unit_h04P_0312
+        常量: stand
+    DestructableRestoreLife
+        变量: gg_dest_YTpc_9905
+        函数: GetDestructableMaxLife
+            函数: GetLastCreatedDestructable
+        预设: ShowHideHide
+    DestructableRestoreLife
+        变量: gg_dest_YTpc_9906
+        函数: GetDestructableMaxLife
+            函数: GetLastCreatedDestructable
+        预设: ShowHideHide
+    KillDestructable
+        变量: gg_dest_YTpc_11324
+    KillDestructable
+        变量: gg_dest_YTpc_11323
+    KillDestructable
+        变量: gg_dest_YTpc_11322
+    KillDestructable
+        变量: gg_dest_YTpc_11327
+    KillDestructable
+        变量: gg_dest_YTpc_11326
+    KillDestructable
+        变量: gg_dest_YTpc_11325
+    PlaySoundBJ
+        变量: gg_snd_EnergyWaves
+    CameraSetEQNoiseForPlayer
+        预设: Player00
+        常量: 1.50
+    TriggerSleepAction
+        常量: 17.00
+    CameraClearNoiseForPlayer
+        预设: Player00
+    PlaySoundBJ
+        变量: gg_snd_EnergyExplosion
+    ShowUnitShow
+        变量: gg_unit_H05O_0043
+    SetUnitPositionLoc
+        变量: Khnartho
+        函数: GetRectCenter
+            变量: gg_rct_Region_271
+    PauseUnitBJ
+        预设: PauseUnpauseOptionPause
+        变量: gg_unit_H05O_0043
+    UnitAddAbilityBJ
+        常量: Avul
+        变量: gg_unit_H05O_0043
+    AddSpecialEffectTargetUnitBJ
+        常量: origin
+        变量: gg_unit_H05O_0043
+        常量: Teleport.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    TriggerSleepAction
+        常量: 2
+    SelectUnitForPlayerSingle
+        变量: Khnartho
+        预设: Player00
+    SetMusicVolumeBJ
+        常量: 50.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 24.00
+        常量: '|cffffcc00卡尔索魂魄:|r 谁有勇气与意志敢到这里?我是守护这里所有工艺品的诅咒与灵魂,只有最出色的人才有可能在我的愤怒下幸存!
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Khnartho1
+    TriggerSleepAction
+        常量: 25.00
+    SetMusicVolumeBJ
+        常量: 100.00
+    PauseUnitBJ
+        预设: PauseUnpauseOptionUnpause
+        变量: gg_unit_H05O_0043
+    UnitRemoveAbilityBJ
+        常量: Avul
+        变量: gg_unit_H05O_0043
+    ClearMapMusicBJ
+    EndThematicMusicBJ
+    StopMusicBJ
+        预设: FadeDontDont
+    PlayMusicBJ
+        变量: gg_snd_Joshua_Buck___Death_s_Chant
+    EnableTrigger
+        变量: gg_trg_Khnartho_Teleports
+    EnableTrigger
+        变量: gg_trg_Khnartho_Spells

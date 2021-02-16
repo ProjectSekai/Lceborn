@@ -1,0 +1,52 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventDeath
+条件
+    OrMultiple
+        条件
+            OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetDyingUnit
+                预设: OperatorEqualENE
+                常量: h00W
+            OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetDyingUnit
+                预设: OperatorEqualENE
+                常量: h054
+            OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetDyingUnit
+                预设: OperatorEqualENE
+                常量: h02N
+            OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetDyingUnit
+                预设: OperatorEqualENE
+                常量: h05I
+            OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetDyingUnit
+                预设: OperatorEqualENE
+                常量: h05J
+            OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetDyingUnit
+                预设: OperatorEqualENE
+                常量: h05K
+            OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetDyingUnit
+                预设: OperatorEqualENE
+                常量: h05L
+动作
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetDyingUnit
+        常量: Abilities\Spells\Human\FlakCannons\FlakTarget.mdl
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    TriggerSleepAction
+        常量: 0.01
+    ShowUnitHide
+        函数: GetDyingUnit

@@ -1,0 +1,65 @@
+事件
+条件
+动作
+    SetVariable
+        变量: GlyphRuneTarget
+        函数: GroupPickRandomUnit
+            变量: GlyphRuneGroup
+    IfThenElseMultiple
+        条件
+            AndMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: UnitHasBuffBJ
+                            变量: GlyphRuneTarget
+                            常量: B001
+                        预设: OperatorEqualENE
+                        常量: false
+        动作
+            UnitDamageTargetBJ
+                变量: Hero
+                变量: GlyphRuneTarget
+                函数: OperatorReal
+                    函数: GetUnitStateSwap
+                        预设: UnitStateMana
+                        变量: Hero
+                    预设: OperatorMultiply
+                    常量: 1.00
+                预设: AttackTypeNormal
+                预设: DamageTypeNormal
+    IfThenElseMultiple
+        条件
+            AndMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: UnitHasBuffBJ
+                            变量: GlyphRuneTarget
+                            常量: B001
+                        预设: OperatorEqualENE
+                        常量: true
+        动作
+            UnitDamageTargetBJ
+                变量: Hero
+                变量: GlyphRuneTarget
+                函数: OperatorReal
+                    函数: GetUnitStateSwap
+                        预设: UnitStateMana
+                        变量: Hero
+                    预设: OperatorMultiply
+                    常量: 4.00
+                预设: AttackTypeNormal
+                预设: DamageTypeNormal
+    GroupRemoveUnitSimple
+        变量: GlyphRuneTarget
+        变量: GlyphRuneGroup
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: IsUnitGroupEmptyBJ
+                    变量: GlyphRuneGroup
+                预设: OperatorEqualENE
+                常量: true
+        动作
+        动作
+            TriggerExecute
+                函数: GetTriggeringTrigger

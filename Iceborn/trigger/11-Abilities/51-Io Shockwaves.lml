@@ -1,0 +1,360 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OperatorCompareAbilityId
+        函数: GetSpellAbilityId
+        预设: OperatorEqualENE
+        常量: A027
+动作
+    SetVariable
+        变量: RingPoint
+        函数: GetUnitLoc
+            函数: GetTriggerUnit
+    SetVariable
+        变量: AngleRing
+        常量: 360.00
+    SetVariable
+        变量: RingPointSummon
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                函数: GetTriggerUnit
+            常量: 100.00
+            变量: AngleRing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h01T
+        预设: PlayerNA
+        变量: RingPointSummon
+        变量: AngleRing
+    SetVariable
+        变量: ShockwavePoint
+        函数: PolarProjectionBJ
+            变量: RingPoint
+            常量: 200.00
+            变量: AngleRing
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderCarrionSwarm
+        变量: ShockwavePoint
+    SetVariable
+        变量: AngleRing
+        函数: OperatorReal
+            变量: AngleRing
+            预设: OperatorSubtract
+            常量: 30.00
+    SetVariable
+        变量: RingPointSummon
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                函数: GetTriggerUnit
+            常量: 100.00
+            变量: AngleRing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h01T
+        预设: PlayerNA
+        变量: RingPointSummon
+        变量: AngleRing
+    SetVariable
+        变量: ShockwavePoint
+        函数: PolarProjectionBJ
+            变量: RingPoint
+            常量: 200.00
+            变量: AngleRing
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderCarrionSwarm
+        变量: ShockwavePoint
+    SetVariable
+        变量: AngleRing
+        函数: OperatorReal
+            变量: AngleRing
+            预设: OperatorSubtract
+            常量: 30.00
+    SetVariable
+        变量: RingPointSummon
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                函数: GetTriggerUnit
+            常量: 100.00
+            变量: AngleRing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h01T
+        预设: PlayerNA
+        变量: RingPointSummon
+        变量: AngleRing
+    SetVariable
+        变量: ShockwavePoint
+        函数: PolarProjectionBJ
+            变量: RingPoint
+            常量: 200.00
+            变量: AngleRing
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderCarrionSwarm
+        变量: ShockwavePoint
+    SetVariable
+        变量: AngleRing
+        函数: OperatorReal
+            变量: AngleRing
+            预设: OperatorSubtract
+            常量: 30.00
+    SetVariable
+        变量: RingPointSummon
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                函数: GetTriggerUnit
+            常量: 100.00
+            变量: AngleRing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h01T
+        预设: PlayerNA
+        变量: RingPointSummon
+        变量: AngleRing
+    SetVariable
+        变量: ShockwavePoint
+        函数: PolarProjectionBJ
+            变量: RingPoint
+            常量: 200.00
+            变量: AngleRing
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderCarrionSwarm
+        变量: ShockwavePoint
+    SetVariable
+        变量: AngleRing
+        函数: OperatorReal
+            变量: AngleRing
+            预设: OperatorSubtract
+            常量: 30.00
+    SetVariable
+        变量: RingPointSummon
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                函数: GetTriggerUnit
+            常量: 100.00
+            变量: AngleRing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h01T
+        预设: PlayerNA
+        变量: RingPointSummon
+        变量: AngleRing
+    SetVariable
+        变量: ShockwavePoint
+        函数: PolarProjectionBJ
+            变量: RingPoint
+            常量: 200.00
+            变量: AngleRing
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderCarrionSwarm
+        变量: ShockwavePoint
+    SetVariable
+        变量: AngleRing
+        函数: OperatorReal
+            变量: AngleRing
+            预设: OperatorSubtract
+            常量: 30.00
+    SetVariable
+        变量: RingPointSummon
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                函数: GetTriggerUnit
+            常量: 100.00
+            变量: AngleRing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h01T
+        预设: PlayerNA
+        变量: RingPointSummon
+        变量: AngleRing
+    SetVariable
+        变量: ShockwavePoint
+        函数: PolarProjectionBJ
+            变量: RingPoint
+            常量: 200.00
+            变量: AngleRing
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderCarrionSwarm
+        变量: ShockwavePoint
+    SetVariable
+        变量: AngleRing
+        函数: OperatorReal
+            变量: AngleRing
+            预设: OperatorSubtract
+            常量: 30.00
+    SetVariable
+        变量: RingPointSummon
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                函数: GetTriggerUnit
+            常量: 100.00
+            变量: AngleRing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h01T
+        预设: PlayerNA
+        变量: RingPointSummon
+        变量: AngleRing
+    SetVariable
+        变量: ShockwavePoint
+        函数: PolarProjectionBJ
+            变量: RingPoint
+            常量: 200.00
+            变量: AngleRing
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderCarrionSwarm
+        变量: ShockwavePoint
+    SetVariable
+        变量: AngleRing
+        函数: OperatorReal
+            变量: AngleRing
+            预设: OperatorSubtract
+            常量: 30.00
+    SetVariable
+        变量: RingPointSummon
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                函数: GetTriggerUnit
+            常量: 100.00
+            变量: AngleRing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h01T
+        预设: PlayerNA
+        变量: RingPointSummon
+        变量: AngleRing
+    SetVariable
+        变量: ShockwavePoint
+        函数: PolarProjectionBJ
+            变量: RingPoint
+            常量: 200.00
+            变量: AngleRing
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderCarrionSwarm
+        变量: ShockwavePoint
+    SetVariable
+        变量: AngleRing
+        函数: OperatorReal
+            变量: AngleRing
+            预设: OperatorSubtract
+            常量: 30.00
+    SetVariable
+        变量: RingPointSummon
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                函数: GetTriggerUnit
+            常量: 100.00
+            变量: AngleRing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h01T
+        预设: PlayerNA
+        变量: RingPointSummon
+        变量: AngleRing
+    SetVariable
+        变量: ShockwavePoint
+        函数: PolarProjectionBJ
+            变量: RingPoint
+            常量: 200.00
+            变量: AngleRing
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderCarrionSwarm
+        变量: ShockwavePoint
+    SetVariable
+        变量: AngleRing
+        函数: OperatorReal
+            变量: AngleRing
+            预设: OperatorSubtract
+            常量: 30.00
+    SetVariable
+        变量: RingPointSummon
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                函数: GetTriggerUnit
+            常量: 100.00
+            变量: AngleRing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h01T
+        预设: PlayerNA
+        变量: RingPointSummon
+        变量: AngleRing
+    SetVariable
+        变量: ShockwavePoint
+        函数: PolarProjectionBJ
+            变量: RingPoint
+            常量: 200.00
+            变量: AngleRing
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderCarrionSwarm
+        变量: ShockwavePoint
+    SetVariable
+        变量: AngleRing
+        函数: OperatorReal
+            变量: AngleRing
+            预设: OperatorSubtract
+            常量: 30.00
+    SetVariable
+        变量: RingPointSummon
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                函数: GetTriggerUnit
+            常量: 100.00
+            变量: AngleRing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h01T
+        预设: PlayerNA
+        变量: RingPointSummon
+        变量: AngleRing
+    SetVariable
+        变量: ShockwavePoint
+        函数: PolarProjectionBJ
+            变量: RingPoint
+            常量: 200.00
+            变量: AngleRing
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderCarrionSwarm
+        变量: ShockwavePoint
+    SetVariable
+        变量: AngleRing
+        函数: OperatorReal
+            变量: AngleRing
+            预设: OperatorSubtract
+            常量: 30.00
+    SetVariable
+        变量: RingPointSummon
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                函数: GetTriggerUnit
+            常量: 100.00
+            变量: AngleRing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h01T
+        预设: PlayerNA
+        变量: RingPointSummon
+        变量: AngleRing
+    SetVariable
+        变量: ShockwavePoint
+        函数: PolarProjectionBJ
+            变量: RingPoint
+            常量: 200.00
+            变量: AngleRing
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderCarrionSwarm
+        变量: ShockwavePoint
+    PlaySoundBJ
+        变量: gg_snd_HeroLichYesAttack3

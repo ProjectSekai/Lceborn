@@ -1,0 +1,120 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventDeath
+条件
+    OperatorCompareUnit
+        函数: GetDyingUnit
+        预设: OperatorEqualENE
+        变量: GornuSphere
+动作
+    IfThenElse
+        条件: OperatorCompareBoolean
+            变量: CirrathoDeath
+            预设: OperatorEqualENE
+            常量: true
+        动作: ReturnAction
+        动作: DoNothing
+    UnitDamageTargetBJ
+        变量: Hero
+        变量: gg_unit_H03O_0108
+        常量: 700.00
+        预设: AttackTypeNormal
+        预设: DamageTypeNormal
+    PlaySoundBJ
+        变量: gg_snd_Explosion3
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h03R
+        预设: PlayerNP
+        函数: GetRectCenter
+            变量: gg_rct_Region_179
+        预设: RealUnitFacing
+    PlaySoundBJ
+        变量: gg_snd_WaterElementalYesAttack3
+    PauseUnitBJ
+        预设: PauseUnpauseOptionPause
+        变量: gg_unit_H03O_0108
+    ResetUnitAnimation
+        变量: gg_unit_H03O_0108
+    SetUnitAnimation
+        变量: gg_unit_H03O_0108
+        常量: Stun
+    CameraSetEQNoiseForPlayer
+        预设: Player00
+        常量: 10.00
+    TriggerSleepAction
+        常量: 0.50
+    CameraClearNoiseForPlayer
+        预设: Player00
+    TriggerSleepAction
+        常量: 9.50
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: IsUnitDeadBJ
+                    变量: gg_unit_H03O_0108
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            PauseUnitBJ
+                预设: PauseUnpauseOptionUnpause
+                变量: gg_unit_H03O_0108
+            ReturnAction
+    PauseUnitBJ
+        预设: PauseUnpauseOptionUnpause
+        变量: gg_unit_H03O_0108
+    SetUnitTimeScalePercent
+        变量: gg_unit_H03O_0108
+        常量: 25.00
+    ResetUnitAnimation
+        变量: gg_unit_H03O_0108
+    SetUnitAnimation
+        变量: gg_unit_H03O_0108
+        常量: 'spell slam'
+    PauseUnitBJ
+        预设: PauseUnpauseOptionPause
+        变量: gg_unit_H03O_0108
+    PlaySoundBJ
+        变量: gg_snd_MonsterRoar
+    SetSoundVolumeBJ
+        变量: gg_snd_MonsterRoar
+        常量: 60.00
+    SetUnitMoveSpeed
+        变量: gg_unit_H03O_0108
+        常量: 0.00
+    TriggerSleepAction
+        常量: 5.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: IsUnitDeadBJ
+                    变量: gg_unit_H03O_0108
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            PauseUnitBJ
+                预设: PauseUnpauseOptionUnpause
+                变量: gg_unit_H03O_0108
+            SetUnitTimeScalePercent
+                变量: gg_unit_H03O_0108
+                常量: 100.00
+            SetSoundVolumeBJ
+                变量: gg_snd_MonsterRoar
+                常量: 100.00
+            ReturnAction
+    SetSoundVolumeBJ
+        变量: gg_snd_MonsterRoar
+        常量: 100.00
+    ResetUnitAnimation
+        变量: gg_unit_H03O_0108
+    SetUnitTimeScalePercent
+        变量: gg_unit_H03O_0108
+        常量: 100.00
+    PlaySoundBJ
+        变量: gg_snd_WaterElementalYesAttack2
+    PauseUnitBJ
+        预设: PauseUnpauseOptionUnpause
+        变量: gg_unit_H03O_0108
+    SetUnitMoveSpeed
+        变量: gg_unit_H03O_0108
+        常量: 0.00

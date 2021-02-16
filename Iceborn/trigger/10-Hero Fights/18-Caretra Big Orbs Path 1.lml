@@ -1,0 +1,15 @@
+事件
+    TriggerRegisterEnterRectSimple
+        变量: gg_rct_Region_112_Copy
+条件
+    OperatorCompareUnitCode
+        函数: GetUnitTypeId
+            函数: GetEnteringUnit
+        预设: OperatorEqualENE
+        常量: h02J
+动作
+    IssuePointOrderLoc
+        函数: GetEnteringUnit
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_112_Copy_2

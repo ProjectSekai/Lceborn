@@ -1,0 +1,36 @@
+事件
+条件
+动作
+    SetVariable
+        变量: AngleRing
+        函数: OperatorReal
+            变量: AngleRing
+            预设: OperatorSubtract
+            常量: 5.00
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h06H
+        预设: PlayerNA
+        函数: GetUnitLoc
+            变量: gg_unit_h066_0403
+        变量: AngleRing
+    SetVariable
+        变量: ShockwavePoint
+        函数: PolarProjectionBJ
+            变量: RingPoint
+            常量: 200.00
+            变量: AngleRing
+    IssuePointOrderLoc
+        函数: GetLastCreatedUnit
+        预设: UnitOrderCarrionSwarm
+        变量: ShockwavePoint
+    IfThenElseMultiple
+        条件
+            OperatorCompareReal
+                变量: AngleRing
+                预设: OperatorEqual
+                常量: 0.00
+        动作
+        动作
+            TriggerExecute
+                函数: GetTriggeringTrigger

@@ -1,0 +1,59 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventAttacked
+条件
+    OperatorCompareUnit
+        函数: GetAttacker
+        预设: OperatorEqualENE
+        变量: Arazayah
+动作
+    IfThenElse
+        条件: OperatorComparePlayer
+            函数: GetOwningPlayer
+                变量: Arazayah
+            预设: OperatorEqualENE
+            预设: PlayerNP
+        动作: ReturnAction
+        动作: DoNothing
+    IssueImmediateOrder
+        变量: Arazayah
+        预设: UnitOrderStop
+    IssueTargetOrder
+        变量: Arazayah
+        预设: UnitOrderChainLightning
+        函数: GetAttackedUnitBJ
+    IfThenElse
+        条件: OperatorComparePlayer
+            函数: GetOwningPlayer
+                变量: Arazayah
+            预设: OperatorEqualENE
+            预设: PlayerNP
+        动作: ReturnAction
+        动作: DoNothing
+    TriggerSleepAction
+        常量: 1.00
+    IfThenElse
+        条件: OperatorComparePlayer
+            函数: GetOwningPlayer
+                变量: Arazayah
+            预设: OperatorEqualENE
+            预设: PlayerNP
+        动作: ReturnAction
+        动作: DoNothing
+    IssueImmediateOrder
+        变量: Arazayah
+        预设: UnitOrderStomp
+    TriggerSleepAction
+        常量: 1.00
+    IfThenElse
+        条件: OperatorComparePlayer
+            函数: GetOwningPlayer
+                变量: Arazayah
+            预设: OperatorEqualENE
+            预设: PlayerNP
+        动作: ReturnAction
+        动作: DoNothing
+    IssueTargetOrder
+        变量: Arazayah
+        预设: UnitOrderAttackUnit
+        函数: GetAttackedUnitBJ

@@ -1,0 +1,243 @@
+事件
+    TriggerRegisterUnitInRangeSimple
+        常量: 200.00
+        变量: gg_unit_H00E_0012
+条件
+    OperatorCompareUnit
+        函数: GetTriggerUnit
+        预设: OperatorEqualENE
+        变量: HeroBorn
+动作
+    IfThenElseMultiple
+        条件
+            AndMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: IsItemOwned
+                            变量: CO
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsItemOwned
+                            变量: GO
+                        预设: OperatorEqualENE
+                        常量: true
+        动作
+            DisableTrigger
+                函数: GetTriggeringTrigger
+            KillDestructable
+                变量: gg_dest_B000_1920
+            KillDestructable
+                变量: gg_dest_B000_1922
+            KillDestructable
+                变量: gg_dest_B000_1923
+            ShowDestructableBJ
+                预设: ShowHideHide
+                变量: gg_dest_B000_1922
+            ShowDestructableBJ
+                预设: ShowHideHide
+                变量: gg_dest_B000_1920
+            ShowDestructableBJ
+                预设: ShowHideHide
+                变量: gg_dest_B000_1923
+            RemoveUnit
+                变量: Orb11
+            RemoveUnit
+                变量: Orb12
+            RemoveUnit
+                变量: Orb13
+            RemoveUnit
+                变量: Orb21
+            RemoveUnit
+                变量: Orb22
+            RemoveUnit
+                变量: Orb23
+            RemoveUnit
+                变量: Orb31
+            RemoveUnit
+                变量: Orb32
+            RemoveUnit
+                变量: Orb33
+            RemoveItem
+                函数: GetItemOfTypeFromUnitBJ
+                    变量: HeroBorn
+                    常量: I00D
+            RemoveItem
+                函数: GetItemOfTypeFromUnitBJ
+                    变量: HeroBorn
+                    常量: I00C
+            QuestItemSetCompletedBJ
+                变量: QuestMainReq1
+                预设: CompletionOptionCompleted
+            QuestSetCompletedBJ
+                变量: QuestMain
+                预设: CompletionOptionCompleted
+            SelectUnitSingle
+                变量: gg_unit_H00E_0012
+            SetMusicVolumeBJ
+                常量: 50.00
+            DisplayTimedTextToForce
+                函数: GetPlayersAll
+                常量: 21.00
+                常量: '|cffffcc00萨那尔:|r 寒冷将会唤醒你的沉眠,生长会助你穿越暴雪与寒冰.坠落到瓦尔鲁的双臂,重新回到这里,作为另一个存在.
+
+'
+            PlaySoundBJ
+                变量: gg_snd_Thunar4
+            TriggerSleepAction
+                常量: 21.00
+            SetMusicVolumeBJ
+                常量: 100.00
+            TriggerSleepAction
+                常量: 2
+            PauseUnitBJ
+                预设: PauseUnpauseOptionPause
+                变量: HeroBorn
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h00T
+                预设: PlayerNP
+                函数: GetUnitLoc
+                    变量: HeroBorn
+                预设: RealUnitFacing
+            SetMusicVolumeBJ
+                常量: 50.00
+            PlaySoundBJ
+                变量: gg_snd_Avalanche
+            CameraSetEQNoiseForPlayer
+                预设: Player00
+                常量: 2.00
+            TriggerSleepAction
+                常量: 2.00
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h00S
+                预设: PlayerNP
+                函数: GetUnitLoc
+                    变量: HeroBorn
+                预设: RealUnitFacing
+            TriggerSleepAction
+                常量: 3.00
+            CinematicFadeBJ
+                预设: FadeTypeOptionFadeOut
+                常量: 3.00
+                预设: CineFilterTextureWhite
+                常量: 100.00
+                常量: 100.00
+                常量: 100.00
+                常量: 0
+            DisableTrigger
+                变量: gg_trg_HeroBorn_Lock
+            TriggerSleepAction
+                常量: 4.00
+            CameraClearNoiseForPlayer
+                预设: Player00
+            SetMusicVolumeBJ
+                常量: 100.00
+            CinematicFadeBJ
+                预设: FadeTypeOptionFadeIn
+                常量: 4.00
+                预设: CineFilterTextureWhite
+                常量: 100.00
+                常量: 100.00
+                常量: 100.00
+                常量: 0.00
+            ShowUnitHide
+                变量: HeroBorn
+            ShowUnitShow
+                变量: Hero
+            SetUnitOwner
+                变量: Hero
+                预设: Player00
+                预设: ChangeColorTrue
+            SelectUnitSingle
+                变量: Hero
+            UnitRemoveAbilityBJ
+                常量: Avul
+                变量: gg_unit_h00W_0023
+            EnableTrigger
+                变量: gg_trg_Hero_Lock
+            SetCameraTargetControllerNoZForPlayer
+                预设: Player00
+                变量: Hero
+                常量: 0
+                常量: 0
+                预设: CameraOrientationNormal
+            TriggerSleepAction
+                常量: 5.00
+            DisplayTextToForce
+                函数: GetPlayersAll
+                常量: '|cffffcc00水 晶 树 之 丘|r
+
+'
+            PlaySoundBJ
+                变量: gg_snd_Hint
+            TriggerSleepAction
+                常量: 2.00
+            CreateQuestBJ
+                预设: QuestTypeReqDiscovered
+                常量: 微光的暗夜水晶
+                常量: 我要与泰尔卓,寒霜天地的氏族首领对话,他在水晶树的西边,顺便看看他有什么任务要托付于我.
+                常量: ReplaceableTextures\CommandButtons\BTNEmberShard.blp
+            SetVariable
+                变量: QuestMain
+                函数: GetLastCreatedQuestBJ
+            CreateQuestItemBJ
+                变量: QuestMain
+                常量: 在水晶树的西边寻找泰尔卓
+            SetVariable
+                变量: QuestMainReq1
+                函数: GetLastCreatedQuestItemBJ
+            FlashQuestDialogButtonBJ
+            PlaySoundBJ
+                变量: gg_snd_QuestLog
+            DisplayTextToForce
+                函数: GetPlayersAll
+                常量: '|cffffcc00 - 寻找泰尔卓|r
+
+'
+            TriggerSleepAction
+                常量: 2.00
+            PlaySoundBJ
+                变量: gg_snd_Hint
+            DisplayTextToForce
+                函数: GetPlayersAll
+                常量: '|cff7777aa提示: 冰裔必须活着|r
+
+'
+            TriggerSleepAction
+                常量: 5.00
+            PlaySoundBJ
+                变量: gg_snd_Hint
+            DisplayTextToForce
+                函数: GetPlayersAll
+                常量: '|cff7777aa提示: 在聊天框输入匹配|r |cffffcc00Stats|r |cff7777aa或|r |cffffcc00Statistics|r |cff7777aaas的文字会显示出一些游戏统计|r
+
+'
+            TriggerSleepAction
+                常量: 10.00
+            PlaySoundBJ
+                变量: gg_snd_Hint
+            DisplayTextToForce
+                函数: GetPlayersAll
+                常量: '|cff7777aa提示: 输入完全匹配|r |cffffcc00Reset|r |cff7777aa文字的信息将会显现重置英雄属性的窗口|r
+
+'
+            TriggerSleepAction
+                常量: 10.00
+            PlaySoundBJ
+                变量: gg_snd_Hint
+            DisplayTextToForce
+                函数: GetPlayersAll
+                常量: '|cff7777aa提示: 理论上支线任务如果不是为了更进一步地游戏可以不干涉,也是与主任务线分隔的部分,但是支线任务非常重要,不可轻易略过|r
+
+'
+            TriggerSleepAction
+                常量: 10.00
+            PlaySoundBJ
+                变量: gg_snd_Hint
+            DisplayTextToForce
+                函数: GetPlayersAll
+                常量: '|cff7777aa提示: 请在游戏期间也将注意力放到环境上,以更好地掠夺搜刮财宝或解谜,疏忽与匆忙或许会使游戏过程变得不平衡|r
+
+'

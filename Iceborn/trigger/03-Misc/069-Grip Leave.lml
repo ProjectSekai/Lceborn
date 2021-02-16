@@ -1,0 +1,13 @@
+事件
+    TriggerRegisterLeaveRectSimple
+        变量: gg_rct_Region_029
+条件
+    OperatorCompareUnit
+        函数: GetTriggerUnit
+        预设: OperatorEqualENE
+        变量: Hero
+动作
+    SetUnitOwner
+        变量: gg_unit_h00Y_0036
+        预设: PlayerNP
+        预设: ChangeColorFalse

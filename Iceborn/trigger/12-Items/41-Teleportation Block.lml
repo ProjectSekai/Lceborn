@@ -1,0 +1,14 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OperatorCompareAbilityId
+        函数: GetSpellAbilityId
+        预设: OperatorEqualENE
+        常量: A00L
+动作
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: 目前无法使用
+    PlaySoundBJ
+        变量: gg_snd_Error

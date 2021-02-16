@@ -1,0 +1,97 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventDeath
+条件
+    OperatorCompareUnit
+        函数: GetDyingUnit
+        预设: OperatorEqualENE
+        变量: gg_unit_H03O_0108
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    ClearMapMusicBJ
+    EndThematicMusicBJ
+    StopMusicBJ
+        预设: FadeDontDont
+    PlayMusicBJ
+        变量: gg_snd_Baldur_s_Gate_Candelkeep
+    KillDestructable
+        变量: gg_dest_YTpc_7293
+    KillDestructable
+        变量: gg_dest_YTpc_7292
+    SetUnitAnimation
+        变量: gg_unit_h027_0106
+        常量: stand
+    EnableTrigger
+        变量: gg_trg_Teleportation_Window
+    DisableTrigger
+        变量: gg_trg_Teleportation_Block
+    EnableTrigger
+        变量: gg_trg_Teleport_Cirratho
+    ShowUnitHide
+        变量: gg_unit_h03W_0237
+    ShowUnitHide
+        变量: gg_unit_h03W_0157
+    ShowUnitHide
+        变量: gg_unit_h03W_0158
+    ShowUnitHide
+        变量: gg_unit_h03W_0159
+    ShowUnitHide
+        变量: gg_unit_h03W_0160
+    ShowUnitHide
+        变量: gg_unit_h03W_0161
+    ShowUnitHide
+        变量: gg_unit_h03W_0223
+    ShowUnitHide
+        变量: gg_unit_h03W_0225
+    ShowUnitHide
+        变量: gg_unit_h03W_0227
+    ShowUnitHide
+        变量: gg_unit_h03W_0235
+    ShowUnitHide
+        变量: gg_unit_h03W_0236
+    ShowUnitShow
+        变量: gg_unit_h046_0239
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h044
+        预设: PlayerNP
+        函数: GetUnitLoc
+            变量: gg_unit_H03O_0108
+        函数: GetRandomDirectionDeg
+    CameraSetEQNoiseForPlayer
+        预设: Player00
+        常量: 15.00
+    PlaySoundBJ
+        变量: gg_snd_WaterElementalYesAttack3
+    CreateItemLoc
+        常量: I001
+        函数: GetRectCenter
+            变量: gg_rct_Region_179
+    CreateItemLoc
+        常量: I00F
+        函数: GetRectCenter
+            变量: gg_rct_Region_179
+    CreateItemLoc
+        常量: I00G
+        函数: GetRectCenter
+            变量: gg_rct_Region_179
+    CreateItemLoc
+        常量: I00G
+        函数: GetRectCenter
+            变量: gg_rct_Region_179
+    CreateItemLoc
+        常量: I01D
+        函数: GetRectCenter
+            变量: gg_rct_Region_179
+    SetVariable
+        变量: CirrathoDeath
+        常量: true
+    TriggerSleepAction
+        常量: 1.00
+    ShowUnitHide
+        变量: gg_unit_H03O_0108
+    CameraClearNoiseForPlayer
+        预设: Player00
+    PlaySoundBJ
+        变量: gg_snd_WaterElementalWhat4

@@ -1,0 +1,41 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventDeath
+条件
+    OperatorCompareUnit
+        函数: GetDyingUnit
+        预设: OperatorEqualENE
+        变量: ColdBomb
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    KillUnit
+        函数: GetDyingUnit
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetDyingUnit
+        常量: IceNova.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    ForGroupMultiple
+        函数: GetUnitsInRangeOfLocAll
+            常量: 325.00
+            函数: GetUnitLoc
+                函数: GetDyingUnit
+        动作
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h001
+                预设: Player00
+                函数: GetUnitLoc
+                    函数: GetEnumUnit
+                预设: RealUnitFacing
+            IssueTargetOrder
+                函数: GetLastCreatedUnit
+                预设: UnitOrderSlow
+                函数: GetEnumUnit
+            StopSoundBJ
+                变量: gg_snd_IceCrack
+                预设: FadeDontDont
+            PlaySoundBJ
+                变量: gg_snd_IceCrack

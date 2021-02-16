@@ -1,0 +1,40 @@
+事件
+    TriggerRegisterEnterRectSimple
+        变量: gg_rct_Region_232
+条件
+    OperatorCompareUnit
+        函数: GetEnteringUnit
+        预设: OperatorEqualENE
+        变量: gg_unit_h04U_0311
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    SelectUnitSingle
+        变量: gg_unit_h04U_0311
+    SetMusicVolumeBJ
+        常量: 50.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 21.00
+        常量: '|cffffcc00亚坦崔米迪俄斯:|r 这些恶棍看起来很危险,做好准备.你的目标是通过开关周围的4个球体,点亮所有8个基座.之后我就可以解除维久方块的污染.要快!
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Atantrimedius5
+    TriggerSleepAction
+        常量: 6.00
+    EnableTrigger
+        变量: gg_trg_Circle_Spawns
+    TriggerSleepAction
+        常量: 16.00
+    SetMusicVolumeBJ
+        常量: 100.00
+    TriggerSleepAction
+        常量: 2.00
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cff7777aa提示: 每个方块的开关都连接着某些基座,即使是不同的开关都有可能开启同一个东西.通过开启开关,将会开启其连接的基座,如果它原本是关闭着的.终点是将所有都开启.|r
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Hint

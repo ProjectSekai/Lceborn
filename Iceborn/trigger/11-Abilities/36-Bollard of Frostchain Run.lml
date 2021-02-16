@@ -1,0 +1,18 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OrMultiple
+        条件
+            OperatorCompareAbilityId
+                函数: GetSpellAbilityId
+                预设: OperatorEqualENE
+                常量: A05B
+动作
+    SetVariable
+        变量: PointPower
+        函数: GetSpellTargetLoc
+    TriggerSleepAction
+        常量: 0.00
+    ConditionalTriggerExecute
+        变量: gg_trg_Bollard_of_Frostchain_Start

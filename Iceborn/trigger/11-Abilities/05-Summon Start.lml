@@ -1,0 +1,107 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OrMultiple
+        条件
+            OperatorCompareAbilityId
+                函数: GetSpellAbilityId
+                预设: OperatorEqualENE
+                常量: A001
+            OperatorCompareAbilityId
+                函数: GetSpellAbilityId
+                预设: OperatorEqualENE
+                常量: A05O
+动作
+    TriggerSleepAction
+        常量: 0.00
+    IssueImmediateOrder
+        变量: Hero
+        预设: UnitOrderStop
+    SetUnitAnimation
+        变量: Hero
+        常量: 'spell channel'
+    SetVariable
+        变量: HeroPoint
+        函数: GetUnitLoc
+            变量: Hero
+    AddSpecialEffectLocBJ
+        变量: HeroPoint
+        常量: GlaciarAura.mdx
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_HeroPoint)'
+    SetVariable
+        变量: ChannelSummon
+        函数: GetLastCreatedEffectBJ
+    PlaySoundBJ
+        变量: gg_snd_CityscapeCrystalLampLoop1
+    SetVariable
+        变量: HeroPoint
+        函数: GetUnitLoc
+            变量: Hero
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h00H
+        预设: Player00
+        变量: HeroPoint
+        函数: GetUnitFacing
+            变量: Hero
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_HeroPoint)'
+    SetVariable
+        变量: EleProg
+        函数: GetLastCreatedUnit
+    SetUnitTimeScalePercent
+        变量: EleProg
+        常量: 15.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: IsItemOwned
+                    变量: Eyestone
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: MaskON
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                    TriggerExecute
+                        变量: gg_trg_Summon_Improved_Finish
+                动作
+                    TriggerExecute
+                        变量: gg_trg_Summon_Finish
+            ReturnAction
+    EnableTrigger
+        变量: gg_trg_Summon_Stop
+    TriggerSleepAction
+        常量: 6.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: IsTriggerEnabled
+                    变量: gg_trg_Summon_Stop
+                预设: OperatorEqualENE
+                常量: false
+        动作
+        动作
+            DisableTrigger
+                变量: gg_trg_Summon_Stop
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: MaskON
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                    TriggerExecute
+                        变量: gg_trg_Summon_Improved_Finish
+                动作
+                    TriggerExecute
+                        变量: gg_trg_Summon_Finish
+            IssueImmediateOrder
+                变量: Hero
+                预设: UnitOrderStop

@@ -1,0 +1,38 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventHeroPickUpItem
+条件
+    OperatorCompareItemCode
+        函数: GetItemTypeId
+            函数: GetManipulatedItem
+        预设: OperatorEqualENE
+        常量: I01K
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    EnableTrigger
+        变量: gg_trg_Spawn_20
+    EnableTrigger
+        变量: gg_trg_Spawn_23
+    CreateQuestBJ
+        预设: QuestTypeOptDiscovered
+        常量: 理解的背后
+        常量: 我找到了一本关于希尔拉索氏族的真相的书籍.有一个法术可以唤醒奇岩城外面的4个发生器.一旦发生器全都被唤醒,能量门将会塌陷,打开一条通往地下室的通道.
+        常量: ReplaceableTextures\CommandButtons\BTNBookOfAncientKnowledge.blp
+    SetVariable
+        变量: QuestOptional5
+        函数: GetLastCreatedQuestBJ
+    CreateQuestItemBJ
+        变量: QuestOptional5
+        常量: 完全唤醒4个发生器并停止地下室的门的能量供给
+    SetVariable
+        变量: QuestOptional5Req1
+        函数: GetLastCreatedQuestItemBJ
+    FlashQuestDialogButtonBJ
+    PlaySoundBJ
+        变量: gg_snd_QuestLog
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cffffcc00 - 完全唤醒4个发生器并停止地下室的门的能量供给|r
+
+'

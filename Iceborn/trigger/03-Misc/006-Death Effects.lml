@@ -1,0 +1,182 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventDeath
+条件
+    OrMultiple
+        条件
+            OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetDyingUnit
+                预设: OperatorEqualENE
+                常量: h018
+            OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetDyingUnit
+                预设: OperatorEqualENE
+                常量: h01K
+            OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetDyingUnit
+                预设: OperatorEqualENE
+                常量: h02P
+            OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetDyingUnit
+                预设: OperatorEqualENE
+                常量: h041
+            OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetDyingUnit
+                预设: OperatorEqualENE
+                常量: h069
+            OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetDyingUnit
+                预设: OperatorEqualENE
+                常量: h06T
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetDyingUnit
+                预设: OperatorEqualENE
+                常量: h06T
+        动作
+            AddSpecialEffectLocBJ
+                函数: GetUnitLoc
+                    函数: GetDyingUnit
+                常量: EarthMagic.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetDyingUnit
+                预设: OperatorEqualENE
+                常量: h018
+        动作
+            AddSpecialEffectLocBJ
+                函数: GetUnitLoc
+                    函数: GetDyingUnit
+                常量: DevilSlam.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetDyingUnit
+                预设: OperatorEqualENE
+                常量: h01K
+        动作
+            AddSpecialEffectLocBJ
+                函数: GetUnitLoc
+                    函数: GetDyingUnit
+                常量: 'Arcane Nova.mdx'
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            PlaySoundBJ
+                变量: gg_snd_DeathCoilSpecialArt1
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetDyingUnit
+                预设: OperatorEqualENE
+                常量: h02P
+        动作
+            AddSpecialEffectLocBJ
+                函数: GetUnitLoc
+                    函数: GetDyingUnit
+                常量: Enchantment.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            PlaySoundBJ
+                变量: gg_snd_Explosion1
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetDyingUnit
+                预设: OperatorEqualENE
+                常量: h069
+        动作
+            AddSpecialEffectLocBJ
+                函数: GetUnitLoc
+                    函数: GetDyingUnit
+                常量: NewGroundEXBlue.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            AddSpecialEffectLocBJ
+                函数: PolarProjectionBJ
+                    函数: GetUnitLoc
+                        函数: GetDyingUnit
+                    常量: 75.00
+                    函数: GetUnitFacing
+                        函数: GetDyingUnit
+                常量: NewGroundEXBlue.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            AddSpecialEffectLocBJ
+                函数: PolarProjectionBJ
+                    函数: GetUnitLoc
+                        函数: GetDyingUnit
+                    常量: 75.00
+                    函数: OperatorReal
+                        函数: GetUnitFacing
+                            函数: GetDyingUnit
+                        预设: OperatorAdd
+                        常量: 120.00
+                常量: NewGroundEXBlue.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            AddSpecialEffectLocBJ
+                函数: PolarProjectionBJ
+                    函数: GetUnitLoc
+                        函数: GetDyingUnit
+                    常量: 75.00
+                    函数: OperatorReal
+                        函数: GetUnitFacing
+                            函数: GetDyingUnit
+                        预设: OperatorSubtract
+                        常量: 120.00
+                常量: NewGroundEXBlue.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetDyingUnit
+                预设: OperatorEqualENE
+                常量: h041
+        动作
+            AddSpecialEffectLocBJ
+                函数: PolarProjectionBJ
+                    函数: GetUnitLoc
+                        函数: GetDyingUnit
+                    常量: 50.00
+                    常量: 0.00
+                常量: AquaSpike.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            AddSpecialEffectLocBJ
+                函数: PolarProjectionBJ
+                    函数: GetUnitLoc
+                        函数: GetDyingUnit
+                    常量: 50.00
+                    常量: 120.00
+                常量: AquaSpike.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            AddSpecialEffectLocBJ
+                函数: PolarProjectionBJ
+                    函数: GetUnitLoc
+                        函数: GetDyingUnit
+                    常量: 50.00
+                    常量: 240.00
+                常量: AquaSpike.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ

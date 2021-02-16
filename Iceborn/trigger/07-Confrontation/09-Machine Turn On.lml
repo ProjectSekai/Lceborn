@@ -1,0 +1,36 @@
+事件
+    TriggerRegisterUnitInRangeSimple
+        常量: 350.00
+        变量: gg_unit_h06S_0381
+条件
+    OperatorCompareUnit
+        函数: GetTriggerUnit
+        预设: OperatorEqualENE
+        变量: Hero
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    PlaySoundBJ
+        变量: gg_snd_Minigun
+    AddUnitAnimationPropertiesBJ
+        预设: AddRemoveRemove
+        常量: alternate
+        变量: gg_unit_h06S_0381
+    SetUnitAnimation
+        变量: gg_unit_h06S_0381
+        常量: birth
+    SetUnitOwner
+        变量: gg_unit_h06S_0381
+        预设: Player01
+        预设: ChangeColorTrue
+    TriggerSleepAction
+        常量: 2
+    ResetUnitAnimation
+        变量: gg_unit_h06S_0381
+    TriggerSleepAction
+        常量: 2
+    IssuePointOrderLoc
+        变量: gg_unit_h06S_0381
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_362

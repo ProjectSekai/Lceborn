@@ -1,0 +1,174 @@
+事件
+条件
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareReal
+                函数: OperatorReal
+                    函数: GetUnitStateSwap
+                        预设: UnitStateMana
+                        变量: Hero
+                    预设: OperatorSubtract
+                    函数: OperatorReal
+                        函数: GetUnitStateSwap
+                            预设: UnitStateMaxMana
+                            变量: Hero
+                        预设: OperatorMultiply
+                        函数: OperatorReal
+                            常量: 0.19
+                            预设: OperatorSubtract
+                            函数: OperatorReal
+                                变量: AetrisEffect
+                                预设: OperatorAdd
+                                变量: BoethNeckEffect
+                预设: OperatorLessEq
+                常量: 0.00
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: ScrollSpellcaster
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareReal
+                                函数: GetRandomReal
+                                    常量: 0
+                                    常量: 100.00
+                                预设: OperatorLessEq
+                                常量: 25.00
+                        动作
+                        动作
+                            SetUnitManaPercentBJ
+                                变量: Hero
+                                常量: 0.00
+                            ReturnAction
+                动作
+                    SetUnitManaPercentBJ
+                        变量: Hero
+                        常量: 0.00
+                    ReturnAction
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: ScrollSpellcaster
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareReal
+                                函数: GetRandomReal
+                                    常量: 0
+                                    常量: 100.00
+                                预设: OperatorLessEq
+                                常量: 25.00
+                        动作
+                        动作
+                            SetUnitManaBJ
+                                变量: Hero
+                                函数: OperatorReal
+                                    函数: GetUnitStateSwap
+                                        预设: UnitStateMana
+                                        变量: Hero
+                                    预设: OperatorSubtract
+                                    函数: OperatorReal
+                                        函数: GetUnitStateSwap
+                                            预设: UnitStateMaxMana
+                                            变量: Hero
+                                        预设: OperatorMultiply
+                                        函数: OperatorReal
+                                            常量: 0.19
+                                            预设: OperatorSubtract
+                                            函数: OperatorReal
+                                                变量: AetrisEffect
+                                                预设: OperatorAdd
+                                                变量: BoethNeckEffect
+                动作
+                    SetUnitManaBJ
+                        变量: Hero
+                        函数: OperatorReal
+                            函数: GetUnitStateSwap
+                                预设: UnitStateMana
+                                变量: Hero
+                            预设: OperatorSubtract
+                            函数: OperatorReal
+                                函数: GetUnitStateSwap
+                                    预设: UnitStateMaxMana
+                                    变量: Hero
+                                预设: OperatorMultiply
+                                函数: OperatorReal
+                                    常量: 0.19
+                                    预设: OperatorSubtract
+                                    函数: OperatorReal
+                                        变量: AetrisEffect
+                                        预设: OperatorAdd
+                                        变量: BoethNeckEffect
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: IsUnitAliveBJ
+                    变量: Grenade
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            DestroyEffectBJ
+                变量: Beam
+            RemoveUnit
+                变量: Grenade
+    PlaySoundBJ
+        变量: gg_snd_Feedback
+    AddSpecialEffectLocBJ
+        变量: GREpoint
+        常量: LightningNova.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    SetVariable
+        变量: AAPOINT
+        函数: OffsetLocation
+            变量: GREpoint
+            常量: 0
+            常量: 0
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h006
+        预设: Player00
+        变量: AAPOINT
+        预设: RealUnitFacing
+    SetVariable
+        变量: ColdBomb
+        函数: GetLastCreatedUnit
+    IfThenElseMultiple
+        条件
+            OperatorCompareReal
+                函数: GetUnitStateSwap
+                    预设: UnitStateMaxLife
+                    变量: Hero
+                预设: OperatorGreaterEq
+                常量: 2000.00
+        动作
+            UnitApplyTimedLifeBJ
+                常量: 1.00
+                预设: TimedLifeBuffCodeGeneric
+                变量: ColdBomb
+        动作
+            UnitApplyTimedLifeBJ
+                函数: OperatorReal
+                    常量: 14.00
+                    预设: OperatorSubtract
+                    函数: OperatorReal
+                        函数: OperatorReal
+                            函数: GetUnitStateSwap
+                                预设: UnitStateMaxLife
+                                变量: Hero
+                            预设: OperatorDivide
+                            常量: 30.00
+                        预设: OperatorMultiply
+                        常量: 0.20
+                预设: TimedLifeBuffCodeGeneric
+                变量: ColdBomb
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'

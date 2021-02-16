@@ -1,0 +1,346 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventHeroUseItem
+条件
+    OrMultiple
+        条件
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I009
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I008
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I007
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I006
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I005
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I00A
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I01M
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I01N
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I01O
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I01P
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I01T
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I009
+        动作
+            AddSpecialEffectTargetUnitBJ
+                常量: origin
+                变量: Hero
+                常量: HarvestMana.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            UnitAddAbilityBJ
+                常量: A05B
+                变量: Hero
+            PlaySoundBJ
+                变量: gg_snd_LifeDrain
+    IfThenElseMultiple
+        条件
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I008
+        动作
+            AddSpecialEffectTargetUnitBJ
+                常量: origin
+                变量: Hero
+                常量: HarvestMana.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            UnitAddAbilityBJ
+                常量: A02U
+                变量: Hero
+            PlaySoundBJ
+                变量: gg_snd_LifeDrain
+    IfThenElseMultiple
+        条件
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I005
+        动作
+            AddSpecialEffectTargetUnitBJ
+                常量: origin
+                变量: Hero
+                常量: HarvestMana.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            UnitAddAbilityBJ
+                常量: A002
+                变量: Hero
+            PlaySoundBJ
+                变量: gg_snd_LifeDrain
+    IfThenElseMultiple
+        条件
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I006
+        动作
+            AddSpecialEffectTargetUnitBJ
+                常量: origin
+                变量: Hero
+                常量: HarvestMana.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            UnitAddAbilityBJ
+                常量: A001
+                变量: Hero
+            PlaySoundBJ
+                变量: gg_snd_LifeDrain
+    IfThenElseMultiple
+        条件
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I00A
+        动作
+            AddSpecialEffectTargetUnitBJ
+                常量: origin
+                变量: Hero
+                常量: HarvestMana.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            UnitAddAbilityBJ
+                常量: A02S
+                变量: Hero
+            PlaySoundBJ
+                变量: gg_snd_LifeDrain
+    IfThenElseMultiple
+        条件
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I007
+        动作
+            AddSpecialEffectTargetUnitBJ
+                常量: origin
+                变量: Hero
+                常量: HarvestMana.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            UnitAddAbilityBJ
+                常量: A03Q
+                变量: Hero
+            PlaySoundBJ
+                变量: gg_snd_LifeDrain
+    IfThenElseMultiple
+        条件
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I01M
+        动作
+            AddSpecialEffectTargetUnitBJ
+                常量: origin
+                变量: Hero
+                常量: ABirth_1.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            EnableTrigger
+                变量: gg_trg_Scroll_Defense
+            PlaySoundBJ
+                变量: gg_snd_Explosion3
+            UnitAddAbilityBJ
+                常量: A037
+                变量: Hero
+            UnitAddAbilityBJ
+                常量: A038
+                变量: Hero
+            UnitAddAbilityBJ
+                常量: A05T
+                变量: Hero
+            UnitAddAbilityBJ
+                常量: A05V
+                变量: Hero
+            DisplayTextToForce
+                函数: GetPlayersAll
+                常量: '|cff7777aa注意: 视觉效果已应用.|r
+
+'
+            PlaySoundBJ
+                变量: gg_snd_Hint
+    IfThenElseMultiple
+        条件
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I01N
+        动作
+            AddSpecialEffectTargetUnitBJ
+                常量: origin
+                变量: Hero
+                常量: ABirth_1.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            SetVariable
+                变量: ScrollCritical
+                常量: true
+            PlaySoundBJ
+                变量: gg_snd_Explosion3
+            UnitAddAbilityBJ
+                常量: A02Y
+                变量: Hero
+            DisplayTextToForce
+                函数: GetPlayersAll
+                常量: '|cff7777aa注意: 视觉效果已应用.|r
+
+'
+            PlaySoundBJ
+                变量: gg_snd_Hint
+    IfThenElseMultiple
+        条件
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I01O
+        动作
+            AddSpecialEffectTargetUnitBJ
+                常量: origin
+                变量: Hero
+                常量: ABirth_1.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            SetVariable
+                变量: ScrollSpellcaster
+                常量: true
+            EnableTrigger
+                变量: gg_trg_Scroll_Spellcaster
+            PlaySoundBJ
+                变量: gg_snd_Explosion3
+            UnitAddAbilityBJ
+                常量: A040
+                变量: Hero
+            UnitAddAbilityBJ
+                常量: A041
+                变量: Hero
+            UnitAddAbilityBJ
+                常量: A055
+                变量: Hero
+            DisplayTextToForce
+                函数: GetPlayersAll
+                常量: '|cff7777aa注意: 视觉效果已应用.|r
+
+'
+            PlaySoundBJ
+                变量: gg_snd_Hint
+    IfThenElseMultiple
+        条件
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I01P
+        动作
+            AddSpecialEffectTargetUnitBJ
+                常量: origin
+                变量: Hero
+                常量: ABirth_1.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            EnableTrigger
+                变量: gg_trg_Scroll_Soul
+            PlaySoundBJ
+                变量: gg_snd_Explosion3
+            UnitAddAbilityBJ
+                常量: A044
+                变量: Hero
+            UnitAddAbilityBJ
+                常量: A045
+                变量: Hero
+            UnitAddAbilityBJ
+                常量: A043
+                变量: Hero
+            UnitAddAbilityBJ
+                常量: A050
+                变量: Hero
+            UnitAddAbilityBJ
+                常量: A051
+                变量: Hero
+            UnitAddAbilityBJ
+                常量: A052
+                变量: Hero
+            UnitAddAbilityBJ
+                常量: A053
+                变量: Hero
+            UnitAddAbilityBJ
+                常量: A054
+                变量: Hero
+            DisplayTextToForce
+                函数: GetPlayersAll
+                常量: '|cff7777aa注意: 视觉效果已应用.|r
+
+'
+            PlaySoundBJ
+                变量: gg_snd_Hint
+    IfThenElseMultiple
+        条件
+            OperatorCompareItemCode
+                函数: GetItemTypeId
+                    函数: GetManipulatedItem
+                预设: OperatorEqualENE
+                常量: I01T
+        动作
+            PlaySoundBJ
+                变量: gg_snd_Explosion3
+            AddSpecialEffectTargetUnitBJ
+                常量: origin
+                变量: Hero
+                常量: ABirth_1.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+            EnableTrigger
+                变量: gg_trg_Scroll_Avatar

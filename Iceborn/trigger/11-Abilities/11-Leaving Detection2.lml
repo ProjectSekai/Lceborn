@@ -1,0 +1,11 @@
+事件
+    TriggerRegisterTimerEventPeriodic
+        常量: 1.00
+条件
+动作
+    CustomScriptCode
+        常量: 'if not(IsUnitInRange(udg_Hero, udg_SummonedElemental2, 1200)) then'
+    KillUnit
+        变量: SummonedElemental2
+    CustomScriptCode
+        常量: endif

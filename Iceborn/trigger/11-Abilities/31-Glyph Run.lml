@@ -1,0 +1,14 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OperatorCompareAbilityId
+        函数: GetSpellAbilityId
+        预设: OperatorEqualENE
+        常量: A03Q
+动作
+    SetVariable
+        变量: GlyphPoint
+        函数: GetSpellTargetLoc
+    TriggerExecute
+        变量: gg_trg_Glyph_of_Tremorfrost

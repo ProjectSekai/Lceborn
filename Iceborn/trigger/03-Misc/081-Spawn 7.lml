@@ -1,0 +1,74 @@
+事件
+    TriggerRegisterEnterRectSimple
+        变量: gg_rct_Region_029
+条件
+    OperatorCompareUnit
+        函数: GetTriggerUnit
+        预设: OperatorEqualENE
+        变量: Hero
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    PlaySoundBJ
+        变量: gg_snd_GhoulYesAttack4
+    PlaySoundBJ
+        变量: gg_snd_BlinkArrival1
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h015
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_047
+        预设: RealUnitFacing
+    AddSpecialEffectTargetUnitBJ
+        常量: origin
+        函数: GetLastCreatedUnit
+        常量: 'Shiva''sWrath.mdx'
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h015
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_047
+        预设: RealUnitFacing
+    AddSpecialEffectTargetUnitBJ
+        常量: origin
+        函数: GetLastCreatedUnit
+        常量: 'Shiva''sWrath.mdx'
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h015
+        预设: PlayerNA
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_047
+        预设: RealUnitFacing
+    AddSpecialEffectTargetUnitBJ
+        常量: origin
+        函数: GetLastCreatedUnit
+        常量: 'Shiva''sWrath.mdx'
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: ModeAdvanced
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h014
+                预设: PlayerNA
+                函数: GetRandomLocInRect
+                    变量: gg_rct_Region_047
+                预设: RealUnitFacing
+            AddSpecialEffectTargetUnitBJ
+                常量: origin
+                函数: GetLastCreatedUnit
+                常量: 'Shiva''sWrath.mdx'
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ

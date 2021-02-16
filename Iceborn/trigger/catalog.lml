@@ -1,0 +1,717 @@
+01-Text: Text
+    注释
+    '01-Changelog 1.7 -': 'Changelog 1.7 -'
+        注释
+    '02-Changelog 1.0 - 1.6': 'Changelog 1.0 - 1.6'
+        注释
+    '03-Credits #1': 'Credits #1'
+        注释
+    '04-Credits #2': 'Credits #2'
+        注释
+    '05-Credits Special': 'Credits Special'
+        注释
+    06-Thunar: Thunar
+        注释
+    07-Tyotho: Tyotho
+        注释
+    08-Tyotho: Tyotho
+        注释
+    09-Bor: Bor
+        注释
+    10-Ortuk: Ortuk
+        注释
+    11-Varglo: Varglo
+        注释
+    '12-Thun''tharok': 'Thun''tharok'
+        注释
+    13-Northorum: Northorum
+        注释
+    '14-Andalgon Act 1': 'Andalgon Act 1'
+        注释
+    '15-Urathol Act 1': 'Urathol Act 1'
+        注释
+    '16-Boeth Boat Act 1': 'Boeth Boat Act 1'
+        注释
+    '17-Boeth Boat Act 2': 'Boeth Boat Act 2'
+        注释
+    '18-Peak Act 2': 'Peak Act 2'
+        注释
+    '19-Capture Act 2': 'Capture Act 2'
+        注释
+    '20-Urathol Meet Up Act 3': 'Urathol Meet Up Act 3'
+        注释
+    '21-Treachery Act 3': 'Treachery Act 3'
+        注释
+    22-Mertherio: Mertherio
+        注释
+    23-Atantrimedius: Atantrimedius
+        注释
+    '24-Khnartho Spirit': 'Khnartho Spirit'
+        注释
+    25-Boethguard: Boethguard
+        注释
+    '26-A4 Fort': 'A4 Fort'
+        注释
+    '27-A4 Portal': 'A4 Portal'
+        注释
+    '28-A4 Trap': 'A4 Trap'
+        注释
+    '29-A4 Treachery': 'A4 Treachery'
+        注释
+    '30-A4 Preparation': 'A4 Preparation'
+        注释
+    31-Confrontation: Confrontation
+        注释
+    32-Finale: Finale
+        注释
+02-Initialization: Initialization
+    01-Initialization: Initialization
+    '02-Defeat Condition': 'Defeat Condition'
+    '03-HeroBorn Lock': 'HeroBorn Lock'
+        关闭
+    '04-Hero Lock': 'Hero Lock'
+        关闭
+    '05-Hero Lock Confrontation': 'Hero Lock Confrontation'
+        关闭
+    '06-Beginning Set Up': 'Beginning Set Up'
+    '07-Level Up': 'Level Up'
+    '08-Anti Cheat 1': 'Anti Cheat 1'
+    '09-Anti Cheat 2': 'Anti Cheat 2'
+    '10-Anti Cheat 3': 'Anti Cheat 3'
+03-Misc: Misc
+    '001-Urathol Attack Order': 'Urathol Attack Order'
+    '002-Container Cover Up': 'Container Cover Up'
+    '003-Approach Checkup': 'Approach Checkup'
+    '004-Attack Order': 'Attack Order'
+    '005-Northorum Attack Order': 'Northorum Attack Order'
+    '006-Death Effects': 'Death Effects'
+    007-NeedleSpin: NeedleSpin
+        关闭
+    '008-Jurkar Cast': 'Jurkar Cast'
+    '009-Horth Cast': 'Horth Cast'
+    '010-Area Chest': 'Area Chest'
+    '011-Area Notice': 'Area Notice'
+    '012-Area Icebrick': 'Area Icebrick'
+    '013-Area Frostsky Sanctuary': 'Area Frostsky Sanctuary'
+    '014-Area Grip': 'Area Grip'
+    '015-Area Canyon': 'Area Canyon'
+    '016-Area Crystal': 'Area Crystal'
+    '017-Area Horth': 'Area Horth'
+    '018-Area Nars Upper': 'Area Nars Upper'
+    '019-Area Pylons': 'Area Pylons'
+    '020-Area Syon': 'Area Syon'
+    '021-Area Nars Lower': 'Area Nars Lower'
+    '022-Area Cirr': 'Area Cirr'
+    '023-Area Bridge': 'Area Bridge'
+    '024-Area Rock': 'Area Rock'
+    '025-Area Northorum': 'Area Northorum'
+    '026-Area Boethsoul': 'Area Boethsoul'
+    '027-Area Boethsoul 1': 'Area Boethsoul 1'
+    '028-Area Boethsoul 2': 'Area Boethsoul 2'
+    '029-Area Boethsoul 3': 'Area Boethsoul 3'
+    '030-Area Boethsoul 4': 'Area Boethsoul 4'
+    '031-Area Boethsoul Fog In': 'Area Boethsoul Fog In'
+    '032-Area Boethsoul Fog Out': 'Area Boethsoul Fog Out'
+    '033-Area Valley': 'Area Valley'
+    '034-Area Left Wing': 'Area Left Wing'
+    '035-Area Right Wing': 'Area Right Wing'
+    '036-Area Cleasing Tower': 'Area Cleasing Tower'
+    '037-Area Crystalrock': 'Area Crystalrock'
+    '038-Area Stonepride': 'Area Stonepride'
+    '039-Hint Icebrick': 'Hint Icebrick'
+    '040-Hint Alcazar': 'Hint Alcazar'
+    '041-Notice Spider': 'Notice Spider'
+    '042-Guardian Sounds': 'Guardian Sounds'
+    '043-Electricity Sounds Enter': 'Electricity Sounds Enter'
+    '044-Electricity Sounds Leave': 'Electricity Sounds Leave'
+    045-Seerglass: Seerglass
+    046-Seals: Seals
+    '047-Spark Attack Launch': 'Spark Attack Launch'
+    '048-Spark Strikes': 'Spark Strikes'
+        关闭
+    '049-Fer Sound': 'Fer Sound'
+    '050-Fer Assault 1': 'Fer Assault 1'
+    '051-Fer Assault 2': 'Fer Assault 2'
+    '052-Teleport to Grip': 'Teleport to Grip'
+    '053-Teleport Horth 1': 'Teleport Horth 1'
+    '054-Teleport Horth 1 1': 'Teleport Horth 1 1'
+    '055-Teleport Horth 2': 'Teleport Horth 2'
+    '056-Teleport Horth 2 1': 'Teleport Horth 2 1'
+    '057-Teleport Horth 3': 'Teleport Horth 3'
+    '058-Teleport Horth 3 1': 'Teleport Horth 3 1'
+    '059-Teleport Horth 4': 'Teleport Horth 4'
+    '060-Teleport Horth 4 1': 'Teleport Horth 4 1'
+    '061-Teleport Horth 5': 'Teleport Horth 5'
+    '062-Teleport Horth 5 1': 'Teleport Horth 5 1'
+    '063-Teleport Nars 1': 'Teleport Nars 1'
+    '064-Teleport Nars 2': 'Teleport Nars 2'
+        关闭
+    '065-Teleport Nars 3': 'Teleport Nars 3'
+    '066-Teleport Nars 4': 'Teleport Nars 4'
+        关闭
+    '067-Teleport Cirratho': 'Teleport Cirratho'
+        关闭
+    '068-Bor Leave': 'Bor Leave'
+    '069-Grip Leave': 'Grip Leave'
+    070-GuardSpawn: GuardSpawn
+    '071-Orb and Force': 'Orb and Force'
+    '072-Sonic Shield Collapse': 'Sonic Shield Collapse'
+    '073-Rolling Door Effect': 'Rolling Door Effect'
+        关闭
+    '074-Damage Meter': 'Damage Meter'
+    '075-Spawn 1': 'Spawn 1'
+    '076-Spawn 2': 'Spawn 2'
+    '077-Spawn 3': 'Spawn 3'
+    '078-Spawn 4': 'Spawn 4'
+    '079-Spawn 5': 'Spawn 5'
+    '080-Spawn 6': 'Spawn 6'
+    '081-Spawn 7': 'Spawn 7'
+    '082-Spawn 8': 'Spawn 8'
+    '083-Spawn 9': 'Spawn 9'
+    '084-Spawn 10': 'Spawn 10'
+    '085-Spawn 11': 'Spawn 11'
+    '086-Spawn 12': 'Spawn 12'
+    '087-Spawn 13': 'Spawn 13'
+    '088-Spawn 14': 'Spawn 14'
+    '089-Spawn 15': 'Spawn 15'
+    '090-Spawn 16': 'Spawn 16'
+    '091-Spawn 17': 'Spawn 17'
+    '092-Spawn 18': 'Spawn 18'
+    '093-Spawn 19': 'Spawn 19'
+    '094-Spawn 20': 'Spawn 20'
+    '095-Spawn 21': 'Spawn 21'
+    '096-Spawn 22': 'Spawn 22'
+    '097-Spawn 23': 'Spawn 23'
+    '098-Spawn Sargon': 'Spawn Sargon'
+    '099-Spawn 24': 'Spawn 24'
+    '100-Spawn 25': 'Spawn 25'
+'04-Main Quests': 'Main Quests'
+    '01-Approach Thunar 1': 'Approach Thunar 1'
+    '02-Approach Thunar 2': 'Approach Thunar 2'
+        关闭
+    '03-Approach Thunar 3': 'Approach Thunar 3'
+    '04-Meet Tyotho 1': 'Meet Tyotho 1'
+    '05-Meet Tyotho Add': 'Meet Tyotho Add'
+    '06-Meet Tyotho 2': 'Meet Tyotho 2'
+        关闭
+    '07-Northorum Free': 'Northorum Free'
+    '08-Atantrimedius 1': 'Atantrimedius 1'
+    '09-Atantrimedius 2': 'Atantrimedius 2'
+        关闭
+    '10-Atantrimedius 3': 'Atantrimedius 3'
+    '11-Atantrimedius 4': 'Atantrimedius 4'
+    '12-Atantrimedius 5': 'Atantrimedius 5'
+    '13-Atantrimedius Death': 'Atantrimedius Death'
+    '14-Mask 1': 'Mask 1'
+    '15-Mask 2': 'Mask 2'
+        关闭
+'05-Optional Quests': 'Optional Quests'
+    '01-Ortuk 1': 'Ortuk 1'
+    '02-Ortuk 2': 'Ortuk 2'
+    '03-Bor 1': 'Bor 1'
+    '04-Bor 2': 'Bor 2'
+    '05-Varglo 1': 'Varglo 1'
+    '06-Varglo 2': 'Varglo 2'
+        关闭
+    '07-Varglo 3': 'Varglo 3'
+    '08-Varglo 4': 'Varglo 4'
+    '09-Varglo 5': 'Varglo 5'
+    '10-Tharok 1': 'Tharok 1'
+    '11-Tharok 2': 'Tharok 2'
+        关闭
+    '12-Tharok 3': 'Tharok 3'
+    '13-Tharok 4': 'Tharok 4'
+    '14-Tharok Waves': 'Tharok Waves'
+    '15-Tharok Wave 1': 'Tharok Wave 1'
+    '16-Tharok Wave 2': 'Tharok Wave 2'
+    '17-Tharok Wave 3': 'Tharok Wave 3'
+    '18-Tharok Wave 4': 'Tharok Wave 4'
+    '19-Tharok Wave 5': 'Tharok Wave 5'
+    '20-Tharok 5 Fail': 'Tharok 5 Fail'
+    '21-Tharok 5': 'Tharok 5'
+        关闭
+    '22-Cirratho Truths 1': 'Cirratho Truths 1'
+    '23-Cirratho Truths 2': 'Cirratho Truths 2'
+    '24-Mertherio 1': 'Mertherio 1'
+    '25-Mertherio 2': 'Mertherio 2'
+        关闭
+    '26-Mertherio 3': 'Mertherio 3'
+        关闭
+'06-Quest Additionals': 'Quest Additionals'
+    '01-Spawn Wnderers': 'Spawn Wnderers'
+    '02-Wanderer Order': 'Wanderer Order'
+        关闭
+    '03-Wanderer Death': 'Wanderer Death'
+    '04-Statue 1 1 Trigger': 'Statue 1 1 Trigger'
+    '05-Statue 1 2 Trigger': 'Statue 1 2 Trigger'
+        关闭
+    '06-Statue 1 3 Trigger': 'Statue 1 3 Trigger'
+        关闭
+    '07-Statue 2 1 Trigger': 'Statue 2 1 Trigger'
+    '08-Statue 2 2 Trigger': 'Statue 2 2 Trigger'
+        关闭
+    '09-Statue 2 3 Trigger': 'Statue 2 3 Trigger'
+        关闭
+    '10-Statue 3 1 Trigger': 'Statue 3 1 Trigger'
+    '11-Statue 3 2 Trigger': 'Statue 3 2 Trigger'
+        关闭
+    '12-Statue 3 3 Trigger': 'Statue 3 3 Trigger'
+        关闭
+    '13-Statue Check Frost': 'Statue Check Frost'
+    '14-Statue Check Fire': 'Statue Check Fire'
+    '15-Being Summon 1': 'Being Summon 1'
+        关闭
+    '16-Being Summon 2': 'Being Summon 2'
+        关闭
+    '17-Io2 Death': 'Io2 Death'
+    '18-Uncharged Obtain': 'Uncharged Obtain'
+        关闭
+    19-Rubies: Rubies
+    '20-In Search Sell': 'In Search Sell'
+    '21-Varglo Dialog Checkup': 'Varglo Dialog Checkup'
+        关闭
+    '22-Mertherio Dialog Checkup': 'Mertherio Dialog Checkup'
+        关闭
+    '23-Bombarder Strike': 'Bombarder Strike'
+        关闭
+    '24-Tharok Dialog Checkup': 'Tharok Dialog Checkup'
+        关闭
+    '25-Tharok Order': 'Tharok Order'
+        关闭
+    '26-Dragon Call': 'Dragon Call'
+    '27-Dragon Borders': 'Dragon Borders'
+    '28-Dragon Capture': 'Dragon Capture'
+    '29-Atantrimedius Dialog Checkup': 'Atantrimedius Dialog Checkup'
+        关闭
+    '30-Circle Spawns': 'Circle Spawns'
+        关闭
+    '31-Circle Spawns Phase 2': 'Circle Spawns Phase 2'
+        关闭
+    '32-Atantrimedius Walk Up': 'Atantrimedius Walk Up'
+        关闭
+    '33-Icethorn Blossoms': 'Icethorn Blossoms'
+    '34-Boetheart Generator': 'Boetheart Generator'
+    '35-Mask Dialog Checkup': 'Mask Dialog Checkup'
+        关闭
+07-Confrontation: Confrontation
+    '01-P1 Start Up': 'P1 Start Up'
+    '02-P2 Wave Defeat': 'P2 Wave Defeat'
+    '03-P3 Portal Shut': 'P3 Portal Shut'
+    '04-P4 Tower Shut': 'P4 Tower Shut'
+    '05-P5 Provocation': 'P5 Provocation'
+    '06-P6 Victory': 'P6 Victory'
+    '07-Portal Open': 'Portal Open'
+    '08-Crystal Notification': 'Crystal Notification'
+        关闭
+    '09-Machine Turn On': 'Machine Turn On'
+        关闭
+    '10-Machine Death': 'Machine Death'
+    '11-Premature Provoke 1': 'Premature Provoke 1'
+    '12-Premature Provoke 2': 'Premature Provoke 2'
+    '13-Constant P1': 'Constant P1'
+        关闭
+    '14-Hide Wave': 'Hide Wave'
+    '15-Unhide Wave': 'Unhide Wave'
+    '16-Spawn Ally': 'Spawn Ally'
+        关闭
+    '17-Spawn Hostile': 'Spawn Hostile'
+        关闭
+    '18-Spawn Hostile 2': 'Spawn Hostile 2'
+        关闭
+    19-Towers: Towers
+    '20-Cleansing Tower': 'Cleansing Tower'
+    '21-Cleansing Loop': 'Cleansing Loop'
+    '22-Farazeth Movement': 'Farazeth Movement'
+        关闭
+    '23-Urathol Order': 'Urathol Order'
+        关闭
+    '24-Urathol Phase 1': 'Urathol Phase 1'
+    '25-Urathol Phase 2': 'Urathol Phase 2'
+    '26-Urathol Phase 3': 'Urathol Phase 3'
+    '27-Urathol Phase 4': 'Urathol Phase 4'
+    '28-Urathol Phase 5': 'Urathol Phase 5'
+    '29-Urathol Phase 6': 'Urathol Phase 6'
+    '30-Summon Crawlers': 'Summon Crawlers'
+        关闭
+    '31-Reflecting Shield': 'Reflecting Shield'
+        关闭
+    '32-Reflecting Shield Effect 1': 'Reflecting Shield Effect 1'
+        关闭
+    '33-Reflecting Shield Effect 2': 'Reflecting Shield Effect 2'
+        关闭
+    '34-Frost Circles': 'Frost Circles'
+        关闭
+    35-Blizzard: Blizzard
+        关闭
+    '36-Blizzard Effect 1': 'Blizzard Effect 1'
+        关闭
+    '37-Blizzard Effect 2': 'Blizzard Effect 2'
+        关闭
+    '38-Electric Balls': 'Electric Balls'
+        关闭
+    '39-Electric Balls Effect': 'Electric Balls Effect'
+    '40-Northorum Retreat 1': 'Northorum Retreat 1'
+    '41-Northorum Retreat 2': 'Northorum Retreat 2'
+        关闭
+    '42-Northorum Movement': 'Northorum Movement'
+08-Cinematics: Cinematics
+    '01-A1 Beginning Peak': 'A1 Beginning Peak'
+    '02-A1 Beginning Boat': 'A1 Beginning Boat'
+    '03-A1 Skip': 'A1 Skip'
+    '04-A2 Argument Boat': 'A2 Argument Boat'
+    '05-A2 Argument Peak': 'A2 Argument Peak'
+    '06-A2 Capture Boat': 'A2 Capture Boat'
+    '07-A2 Fight': 'A2 Fight'
+    '08-A2 Skip': 'A2 Skip'
+        关闭
+    '09-A3 Meet Up and Treachery': 'A3 Meet Up and Treachery'
+    '10-A3 Skip': 'A3 Skip'
+        关闭
+    '11-A4 Fort': 'A4 Fort'
+    '12-A4 Portal': 'A4 Portal'
+    '13-A4 Trap': 'A4 Trap'
+    '14-A4 Treachery': 'A4 Treachery'
+    '15-A4 Preparation': 'A4 Preparation'
+    '16-A4 Skip': 'A4 Skip'
+        关闭
+    '17-A4 Finale': 'A4 Finale'
+    '18-A4 Finale Skip': 'A4 Finale Skip'
+        关闭
+    '19-Hero Face Order': 'Hero Face Order'
+        关闭
+    20-Lightnings: Lightnings
+        关闭
+    '21-Castings Balance': 'Castings Balance'
+        关闭
+    '22-Casting Balance Stop': 'Casting Balance Stop'
+09-Puzzles: Puzzles
+    '01-Pylon Puzzle': 'Pylon Puzzle'
+    '02-Jar 1': 'Jar 1'
+    '03-Jar 2': 'Jar 2'
+    '04-Jar 3': 'Jar 3'
+    '05-Jar Lighting': 'Jar Lighting'
+    '06-Syon Charge 1': 'Syon Charge 1'
+    '07-Syon Cast 1': 'Syon Cast 1'
+        关闭
+    '08-Syon Charge 2': 'Syon Charge 2'
+    '09-Syon Cast 2': 'Syon Cast 2'
+        关闭
+    '10-Syon Charge 3': 'Syon Charge 3'
+    '11-Syon Cast 3': 'Syon Cast 3'
+        关闭
+    '12-Circle Wall': 'Circle Wall'
+        关闭
+    '13-Chains Mirror Upper': 'Chains Mirror Upper'
+    '14-Chains Mirror Lower': 'Chains Mirror Lower'
+    '15-Chains Triangle': 'Chains Triangle'
+    '16-Chains Triangle Solve': 'Chains Triangle Solve'
+    '17-Chains Book': 'Chains Book'
+        关闭
+    '18-Chains Marun': 'Chains Marun'
+    '19-Torn Page Spheres': 'Torn Page Spheres'
+    '20-Cube Triggers': 'Cube Triggers'
+    '21-Cube Pedestal 1': 'Cube Pedestal 1'
+    '22-Cube Pedestal 2': 'Cube Pedestal 2'
+    '23-Cube Pedestal 3': 'Cube Pedestal 3'
+    '24-Cube Pedestal 4': 'Cube Pedestal 4'
+    '25-Cube Pedestal 5': 'Cube Pedestal 5'
+    '26-Cube Pedestal 6': 'Cube Pedestal 6'
+    '27-Cube Pedestal 7': 'Cube Pedestal 7'
+    '28-Cube Pedestal 8': 'Cube Pedestal 8'
+    '29-Alcazar Trigger 1': 'Alcazar Trigger 1'
+    '30-Alcazar Trigger 2': 'Alcazar Trigger 2'
+    '31-Alcazar Trigger 3': 'Alcazar Trigger 3'
+    '32-Alcazar Trigger 4': 'Alcazar Trigger 4'
+'10-Hero Fights': 'Hero Fights'
+    '01-Ertiotallus Approach': 'Ertiotallus Approach'
+    '02-Ertiotallus Cast': 'Ertiotallus Cast'
+        关闭
+    '03-Ertiotallus Second Phase': 'Ertiotallus Second Phase'
+    '04-Ertio Bubble Blast': 'Ertio Bubble Blast'
+    '05-Ertio Spheres': 'Ertio Spheres'
+        关闭
+    '06-Ertio Bubble Wander': 'Ertio Bubble Wander'
+        关闭
+    '07-Ertio Death': 'Ertio Death'
+    '08-Ertio Crystal Movement': 'Ertio Crystal Movement'
+        关闭
+    '09-Checkup Io1': 'Checkup Io1'
+        关闭
+    '10-Checkup Io2': 'Checkup Io2'
+        关闭
+    '11-Caretra Approach': 'Caretra Approach'
+    '12-Caretra Void 1 Enter': 'Caretra Void 1 Enter'
+        关闭
+    '13-Caretra Void 1 Leave': 'Caretra Void 1 Leave'
+        关闭
+    '14-Caretra Void 2 Enter': 'Caretra Void 2 Enter'
+        关闭
+    '15-Caretra Void 2 Leave': 'Caretra Void 2 Leave'
+        关闭
+    '16-Caretra Void 3 Enter': 'Caretra Void 3 Enter'
+        关闭
+    '17-Caretra Void 3 Leave': 'Caretra Void 3 Leave'
+        关闭
+    '18-Caretra Big Orbs Path 1': 'Caretra Big Orbs Path 1'
+    '19-Caretra Big Orbs Path 2': 'Caretra Big Orbs Path 2'
+    '20-Caretra Big Orbs Path 3': 'Caretra Big Orbs Path 3'
+    '21-Caretra Big Sphere Death': 'Caretra Big Sphere Death'
+    '22-Caretra Lesser Sphere Death 1': 'Caretra Lesser Sphere Death 1'
+    '23-Caretra Lesser Sphere Death 2': 'Caretra Lesser Sphere Death 2'
+        关闭
+    '24-Caretra Lesser Sphere Death 3': 'Caretra Lesser Sphere Death 3'
+        关闭
+    '25-Caretra Spell': 'Caretra Spell'
+        关闭
+    '26-Gornunshanni Set Up': 'Gornunshanni Set Up'
+    '27-Gornunshanni Crystals': 'Gornunshanni Crystals'
+    '28-Gornunshanni Timer': 'Gornunshanni Timer'
+    '29-Gornunshanni Neosphere': 'Gornunshanni Neosphere'
+    '30-Gornunshanni Neosphere Order': 'Gornunshanni Neosphere Order'
+        关闭
+    '31-Gornunshanni Spawns': 'Gornunshanni Spawns'
+        关闭
+    '32-Gornunshanni Spells': 'Gornunshanni Spells'
+        关闭
+    '33-Gornunshanni Phase 2': 'Gornunshanni Phase 2'
+    '34-Gornunshanni Death': 'Gornunshanni Death'
+    '35-Khnartho Alcazar': 'Khnartho Alcazar'
+    '36-Khnartho Teleports': 'Khnartho Teleports'
+        关闭
+    '37-Khnartho Spells': 'Khnartho Spells'
+        关闭
+    '38-Khnartho Phase 2': 'Khnartho Phase 2'
+    '39-Khnartho Phase 3': 'Khnartho Phase 3'
+    '40-Khnartho Death': 'Khnartho Death'
+11-Abilities: Abilities
+    01-Soulbolt: Soulbolt
+    '02-Soulbolt Run': 'Soulbolt Run'
+    '03-Soulbolt AOE': 'Soulbolt AOE'
+    '04-Weak Soulbolt': 'Weak Soulbolt'
+    '05-Summon Start': 'Summon Start'
+    '06-Summon Stop': 'Summon Stop'
+        关闭
+    '07-Summon Finish': 'Summon Finish'
+    '08-Summon Improved Finish': 'Summon Improved Finish'
+    '09-Enhyli Death Boosted': 'Enhyli Death Boosted'
+    '10-Leaving Detection1': 'Leaving Detection1'
+    '11-Leaving Detection2': 'Leaving Detection2'
+    '12-Nether Bonds': 'Nether Bonds'
+    '13-Nether Bonds Knock': 'Nether Bonds Knock'
+    14-Shatter: Shatter
+    '15-Shatter Damage': 'Shatter Damage'
+    '16-Scroll Defense': 'Scroll Defense'
+        关闭
+    '17-Scroll Spellcaster': 'Scroll Spellcaster'
+        关闭
+    '18-Scroll Soul': 'Scroll Soul'
+        关闭
+    '19-Scroll Soul Knock': 'Scroll Soul Knock'
+    '20-Scroll Avatar': 'Scroll Avatar'
+        关闭
+    '21-Cold Bomb': 'Cold Bomb'
+    '22-Cold Bomb Death': 'Cold Bomb Death'
+        关闭
+    '23-Icegrenade Run': 'Icegrenade Run'
+    24-Icegrenade: Icegrenade
+    '25-Icegrenade Showup': 'Icegrenade Showup'
+    '26-Icegrenade Detonation': 'Icegrenade Detonation'
+    '27-Icegrenade Timer': 'Icegrenade Timer'
+        关闭
+    '28-Icegrenade Timer Orbs': 'Icegrenade Timer Orbs'
+        关闭
+    29-Verthostrike: Verthostrike
+    '30-Verthostrike Knock': 'Verthostrike Knock'
+    '31-Glyph Run': 'Glyph Run'
+    '32-Glyph of Tremorfrost': 'Glyph of Tremorfrost'
+    '33-Glyph Timer': 'Glyph Timer'
+    '34-Glyph Approach': 'Glyph Approach'
+    '35-Glyph Rune Damage': 'Glyph Rune Damage'
+    '36-Bollard of Frostchain Run': 'Bollard of Frostchain Run'
+    '37-Bollard of Frostchain Start': 'Bollard of Frostchain Start'
+    '38-Bollard of Frostchain Stop': 'Bollard of Frostchain Stop'
+        关闭
+    '39-Bollard of Frostchain Finish': 'Bollard of Frostchain Finish'
+    '40-Bollard of Frostchain Soulbolt': 'Bollard of Frostchain Soulbolt'
+        关闭
+    '41-Bollard of Frostchain Damage': 'Bollard of Frostchain Damage'
+    '42-Circle of Frostshield': 'Circle of Frostshield'
+    '43-Circle of Frostshield Loop': 'Circle of Frostshield Loop'
+        关闭
+    '44-Astral Grab': 'Astral Grab'
+    '45-Ertio Glyph': 'Ertio Glyph'
+    '46-Ertio Crystal Cast': 'Ertio Crystal Cast'
+    '47-Ertio Crystal Loop': 'Ertio Crystal Loop'
+        关闭
+    '48-Ertio Circle Cast': 'Ertio Circle Cast'
+    '49-Ertio Circle Loop': 'Ertio Circle Loop'
+        关闭
+    '50-Ertio Circle Addition': 'Ertio Circle Addition'
+    '51-Io Shockwaves': 'Io Shockwaves'
+    '52-Frost Shockwaves': 'Frost Shockwaves'
+    '53-Cirrath Strike': 'Cirrath Strike'
+    '54-Tharok Strike': 'Tharok Strike'
+    '55-Cirrath Strike 2': 'Cirrath Strike 2'
+    '56-Gornu Mines': 'Gornu Mines'
+    '57-Gornu Strikes': 'Gornu Strikes'
+    '58-Gornu Spike': 'Gornu Spike'
+    '59-Sargon Detection': 'Sargon Detection'
+        关闭
+    '60-Sargon Clap': 'Sargon Clap'
+    '61-Boethele Strike': 'Boethele Strike'
+    '62-Arazayah Order': 'Arazayah Order'
+    '63-Arazayah Beams': 'Arazayah Beams'
+    '64-Arazayah Beams Loop': 'Arazayah Beams Loop'
+        关闭
+    '65-Arazayah Beams Group': 'Arazayah Beams Group'
+    '66-Arazayah Death for Q': 'Arazayah Death for Q'
+    '67-Arazayah Death': 'Arazayah Death'
+    '68-Arazayah Call Up': 'Arazayah Call Up'
+    '69-Arazayah CD Deselect': 'Arazayah CD Deselect'
+    '70-Arazayah Detection': 'Arazayah Detection'
+        关闭
+    '71-Atantrimedius Order': 'Atantrimedius Order'
+    '72-Atantri Clap Knock': 'Atantri Clap Knock'
+    '73-Golem Clap Knock': 'Golem Clap Knock'
+    '74-Khar Teleport Effect': 'Khar Teleport Effect'
+    '75-Khar Strike': 'Khar Strike'
+    '76-Khar Clap': 'Khar Clap'
+    '77-Khar Fan': 'Khar Fan'
+    '78-Clap 71': 'Clap 71'
+    '79-Clap 71 Phase 2': 'Clap 71 Phase 2'
+        关闭
+    '80-Clap 81': 'Clap 81'
+    '81-Heal Cast': 'Heal Cast'
+    '82-Frostsky Ability Order': 'Frostsky Ability Order'
+    '83-Northorum Strike': 'Northorum Strike'
+    84-NorthSwarm: NorthSwarm
+    '85-Icewalker Strike': 'Icewalker Strike'
+    '86-Farazeth Order': 'Farazeth Order'
+    '87-Farazeth Strike': 'Farazeth Strike'
+    '88-Dread Clap': 'Dread Clap'
+    '89-Dread Clap Loop': 'Dread Clap Loop'
+        关闭
+    '90-Dread Clap Orbs': 'Dread Clap Orbs'
+    '91-Dread Fan': 'Dread Fan'
+    '92-Dread Fan Effect': 'Dread Fan Effect'
+    '93-Urathol Swarm': 'Urathol Swarm'
+    '94-Urathol Swarm Effect': 'Urathol Swarm Effect'
+    '95-Urathol Clap': 'Urathol Clap'
+    '96-Urathol Clap Effect': 'Urathol Clap Effect'
+        关闭
+12-Items: Items
+    '01-Item Acquire Memory': 'Item Acquire Memory'
+    '02-Gold and Lumber': 'Gold and Lumber'
+    '03-Item Sell': 'Item Sell'
+    04-Juice: Juice
+    05-Sphere: Sphere
+    06-Petal: Petal
+    07-Bag: Bag
+    '08-Manna Recover': 'Manna Recover'
+    '09-Manna Take': 'Manna Take'
+    '10-Manna Const': 'Manna Const'
+        关闭
+    '11-Hook Recover': 'Hook Recover'
+    '12-Hook Take': 'Hook Take'
+    '13-Hook Const': 'Hook Const'
+        关闭
+    '14-Sword Lash': 'Sword Lash'
+    '15-Guard Take': 'Guard Take'
+    '16-Guard Feeze': 'Guard Feeze'
+        关闭
+    '17-Guard Lose': 'Guard Lose'
+    '18-Ring IO': 'Ring IO'
+    '19-Scroll Pylon 1': 'Scroll Pylon 1'
+    '20-Scroll Pylon 2': 'Scroll Pylon 2'
+    '21-Scroll Pylon 3': 'Scroll Pylon 3'
+    '22-Aetris Pick': 'Aetris Pick'
+    '23-Aetris Lose': 'Aetris Lose'
+    '24-Boeth Neck Pick': 'Boeth Neck Pick'
+    '25-Boeth Neck Lose': 'Boeth Neck Lose'
+    '26-Boeth Neck Const': 'Boeth Neck Const'
+        关闭
+    '27-Valn Forge': 'Valn Forge'
+    '28-Valn Effect': 'Valn Effect'
+    '29-Valn Take': 'Valn Take'
+    '30-Valn Const': 'Valn Const'
+        关闭
+    '31-Perpythus Head Cast': 'Perpythus Head Cast'
+    '32-Perpythus Head Loop': 'Perpythus Head Loop'
+        关闭
+    '33-Perpythus Shoulder Cast': 'Perpythus Shoulder Cast'
+    '34-Perpythus Shoulder Loop': 'Perpythus Shoulder Loop'
+        关闭
+    '35-Icesoul Cloak Pick': 'Icesoul Cloak Pick'
+    '36-Icesoul Cloak Lose': 'Icesoul Cloak Lose'
+    '37-Icesoul Loop': 'Icesoul Loop'
+        关闭
+    38-Iceneedle: Iceneedle
+    39-Teleport: Teleport
+        注释
+    '40-Teleportation Window': 'Teleportation Window'
+    '41-Teleportation Block': 'Teleportation Block'
+        关闭
+    '42-Teleportation Itself': 'Teleportation Itself'
+        关闭
+    '43-Teleportation Cast': 'Teleportation Cast'
+        关闭
+    '44-Teleportation Window Siege': 'Teleportation Window Siege'
+        关闭
+    '45-Teleportation Itself Siege': 'Teleportation Itself Siege'
+        关闭
+    '46-Ability Learn': 'Ability Learn'
+        注释
+    '47-Scroll Consume': 'Scroll Consume'
+13-Systems: Systems
+    01-Leveling: Leveling
+        注释
+    '02-ExpAttribute Gain': 'ExpAttribute Gain'
+    '03-Attribute Selection': 'Attribute Selection'
+        关闭
+    '04-Attribute Reset System': 'Attribute Reset System'
+        注释
+    '05-Attribute Trigger': 'Attribute Trigger'
+    '06-Attribute Reset': 'Attribute Reset'
+        关闭
+    '07-Attribute Reset Gain': 'Attribute Reset Gain'
+    '08-Attribute Reset Selection': 'Attribute Reset Selection'
+        关闭
+    '09-Attribute Reset CD': 'Attribute Reset CD'
+        关闭
+    '10-Knockback by Paladon': 'Knockback by Paladon'
+        注释
+    '11-Get Knockback': 'Get Knockback'
+        关闭
+    '12-Cast A Knockback': 'Cast A Knockback'
+    '13-Bag System': 'Bag System'
+        注释
+    '14-Change Bag 1': 'Change Bag 1'
+    '15-Change Bag 2': 'Change Bag 2'
+        关闭
+    '16-Damage Detection by Juliano': 'Damage Detection by Juliano'
+        注释
+    '17-GUI Friendly Damage Detection': 'GUI Friendly Damage Detection'
+    18-Configuration: Configuration
+    '19-Floating Damage Taken': 'Floating Damage Taken'
+    '20-Unit Property by Snippet': 'Unit Property by Snippet'
+        注释
+    '21-Set Max Hp': 'Set Max Hp'
+    '22-Set Max Mana': 'Set Max Mana'
+    '23-HPnMP Enhyli 1': 'HPnMP Enhyli 1'
+    '24-HPnMP Enhyli 1 Improved': 'HPnMP Enhyli 1 Improved'
+    '25-HPnMP Enhyli 2': 'HPnMP Enhyli 2'
+    '26-HPnMP Enhyli 2 Improved': 'HPnMP Enhyli 2 Improved'
+    '27-Game Mode Selection': 'Game Mode Selection'
+        注释
+    '28-Mode Selection': 'Mode Selection'
+    '29-Mode Next Path': 'Mode Next Path'
+        关闭
+    '30-Normal Mode': 'Normal Mode'
+    '31-Advanced Mode': 'Advanced Mode'
+    '32-Sphere Drop': 'Sphere Drop'
+        注释
+    '33-Sphere Drop Average': 'Sphere Drop Average'
+    '34-Statistics System': 'Statistics System'
+        注释
+    '35-Statistics Display': 'Statistics Display'
+    '36-Property Statistics': 'Property Statistics'

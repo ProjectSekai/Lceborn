@@ -1,0 +1,334 @@
+事件
+条件
+动作
+    ClearMapMusicBJ
+    EndThematicMusicBJ
+    StopMusicBJ
+        预设: FadeDontDont
+    PlayMusicBJ
+        变量: gg_snd_Ulduar_Dramatic
+    ShowUnitShow
+        变量: gg_unit_H01N_0355
+    TriggerSleepAction
+        常量: 2.00
+    SetTerrainFogExBJ
+        预设: FogStyleLinear
+        常量: 1000.00
+        常量: 11000.00
+        常量: 0
+        常量: 100
+        常量: 100
+        常量: 100
+    SetSkyModel
+        预设: SkyModelSky08
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_059
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_060
+        预设: Player00
+        常量: 20.00
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeIn
+        常量: 4.00
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    TriggerSleepAction
+        常量: 15.00
+    SetTerrainFogExBJ
+        预设: FogStyleLinear
+        常量: 500.00
+        常量: 3500.00
+        常量: 0
+        常量: 100
+        常量: 100
+        常量: 100
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_099
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_100_One
+        预设: Player00
+        常量: 14.00
+    TriggerSleepAction
+        常量: 1.00
+    IssuePointOrderLoc
+        变量: gg_unit_H01N_0355
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_282
+    TriggerSleepAction
+        常量: 12.00
+    ShowUnitShow
+        变量: gg_unit_H05R_0356
+    ShowUnitShow
+        变量: gg_unit_H00D_0370
+    SetTerrainFogExBJ
+        预设: FogStyleLinear
+        常量: 500.00
+        常量: 5500.00
+        常量: 0
+        常量: 100
+        常量: 100
+        常量: 100
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_138
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_103
+        预设: Player00
+        常量: 17.00
+    SetUnitTimeScalePercent
+        变量: gg_unit_H05R_0356
+        常量: 50.00
+    SetUnitMoveSpeed
+        变量: gg_unit_H00D_0370
+        常量: 100.00
+    TriggerSleepAction
+        常量: 9.00
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H01N_0355
+        常量: 诺索拉姆
+        变量: gg_snd_Northorum15
+        常量: 乌拉索尔...
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    TriggerSleepAction
+        常量: 5.00
+    SetTerrainFogExBJ
+        预设: FogStyleLinear
+        常量: 500.00
+        常量: 3000.00
+        常量: 0
+        常量: 100
+        常量: 100
+        常量: 100
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_104
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_105
+        预设: Player00
+        常量: 13.00
+    TriggerSleepAction
+        常量: 1.00
+    SetUnitFacingToFaceUnitTimed
+        变量: gg_unit_H01N_0355
+        变量: gg_unit_H00D_0370
+        常量: 2.00
+    TriggerSleepAction
+        常量: 3.00
+    SetUnitAnimation
+        变量: gg_unit_H01N_0355
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H01N_0355
+        常量: 诺索拉姆
+        变量: gg_snd_Northorum16
+        常量: 我没想到你竟然犯了这么大的错.
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H01N_0355
+    TriggerSleepAction
+        常量: 2
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_106
+        预设: Player00
+        常量: 0.00
+    TriggerSleepAction
+        常量: 1.00
+    SetUnitAnimation
+        变量: gg_unit_H00D_0370
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H00D_0370
+        常量: 乌拉索尔
+        变量: gg_snd_Urathol19
+        常量: 我来这里建议你加入我,或者就像那些太过急躁看不到新时代到来的人一样,从这个生者的世界消失.
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H00D_0370
+    TriggerSleepAction
+        常量: 2
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_104
+        预设: Player00
+        常量: 0
+    TriggerSleepAction
+        常量: 1.00
+    SetUnitAnimation
+        变量: gg_unit_H01N_0355
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H01N_0355
+        常量: 诺索拉姆
+        变量: gg_snd_Northorum17
+        常量: 你很像是疯了,竟然邀我和你联手.噢,你其实早在想要对抗宇宙规律的那一刻开始就已经疯了.
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H01N_0355
+    TriggerSleepAction
+        常量: 2
+    SetTerrainFogExBJ
+        预设: FogStyleLinear
+        常量: 500.00
+        常量: 3500.00
+        常量: 0
+        常量: 100
+        常量: 100
+        常量: 100
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_107
+        预设: Player00
+        常量: 0.00
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_108
+        预设: Player00
+        常量: 9.00
+    TriggerSleepAction
+        常量: 1.00
+    IssuePointOrderLoc
+        变量: gg_unit_H00D_0370
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_283
+    TriggerSleepAction
+        常量: 9.00
+    SetUnitAnimation
+        变量: gg_unit_H00D_0370
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H00D_0370
+        常量: 乌拉索尔
+        变量: gg_snd_Urathol20
+        常量: 我讨厌那东西的每一个部分.寒霜天地应该欢呼我为他们的救世主,而不是敌人.是我力图净化波伊斯人给这个世界与其他宇宙带来的污染.
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H00D_0370
+    TriggerSleepAction
+        常量: 2
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_109
+        预设: Player00
+        常量: 0
+    IssuePointOrderLoc
+        变量: gg_unit_H00D_0370
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_284
+    TriggerSleepAction
+        常量: 10.00
+    SetUnitFacingToFaceUnitTimed
+        变量: gg_unit_H01N_0355
+        变量: gg_unit_H00D_0370
+        常量: 2.00
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H00D_0370
+        常量: 乌拉索尔
+        变量: gg_snd_Urathol21
+        常量: 当我的父亲被冷血杀害时,你无动于衷.他的王冠也变成了我兄弟泰尔卓的东西,你们这些腐败的波伊斯人在那时根本毫无正义可言.
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    TriggerSleepAction
+        常量: 2
+    SetUnitFacingToFaceUnitTimed
+        变量: gg_unit_H00D_0370
+        变量: gg_unit_H01N_0355
+        常量: 2.00
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_110
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_114
+        预设: Player00
+        常量: 30.00
+    IssuePointOrderLoc
+        变量: gg_unit_H01N_0355
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_285
+    TriggerSleepAction
+        常量: 5.00
+    SetUnitAnimation
+        变量: gg_unit_H01N_0355
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H01N_0355
+        常量: 诺索拉姆
+        变量: gg_snd_Northorum18
+        常量: '因为你父亲是个像你一样的疯子.他只带来几乎覆没整个寒霜天地的灾难,也是为什么你会随着你父亲的脚步,今时今日在这里结束你的时间. '
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H01N_0355
+    TriggerSleepAction
+        常量: 2
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_112
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_113
+        预设: Player00
+        常量: 20.00
+    TriggerSleepAction
+        常量: 1.00
+    SetUnitAnimation
+        变量: gg_unit_H00D_0370
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H00D_0370
+        常量: 乌拉索尔
+        变量: gg_snd_Urathol22
+        常量: 真是幼稚,诺索拉姆.你不是唯一一个拒绝我的邀请的人,但却侮辱了我父亲的这份回忆.这必须要被回应.
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H00D_0370
+    TriggerExecute
+        变量: gg_trg_A2_Fight

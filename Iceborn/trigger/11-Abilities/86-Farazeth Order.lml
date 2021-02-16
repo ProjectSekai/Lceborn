@@ -1,0 +1,15 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventAttacked
+条件
+    OperatorCompareUnit
+        函数: GetAttacker
+        预设: OperatorEqualENE
+        变量: gg_unit_H06N_0376
+动作
+    IssueImmediateOrder
+        变量: gg_unit_H06N_0376
+        预设: UnitOrderStop
+    IssueImmediateOrder
+        变量: gg_unit_H06N_0376
+        预设: UnitOrderFanOfKnives

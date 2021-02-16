@@ -1,0 +1,1101 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OperatorCompareAbilityId
+        函数: GetSpellAbilityId
+        预设: OperatorEqualENE
+        常量: A04G
+动作
+    PlaySoundBJ
+        变量: gg_snd_CrippleTarget1
+    PlaySoundBJ
+        变量: gg_snd_WaterElementalWhat4
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    IfThenElse
+        条件: OperatorCompareBoolean
+            变量: ModeAdvanced
+            预设: OperatorEqualENE
+            常量: true
+        动作: DoNothing
+        动作: ReturnAction
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'
+    SetVariable
+        变量: AAPOINT
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H03O_0108
+            函数: GetRandomReal
+                常量: 600.00
+                常量: 1200.00
+            函数: GetRandomDirectionDeg
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h041
+        预设: PlayerNA
+        变量: AAPOINT
+        预设: RealUnitFacing
+    UnitApplyTimedLifeBJ
+        函数: GetRandomReal
+            常量: 5.00
+            常量: 30.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    CustomScriptCode
+        常量: 'call RemoveLocation(udg_AAPOINT)'

@@ -1,0 +1,50 @@
+事件
+    TriggerRegisterEnterRectSimple
+        变量: gg_rct_Region_322
+    TriggerRegisterEnterRectSimple
+        变量: gg_rct_Region_321
+    TriggerRegisterEnterRectSimple
+        变量: gg_rct_Region_323
+    TriggerRegisterEnterRectSimple
+        变量: gg_rct_Region_324
+条件
+    OperatorCompareBoolean
+        函数: IsUnitEnemy
+            函数: GetEnteringUnit
+            预设: PlayerNA
+        预设: OperatorEqualENE
+        常量: true
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    StopSoundBJ
+        变量: gg_snd_Explosion10Extended
+        预设: FadeDontDont
+    PlaySoundBJ
+        变量: gg_snd_Explosion10Extended
+    SetVariable
+        变量: RingPoint
+        函数: GetUnitLoc
+            变量: gg_unit_h066_0403
+    SetVariable
+        变量: AngleRing
+        常量: 360.00
+    CameraSetEQNoiseForPlayer
+        预设: Player00
+        常量: 10.00
+    TriggerExecute
+        变量: gg_trg_Cleansing_Loop
+    TriggerSleepAction
+        常量: 2
+    CameraClearNoiseForPlayer
+        预设: Player00
+    IfThenElse
+        条件: OperatorCompareBoolean
+            函数: IsTriggerEnabled
+                变量: gg_trg_Machine_Death
+            预设: OperatorEqualENE
+            常量: false
+        动作: ReturnAction
+        动作: DoNothing
+    EnableTrigger
+        函数: GetTriggeringTrigger

@@ -1,0 +1,24 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventHeroPickUpItem
+条件
+    OperatorCompareItemCode
+        函数: GetItemTypeId
+            函数: GetManipulatedItem
+        预设: OperatorEqualENE
+        常量: I00P
+动作
+    EnableTrigger
+        变量: gg_trg_Guard_Feeze
+    UnitAddAbilityBJ
+        常量: A036
+        变量: Hero
+    UnitAddAbilityBJ
+        常量: A035
+        变量: Hero
+    UnitAddAbilityBJ
+        常量: A034
+        变量: Hero
+    UnitAddAbilityBJ
+        常量: A033
+        变量: Hero

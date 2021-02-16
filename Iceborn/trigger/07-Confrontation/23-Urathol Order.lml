@@ -1,0 +1,15 @@
+事件
+    TriggerRegisterTimerEventPeriodic
+        常量: 10.00
+条件
+动作
+    IssuePointOrderLoc
+        变量: gg_unit_H06F_0415
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+    IssuePointOrderLoc
+        变量: gg_unit_H03Q_0374
+        预设: UnitOrderPatrol
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2

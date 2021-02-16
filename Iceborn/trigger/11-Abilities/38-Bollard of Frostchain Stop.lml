@@ -1,0 +1,35 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventIssued_Unit_Order
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventIssued_Point_Order
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventIssued_Order
+条件
+    OperatorCompareUnit
+        函数: GetTriggerUnit
+        预设: OperatorEqualENE
+        变量: Hero
+        条件
+            OperatorCompareAbilityId
+                函数: GetSpellAbilityId
+                预设: OperatorEqualENE
+                常量: A001
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    ResetUnitAnimation
+        变量: Hero
+    StopSoundBJ
+        变量: gg_snd_CityscapeCrystalLampLoop1
+        预设: FadeDontDont
+    KillUnit
+        变量: EleProg
+    SetUnitTimeScalePercent
+        变量: EleProg
+        常量: 1000.00
+    UnitRemoveAbilityBJ
+        常量: A05C
+        变量: Hero
+    CameraClearNoiseForPlayer
+        预设: Player00

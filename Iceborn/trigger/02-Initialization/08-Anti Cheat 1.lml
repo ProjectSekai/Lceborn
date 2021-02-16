@@ -1,0 +1,26 @@
+事件
+    TriggerRegisterPlayerStateEvent
+        预设: Player00
+        预设: PlayerStateGold
+        预设: LimitOpGreaterThanOrEqual
+        常量: 1.00
+    TriggerRegisterPlayerStateEvent
+        预设: Player00
+        预设: PlayerStateLumber
+        预设: LimitOpGreaterThanOrEqual
+        常量: 1.00
+条件
+动作
+    TriggerSleepAction
+        常量: 0.05
+    IfThenElse
+        条件: OperatorCompareBoolean
+            函数: IsTriggerEnabled
+                函数: GetTriggeringTrigger
+            预设: OperatorEqualENE
+            常量: true
+        动作: DoNothing
+        动作: ReturnAction
+    CustomDefeatBJ
+        预设: Player00
+        常量: 检测到作弊代码

@@ -1,0 +1,26 @@
+事件
+    TriggerRegisterUnitEvent
+        变量: gg_unit_h016_0041
+        预设: UnitEventDeath
+条件
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    KillDestructable
+        变量: gg_dest_YTpc_3459
+    KillDestructable
+        变量: gg_dest_YTpc_3460
+    KillDestructable
+        变量: gg_dest_YTpc_3461
+    KillUnit
+        变量: gg_unit_h01J_0068
+    KillUnit
+        变量: gg_unit_h01J_0070
+    KillUnit
+        变量: gg_unit_h01J_0072
+    KillUnit
+        变量: gg_unit_h01J_0071
+    KillUnit
+        变量: gg_unit_h01J_0069
+    PlaySoundBJ
+        变量: gg_snd_LifeDrain

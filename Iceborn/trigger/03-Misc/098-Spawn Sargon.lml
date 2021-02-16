@@ -1,0 +1,35 @@
+事件
+    TriggerRegisterEnterRectSimple
+        变量: gg_rct_Region_214
+条件
+    OperatorCompareUnit
+        函数: GetTriggerUnit
+        预设: OperatorEqualENE
+        变量: Hero
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    TriggerSleepAction
+        常量: 3.00
+    PlaySoundBJ
+        变量: gg_snd_DragonYesAttack2
+    PlaySoundBJ
+        变量: gg_snd_BlinkArrival1
+    ShowUnitShow
+        变量: gg_unit_h04Q_0298
+    AddSpecialEffectTargetUnitBJ
+        常量: origin
+        变量: gg_unit_h04Q_0298
+        常量: 'Arcane Nova.mdx'
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectTargetUnitBJ
+        常量: origin
+        变量: gg_unit_h04Q_0298
+        常量: LightningWrath.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    TriggerSleepAction
+        常量: 4.00
+    EnableTrigger
+        变量: gg_trg_Sargon_Detection

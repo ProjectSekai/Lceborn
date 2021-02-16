@@ -1,0 +1,81 @@
+事件
+    TriggerRegisterDialogEventBJ
+        变量: Dialog
+条件
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    IfThenElseMultiple
+        条件
+            OperatorCompareButton
+                函数: GetClickedButtonBJ
+                预设: OperatorEqualENE
+                变量: DialogButton1
+        动作
+            DisableTrigger
+                变量: gg_trg_Mertherio_Dialog_Checkup
+            TriggerSleepAction
+                常量: 1.00
+            SelectUnitSingle
+                变量: gg_unit_h04X_0330
+            SetMusicVolumeBJ
+                常量: 50.00
+            DisplayTimedTextToForce
+                函数: GetPlayersAll
+                常量: 28.00
+                常量: '|cffffcc00摩西里奥:|r 离这里不远处有三个陷阱.你需要吸引到每个地方,然后设计被球体封闭的开关.每个陷阱只能被射击开启一次,所以确保龙在你开启时正好在水井旁.
+
+'
+            PlaySoundBJ
+                变量: gg_snd_Mertherio5
+            TriggerSleepAction
+                常量: 29.00
+            DisplayTimedTextToForce
+                函数: GetPlayersAll
+                常量: 31.00
+                常量: '|cffffcc00摩西里奥:|r 使用这个呼叫那条龙,或许瓦尔鲁会帮助你的任务的.喔,顺便一提,不要杀了那条龙,目的是捉住而不是杀害,你明白了对吧?现在就前往波伊斯之魂的深处去终结它那致命的存在.
+
+'
+            PlaySoundBJ
+                变量: gg_snd_Mertherio6
+            TriggerSleepAction
+                常量: 32.00
+            SetMusicVolumeBJ
+                常量: 100.00
+            TriggerSleepAction
+                常量: 1.00
+            CreateItemLoc
+                常量: I01I
+                函数: GetRectCenter
+                    变量: gg_rct_Region_221
+            CreateQuestBJ
+                预设: QuestTypeOptDiscovered
+                常量: 捉龙
+                常量: 我遇见了摩西里奥,他制造了陷阱想捕捉一条龙.我答应帮助他了,我曾说要帮他把那条龙引到水晶陷阱的中心,开启陷阱射出周围的三个球体,牢牢地困住它.我需要不断重复这些步骤直到我抓到了那条龙.他给了我一个球体,可以召唤出那条龙.龙不该被杀死.
+                常量: ReplaceableTextures\CommandButtons\BTNSkywallDrake.blp
+            SetVariable
+                变量: QuestOptional6
+                函数: GetLastCreatedQuestBJ
+            CreateQuestItemBJ
+                变量: QuestOptional6
+                常量: 捕获闪电龙
+            SetVariable
+                变量: QuestOptional6Req1
+                函数: GetLastCreatedQuestItemBJ
+            FlashQuestDialogButtonBJ
+            PlaySoundBJ
+                变量: gg_snd_QuestLog
+            DisplayTextToForce
+                函数: GetPlayersAll
+                常量: '|cffffcc00 - 捕获闪电龙|r
+
+'
+    IfThenElseMultiple
+        条件
+            OperatorCompareButton
+                函数: GetClickedButtonBJ
+                预设: OperatorEqualENE
+                变量: DialogButton3
+        动作
+            DisableTrigger
+                变量: gg_trg_Mertherio_Dialog_Checkup

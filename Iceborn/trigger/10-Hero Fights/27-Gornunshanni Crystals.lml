@@ -1,0 +1,82 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventDeath
+条件
+    OperatorCompareUnitCode
+        函数: GetUnitTypeId
+            函数: GetDyingUnit
+        预设: OperatorEqualENE
+        常量: h03U
+动作
+    IfThenElseMultiple
+        条件
+            AndMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: GornuCrystal1
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: GornuCrystal2
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: GornuCrystal3
+                        预设: OperatorEqualENE
+                        常量: true
+        动作
+            EnableTrigger
+                变量: gg_trg_Gornunshanni_Neosphere_Order
+            PauseUnitBJ
+                预设: PauseUnpauseOptionUnpause
+                变量: gg_unit_H03O_0108
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h03X
+                预设: PlayerNP
+                函数: GetRandomLocInRect
+                    变量: gg_rct_Region_196
+                预设: RealUnitFacing
+            SetVariable
+                变量: GornuSphere
+                函数: GetLastCreatedUnit
+            KillUnit
+                变量: GornuShield
+            UnitRemoveAbilityBJ
+                常量: Avul
+                变量: gg_unit_H03O_0108
+            PlaySoundBJ
+                变量: gg_snd_Explosion8
+            SetUnitMoveSpeed
+                变量: gg_unit_H03O_0108
+                常量: 0.00
+            DisableTrigger
+                变量: gg_trg_Gornunshanni_Spawns
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        变量: ModeNormal
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                    StartTimerBJ
+                        变量: TimerGornu
+                        预设: PeriodicOptionOneTime
+                        常量: 60.00
+                动作
+                    StartTimerBJ
+                        变量: TimerGornu
+                        预设: PeriodicOptionOneTime
+                        常量: 40.00
+            TriggerSleepAction
+                常量: 15.00
+            RemoveUnit
+                变量: GornuSphere
+            DisableTrigger
+                变量: gg_trg_Gornunshanni_Neosphere_Order
+            SetUnitMoveSpeed
+                变量: gg_unit_H03O_0108
+                常量: 0.00

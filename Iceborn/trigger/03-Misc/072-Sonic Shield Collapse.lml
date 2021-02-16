@@ -1,0 +1,28 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventDeath
+条件
+    OrMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_h03C_0220
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_h03C_0221
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: gg_unit_h03C_0222
+动作
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h03D
+        预设: Player01
+        函数: GetUnitLoc
+            函数: GetDyingUnit
+        预设: RealUnitFacing
+    ShowUnitHide
+        函数: GetDyingUnit

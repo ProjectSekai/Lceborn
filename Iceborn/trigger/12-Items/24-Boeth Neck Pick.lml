@@ -1,0 +1,15 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventHeroPickUpItem
+条件
+    OperatorCompareItemCode
+        函数: GetItemTypeId
+            函数: GetManipulatedItem
+        预设: OperatorEqualENE
+        常量: I00O
+动作
+    SetVariable
+        变量: BoethNeckEffect
+        常量: 0.02
+    EnableTrigger
+        变量: gg_trg_Boeth_Neck_Const

@@ -1,0 +1,89 @@
+事件
+    TriggerRegisterUnitInRangeSimple
+        常量: 200.00
+        变量: gg_unit_H00C_0011
+条件
+    OperatorCompareUnit
+        函数: GetTriggerUnit
+        预设: OperatorEqualENE
+        变量: Hero
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    QuestItemSetCompletedBJ
+        变量: QuestMainReq1
+        预设: CompletionOptionCompleted
+    QuestSetCompletedBJ
+        变量: QuestMain
+        预设: CompletionOptionCompleted
+    SelectUnitSingle
+        变量: gg_unit_H00C_0011
+    SetMusicVolumeBJ
+        常量: 50.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 18.00
+        常量: '|cffffcc00泰尔卓:|r 水晶不会再被乌拉索尔亵渎.若不是你,冰裔,边缘行者的水晶就这样落在乌拉索尔的手中意味着他的优势浩大.让我们先把庆祝放在一旁,集中在另一个伟大的事业上.
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Tyotho5
+    TriggerSleepAction
+        常量: 19.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 26.00
+        常量: '|cffffcc00泰尔卓:|r 水晶的能量对我的兄弟触不可及,确实地给他造成了猛烈的打击,但我们依然赢不了他.诺索拉姆,暴雪的波伊斯人被乌拉索尔亲手捕获.如果我们要为了和睦而平衡的宇宙而对我的兄弟开战,那么诺索拉姆必须得到解放,和我们站在同一战线.
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Tyotho6
+    TriggerSleepAction
+        常量: 27.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 22.00
+        常量: '|cffffcc00泰尔卓:|r 诺索拉姆是许多波伊斯人中最强大的一个,其协助也是我们任务中的根本要素.锁住诺索拉姆的锁链坚固得超乎想象,需要坚不可摧的意志与锐利的头脑才能解开,而你有那个能力去处理,冰裔.
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Tyotho7
+    TriggerSleepAction
+        常量: 23.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 19.00
+        常量: '|cffffcc00泰尔卓:|r 使用早些时候我给你的球体.一旦我们说完话,就会传送你到一个危险又复杂的场地.那里就是诺拉索姆被囚禁的地方.找到并解放他,之后看看他的愤怒是怎么落入我那堕落的兄弟的双臂中的.
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Tyotho8
+    TriggerSleepAction
+        常量: 20.00
+    SetVariable
+        变量: Horthodamus
+        常量: true
+    SetMusicVolumeBJ
+        常量: 100.00
+    CreateQuestBJ
+        预设: QuestTypeReqDiscovered
+        常量: 诺索拉姆的枷锁
+        常量: 我要通过球体进入诺索拉姆被囚禁的地方,营救他并看看接下来会发生什么.
+        常量: ReplaceableTextures\CommandButtons\BTNSpell_Frost_ChainsOfIce.blp
+    SetVariable
+        变量: QuestMain
+        函数: GetLastCreatedQuestBJ
+    CreateQuestItemBJ
+        变量: QuestMain
+        常量: 寻找并解放被囚禁的诺索拉姆
+    SetVariable
+        变量: QuestMainReq1
+        函数: GetLastCreatedQuestItemBJ
+    FlashQuestDialogButtonBJ
+    PlaySoundBJ
+        变量: gg_snd_QuestLog
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cffffcc00 - 寻找并解放被囚禁的诺索拉姆|r
+
+'

@@ -1,0 +1,17 @@
+事件
+    TriggerRegisterEnterRectSimple
+        变量: gg_rct_Region_246
+条件
+    OperatorCompareUnit
+        函数: GetTriggerUnit
+        预设: OperatorEqualENE
+        变量: Hero
+动作
+    SetTerrainFogExBJ
+        预设: FogStyleLinear
+        常量: 500.00
+        常量: 3200.00
+        常量: 0.50
+        常量: 20.00
+        常量: 40.00
+        常量: 80.00

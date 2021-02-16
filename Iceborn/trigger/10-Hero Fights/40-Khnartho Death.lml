@@ -1,0 +1,32 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventDeath
+条件
+    OperatorCompareUnit
+        函数: GetDyingUnit
+        预设: OperatorEqualENE
+        变量: Khnartho
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    ClearMapMusicBJ
+    EndThematicMusicBJ
+    StopMusicBJ
+        预设: FadeDontDont
+    PlayMusicBJ
+        变量: gg_snd_VashirMusic
+    EnableTrigger
+        变量: gg_trg_Teleportation_Window
+    DisableTrigger
+        变量: gg_trg_Teleportation_Block
+    DisableTrigger
+        变量: gg_trg_Khnartho_Teleports
+    DisableTrigger
+        变量: gg_trg_Khnartho_Spells
+    SetUnitAnimation
+        变量: gg_unit_h04P_0312
+        常量: 'stand gold'
+    KillDestructable
+        变量: gg_dest_YTpc_9905
+    KillDestructable
+        变量: gg_dest_YTpc_9906

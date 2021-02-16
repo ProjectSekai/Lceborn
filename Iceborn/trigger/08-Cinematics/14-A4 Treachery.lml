@@ -1,0 +1,739 @@
+事件
+条件
+动作
+    SetTerrainFogExBJ
+        预设: FogStyleLinear
+        常量: 500.00
+        常量: 4500.00
+        常量: 0
+        常量: 100
+        常量: 100
+        常量: 100
+    SetUnitPositionLoc
+        变量: gg_unit_H04N_0368
+        函数: GetRectCenter
+            变量: gg_rct_Region_339
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_194
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_195
+        预设: Player00
+        常量: 25.00
+    SetUnitMoveSpeed
+        变量: gg_unit_H04N_0368
+        常量: 100.00
+    IssuePointOrderLoc
+        变量: gg_unit_H04N_0368
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_339_Copy
+    SetUnitFacingToFaceLocTimed
+        变量: gg_unit_H01N_0420
+        函数: GetRectCenter
+            变量: gg_rct_Region_313_Copy_2
+        常量: 0
+    PolledWait
+        常量: 1.00
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeIn
+        常量: 2.00
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    TriggerSleepAction
+        常量: 6.00
+    SetUnitFacingToFaceLocTimed
+        变量: gg_unit_H01N_0420
+        函数: GetRectCenter
+            变量: gg_rct_Region_339_Copy
+        常量: 2.00
+    SetUnitFacingToFaceLocTimed
+        变量: Hero
+        函数: GetRectCenter
+            变量: gg_rct_Region_339_Copy
+        常量: 2.00
+    SetUnitAnimation
+        变量: gg_unit_H01N_0420
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H01N_0420
+        常量: 诺索拉姆
+        变量: gg_snd_Northorum24
+        常量: 萨德玛斯,你的迟到很稀有.你去哪了?还有阿娜拉在哪,她不是跟着你的吗?
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H01N_0420
+    TriggerSleepAction
+        常量: 1.00
+    SetTerrainFogExBJ
+        预设: FogStyleLinear
+        常量: 500.00
+        常量: 4000.00
+        常量: 0
+        常量: 100
+        常量: 100
+        常量: 100
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_200
+        预设: Player00
+        常量: 0
+    SetUnitFacingToFaceLocTimed
+        变量: gg_unit_H04N_0368
+        函数: GetUnitLoc
+            变量: gg_unit_H01N_0420
+        常量: 2.00
+    TriggerSleepAction
+        常量: 3.00
+    SetUnitAnimation
+        变量: gg_unit_H04N_0368
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H04N_0368
+        常量: 萨德玛斯
+        变量: gg_snd_Thardomus8
+        常量: 她死了,被乌拉索尔杀了.
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H04N_0368
+    SetUnitAnimation
+        变量: gg_unit_H01N_0420
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H01N_0420
+        常量: 诺索拉姆
+        变量: gg_snd_Northorum25
+        常量: 什么?你疯了吗,萨德玛斯?她怎么会死的,说!
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H01N_0420
+    SetUnitAnimation
+        变量: gg_unit_H04N_0368
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H04N_0368
+        常量: 萨德玛斯
+        变量: gg_snd_Thardomus9
+        常量: 不久后你们也会一样,如果你现在乖乖投降,或许你的性命还有救.
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H04N_0368
+    TriggerSleepAction
+        常量: 1.00
+    SetTerrainFogExBJ
+        预设: FogStyleLinear
+        常量: 500.00
+        常量: 3500.00
+        常量: 0
+        常量: 100
+        常量: 100
+        常量: 100
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_197
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_198
+        预设: Player00
+        常量: 31.00
+    TriggerSleepAction
+        常量: 1.00
+    SetUnitAnimation
+        变量: gg_unit_H01N_0420
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H01N_0420
+        常量: 诺索拉姆
+        变量: gg_snd_Northorum26
+        常量: 是你使诈困住了阿娜拉,对不对?!你的背叛是对你的血统的一种侮辱!你不会就此被放过的!
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H01N_0420
+    TriggerSleepAction
+        常量: 1.00
+    SetUnitAnimation
+        变量: gg_unit_H04N_0368
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H04N_0368
+        常量: 萨德玛斯
+        变量: gg_snd_Thardomus10
+        常量: 你看不清吗?你只剩一个人了,那是一个不流一滴血就可以达成共识的明智选择,因为胜率或许并没有你想得那么讨人喜欢.
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H04N_0368
+    TriggerSleepAction
+        常量: 1.00
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_199
+        预设: Player00
+        常量: 0
+    SetUnitAnimation
+        变量: gg_unit_H01N_0420
+        常量: 'stand ready'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H01N_0420
+        常量: 诺索拉姆
+        变量: gg_snd_Northorum27
+        常量: 你个肮脏的渣滓!你会因为你做的事而在阿兹之地腐烂!
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    TriggerSleepAction
+        常量: 0.50
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_201
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_202
+        预设: Player00
+        常量: 3.00
+    TriggerSleepAction
+        常量: 0.50
+    CameraSetEQNoiseForPlayer
+        预设: Player00
+        常量: 5.00
+    SetUnitAnimation
+        变量: gg_unit_H04N_0368
+        常量: 'spell slam'
+    QueueUnitAnimationBJ
+        变量: gg_unit_H04N_0368
+        常量: 'stand ready'
+    PlaySoundBJ
+        变量: gg_snd_LightningBolt
+    PlaySoundBJ
+        变量: gg_snd_LightningBoltEnvironment
+    AddSpecialEffectLocBJ
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H04N_0368
+            常量: 100.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H04N_0368
+                预设: OperatorAdd
+                常量: 0.00
+        常量: LightningGreat.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H04N_0368
+            常量: 100.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H04N_0368
+                预设: OperatorAdd
+                常量: 20.00
+        常量: LightningGreat.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H04N_0368
+            常量: 100.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H04N_0368
+                预设: OperatorSubtract
+                常量: 20.00
+        常量: LightningGreat.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H04N_0368
+            常量: 150.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H04N_0368
+                预设: OperatorAdd
+                常量: 0.00
+        常量: LightningGreat.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H04N_0368
+            常量: 150.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H04N_0368
+                预设: OperatorAdd
+                常量: 20.00
+        常量: LightningGreat.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H04N_0368
+            常量: 150.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H04N_0368
+                预设: OperatorSubtract
+                常量: 20.00
+        常量: LightningGreat.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H04N_0368
+            常量: 200.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H04N_0368
+                预设: OperatorAdd
+                常量: 0.00
+        常量: LightningGreat.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H04N_0368
+            常量: 200.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H04N_0368
+                预设: OperatorAdd
+                常量: 20.00
+        常量: LightningGreat.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H04N_0368
+            常量: 200.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H04N_0368
+                预设: OperatorSubtract
+                常量: 20.00
+        常量: LightningGreat.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H04N_0368
+            常量: 300.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H04N_0368
+                预设: OperatorAdd
+                常量: 0.00
+        常量: LightningGreat.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H04N_0368
+            常量: 300.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H04N_0368
+                预设: OperatorAdd
+                常量: 20.00
+        常量: LightningGreat.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H04N_0368
+            常量: 300.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H04N_0368
+                预设: OperatorSubtract
+                常量: 20.00
+        常量: LightningGreat.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H04N_0368
+            常量: 400.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H04N_0368
+                预设: OperatorAdd
+                常量: 0.00
+        常量: LightningGreat.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H04N_0368
+            常量: 400.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H04N_0368
+                预设: OperatorAdd
+                常量: 20.00
+        常量: LightningGreat.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H04N_0368
+            常量: 400.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H04N_0368
+                预设: OperatorSubtract
+                常量: 20.00
+        常量: LightningGreat.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H04N_0368
+            常量: 500.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H04N_0368
+                预设: OperatorAdd
+                常量: 0.00
+        常量: LightningGreat.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H04N_0368
+            常量: 500.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H04N_0368
+                预设: OperatorAdd
+                常量: 20.00
+        常量: LightningGreat.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H04N_0368
+            常量: 500.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H04N_0368
+                预设: OperatorSubtract
+                常量: 20.00
+        常量: LightningGreat.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H04N_0368
+            常量: 700.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H04N_0368
+                预设: OperatorAdd
+                常量: 0.00
+        常量: LightningGreat.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H04N_0368
+            常量: 700.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H04N_0368
+                预设: OperatorAdd
+                常量: 20.00
+        常量: LightningGreat.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddSpecialEffectLocBJ
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H04N_0368
+            常量: 700.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: gg_unit_H04N_0368
+                预设: OperatorSubtract
+                常量: 20.00
+        常量: LightningGreat.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    AddUnitAnimationPropertiesBJ
+        预设: AddRemoveAdd
+        常量: fast
+        变量: gg_unit_H01N_0420
+    IssuePointOrderLoc
+        变量: gg_unit_H01N_0420
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_341
+    IssuePointOrderLoc
+        变量: Hero
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_342
+    SetUnitMoveSpeed
+        变量: gg_unit_H01N_0420
+        常量: 200.00
+    TriggerSleepAction
+        常量: 2
+    CameraClearNoiseForPlayer
+        预设: Player00
+    SetUnitFacingToFaceLocTimed
+        变量: gg_unit_H04N_0368
+        函数: GetUnitLoc
+            变量: gg_unit_H01N_0420
+        常量: 0.25
+    SetUnitFacingToFaceLocTimed
+        变量: gg_unit_H01N_0420
+        函数: GetUnitLoc
+            变量: gg_unit_H04N_0368
+        常量: 0.20
+    TriggerSleepAction
+        常量: 0.50
+    AddUnitAnimationPropertiesBJ
+        预设: AddRemoveRemove
+        常量: fast
+        变量: gg_unit_H01N_0420
+    SetUnitFacingToFaceLocTimed
+        变量: Hero
+        函数: GetUnitLoc
+            变量: gg_unit_H04N_0368
+        常量: 0.50
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_203
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_204
+        预设: Player00
+        常量: 13.00
+    TriggerSleepAction
+        常量: 0.25
+    PlaySoundBJ
+        变量: gg_snd_Northorum19Shout
+    SetUnitAnimation
+        变量: gg_unit_H01N_0420
+        常量: 'spell slam'
+    QueueUnitAnimationBJ
+        变量: gg_unit_H01N_0420
+        常量: stand
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05U
+        预设: Player01
+        函数: GetUnitLoc
+            变量: gg_unit_H04N_0368
+        函数: GetRandomDirectionDeg
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            变量: gg_unit_H04N_0368
+        常量: IceSlam.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05U
+        预设: Player01
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H04N_0368
+            常量: 75.00
+            常量: 225.00
+        函数: GetRandomDirectionDeg
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: IceSlam.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05U
+        预设: Player01
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H04N_0368
+            常量: 75.00
+            常量: 135.00
+        函数: GetRandomDirectionDeg
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: IceSlam.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05U
+        预设: Player01
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H04N_0368
+            常量: 75.00
+            常量: 315.00
+        函数: GetRandomDirectionDeg
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: IceSlam.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h05U
+        预设: Player01
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: gg_unit_H01N_0420
+            常量: 150.00
+            函数: GetUnitFacing
+                变量: gg_unit_H01N_0420
+        函数: GetRandomDirectionDeg
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            函数: GetLastCreatedUnit
+        常量: IceSlam.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    TriggerSleepAction
+        常量: 0.50
+    SetUnitAnimation
+        变量: gg_unit_H04N_0368
+        常量: death
+    CameraSetEQNoiseForPlayer
+        预设: Player00
+        常量: 5.00
+    PlaySoundBJ
+        变量: gg_snd_IceCrackLoud
+    PlaySoundBJ
+        变量: gg_snd_IceCrackBig
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            变量: gg_unit_H04N_0368
+        常量: Frost_Nova_areaEMedium.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    TriggerSleepAction
+        常量: 1.30
+    SetUnitFacingToFaceLocTimed
+        变量: gg_unit_H01N_0420
+        函数: GetUnitLoc
+            变量: gg_unit_H04N_0368
+        常量: 0.20
+    CameraClearNoiseForPlayer
+        预设: Player00
+    TriggerSleepAction
+        常量: 2
+    SetUnitTimeScalePercent
+        变量: gg_unit_H04N_0368
+        常量: 0.00
+    TriggerSleepAction
+        常量: 7.00
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_205
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_206
+        预设: Player00
+        常量: 16.00
+    TriggerSleepAction
+        常量: 3.00
+    SetUnitAnimation
+        变量: gg_unit_H01N_0420
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H01N_0420
+        常量: 诺索拉姆
+        变量: gg_snd_Northorum28
+        常量: 准备正面交战,我们会让乌拉索尔知道我们不是一股可以随他嘲弄的势力!
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H01N_0420
+    TriggerSleepAction
+        常量: 4.00
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeOut
+        常量: 4.00
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    SetUnitPositionLocFacingLocBJ
+        变量: gg_unit_H06F_0415
+        函数: GetRectCenter
+            变量: gg_rct_Region_317_Copy_2
+        函数: GetRectCenter
+            变量: gg_rct_Region_325
+    TriggerSleepAction
+        常量: 5.00
+    RemoveUnit
+        变量: gg_unit_H04N_0368
+    RemoveUnit
+        变量: gg_unit_H01N_0420
+    SetUnitPositionLocFacingLocBJ
+        变量: Hero
+        函数: GetRectCenter
+            变量: gg_rct_Region_312
+        函数: GetRectCenter
+            变量: gg_rct_Region_339_Copy
+    TriggerExecute
+        变量: gg_trg_A4_Preparation

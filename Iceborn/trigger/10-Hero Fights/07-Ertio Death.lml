@@ -1,0 +1,542 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventDeath
+条件
+    OperatorCompareUnit
+        函数: GetDyingUnit
+        预设: OperatorEqualENE
+        变量: gg_unit_H013_0039
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    DisableTrigger
+        变量: gg_trg_Ertio_Bubble_Blast
+    DisableTrigger
+        变量: gg_trg_Ertiotallus_Cast
+    DisableTrigger
+        变量: gg_trg_Ertio_Spheres
+    DisableTrigger
+        变量: gg_trg_Ertio_Bubble_Wander
+    DisableTrigger
+        变量: gg_trg_Ertio_Glyph
+    KillUnit
+        变量: Bubble1
+    KillUnit
+        变量: Bubble1Shooter
+    KillUnit
+        变量: Bubble2
+    KillUnit
+        变量: Bubble2Shooter
+    KillUnit
+        变量: Bubble3
+    KillUnit
+        变量: Bubble3Shooter
+    ClearMapMusicBJ
+    EndThematicMusicBJ
+    StopMusicBJ
+        预设: FadeDontDont
+    PlayMusicBJ
+        变量: gg_snd_Joshua_Buck___Forest_Tales
+    TriggerSleepAction
+        常量: 6.00
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeOut
+        常量: 4.00
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    DisableTrigger
+        变量: gg_trg_Hero_Lock
+    TriggerSleepAction
+        常量: 3.90
+    DisableTrigger
+        变量: gg_trg_Teleportation_Block
+    EnableTrigger
+        变量: gg_trg_Teleportation_Window
+    IssueImmediateOrder
+        变量: Hero
+        预设: UnitOrderStop
+    TriggerSleepAction
+        常量: 0.10
+    DisableTrigger
+        变量: gg_trg_Guardian_Sounds
+    CinematicModeBJ
+        预设: OnOffOn
+        函数: GetPlayersAll
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeIn
+        常量: 4.00
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_001
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_002
+        预设: Player00
+        常量: 11.00
+    SetTerrainFogExBJ
+        预设: FogStyleLinear
+        常量: 2000.00
+        常量: 5000.00
+        常量: 0.50
+        常量: 40.00
+        常量: 40.00
+        常量: 100
+    SetUnitPositionLocFacingLocBJ
+        变量: Hero
+        函数: GetRectCenter
+            变量: gg_rct_Region_057
+        函数: GetUnitLoc
+            变量: gg_unit_h01E_0060
+    SetUnitPositionLocFacingLocBJ
+        变量: SummonedElemental1
+        函数: GetRectCenter
+            变量: gg_rct_Region_055
+        函数: GetUnitLoc
+            变量: gg_unit_h01E_0060
+    UnitRemoveAbilityBJ
+        常量: Avul
+        变量: gg_unit_h01E_0060
+    CustomScriptCode
+        常量: 'call StopSound(bj_nightAmbientSound, true, false)'
+    CustomScriptCode
+        常量: 'call StopSound(bj_dayAmbientSound, true, false)'
+    TriggerSleepAction
+        常量: 6.50
+    IssueTargetOrder
+        变量: Hero
+        预设: UnitOrderThunderBolt
+        变量: gg_unit_h01E_0060
+    TriggerSleepAction
+        常量: 1.50
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h01G
+        预设: PlayerNP
+        函数: GetRectCenter
+            变量: gg_rct_Region_056
+        预设: RealUnitFacing
+    SetVariable
+        变量: Bubble1
+        函数: GetLastCreatedUnit
+    CommentString
+        常量: 'Level 1'
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h01H
+        预设: PlayerNP
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_058
+        预设: RealUnitFacing
+    SetVariable
+        变量: BubbleShock1
+        函数: GetLastCreatedUnit
+    IssueTargetOrder
+        变量: Bubble1
+        预设: UnitOrderFingerOfDeath
+        函数: GetLastCreatedUnit
+    SetUnitFlyHeightBJ
+        函数: GetLastCreatedUnit
+        常量: 175.00
+        常量: 100.00
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h01H
+        预设: PlayerNP
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_058
+        预设: RealUnitFacing
+    SetVariable
+        变量: BubbleShock2
+        函数: GetLastCreatedUnit
+    IssueTargetOrder
+        变量: Bubble1
+        预设: UnitOrderFingerOfDeath
+        函数: GetLastCreatedUnit
+    SetUnitFlyHeightBJ
+        函数: GetLastCreatedUnit
+        常量: 175.00
+        常量: 100.00
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h01H
+        预设: PlayerNP
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_058
+        预设: RealUnitFacing
+    SetVariable
+        变量: BubbleShock3
+        函数: GetLastCreatedUnit
+    IssueTargetOrder
+        变量: Bubble1
+        预设: UnitOrderFingerOfDeath
+        函数: GetLastCreatedUnit
+    SetUnitFlyHeightBJ
+        函数: GetLastCreatedUnit
+        常量: 175.00
+        常量: 100.00
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h01H
+        预设: PlayerNP
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_058
+        预设: RealUnitFacing
+    SetVariable
+        变量: BubbleShock4
+        函数: GetLastCreatedUnit
+    IssueTargetOrder
+        变量: Bubble1
+        预设: UnitOrderFingerOfDeath
+        函数: GetLastCreatedUnit
+    SetUnitFlyHeightBJ
+        函数: GetLastCreatedUnit
+        常量: 175.00
+        常量: 100.00
+    CommentString
+        常量: 'Level 2'
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h01H
+        预设: PlayerNP
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_058
+        预设: RealUnitFacing
+    SetVariable
+        变量: BubbleShock5
+        函数: GetLastCreatedUnit
+    IssueTargetOrder
+        变量: Bubble1
+        预设: UnitOrderFingerOfDeath
+        函数: GetLastCreatedUnit
+    SetUnitFlyHeightBJ
+        函数: GetLastCreatedUnit
+        常量: 350.00
+        常量: 100.00
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h01H
+        预设: PlayerNP
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_058
+        预设: RealUnitFacing
+    SetVariable
+        变量: BubbleShock6
+        函数: GetLastCreatedUnit
+    IssueTargetOrder
+        变量: Bubble1
+        预设: UnitOrderFingerOfDeath
+        函数: GetLastCreatedUnit
+    SetUnitFlyHeightBJ
+        函数: GetLastCreatedUnit
+        常量: 350.00
+        常量: 100.00
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h01H
+        预设: PlayerNP
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_058
+        预设: RealUnitFacing
+    SetVariable
+        变量: BubbleShock7
+        函数: GetLastCreatedUnit
+    IssueTargetOrder
+        变量: Bubble1
+        预设: UnitOrderFingerOfDeath
+        函数: GetLastCreatedUnit
+    SetUnitFlyHeightBJ
+        函数: GetLastCreatedUnit
+        常量: 350.00
+        常量: 100.00
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h01H
+        预设: PlayerNP
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_058
+        预设: RealUnitFacing
+    SetVariable
+        变量: BubbleShock8
+        函数: GetLastCreatedUnit
+    IssueTargetOrder
+        变量: Bubble1
+        预设: UnitOrderFingerOfDeath
+        函数: GetLastCreatedUnit
+    SetUnitFlyHeightBJ
+        函数: GetLastCreatedUnit
+        常量: 350.00
+        常量: 100.00
+    CommentString
+        常量: 'Level 3'
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h01H
+        预设: PlayerNP
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_058
+        预设: RealUnitFacing
+    SetVariable
+        变量: BubbleShock9
+        函数: GetLastCreatedUnit
+    IssueTargetOrder
+        变量: Bubble1
+        预设: UnitOrderFingerOfDeath
+        函数: GetLastCreatedUnit
+    SetUnitFlyHeightBJ
+        函数: GetLastCreatedUnit
+        常量: 600.00
+        常量: 100.00
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h01H
+        预设: PlayerNP
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_058
+        预设: RealUnitFacing
+    SetVariable
+        变量: BubbleShock10
+        函数: GetLastCreatedUnit
+    IssueTargetOrder
+        变量: Bubble1
+        预设: UnitOrderFingerOfDeath
+        函数: GetLastCreatedUnit
+    SetUnitFlyHeightBJ
+        函数: GetLastCreatedUnit
+        常量: 600.00
+        常量: 100.00
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h01H
+        预设: PlayerNP
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_058
+        预设: RealUnitFacing
+    SetVariable
+        变量: BubbleShock11
+        函数: GetLastCreatedUnit
+    IssueTargetOrder
+        变量: Bubble1
+        预设: UnitOrderFingerOfDeath
+        函数: GetLastCreatedUnit
+    SetUnitFlyHeightBJ
+        函数: GetLastCreatedUnit
+        常量: 600.00
+        常量: 100.00
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h01H
+        预设: PlayerNP
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_058
+        预设: RealUnitFacing
+    SetVariable
+        变量: BubbleShock12
+        函数: GetLastCreatedUnit
+    IssueTargetOrder
+        变量: Bubble1
+        预设: UnitOrderFingerOfDeath
+        函数: GetLastCreatedUnit
+    SetUnitFlyHeightBJ
+        函数: GetLastCreatedUnit
+        常量: 600.00
+        常量: 100.00
+    CommentString
+        常量: 'Level 4'
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h01H
+        预设: PlayerNP
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_058
+        预设: RealUnitFacing
+    SetVariable
+        变量: BubbleShock13
+        函数: GetLastCreatedUnit
+    IssueTargetOrder
+        变量: Bubble1
+        预设: UnitOrderFingerOfDeath
+        函数: GetLastCreatedUnit
+    SetUnitFlyHeightBJ
+        函数: GetLastCreatedUnit
+        常量: 800.00
+        常量: 100.00
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h01H
+        预设: PlayerNP
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_058
+        预设: RealUnitFacing
+    SetVariable
+        变量: BubbleShock14
+        函数: GetLastCreatedUnit
+    IssueTargetOrder
+        变量: Bubble1
+        预设: UnitOrderFingerOfDeath
+        函数: GetLastCreatedUnit
+    SetUnitFlyHeightBJ
+        函数: GetLastCreatedUnit
+        常量: 800.00
+        常量: 100.00
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h01H
+        预设: PlayerNP
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_058
+        预设: RealUnitFacing
+    SetVariable
+        变量: BubbleShock15
+        函数: GetLastCreatedUnit
+    IssueTargetOrder
+        变量: Bubble1
+        预设: UnitOrderFingerOfDeath
+        函数: GetLastCreatedUnit
+    SetUnitFlyHeightBJ
+        函数: GetLastCreatedUnit
+        常量: 800.00
+        常量: 100.00
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h01H
+        预设: PlayerNP
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_058
+        预设: RealUnitFacing
+    SetVariable
+        变量: BubbleShock16
+        函数: GetLastCreatedUnit
+    IssueTargetOrder
+        变量: Bubble1
+        预设: UnitOrderFingerOfDeath
+        函数: GetLastCreatedUnit
+    SetUnitFlyHeightBJ
+        函数: GetLastCreatedUnit
+        常量: 800.00
+        常量: 100.00
+    PlaySoundBJ
+        变量: gg_snd_LightningBoltNotLoud
+    CameraSetEQNoiseForPlayer
+        预设: Player00
+        常量: 3
+    PlaySoundBJ
+        变量: gg_snd_Electricity
+    TriggerSleepAction
+        常量: 2
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_003
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_004
+        预设: Player00
+        常量: 30.00
+    StopSoundBJ
+        变量: gg_snd_LightningBoltNotLoud
+        预设: FadeDontDont
+    PlaySoundBJ
+        变量: gg_snd_LightningBoltNotLoud
+    TriggerSleepAction
+        常量: 2
+    EnableTrigger
+        变量: gg_trg_Ertio_Crystal_Movement
+    TriggerSleepAction
+        常量: 25.00
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_005
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_006
+        预设: Player00
+        常量: 20.00
+    TriggerSleepAction
+        常量: 8.00
+    KillUnit
+        变量: Bubble1
+    ShowUnitHide
+        变量: Bubble1
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h01I
+        预设: PlayerNP
+        函数: GetRectCenter
+            变量: gg_rct_Region_056
+        预设: RealUnitFacing
+    PlaySoundBJ
+        变量: gg_snd_IceCrack
+    ForGroup
+        函数: GetUnitsInRectAll
+            变量: gg_rct_Region_059
+        动作: IfThenElse
+            条件: OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetEnumUnit
+                预设: OperatorEqualENE
+                常量: h01H
+            动作: KillUnit
+                函数: GetEnumUnit
+            动作: DoNothing
+    ForGroup
+        函数: GetUnitsInRectAll
+            变量: gg_rct_Region_059
+        动作: IfThenElse
+            条件: OperatorCompareUnitCode
+                函数: GetUnitTypeId
+                    函数: GetEnumUnit
+                预设: OperatorEqualENE
+                常量: h01H
+            动作: ShowUnitHide
+                函数: GetEnumUnit
+            动作: DoNothing
+    DisableTrigger
+        变量: gg_trg_Ertio_Crystal_Movement
+    TriggerSleepAction
+        常量: 1.00
+    CameraClearNoiseForPlayer
+        预设: Player00
+    StopSoundBJ
+        变量: gg_snd_Electricity
+        预设: FadeDontDont
+    TriggerSleepAction
+        常量: 2.00
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeOut
+        常量: 4.00
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    TriggerSleepAction
+        常量: 4.00
+    ShowUnitHide
+        变量: gg_unit_H01N_0294
+    ShowUnitHide
+        变量: gg_unit_H04N_0295
+    ShowUnitHide
+        变量: gg_unit_H04O_0296
+    ShowUnitHide
+        变量: gg_unit_H00C_0293
+    ShowUnitHide
+        变量: gg_unit_H00D_0291
+    ShowUnitHide
+        变量: gg_unit_H04M_0290
+    ShowUnitHide
+        变量: gg_unit_H03Q_0292
+    TriggerExecute
+        变量: gg_trg_A2_Argument_Boat

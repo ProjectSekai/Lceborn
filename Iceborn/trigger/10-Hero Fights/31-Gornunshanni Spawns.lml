@@ -1,0 +1,788 @@
+事件
+条件
+动作
+    IfThenElse
+        条件: OperatorCompareBoolean
+            变量: CirrathoDeath
+            预设: OperatorEqualENE
+            常量: true
+        动作: DisableTrigger
+            函数: GetTriggeringTrigger
+        动作: DoNothing
+    IfThenElse
+        条件: OperatorCompareBoolean
+            变量: CirrathoDeath
+            预设: OperatorEqualENE
+            常量: true
+        动作: ReturnAction
+        动作: DoNothing
+    SetVariable
+        变量: GornuSpawnReal
+        函数: GetRandomReal
+            常量: 1.00
+            常量: 100.00
+    SetVariable
+        变量: GornuSpawnRegion
+        变量: gg_rct_Region_185_Copy_10
+    IfThenElseMultiple
+        条件
+            OperatorCompareReal
+                变量: GornuSpawnReal
+                预设: OperatorLessEq
+                常量: 40.00
+        动作
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h03Z
+                预设: PlayerNA
+                函数: GetRectCenter
+                    变量: GornuSpawnRegion
+                预设: RealUnitFacing
+            AddSpecialEffectTargetUnitBJ
+                常量: origin
+                函数: GetLastCreatedUnit
+                常量: AquaSpike.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareReal
+                        变量: GornuSpawnReal
+                        预设: OperatorLessEq
+                        常量: 80.00
+                动作
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h040
+                        预设: PlayerNA
+                        函数: GetRectCenter
+                            变量: GornuSpawnRegion
+                        预设: RealUnitFacing
+                    AddSpecialEffectTargetUnitBJ
+                        常量: origin
+                        函数: GetLastCreatedUnit
+                        常量: AquaSpike.mdx
+                    DestroyEffectBJ
+                        函数: GetLastCreatedEffectBJ
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareReal
+                                变量: GornuSpawnReal
+                                预设: OperatorLessEq
+                                常量: 100.00
+                        动作
+                            CreateNUnitsAtLoc
+                                常量: 1
+                                常量: h03Y
+                                预设: PlayerNA
+                                函数: GetRectCenter
+                                    变量: GornuSpawnRegion
+                                预设: RealUnitFacing
+                            AddSpecialEffectTargetUnitBJ
+                                常量: origin
+                                函数: GetLastCreatedUnit
+                                常量: AquaSpike.mdx
+                            DestroyEffectBJ
+                                函数: GetLastCreatedEffectBJ
+    SetVariable
+        变量: GornuSpawnReal
+        函数: GetRandomReal
+            常量: 1.00
+            常量: 100.00
+    SetVariable
+        变量: GornuSpawnRegion
+        变量: gg_rct_Region_185
+    IfThenElseMultiple
+        条件
+            OperatorCompareReal
+                变量: GornuSpawnReal
+                预设: OperatorLessEq
+                常量: 40.00
+        动作
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h03Z
+                预设: PlayerNA
+                函数: GetRectCenter
+                    变量: GornuSpawnRegion
+                预设: RealUnitFacing
+            AddSpecialEffectTargetUnitBJ
+                常量: origin
+                函数: GetLastCreatedUnit
+                常量: AquaSpike.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareReal
+                        变量: GornuSpawnReal
+                        预设: OperatorLessEq
+                        常量: 80.00
+                动作
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h040
+                        预设: PlayerNA
+                        函数: GetRectCenter
+                            变量: GornuSpawnRegion
+                        预设: RealUnitFacing
+                    AddSpecialEffectTargetUnitBJ
+                        常量: origin
+                        函数: GetLastCreatedUnit
+                        常量: AquaSpike.mdx
+                    DestroyEffectBJ
+                        函数: GetLastCreatedEffectBJ
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareReal
+                                变量: GornuSpawnReal
+                                预设: OperatorLessEq
+                                常量: 100.00
+                        动作
+                            CreateNUnitsAtLoc
+                                常量: 1
+                                常量: h03Y
+                                预设: PlayerNA
+                                函数: GetRectCenter
+                                    变量: GornuSpawnRegion
+                                预设: RealUnitFacing
+                            AddSpecialEffectTargetUnitBJ
+                                常量: origin
+                                函数: GetLastCreatedUnit
+                                常量: AquaSpike.mdx
+                            DestroyEffectBJ
+                                函数: GetLastCreatedEffectBJ
+    SetVariable
+        变量: GornuSpawnReal
+        函数: GetRandomReal
+            常量: 1.00
+            常量: 100.00
+    SetVariable
+        变量: GornuSpawnRegion
+        变量: gg_rct_Region_185_Copy
+    IfThenElseMultiple
+        条件
+            OperatorCompareReal
+                变量: GornuSpawnReal
+                预设: OperatorLessEq
+                常量: 40.00
+        动作
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h03Z
+                预设: PlayerNA
+                函数: GetRectCenter
+                    变量: GornuSpawnRegion
+                预设: RealUnitFacing
+            AddSpecialEffectTargetUnitBJ
+                常量: origin
+                函数: GetLastCreatedUnit
+                常量: AquaSpike.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareReal
+                        变量: GornuSpawnReal
+                        预设: OperatorLessEq
+                        常量: 80.00
+                动作
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h040
+                        预设: PlayerNA
+                        函数: GetRectCenter
+                            变量: GornuSpawnRegion
+                        预设: RealUnitFacing
+                    AddSpecialEffectTargetUnitBJ
+                        常量: origin
+                        函数: GetLastCreatedUnit
+                        常量: AquaSpike.mdx
+                    DestroyEffectBJ
+                        函数: GetLastCreatedEffectBJ
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareReal
+                                变量: GornuSpawnReal
+                                预设: OperatorLessEq
+                                常量: 100.00
+                        动作
+                            CreateNUnitsAtLoc
+                                常量: 1
+                                常量: h03Y
+                                预设: PlayerNA
+                                函数: GetRectCenter
+                                    变量: GornuSpawnRegion
+                                预设: RealUnitFacing
+                            AddSpecialEffectTargetUnitBJ
+                                常量: origin
+                                函数: GetLastCreatedUnit
+                                常量: AquaSpike.mdx
+                            DestroyEffectBJ
+                                函数: GetLastCreatedEffectBJ
+    SetVariable
+        变量: GornuSpawnReal
+        函数: GetRandomReal
+            常量: 1.00
+            常量: 100.00
+    SetVariable
+        变量: GornuSpawnRegion
+        变量: gg_rct_Region_185_Copy_2
+    IfThenElseMultiple
+        条件
+            OperatorCompareReal
+                变量: GornuSpawnReal
+                预设: OperatorLessEq
+                常量: 40.00
+        动作
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h03Z
+                预设: PlayerNA
+                函数: GetRectCenter
+                    变量: GornuSpawnRegion
+                预设: RealUnitFacing
+            AddSpecialEffectTargetUnitBJ
+                常量: origin
+                函数: GetLastCreatedUnit
+                常量: AquaSpike.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareReal
+                        变量: GornuSpawnReal
+                        预设: OperatorLessEq
+                        常量: 80.00
+                动作
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h040
+                        预设: PlayerNA
+                        函数: GetRectCenter
+                            变量: GornuSpawnRegion
+                        预设: RealUnitFacing
+                    AddSpecialEffectTargetUnitBJ
+                        常量: origin
+                        函数: GetLastCreatedUnit
+                        常量: AquaSpike.mdx
+                    DestroyEffectBJ
+                        函数: GetLastCreatedEffectBJ
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareReal
+                                变量: GornuSpawnReal
+                                预设: OperatorLessEq
+                                常量: 100.00
+                        动作
+                            CreateNUnitsAtLoc
+                                常量: 1
+                                常量: h03Y
+                                预设: PlayerNA
+                                函数: GetRectCenter
+                                    变量: GornuSpawnRegion
+                                预设: RealUnitFacing
+                            AddSpecialEffectTargetUnitBJ
+                                常量: origin
+                                函数: GetLastCreatedUnit
+                                常量: AquaSpike.mdx
+                            DestroyEffectBJ
+                                函数: GetLastCreatedEffectBJ
+    SetVariable
+        变量: GornuSpawnReal
+        函数: GetRandomReal
+            常量: 1.00
+            常量: 100.00
+    SetVariable
+        变量: GornuSpawnRegion
+        变量: gg_rct_Region_185_Copy_3
+    IfThenElseMultiple
+        条件
+            OperatorCompareReal
+                变量: GornuSpawnReal
+                预设: OperatorLessEq
+                常量: 40.00
+        动作
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h03Z
+                预设: PlayerNA
+                函数: GetRectCenter
+                    变量: GornuSpawnRegion
+                预设: RealUnitFacing
+            AddSpecialEffectTargetUnitBJ
+                常量: origin
+                函数: GetLastCreatedUnit
+                常量: AquaSpike.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareReal
+                        变量: GornuSpawnReal
+                        预设: OperatorLessEq
+                        常量: 80.00
+                动作
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h040
+                        预设: PlayerNA
+                        函数: GetRectCenter
+                            变量: GornuSpawnRegion
+                        预设: RealUnitFacing
+                    AddSpecialEffectTargetUnitBJ
+                        常量: origin
+                        函数: GetLastCreatedUnit
+                        常量: AquaSpike.mdx
+                    DestroyEffectBJ
+                        函数: GetLastCreatedEffectBJ
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareReal
+                                变量: GornuSpawnReal
+                                预设: OperatorLessEq
+                                常量: 100.00
+                        动作
+                            CreateNUnitsAtLoc
+                                常量: 1
+                                常量: h03Y
+                                预设: PlayerNA
+                                函数: GetRectCenter
+                                    变量: GornuSpawnRegion
+                                预设: RealUnitFacing
+                            AddSpecialEffectTargetUnitBJ
+                                常量: origin
+                                函数: GetLastCreatedUnit
+                                常量: AquaSpike.mdx
+                            DestroyEffectBJ
+                                函数: GetLastCreatedEffectBJ
+    SetVariable
+        变量: GornuSpawnReal
+        函数: GetRandomReal
+            常量: 1.00
+            常量: 100.00
+    SetVariable
+        变量: GornuSpawnRegion
+        变量: gg_rct_Region_185_Copy_4
+    IfThenElseMultiple
+        条件
+            OperatorCompareReal
+                变量: GornuSpawnReal
+                预设: OperatorLessEq
+                常量: 40.00
+        动作
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h03Z
+                预设: PlayerNA
+                函数: GetRectCenter
+                    变量: GornuSpawnRegion
+                预设: RealUnitFacing
+            AddSpecialEffectTargetUnitBJ
+                常量: origin
+                函数: GetLastCreatedUnit
+                常量: AquaSpike.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareReal
+                        变量: GornuSpawnReal
+                        预设: OperatorLessEq
+                        常量: 80.00
+                动作
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h040
+                        预设: PlayerNA
+                        函数: GetRectCenter
+                            变量: GornuSpawnRegion
+                        预设: RealUnitFacing
+                    AddSpecialEffectTargetUnitBJ
+                        常量: origin
+                        函数: GetLastCreatedUnit
+                        常量: AquaSpike.mdx
+                    DestroyEffectBJ
+                        函数: GetLastCreatedEffectBJ
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareReal
+                                变量: GornuSpawnReal
+                                预设: OperatorLessEq
+                                常量: 100.00
+                        动作
+                            CreateNUnitsAtLoc
+                                常量: 1
+                                常量: h03Y
+                                预设: PlayerNA
+                                函数: GetRectCenter
+                                    变量: GornuSpawnRegion
+                                预设: RealUnitFacing
+                            AddSpecialEffectTargetUnitBJ
+                                常量: origin
+                                函数: GetLastCreatedUnit
+                                常量: AquaSpike.mdx
+                            DestroyEffectBJ
+                                函数: GetLastCreatedEffectBJ
+    SetVariable
+        变量: GornuSpawnReal
+        函数: GetRandomReal
+            常量: 1.00
+            常量: 100.00
+    SetVariable
+        变量: GornuSpawnRegion
+        变量: gg_rct_Region_185_Copy_5
+    IfThenElseMultiple
+        条件
+            OperatorCompareReal
+                变量: GornuSpawnReal
+                预设: OperatorLessEq
+                常量: 40.00
+        动作
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h03Z
+                预设: PlayerNA
+                函数: GetRectCenter
+                    变量: GornuSpawnRegion
+                预设: RealUnitFacing
+            AddSpecialEffectTargetUnitBJ
+                常量: origin
+                函数: GetLastCreatedUnit
+                常量: AquaSpike.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareReal
+                        变量: GornuSpawnReal
+                        预设: OperatorLessEq
+                        常量: 80.00
+                动作
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h040
+                        预设: PlayerNA
+                        函数: GetRectCenter
+                            变量: GornuSpawnRegion
+                        预设: RealUnitFacing
+                    AddSpecialEffectTargetUnitBJ
+                        常量: origin
+                        函数: GetLastCreatedUnit
+                        常量: AquaSpike.mdx
+                    DestroyEffectBJ
+                        函数: GetLastCreatedEffectBJ
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareReal
+                                变量: GornuSpawnReal
+                                预设: OperatorLessEq
+                                常量: 100.00
+                        动作
+                            CreateNUnitsAtLoc
+                                常量: 1
+                                常量: h03Y
+                                预设: PlayerNA
+                                函数: GetRectCenter
+                                    变量: GornuSpawnRegion
+                                预设: RealUnitFacing
+                            AddSpecialEffectTargetUnitBJ
+                                常量: origin
+                                函数: GetLastCreatedUnit
+                                常量: AquaSpike.mdx
+                            DestroyEffectBJ
+                                函数: GetLastCreatedEffectBJ
+    SetVariable
+        变量: GornuSpawnReal
+        函数: GetRandomReal
+            常量: 1.00
+            常量: 100.00
+    SetVariable
+        变量: GornuSpawnRegion
+        变量: gg_rct_Region_185_Copy_6
+    IfThenElseMultiple
+        条件
+            OperatorCompareReal
+                变量: GornuSpawnReal
+                预设: OperatorLessEq
+                常量: 40.00
+        动作
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h03Z
+                预设: PlayerNA
+                函数: GetRectCenter
+                    变量: GornuSpawnRegion
+                预设: RealUnitFacing
+            AddSpecialEffectTargetUnitBJ
+                常量: origin
+                函数: GetLastCreatedUnit
+                常量: AquaSpike.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareReal
+                        变量: GornuSpawnReal
+                        预设: OperatorLessEq
+                        常量: 80.00
+                动作
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h040
+                        预设: PlayerNA
+                        函数: GetRectCenter
+                            变量: GornuSpawnRegion
+                        预设: RealUnitFacing
+                    AddSpecialEffectTargetUnitBJ
+                        常量: origin
+                        函数: GetLastCreatedUnit
+                        常量: AquaSpike.mdx
+                    DestroyEffectBJ
+                        函数: GetLastCreatedEffectBJ
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareReal
+                                变量: GornuSpawnReal
+                                预设: OperatorLessEq
+                                常量: 100.00
+                        动作
+                            CreateNUnitsAtLoc
+                                常量: 1
+                                常量: h03Y
+                                预设: PlayerNA
+                                函数: GetRectCenter
+                                    变量: GornuSpawnRegion
+                                预设: RealUnitFacing
+                            AddSpecialEffectTargetUnitBJ
+                                常量: origin
+                                函数: GetLastCreatedUnit
+                                常量: AquaSpike.mdx
+                            DestroyEffectBJ
+                                函数: GetLastCreatedEffectBJ
+    SetVariable
+        变量: GornuSpawnReal
+        函数: GetRandomReal
+            常量: 1.00
+            常量: 100.00
+    SetVariable
+        变量: GornuSpawnRegion
+        变量: gg_rct_Region_185_Copy_7
+    IfThenElseMultiple
+        条件
+            OperatorCompareReal
+                变量: GornuSpawnReal
+                预设: OperatorLessEq
+                常量: 40.00
+        动作
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h03Z
+                预设: PlayerNA
+                函数: GetRectCenter
+                    变量: GornuSpawnRegion
+                预设: RealUnitFacing
+            AddSpecialEffectTargetUnitBJ
+                常量: origin
+                函数: GetLastCreatedUnit
+                常量: AquaSpike.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareReal
+                        变量: GornuSpawnReal
+                        预设: OperatorLessEq
+                        常量: 80.00
+                动作
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h040
+                        预设: PlayerNA
+                        函数: GetRectCenter
+                            变量: GornuSpawnRegion
+                        预设: RealUnitFacing
+                    AddSpecialEffectTargetUnitBJ
+                        常量: origin
+                        函数: GetLastCreatedUnit
+                        常量: AquaSpike.mdx
+                    DestroyEffectBJ
+                        函数: GetLastCreatedEffectBJ
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareReal
+                                变量: GornuSpawnReal
+                                预设: OperatorLessEq
+                                常量: 100.00
+                        动作
+                            CreateNUnitsAtLoc
+                                常量: 1
+                                常量: h03Y
+                                预设: PlayerNA
+                                函数: GetRectCenter
+                                    变量: GornuSpawnRegion
+                                预设: RealUnitFacing
+                            AddSpecialEffectTargetUnitBJ
+                                常量: origin
+                                函数: GetLastCreatedUnit
+                                常量: AquaSpike.mdx
+                            DestroyEffectBJ
+                                函数: GetLastCreatedEffectBJ
+    SetVariable
+        变量: GornuSpawnReal
+        函数: GetRandomReal
+            常量: 1.00
+            常量: 100.00
+    SetVariable
+        变量: GornuSpawnRegion
+        变量: gg_rct_Region_185_Copy_8
+    IfThenElseMultiple
+        条件
+            OperatorCompareReal
+                变量: GornuSpawnReal
+                预设: OperatorLessEq
+                常量: 40.00
+        动作
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h03Z
+                预设: PlayerNA
+                函数: GetRectCenter
+                    变量: GornuSpawnRegion
+                预设: RealUnitFacing
+            AddSpecialEffectTargetUnitBJ
+                常量: origin
+                函数: GetLastCreatedUnit
+                常量: AquaSpike.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareReal
+                        变量: GornuSpawnReal
+                        预设: OperatorLessEq
+                        常量: 80.00
+                动作
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h040
+                        预设: PlayerNA
+                        函数: GetRectCenter
+                            变量: GornuSpawnRegion
+                        预设: RealUnitFacing
+                    AddSpecialEffectTargetUnitBJ
+                        常量: origin
+                        函数: GetLastCreatedUnit
+                        常量: AquaSpike.mdx
+                    DestroyEffectBJ
+                        函数: GetLastCreatedEffectBJ
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareReal
+                                变量: GornuSpawnReal
+                                预设: OperatorLessEq
+                                常量: 100.00
+                        动作
+                            CreateNUnitsAtLoc
+                                常量: 1
+                                常量: h03Y
+                                预设: PlayerNA
+                                函数: GetRectCenter
+                                    变量: GornuSpawnRegion
+                                预设: RealUnitFacing
+                            AddSpecialEffectTargetUnitBJ
+                                常量: origin
+                                函数: GetLastCreatedUnit
+                                常量: AquaSpike.mdx
+                            DestroyEffectBJ
+                                函数: GetLastCreatedEffectBJ
+    SetVariable
+        变量: GornuSpawnReal
+        函数: GetRandomReal
+            常量: 1.00
+            常量: 100.00
+    SetVariable
+        变量: GornuSpawnRegion
+        变量: gg_rct_Region_185_Copy_9
+    IfThenElseMultiple
+        条件
+            OperatorCompareReal
+                变量: GornuSpawnReal
+                预设: OperatorLessEq
+                常量: 40.00
+        动作
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h03Z
+                预设: PlayerNA
+                函数: GetRectCenter
+                    变量: GornuSpawnRegion
+                预设: RealUnitFacing
+            AddSpecialEffectTargetUnitBJ
+                常量: origin
+                函数: GetLastCreatedUnit
+                常量: AquaSpike.mdx
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareReal
+                        变量: GornuSpawnReal
+                        预设: OperatorLessEq
+                        常量: 80.00
+                动作
+                    CreateNUnitsAtLoc
+                        常量: 1
+                        常量: h040
+                        预设: PlayerNA
+                        函数: GetRectCenter
+                            变量: GornuSpawnRegion
+                        预设: RealUnitFacing
+                    AddSpecialEffectTargetUnitBJ
+                        常量: origin
+                        函数: GetLastCreatedUnit
+                        常量: AquaSpike.mdx
+                    DestroyEffectBJ
+                        函数: GetLastCreatedEffectBJ
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareReal
+                                变量: GornuSpawnReal
+                                预设: OperatorLessEq
+                                常量: 100.00
+                        动作
+                            CreateNUnitsAtLoc
+                                常量: 1
+                                常量: h03Y
+                                预设: PlayerNA
+                                函数: GetRectCenter
+                                    变量: GornuSpawnRegion
+                                预设: RealUnitFacing
+                            AddSpecialEffectTargetUnitBJ
+                                常量: origin
+                                函数: GetLastCreatedUnit
+                                常量: AquaSpike.mdx
+                            DestroyEffectBJ
+                                函数: GetLastCreatedEffectBJ

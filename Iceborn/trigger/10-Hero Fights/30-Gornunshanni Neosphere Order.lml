@@ -1,0 +1,10 @@
+事件
+    TriggerRegisterTimerEventPeriodic
+        常量: 2
+条件
+动作
+    IssuePointOrderLoc
+        变量: GornuSphere
+        预设: UnitOrderMove
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_196

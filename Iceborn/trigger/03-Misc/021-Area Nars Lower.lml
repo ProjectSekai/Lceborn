@@ -1,0 +1,23 @@
+事件
+    TriggerRegisterEnterRectSimple
+        变量: gg_rct_Region_101
+条件
+    OperatorCompareUnit
+        函数: GetTriggerUnit
+        预设: OperatorEqualENE
+        变量: Hero
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    TriggerSleepAction
+        常量: 0.50
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cffffcc00纳 谢 特 罗 达 慕 斯 :   底 层|r
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Hint
+    SetVariable
+        变量: Narsetrodamus
+        常量: true

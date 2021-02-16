@@ -1,0 +1,130 @@
+事件
+条件
+动作
+    ForGroupMultiple
+        函数: GetUnitsInRangeOfLocAll
+            常量: 700.00
+            函数: GetUnitLoc
+                变量: DreadOrb1
+        动作
+            IfThenElseMultiple
+                条件
+                    AndMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: IsUnitAliveBJ
+                                    函数: GetEnumUnit
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitEnemy
+                                    函数: GetEnumUnit
+                                    预设: PlayerNA
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitType
+                                    函数: GetEnumUnit
+                                    预设: UnitTypeMagicImmune
+                                预设: OperatorEqualENE
+                                常量: false
+                动作
+                    GroupAddUnitSimple
+                        函数: GetEnumUnit
+                        变量: DreadGroup
+    IssueTargetOrder
+        变量: DreadOrb1
+        预设: UnitOrderForkedLightning
+        函数: GroupPickRandomUnit
+            变量: DreadGroup
+    GroupClear
+        变量: DreadGroup
+    ForGroupMultiple
+        函数: GetUnitsInRangeOfLocAll
+            常量: 700.00
+            函数: GetUnitLoc
+                变量: DreadOrb2
+        动作
+            IfThenElseMultiple
+                条件
+                    AndMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: IsUnitAliveBJ
+                                    函数: GetEnumUnit
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitEnemy
+                                    函数: GetEnumUnit
+                                    预设: PlayerNA
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitType
+                                    函数: GetEnumUnit
+                                    预设: UnitTypeMagicImmune
+                                预设: OperatorEqualENE
+                                常量: false
+                动作
+                    GroupAddUnitSimple
+                        函数: GetEnumUnit
+                        变量: DreadGroup
+    IssueTargetOrder
+        变量: DreadOrb2
+        预设: UnitOrderForkedLightning
+        函数: GroupPickRandomUnit
+            变量: DreadGroup
+    GroupClear
+        变量: DreadGroup
+    ForGroupMultiple
+        函数: GetUnitsInRangeOfLocAll
+            常量: 700.00
+            函数: GetUnitLoc
+                变量: DreadOrb3
+        动作
+            IfThenElseMultiple
+                条件
+                    AndMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: IsUnitAliveBJ
+                                    函数: GetEnumUnit
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitEnemy
+                                    函数: GetEnumUnit
+                                    预设: PlayerNA
+                                预设: OperatorEqualENE
+                                常量: true
+                            OperatorCompareBoolean
+                                函数: IsUnitType
+                                    函数: GetEnumUnit
+                                    预设: UnitTypeMagicImmune
+                                预设: OperatorEqualENE
+                                常量: false
+                动作
+                    GroupAddUnitSimple
+                        函数: GetEnumUnit
+                        变量: DreadGroup
+    IssueTargetOrder
+        变量: DreadOrb3
+        预设: UnitOrderForkedLightning
+        函数: GroupPickRandomUnit
+            变量: DreadGroup
+    GroupClear
+        变量: DreadGroup
+    TriggerSleepAction
+        常量: 2.90
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: IsUnitDeadBJ
+                    变量: DreadOrb1
+                预设: OperatorEqualENE
+                常量: true
+        动作
+        动作
+            TriggerExecute
+                函数: GetTriggeringTrigger

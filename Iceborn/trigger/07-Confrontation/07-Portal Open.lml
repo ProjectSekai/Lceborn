@@ -1,0 +1,10 @@
+事件
+    TriggerRegisterTimerExpireEventBJ
+        变量: TimerPortal
+条件
+动作
+    TriggerSleepAction
+        常量: 5.00
+    CustomDefeatBJ
+        预设: Player00
+        常量: 恐惧之门已开启

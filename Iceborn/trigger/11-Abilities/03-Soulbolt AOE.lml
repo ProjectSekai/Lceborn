@@ -1,0 +1,53 @@
+事件
+条件
+动作
+    SetVariable
+        变量: Soultarget
+        函数: GroupPickRandomUnit
+            变量: Soulgroup
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: UnitHasBuffBJ
+                    变量: Soultarget
+                    常量: B001
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            UnitDamageTargetBJ
+                变量: Hero
+                变量: Soultarget
+                函数: OperatorReal
+                    函数: GetUnitStateSwap
+                        预设: UnitStateMana
+                        变量: Hero
+                    预设: OperatorMultiply
+                    常量: 0.50
+                预设: AttackTypeNormal
+                预设: DamageTypeNormal
+        动作
+            UnitDamageTargetBJ
+                变量: Hero
+                变量: Soultarget
+                函数: OperatorReal
+                    函数: GetUnitStateSwap
+                        预设: UnitStateMana
+                        变量: Hero
+                    预设: OperatorMultiply
+                    常量: 0.25
+                预设: AttackTypeNormal
+                预设: DamageTypeNormal
+    GroupRemoveUnitSimple
+        变量: Soultarget
+        变量: Soulgroup
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: IsUnitGroupEmptyBJ
+                    变量: Soulgroup
+                预设: OperatorEqualENE
+                常量: true
+        动作
+        动作
+            TriggerExecute
+                函数: GetTriggeringTrigger

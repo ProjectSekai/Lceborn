@@ -1,0 +1,153 @@
+事件
+条件
+动作
+    SetUnitPositionLocFacingLocBJ
+        变量: Hero
+        函数: GetRectCenter
+            变量: gg_rct_Region_173
+        函数: GetRectCenter
+            变量: gg_rct_Region_175
+    SetUnitPositionLocFacingLocBJ
+        变量: SummonedElemental1
+        函数: GetRectCenter
+            变量: gg_rct_Region_176
+        函数: GetRectCenter
+            变量: gg_rct_Region_175
+    SetUnitPositionLocFacingLocBJ
+        变量: SummonedElemental2
+        函数: GetRectCenter
+            变量: gg_rct_Region_177
+        函数: GetRectCenter
+            变量: gg_rct_Region_175
+    ShowUnitShow
+        变量: gg_unit_H03O_0108
+    RemoveUnit
+        变量: gg_unit_H03Q_0153
+    RemoveUnit
+        变量: gg_unit_H00D_0154
+    SetUnitAnimation
+        变量: gg_unit_h027_0106
+        常量: 'stand alternate'
+    DestructableRestoreLife
+        变量: gg_dest_YTpc_7293
+        函数: GetDestructableMaxLife
+            函数: GetLastCreatedDestructable
+        预设: ShowHideShow
+    DestructableRestoreLife
+        变量: gg_dest_YTpc_7292
+        函数: GetDestructableMaxLife
+            函数: GetLastCreatedDestructable
+        预设: ShowHideShow
+    DisableTrigger
+        变量: gg_trg_Teleportation_Window
+    EnableTrigger
+        变量: gg_trg_Teleportation_Block
+    StopSoundBJ
+        变量: gg_snd_AmbienceExam1
+        预设: FadeDontDont
+    ClearMapMusicBJ
+    EndThematicMusicBJ
+    StopMusicBJ
+        预设: FadeDontDont
+    PlayMusicBJ
+        变量: gg_snd_Joshua_Buck___Vanguard
+    ShowUnitShow
+        变量: gg_unit_h03W_0237
+    ShowUnitShow
+        变量: gg_unit_h03W_0157
+    ShowUnitShow
+        变量: gg_unit_h03W_0158
+    ShowUnitShow
+        变量: gg_unit_h03W_0159
+    ShowUnitShow
+        变量: gg_unit_h03W_0160
+    ShowUnitShow
+        变量: gg_unit_h03W_0161
+    ShowUnitShow
+        变量: gg_unit_h03W_0223
+    ShowUnitShow
+        变量: gg_unit_h03W_0225
+    ShowUnitShow
+        变量: gg_unit_h03W_0227
+    ShowUnitShow
+        变量: gg_unit_h03W_0235
+    ShowUnitShow
+        变量: gg_unit_h03W_0236
+    ShowUnitShow
+        变量: gg_unit_h03U_0155
+    ShowUnitShow
+        变量: gg_unit_h03U_0152
+    ShowUnitShow
+        变量: gg_unit_h03U_0151
+    SetVariable
+        变量: GornuCrystal1
+        变量: gg_unit_h03U_0151
+    SetVariable
+        变量: GornuCrystal2
+        变量: gg_unit_h03U_0152
+    SetVariable
+        变量: GornuCrystal3
+        变量: gg_unit_h03U_0155
+    SetUnitMoveSpeed
+        变量: gg_unit_H03O_0108
+        常量: 0.00
+    TriggerSleepAction
+        常量: 2
+    PlaySoundBJ
+        变量: gg_snd_WaterElementalWhat4
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h03V
+        预设: PlayerNP
+        函数: GetRectCenter
+            变量: gg_rct_Region_179
+        预设: RealUnitFacing
+    SetVariable
+        变量: GornuShield
+        函数: GetLastCreatedUnit
+    TriggerSleepAction
+        常量: 1.00
+    PlaySoundBJ
+        变量: gg_snd_WaterElementalYesAttack2
+    TriggerSleepAction
+        常量: 1.00
+    PlaySoundBJ
+        变量: gg_snd_WaterElementalYesAttack3
+    TriggerSleepAction
+        常量: 1.00
+    SetUnitOwner
+        变量: gg_unit_H03O_0108
+        预设: PlayerNA
+        预设: ChangeColorFalse
+    PauseUnitBJ
+        预设: PauseUnpauseOptionPause
+        变量: gg_unit_H03O_0108
+    TriggerExecute
+        变量: gg_trg_Gornunshanni_Spawns
+    EnableTrigger
+        变量: gg_trg_Gornunshanni_Spells
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: ModeNormal
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            DisplayTextToForce
+                函数: GetPlayersAll
+                常量: '|cff7777aa提示: 摧毁3个水晶能量源以突破护盾并反击希尔拉索元素.打破护盾会使得一只眼睛释放出部分能量变成球体维修护盾一段时间.摧毁它能够晕眩并伤害希尔拉索元素.|r
+
+'
+            PlaySoundBJ
+                变量: gg_snd_Hint
+            AddTriggerEvent
+                变量: gg_trg_Gornunshanni_Spawns
+                事件: TriggerRegisterTimerEventPeriodic
+                    常量: 50.00
+        动作
+            AddTriggerEvent
+                变量: gg_trg_Gornunshanni_Spawns
+                事件: TriggerRegisterTimerEventPeriodic
+                    常量: 40.00
+    EnableTrigger
+        变量: gg_trg_Gornunshanni_Spawns

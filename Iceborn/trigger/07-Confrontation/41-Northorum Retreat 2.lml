@@ -1,0 +1,45 @@
+事件
+    TriggerRegisterUnitLifeEvent
+        变量: gg_unit_H06O_0377
+        预设: LimitOpLessThanOrEqual
+        常量: 500.00
+条件
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h03T
+        预设: PlayerNP
+        函数: GetUnitLoc
+            变量: gg_unit_H06O_0377
+        预设: RealUnitFacing
+    TriggerSleepAction
+        常量: 1.00
+    SetUnitPositionLocFacingBJ
+        变量: gg_unit_H06O_0377
+        函数: GetRectCenter
+            变量: gg_rct_Region_312
+        常量: 45.00
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h03T
+        预设: PlayerNP
+        函数: GetUnitLoc
+            变量: gg_unit_H06O_0377
+        预设: RealUnitFacing
+    SetUnitLifePercentBJ
+        变量: gg_unit_H06O_0377
+        常量: 60.00
+    TriggerSleepAction
+        常量: 0.50
+    IssueImmediateOrder
+        变量: gg_unit_H06O_0377
+        预设: UnitOrderStop
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cff7777aa注意: 诺索拉姆撤退到周围以逃脱死亡.|r
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Hint

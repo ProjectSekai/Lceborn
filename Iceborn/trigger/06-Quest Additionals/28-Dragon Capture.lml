@@ -1,0 +1,451 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventDeath
+条件
+    OrMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: TrapTrigger1
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: TrapTrigger2
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: TrapTrigger3
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: TrapTrigger4
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: TrapTrigger5
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: TrapTrigger6
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: TrapTrigger7
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: TrapTrigger8
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: TrapTrigger9
+动作
+    IfThenElseMultiple
+        条件
+            OrMultiple
+                条件
+                    OperatorCompareUnit
+                        函数: GetDyingUnit
+                        预设: OperatorEqualENE
+                        变量: TrapTrigger1
+                    OperatorCompareUnit
+                        函数: GetDyingUnit
+                        预设: OperatorEqualENE
+                        变量: TrapTrigger2
+                    OperatorCompareUnit
+                        函数: GetDyingUnit
+                        预设: OperatorEqualENE
+                        变量: TrapTrigger3
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: TrapTrigger1
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: TrapTrigger2
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: TrapTrigger3
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                    AddSpecialEffectLocBJ
+                        函数: GetRectCenter
+                            变量: gg_rct_Region_224
+                        常量: LaserStrike.mdx
+                    DestroyEffectBJ
+                        函数: GetLastCreatedEffectBJ
+                    TriggerSleepAction
+                        常量: 3.00
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: RectContainsLoc
+                                    变量: gg_rct_Region_224
+                                    函数: GetUnitLoc
+                                        变量: Arazayah
+                                预设: OperatorEqualENE
+                                常量: true
+                        动作
+                            SetVariable
+                                变量: TrapCounter
+                                函数: OperatorReal
+                                    变量: TrapCounter
+                                    预设: OperatorAdd
+                                    常量: 1
+                            DisplayTextToForce
+                                函数: GetPlayersAll
+                                函数: OperatorString
+                                    函数: OperatorString
+                                        常量: |cffffcc00
+                                        函数: R2S
+                                            变量: TrapCounter
+                                    常量: /3|r
+                        动作
+                            DisplayTextToForce
+                                函数: GetPlayersAll
+                                常量: '|cffffcc00Missed. Dragon was not positioned right above the crystal during the shot itself.|r'
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareReal
+                                变量: TrapCounter
+                                预设: OperatorEqual
+                                常量: 3.00
+                        动作
+                            IfThenElse
+                                条件: OperatorCompareBoolean
+                                    函数: IsUnitDeadBJ
+                                        变量: Arazayah
+                                    预设: OperatorEqualENE
+                                    常量: true
+                                动作: ReturnAction
+                                动作: DoNothing
+                            DisableTrigger
+                                函数: GetTriggeringTrigger
+                            PlaySoundBJ
+                                变量: gg_snd_DragonYes1
+                            PlaySoundBJ
+                                变量: gg_snd_WaterElementalWhat4
+                            PauseUnitBJ
+                                预设: PauseUnpauseOptionPause
+                                变量: Arazayah
+                            SetUnitOwner
+                                变量: Arazayah
+                                预设: PlayerNP
+                                预设: ChangeColorTrue
+                            DisableTrigger
+                                变量: gg_trg_Dragon_Borders
+                            AddSpecialEffectTargetUnitBJ
+                                常量: chest
+                                变量: Arazayah
+                                常量: FinalFieldHBig.mdx
+                            SetVariable
+                                变量: TrapEff1
+                                函数: GetLastCreatedEffectBJ
+                            AddSpecialEffectTargetUnitBJ
+                                常量: chest
+                                变量: Arazayah
+                                常量: FinalFieldHBigReversed.mdx
+                            SetVariable
+                                变量: TrapEff2
+                                函数: GetLastCreatedEffectBJ
+                            QuestItemSetCompletedBJ
+                                变量: QuestOptional6Req1
+                                预设: CompletionOptionCompleted
+                            TriggerSleepAction
+                                常量: 2
+                            CreateQuestItemBJ
+                                变量: QuestOptional6
+                                常量: 回复摩西里奥
+                            SetVariable
+                                变量: QuestOptional6Req1
+                                函数: GetLastCreatedQuestItemBJ
+                            FlashQuestDialogButtonBJ
+                            PlaySoundBJ
+                                变量: gg_snd_QuestLog
+                            DisplayTextToForce
+                                函数: GetPlayersAll
+                                常量: '|cffffcc00 - 回复摩西里奥|r
+
+'
+                            EnableTrigger
+                                变量: gg_trg_Mertherio_3
+    IfThenElseMultiple
+        条件
+            OrMultiple
+                条件
+                    OperatorCompareUnit
+                        函数: GetDyingUnit
+                        预设: OperatorEqualENE
+                        变量: TrapTrigger4
+                    OperatorCompareUnit
+                        函数: GetDyingUnit
+                        预设: OperatorEqualENE
+                        变量: TrapTrigger5
+                    OperatorCompareUnit
+                        函数: GetDyingUnit
+                        预设: OperatorEqualENE
+                        变量: TrapTrigger6
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: TrapTrigger4
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: TrapTrigger5
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: TrapTrigger6
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                    AddSpecialEffectLocBJ
+                        函数: GetRectCenter
+                            变量: gg_rct_Region_224_Copy
+                        常量: LaserStrike.mdx
+                    DestroyEffectBJ
+                        函数: GetLastCreatedEffectBJ
+                    TriggerSleepAction
+                        常量: 3.00
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: RectContainsLoc
+                                    变量: gg_rct_Region_224_Copy
+                                    函数: GetUnitLoc
+                                        变量: Arazayah
+                                预设: OperatorEqualENE
+                                常量: true
+                        动作
+                            SetVariable
+                                变量: TrapCounter
+                                函数: OperatorReal
+                                    变量: TrapCounter
+                                    预设: OperatorAdd
+                                    常量: 1
+                            DisplayTextToForce
+                                函数: GetPlayersAll
+                                函数: OperatorString
+                                    函数: OperatorString
+                                        常量: |cffffcc00
+                                        函数: R2S
+                                            变量: TrapCounter
+                                    常量: /3|r
+                        动作
+                            DisplayTextToForce
+                                函数: GetPlayersAll
+                                常量: '|cffffcc00Missed. Dragon was not positioned right above the crystal during the shot itself.|r'
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareReal
+                                变量: TrapCounter
+                                预设: OperatorEqual
+                                常量: 3.00
+                        动作
+                            IfThenElse
+                                条件: OperatorCompareBoolean
+                                    函数: IsUnitDeadBJ
+                                        变量: Arazayah
+                                    预设: OperatorEqualENE
+                                    常量: true
+                                动作: ReturnAction
+                                动作: DoNothing
+                            DisableTrigger
+                                函数: GetTriggeringTrigger
+                            PlaySoundBJ
+                                变量: gg_snd_DragonYes1
+                            PlaySoundBJ
+                                变量: gg_snd_WaterElementalWhat4
+                            PauseUnitBJ
+                                预设: PauseUnpauseOptionPause
+                                变量: Arazayah
+                            SetUnitOwner
+                                变量: Arazayah
+                                预设: PlayerNP
+                                预设: ChangeColorTrue
+                            DisableTrigger
+                                变量: gg_trg_Dragon_Borders
+                            AddSpecialEffectTargetUnitBJ
+                                常量: chest
+                                变量: Arazayah
+                                常量: FinalFieldHBig.mdx
+                            SetVariable
+                                变量: TrapEff1
+                                函数: GetLastCreatedEffectBJ
+                            AddSpecialEffectTargetUnitBJ
+                                常量: chest
+                                变量: Arazayah
+                                常量: FinalFieldHBigReversed.mdx
+                            SetVariable
+                                变量: TrapEff2
+                                函数: GetLastCreatedEffectBJ
+                            QuestItemSetCompletedBJ
+                                变量: QuestOptional6Req1
+                                预设: CompletionOptionCompleted
+                            TriggerSleepAction
+                                常量: 2
+                            CreateQuestItemBJ
+                                变量: QuestOptional6
+                                常量: 回复摩西里奥
+                            SetVariable
+                                变量: QuestOptional6Req1
+                                函数: GetLastCreatedQuestItemBJ
+                            FlashQuestDialogButtonBJ
+                            PlaySoundBJ
+                                变量: gg_snd_QuestLog
+                            DisplayTextToForce
+                                函数: GetPlayersAll
+                                常量: '|cffffcc00 - 回复摩西里奥|r
+
+'
+                            EnableTrigger
+                                变量: gg_trg_Mertherio_3
+    IfThenElseMultiple
+        条件
+            OrMultiple
+                条件
+                    OperatorCompareUnit
+                        函数: GetDyingUnit
+                        预设: OperatorEqualENE
+                        变量: TrapTrigger7
+                    OperatorCompareUnit
+                        函数: GetDyingUnit
+                        预设: OperatorEqualENE
+                        变量: TrapTrigger8
+                    OperatorCompareUnit
+                        函数: GetDyingUnit
+                        预设: OperatorEqualENE
+                        变量: TrapTrigger9
+        动作
+            IfThenElseMultiple
+                条件
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: TrapTrigger7
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: TrapTrigger8
+                        预设: OperatorEqualENE
+                        常量: true
+                    OperatorCompareBoolean
+                        函数: IsUnitDeadBJ
+                            变量: TrapTrigger9
+                        预设: OperatorEqualENE
+                        常量: true
+                动作
+                    AddSpecialEffectLocBJ
+                        函数: GetRectCenter
+                            变量: gg_rct_Region_224_Copy_2
+                        常量: LaserStrike.mdx
+                    DestroyEffectBJ
+                        函数: GetLastCreatedEffectBJ
+                    TriggerSleepAction
+                        常量: 3.00
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: RectContainsLoc
+                                    变量: gg_rct_Region_224_Copy_2
+                                    函数: GetUnitLoc
+                                        变量: Arazayah
+                                预设: OperatorEqualENE
+                                常量: true
+                        动作
+                            SetVariable
+                                变量: TrapCounter
+                                函数: OperatorReal
+                                    变量: TrapCounter
+                                    预设: OperatorAdd
+                                    常量: 1
+                            DisplayTextToForce
+                                函数: GetPlayersAll
+                                函数: OperatorString
+                                    函数: OperatorString
+                                        常量: |cffffcc00
+                                        函数: R2S
+                                            变量: TrapCounter
+                                    常量: /3|r
+                        动作
+                            DisplayTextToForce
+                                函数: GetPlayersAll
+                                常量: '|cffffcc00Missed. Dragon was not positioned right above the crystal during the shot itself.|r'
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareReal
+                                变量: TrapCounter
+                                预设: OperatorEqual
+                                常量: 3.00
+                        动作
+                            IfThenElse
+                                条件: OperatorCompareBoolean
+                                    函数: IsUnitDeadBJ
+                                        变量: Arazayah
+                                    预设: OperatorEqualENE
+                                    常量: true
+                                动作: ReturnAction
+                                动作: DoNothing
+                            DisableTrigger
+                                函数: GetTriggeringTrigger
+                            PlaySoundBJ
+                                变量: gg_snd_DragonYes1
+                            PlaySoundBJ
+                                变量: gg_snd_WaterElementalWhat4
+                            PauseUnitBJ
+                                预设: PauseUnpauseOptionPause
+                                变量: Arazayah
+                            SetUnitOwner
+                                变量: Arazayah
+                                预设: PlayerNP
+                                预设: ChangeColorTrue
+                            DisableTrigger
+                                变量: gg_trg_Dragon_Borders
+                            AddSpecialEffectTargetUnitBJ
+                                常量: chest
+                                变量: Arazayah
+                                常量: FinalFieldHBig.mdx
+                            SetVariable
+                                变量: TrapEff1
+                                函数: GetLastCreatedEffectBJ
+                            AddSpecialEffectTargetUnitBJ
+                                常量: chest
+                                变量: Arazayah
+                                常量: FinalFieldHBigReversed.mdx
+                            SetVariable
+                                变量: TrapEff2
+                                函数: GetLastCreatedEffectBJ
+                            QuestItemSetCompletedBJ
+                                变量: QuestOptional6Req1
+                                预设: CompletionOptionCompleted
+                            TriggerSleepAction
+                                常量: 2
+                            CreateQuestItemBJ
+                                变量: QuestOptional6
+                                常量: 回复摩西里奥
+                            SetVariable
+                                变量: QuestOptional6Req1
+                                函数: GetLastCreatedQuestItemBJ
+                            FlashQuestDialogButtonBJ
+                            PlaySoundBJ
+                                变量: gg_snd_QuestLog
+                            DisplayTextToForce
+                                函数: GetPlayersAll
+                                常量: '|cffffcc00 - 回复摩西里奥|r
+
+'
+                            EnableTrigger
+                                变量: gg_trg_Mertherio_3

@@ -1,0 +1,73 @@
+事件
+    TriggerRegisterEnterRectSimple
+        变量: gg_rct_Region_024
+条件
+    OperatorCompareUnit
+        函数: GetEnteringUnit
+        预设: OperatorEqualENE
+        变量: Hero
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h00V
+        预设: PlayerNA
+        函数: GetRectCenter
+            变量: gg_rct_Region_026
+        预设: RealUnitFacing
+    IssueTargetOrder
+        函数: GetLastCreatedUnit
+        预设: UnitOrderAttackUnit
+        变量: Hero
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h00V
+        预设: PlayerNA
+        函数: GetRectCenter
+            变量: gg_rct_Region_026
+        预设: RealUnitFacing
+    IssueTargetOrder
+        函数: GetLastCreatedUnit
+        预设: UnitOrderAttackUnit
+        变量: Hero
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h00V
+        预设: PlayerNA
+        函数: GetRectCenter
+            变量: gg_rct_Region_026
+        预设: RealUnitFacing
+    IssueTargetOrder
+        函数: GetLastCreatedUnit
+        预设: UnitOrderAttackUnit
+        变量: Hero
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h00V
+        预设: PlayerNA
+        函数: GetRectCenter
+            变量: gg_rct_Region_026
+        预设: RealUnitFacing
+    IssueTargetOrder
+        函数: GetLastCreatedUnit
+        预设: UnitOrderAttackUnit
+        变量: Hero
+    IfThenElse
+        条件: OperatorCompareBoolean
+            变量: ModeAdvanced
+            预设: OperatorEqualENE
+            常量: true
+        动作: DoNothing
+        动作: ReturnAction
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h00V
+        预设: PlayerNA
+        函数: GetRectCenter
+            变量: gg_rct_Region_026
+        预设: RealUnitFacing
+    IssueTargetOrder
+        函数: GetLastCreatedUnit
+        预设: UnitOrderAttackUnit
+        变量: Hero

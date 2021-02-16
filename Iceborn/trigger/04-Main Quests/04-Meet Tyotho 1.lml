@@ -1,0 +1,94 @@
+事件
+    TriggerRegisterUnitInRangeSimple
+        常量: 200.00
+        变量: gg_unit_H00C_0011
+条件
+    OperatorCompareUnit
+        函数: GetTriggerUnit
+        预设: OperatorEqualENE
+        变量: Hero
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    QuestItemSetCompletedBJ
+        变量: QuestMainReq1
+        预设: CompletionOptionCompleted
+    KillDestructable
+        变量: gg_dest_YTpc_3456
+    KillDestructable
+        变量: gg_dest_YTpc_3457
+    SelectUnitSingle
+        变量: gg_unit_H00C_0011
+    DisableTrigger
+        变量: gg_trg_Area_Notice
+    SetMusicVolumeBJ
+        常量: 50.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 26.00
+        常量: '|cffffcc00泰尔卓:|r 我猜,你伴随着萨尔那的祝福总算是到了.他怀着崇高的理想,将你带到了第九宇宙.我的兄弟,乌拉索尔因为对超出我们宇宙界限的力量与知识的渴望,而被蒙蔽了双眼.因此,乌拉索尔为了获得尽可能多的魔法暗夜水晶而拼尽一切.
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Tyotho1
+    TriggerSleepAction
+        常量: 27.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 21.00
+        常量: '|cffffcc00泰尔卓:|r 这个宝物所给他带来的能量,或许有一日会使波伊斯人臣服.这或许会导致世界与宇宙失衡的灾难发生.但你早就熟知了这一切,也是为什么你来到了这里,因为你的灵魂是高尚的,冰裔.
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Tyotho2
+    TriggerSleepAction
+        常量: 22.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 25.00
+        常量: '|cffffcc00泰尔卓:|r 距离此处的东北方有一个未被处理,强大且尚未被人搜集的部分魔法暗夜水晶.不幸的是,乌拉索尔的手下早已将其纳入控制之下,不过乌拉索尔推迟了他的行程.我建议你去那里,无效化他计划使用的水晶.
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Tyotho3
+    TriggerSleepAction
+        常量: 26.00
+    DisplayTimedTextToForce
+        函数: GetPlayersAll
+        常量: 15.00
+        常量: '|cffffcc00泰尔卓:|r 在你走之前,接受这份礼物以表达我的感谢.这或许会帮你省下困难时刻的宝贵时间,又或者在你陷入陷阱时助你突破险境.
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Tyotho4
+    CreateItemLoc
+        常量: I004
+        函数: GetRectCenter
+            变量: gg_rct_Region_050
+    TriggerSleepAction
+        常量: 16.00
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cff7777aa注意: 通过球体传送到水晶树,同时英雄的生命值与魔法值会迅速地得到回复.|r
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Hint
+    TriggerSleepAction
+        常量: 1.00
+    SetMusicVolumeBJ
+        常量: 100.00
+    CreateQuestItemBJ
+        变量: QuestMain
+        常量: 无效化圣域东北方的边界行者的水晶
+    SetVariable
+        变量: QuestMainReq1
+        函数: GetLastCreatedQuestItemBJ
+    FlashQuestDialogButtonBJ
+    PlaySoundBJ
+        变量: gg_snd_QuestLog
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cffffcc00 - 无效化强大的水晶|r
+
+'

@@ -1,0 +1,25 @@
+事件
+条件
+动作
+    SetVariable
+        变量: PickedUnit
+        函数: GroupPickRandomUnit
+            变量: Sample_Group
+    UnitDamageTargetBJ
+        变量: Arazayah
+        变量: PickedUnit
+        常量: 280.00
+        预设: AttackTypeNormal
+        预设: DamageTypeNormal
+    GroupRemoveUnitSimple
+        变量: PickedUnit
+        变量: Sample_Group
+    IfThenElse
+        条件: OperatorCompareBoolean
+            函数: IsUnitGroupEmptyBJ
+                变量: Sample_Group
+            预设: OperatorEqualENE
+            常量: true
+        动作: DoNothing
+        动作: TriggerExecute
+            函数: GetTriggeringTrigger

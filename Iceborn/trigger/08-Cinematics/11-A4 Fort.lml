@@ -1,0 +1,347 @@
+事件
+条件
+动作
+    ClearMapMusicBJ
+    EndThematicMusicBJ
+    StopMusicBJ
+        预设: FadeDontDont
+    PlayMusicBJ
+        变量: gg_snd_Dragon_Soul
+    DisableTrigger
+        变量: gg_trg_Guardian_Sounds
+    DisableTrigger
+        变量: gg_trg_Hero_Lock
+    CinematicModeBJ
+        预设: OnOffOn
+        函数: GetPlayersAll
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_080
+        预设: Player00
+        常量: 0
+    SetUnitPositionLocFacingLocBJ
+        变量: Hero
+        函数: GetRectCenter
+            变量: gg_rct_Region_312
+        函数: GetUnitLoc
+            变量: gg_unit_H01N_0420
+    EnableTrigger
+        变量: gg_trg_A4_Skip
+    TriggerSleepAction
+        常量: 4.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: CinematicSkipped4
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: CinematicSkipped4
+                常量: false
+            ReturnAction
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeOut
+        常量: 3.00
+        常量: Act4.blp
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    TriggerSleepAction
+        常量: 6.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: CinematicSkipped4
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: CinematicSkipped4
+                常量: false
+            ReturnAction
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeIn
+        常量: 2.00
+        常量: Act4.blp
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    TriggerSleepAction
+        常量: 2.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: CinematicSkipped4
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: CinematicSkipped4
+                常量: false
+            ReturnAction
+    SetTerrainFogExBJ
+        预设: FogStyleLinear
+        常量: 500.00
+        常量: 6000.00
+        常量: 0
+        常量: 100
+        常量: 100
+        常量: 100
+    SetSkyModel
+        预设: SkyModelSky08
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeOut
+        常量: 0.00
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_149
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_150
+        预设: Player00
+        常量: 17.00
+    TriggerSleepAction
+        常量: 1.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: CinematicSkipped4
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: CinematicSkipped4
+                常量: false
+            ReturnAction
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeIn
+        常量: 4.00
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    TriggerSleepAction
+        常量: 7.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: CinematicSkipped4
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: CinematicSkipped4
+                常量: false
+            ReturnAction
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cffffcc00苍 蓝 要 塞|r
+
+'
+    TriggerSleepAction
+        常量: 8.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: CinematicSkipped4
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: CinematicSkipped4
+                常量: false
+            ReturnAction
+    ShowUnitHide
+        变量: gg_unit_h05Y_0388
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_151
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_152
+        预设: Player00
+        常量: 33.00
+    TriggerSleepAction
+        常量: 3.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: CinematicSkipped4
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: CinematicSkipped4
+                常量: false
+            ReturnAction
+    SetUnitAnimation
+        变量: gg_unit_H01N_0420
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H01N_0420
+        常量: 诺索拉姆
+        变量: gg_snd_Northorum22
+        常量: '乌拉索尔想要能够完成他父亲未能完成的 - 开启恐惧之门.一旦足够的魔法暗夜水晶凑齐,打开了恐惧之门,寒霜天地必定会被乌拉索尔支配.我们之中的任何人都不可能阻止从门中到来的力量.'
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H01N_0420
+    TriggerSleepAction
+        常量: 2
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: CinematicSkipped4
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: CinematicSkipped4
+                常量: false
+            ReturnAction
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_153
+        预设: Player00
+        常量: 0
+    SetUnitAnimation
+        变量: gg_unit_H00C_0419
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H00C_0419
+        常量: 泰尔卓
+        变量: gg_snd_Tyotho11
+        常量: 那也是为什么我们必须现在就要打败他,把那个洞关得永远打不开.已经没有时间可以浪费了.
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H00C_0419
+    TriggerSleepAction
+        常量: 2
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: CinematicSkipped4
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: CinematicSkipped4
+                常量: false
+            ReturnAction
+    ShowUnitHide
+        变量: gg_unit_h05N_0425
+    ShowUnitShow
+        变量: gg_unit_h05Y_0388
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_154
+        预设: Player00
+        常量: 0
+    CameraSetupApplyForPlayer
+        预设: CameraApply
+        变量: gg_cam_Camera_155
+        预设: Player00
+        常量: 25.00
+    TriggerSleepAction
+        常量: 1.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: CinematicSkipped4
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: CinematicSkipped4
+                常量: false
+            ReturnAction
+    SetUnitAnimation
+        变量: gg_unit_H01N_0420
+        常量: 'portrait talk'
+    TransmissionFromUnitWithNameBJ
+        函数: GetPlayersAll
+        变量: gg_unit_H01N_0420
+        常量: 诺索拉姆
+        变量: gg_snd_Northorum23
+        常量: 还不行.我们一定要等萨德玛斯与阿娜拉一起.只有这样才能够造成致命打击,完完全全地终结乌拉索尔.
+        预设: AddSetToAdd
+        常量: 0.00
+        预设: WaitDontWait
+    ResetUnitAnimation
+        变量: gg_unit_H01N_0420
+    TriggerSleepAction
+        常量: 2
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: CinematicSkipped4
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: CinematicSkipped4
+                常量: false
+            ReturnAction
+    CinematicFadeBJ
+        预设: FadeTypeOptionFadeOut
+        常量: 4.00
+        预设: CineFilterTextureWhite
+        常量: 100.00
+        常量: 100.00
+        常量: 100.00
+        常量: 0
+    TriggerSleepAction
+        常量: 5.00
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: CinematicSkipped4
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            SetVariable
+                变量: CinematicSkipped4
+                常量: false
+            ReturnAction
+    ShowUnitShow
+        变量: gg_unit_h05N_0425
+    IssuePointOrderLoc
+        变量: gg_unit_h05M_0422
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_328
+    IssuePointOrderLoc
+        变量: gg_unit_h05M_0421
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_329
+    IssuePointOrderLoc
+        变量: gg_unit_h05M_0423
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_327
+    IssuePointOrderLoc
+        变量: gg_unit_h05M_0424
+        预设: UnitOrderMove
+        函数: GetRectCenter
+            变量: gg_rct_Region_330
+    TriggerExecute
+        变量: gg_trg_A4_Portal

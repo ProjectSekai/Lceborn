@@ -1,0 +1,75 @@
+事件
+    MapInitializationEvent
+条件
+动作
+    SetVariable
+        变量: tempGroup
+        函数: GetUnitsInRectAll
+            函数: GetPlayableMapRect
+    CustomScriptCode
+        常量: 'call DestroyGroup(udg_tempGroup)'
+    CommentString
+        常量: 'Configure the duration and size of the floating texts'
+    SetVariable
+        变量: Text_Duration
+        常量: 2.00
+    SetVariable
+        变量: TextSize_dmg
+        常量: 9.00
+    SetVariable
+        变量: TextSize_spells
+        常量: 10.00
+    CommentString
+        常量: -
+    CommentString
+        常量: 'These are strings to make the floating texts use the matching players colors'
+    CommentString
+        常量: 'Neutral Hostile will be using white'
+    SetVariable
+        数组: PlayerColors
+            常量: 1
+        常量: |c00FF0303
+    SetVariable
+        数组: PlayerColors
+            常量: 2
+        常量: |c000042FF
+    SetVariable
+        数组: PlayerColors
+            常量: 3
+        常量: |c001CE6B9
+    SetVariable
+        数组: PlayerColors
+            常量: 4
+        常量: |c00540081
+    SetVariable
+        数组: PlayerColors
+            常量: 5
+        常量: |c00FFFC01
+    SetVariable
+        数组: PlayerColors
+            常量: 6
+        常量: |c00fEBA0E
+    SetVariable
+        数组: PlayerColors
+            常量: 7
+        常量: |c0020C000
+    SetVariable
+        数组: PlayerColors
+            常量: 8
+        常量: |c00E55BB0
+    SetVariable
+        数组: PlayerColors
+            常量: 9
+        常量: |c00959697
+    SetVariable
+        数组: PlayerColors
+            常量: 10
+        常量: |c007EBFF1
+    SetVariable
+        数组: PlayerColors
+            常量: 11
+        常量: |c00106246
+    SetVariable
+        数组: PlayerColors
+            常量: 12
+        常量: |c004E2A04

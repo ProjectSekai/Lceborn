@@ -1,0 +1,58 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventHeroUseItem
+条件
+    OperatorCompareItemCode
+        函数: GetItemTypeId
+            函数: GetManipulatedItem
+        预设: OperatorEqualENE
+        常量: I00K
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareReal
+                函数: OperatorReal
+                    函数: GetUnitStateSwap
+                        预设: UnitStateMana
+                        变量: Hero
+                    预设: OperatorAdd
+                    函数: OperatorReal
+                        函数: GetUnitStateSwap
+                            预设: UnitStateMaxMana
+                            变量: Hero
+                        预设: OperatorMultiply
+                        常量: 0.30
+                预设: OperatorGreaterEq
+                函数: GetUnitStateSwap
+                    预设: UnitStateMaxMana
+                    变量: Hero
+        动作
+            SetUnitManaPercentBJ
+                变量: Hero
+                常量: 100.00
+            AddSpecialEffectTargetUnitBJ
+                常量: origin
+                变量: Hero
+                常量: Abilities\Spells\Items\AIma\AImaTarget.mdl
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ
+        动作
+            SetUnitManaBJ
+                变量: Hero
+                函数: OperatorReal
+                    函数: GetUnitStateSwap
+                        预设: UnitStateMana
+                        变量: Hero
+                    预设: OperatorAdd
+                    函数: OperatorReal
+                        函数: GetUnitStateSwap
+                            预设: UnitStateMaxMana
+                            变量: Hero
+                        预设: OperatorMultiply
+                        常量: 0.30
+            AddSpecialEffectTargetUnitBJ
+                常量: origin
+                变量: Hero
+                常量: Abilities\Spells\Items\AIma\AImaTarget.mdl
+            DestroyEffectBJ
+                函数: GetLastCreatedEffectBJ

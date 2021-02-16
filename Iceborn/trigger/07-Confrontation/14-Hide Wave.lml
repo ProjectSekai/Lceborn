@@ -1,0 +1,37 @@
+事件
+条件
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: IsUnitGroupEmptyBJ
+                    变量: Hostile
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            ForGroup
+                函数: GetUnitsInRectAll
+                    变量: gg_rct_Region_326
+                动作: IfThenElse
+                    条件: OperatorComparePlayer
+                        函数: GetOwningPlayer
+                            函数: GetEnumUnit
+                        预设: OperatorEqualENE
+                        预设: PlayerNA
+                    动作: GroupAddUnitSimple
+                        函数: GetEnumUnit
+                        变量: Hostile
+                    动作: DoNothing
+        动作
+            SetVariable
+                变量: RandomHostile
+                函数: GroupPickRandomUnit
+                    变量: Hostile
+            UnitAddAbilityBJ
+                常量: Agho
+                变量: RandomHostile
+            GroupRemoveUnitSimple
+                变量: RandomHostile
+                变量: Hostile
+            TriggerExecute
+                函数: GetTriggeringTrigger

@@ -1,0 +1,49 @@
+事件
+    TriggerRegisterEnterRectSimple
+        变量: gg_rct_Region_051
+条件
+    OperatorCompareUnit
+        函数: GetTriggerUnit
+        预设: OperatorEqualENE
+        变量: Hero
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    EnableTrigger
+        变量: gg_trg_Ertiotallus_Cast
+    EnableTrigger
+        变量: gg_trg_Ertio_Spheres
+    DisableTrigger
+        变量: gg_trg_Teleportation_Window
+    EnableTrigger
+        变量: gg_trg_Teleportation_Block
+    PlaySoundBJ
+        变量: gg_snd_Hint
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cff7777aa提示: 摧毁三个聚集水晶能量的球体并打倒蜘蛛|r
+
+'
+    ClearMapMusicBJ
+    EndThematicMusicBJ
+    StopMusicBJ
+        预设: FadeDontDont
+    PlayMusicBJ
+        变量: gg_snd_Joshua_Buck___Vanguard
+    CreateItemLoc
+        常量: I00E
+        函数: GetRandomLocInRect
+            变量: gg_rct_Region_315
+    SetVariable
+        变量: ErtioSphere
+        函数: GetLastCreatedItem
+    AddSpecialEffectLocBJ
+        函数: GetItemLoc
+            函数: GetLastCreatedItem
+        常量: Objects\Spawnmodels\Other\ToonBoom\ToonBoom.mdl
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    TriggerSleepAction
+        常量: 8.00
+    EnableTrigger
+        变量: gg_trg_Ertio_Bubble_Wander

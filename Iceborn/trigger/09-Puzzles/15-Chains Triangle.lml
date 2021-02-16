@@ -1,0 +1,62 @@
+事件
+条件
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    SetVariable
+        变量: MirrorHintPointUpper
+        函数: GetUnitLoc
+            变量: gg_unit_h04G_0283
+    SetVariable
+        变量: MirrorHintPointLower
+        函数: GetUnitLoc
+            变量: gg_unit_h04H_0284
+    KillUnit
+        变量: gg_unit_h04G_0283
+    KillUnit
+        变量: gg_unit_h04H_0284
+    ShowUnitShow
+        变量: gg_unit_h04E_0268
+    ShowUnitShow
+        变量: gg_unit_h04E_0271
+    ShowUnitShow
+        变量: gg_unit_h04E_0274
+    ShowUnitShow
+        变量: gg_unit_h04E_0267
+    ShowUnitShow
+        变量: gg_unit_h04E_0280
+    ShowUnitShow
+        变量: gg_unit_h04E_0277
+    ShowUnitShow
+        变量: gg_unit_h04E_0273
+    ShowUnitShow
+        变量: gg_unit_h04E_0275
+    ShowUnitShow
+        变量: gg_unit_h04E_0276
+    ShowUnitShow
+        变量: gg_unit_h04E_0066
+    ShowUnitShow
+        变量: gg_unit_h04E_0282
+    ShowUnitShow
+        变量: gg_unit_h04E_0278
+    ShowUnitShow
+        变量: gg_unit_h04E_0281
+    ShowUnitShow
+        变量: gg_unit_h04E_0279
+    ShowUnitShow
+        变量: gg_unit_h04E_0272
+    ShowUnitShow
+        变量: gg_unit_h04E_0266
+    ShowUnitShow
+        变量: gg_unit_h04E_0269
+    ShowUnitShow
+        变量: gg_unit_h04E_0270
+    TriggerSleepAction
+        常量: 4.00
+    DisplayTextToForce
+        函数: GetPlayersAll
+        常量: '|cff7777aa提示: 消灭18道光线中的3道以留下7个三角形,只有一次机会.被选择的光线无法与它们	的末端相连.|r
+
+'
+    PlaySoundBJ
+        变量: gg_snd_Hint

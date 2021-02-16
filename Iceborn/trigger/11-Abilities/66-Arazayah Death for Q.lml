@@ -1,0 +1,16 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventDeath
+条件
+    OperatorCompareUnit
+        函数: GetDyingUnit
+        预设: OperatorEqualENE
+        变量: Arazayah
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    QuestSetFailedBJ
+        变量: QuestOptional6
+        预设: FailureOptionFailed
+    PlaySoundBJ
+        变量: gg_snd_QuestFailed

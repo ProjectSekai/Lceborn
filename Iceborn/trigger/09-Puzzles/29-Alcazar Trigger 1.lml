@@ -1,0 +1,174 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventDeath
+条件
+    OperatorCompareUnit
+        函数: GetDyingUnit
+        预设: OperatorEqualENE
+        变量: RotatorTrigger1
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareUnit
+                函数: GetDyingUnit
+                预设: OperatorEqualENE
+                变量: RotatorTrigger1
+        动作
+            CreateNUnitsAtLoc
+                常量: 1
+                常量: h05H
+                预设: PlayerNP
+                函数: GetUnitLoc
+                    函数: GetDyingUnit
+                预设: RealUnitFacing
+            SetVariable
+                变量: RotatorTrigger1
+                函数: GetLastCreatedUnit
+            IfThenElseMultiple
+                条件
+                    OperatorCompareReal
+                        变量: RotationAngleT1
+                        预设: OperatorEqual
+                        常量: 1.00
+                动作
+                    SetVariable
+                        变量: RotationAngleT1
+                        常量: 2.00
+                动作
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareReal
+                                变量: RotationAngleT1
+                                预设: OperatorEqual
+                                常量: 2.00
+                        动作
+                            SetVariable
+                                变量: RotationAngleT1
+                                常量: 3.00
+                        动作
+                            IfThenElseMultiple
+                                条件
+                                    OperatorCompareReal
+                                        变量: RotationAngleT1
+                                        预设: OperatorEqual
+                                        常量: 3.00
+                                动作
+                                    SetVariable
+                                        变量: RotationAngleT1
+                                        常量: 4.00
+                                动作
+                                    IfThenElseMultiple
+                                        条件
+                                            OperatorCompareReal
+                                                变量: RotationAngleT1
+                                                预设: OperatorEqual
+                                                常量: 4.00
+                                        动作
+                                            SetVariable
+                                                变量: RotationAngleT1
+                                                常量: 1.00
+            SetVariable
+                变量: RotatorOrb1
+                常量: false
+            SetVariable
+                变量: RotatorOrb2
+                常量: false
+            SetVariable
+                变量: RotatorOrb3
+                常量: false
+            SetVariable
+                变量: RotatorOrb4
+                常量: false
+            StopSoundBJ
+                变量: gg_snd_StoneDrag
+                预设: FadeDontDont
+            PlaySoundBJ
+                变量: gg_snd_StoneDrag
+            IfThenElseMultiple
+                条件
+                    OperatorCompareReal
+                        变量: RotationAngleT1
+                        预设: OperatorEqual
+                        常量: 2.00
+                动作
+                    SetUnitFacingToFaceUnitTimed
+                        变量: gg_unit_h05E_0092
+                        变量: gg_unit_h05G_0231
+                        常量: 2.20
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: IsUnitHiddenBJ
+                                    变量: gg_unit_h05G_0233
+                                预设: OperatorEqualENE
+                                常量: false
+                        动作
+                            SetVariable
+                                变量: RotatorOrb2
+                                常量: true
+            IfThenElseMultiple
+                条件
+                    OperatorCompareReal
+                        变量: RotationAngleT1
+                        预设: OperatorEqual
+                        常量: 3.00
+                动作
+                    SetUnitFacingToFaceUnitTimed
+                        变量: gg_unit_h05E_0092
+                        变量: gg_unit_h05G_0229
+                        常量: 2.20
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: IsUnitHiddenBJ
+                                    变量: gg_unit_h05G_0232
+                                预设: OperatorEqualENE
+                                常量: false
+                        动作
+                            SetVariable
+                                变量: RotatorOrb3
+                                常量: true
+            IfThenElseMultiple
+                条件
+                    OperatorCompareReal
+                        变量: RotationAngleT1
+                        预设: OperatorEqual
+                        常量: 4.00
+                动作
+                    SetUnitFacingToFaceUnitTimed
+                        变量: gg_unit_h05E_0092
+                        变量: gg_unit_h05G_0233
+                        常量: 2.20
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: IsUnitHiddenBJ
+                                    变量: gg_unit_h05G_0231
+                                预设: OperatorEqualENE
+                                常量: false
+                        动作
+                            SetVariable
+                                变量: RotatorOrb4
+                                常量: true
+            IfThenElseMultiple
+                条件
+                    OperatorCompareReal
+                        变量: RotationAngleT1
+                        预设: OperatorEqual
+                        常量: 1.00
+                动作
+                    SetUnitFacingToFaceUnitTimed
+                        变量: gg_unit_h05E_0092
+                        变量: gg_unit_h05G_0232
+                        常量: 2.20
+                    IfThenElseMultiple
+                        条件
+                            OperatorCompareBoolean
+                                函数: IsUnitHiddenBJ
+                                    变量: gg_unit_h05G_0229
+                                预设: OperatorEqualENE
+                                常量: false
+                        动作
+                            SetVariable
+                                变量: RotatorOrb1
+                                常量: true

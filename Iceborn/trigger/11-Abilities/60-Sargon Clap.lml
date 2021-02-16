@@ -1,0 +1,95 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OperatorCompareAbilityId
+        函数: GetSpellAbilityId
+        预设: OperatorEqualENE
+        常量: A04M
+动作
+    PlaySoundBJ
+        变量: gg_snd_IceCrackLoud
+    PlaySoundBJ
+        变量: gg_snd_DragonYesAttack2
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h04R
+        预设: PlayerNA
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: Sargon
+            常量: 200.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: Sargon
+                预设: OperatorAdd
+                常量: 60.00
+        预设: RealUnitFacing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h04R
+        预设: PlayerNA
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: Sargon
+            常量: 200.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: Sargon
+                预设: OperatorAdd
+                常量: 0.00
+        预设: RealUnitFacing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h04R
+        预设: PlayerNA
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: Sargon
+            常量: 200.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: Sargon
+                预设: OperatorSubtract
+                常量: 60.00
+        预设: RealUnitFacing
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h04R
+        预设: PlayerNA
+        函数: PolarProjectionBJ
+            函数: GetUnitLoc
+                变量: Sargon
+            常量: 400.00
+            函数: OperatorReal
+                函数: GetUnitFacing
+                    变量: Sargon
+                预设: OperatorAdd
+                常量: 0.00
+        预设: RealUnitFacing
+    UnitAddAbilityBJ
+        常量: Avul
+        变量: Sargon
+    UnitAddAbilityBJ
+        常量: A04N
+        变量: Sargon
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                变量: ModeAdvanced
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            TriggerSleepAction
+                常量: 12.00
+        动作
+            TriggerSleepAction
+                常量: 8.00
+    UnitRemoveAbilityBJ
+        常量: Avul
+        变量: Sargon
+    UnitRemoveAbilityBJ
+        常量: A04N
+        变量: Sargon
+    PlaySoundBJ
+        变量: gg_snd_NetherDragonYes1

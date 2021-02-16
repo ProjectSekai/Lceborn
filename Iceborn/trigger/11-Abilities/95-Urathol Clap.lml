@@ -1,0 +1,33 @@
+事件
+    TriggerRegisterAnyUnitEventBJ
+        预设: PlayerUnitEventSpellEffect
+条件
+    OperatorCompareAbilityId
+        函数: GetSpellAbilityId
+        预设: OperatorEqualENE
+        常量: A06Y
+动作
+    AddSpecialEffectLocBJ
+        函数: GetUnitLoc
+            变量: gg_unit_H06F_0415
+        常量: Eclipse.mdx
+    DestroyEffectBJ
+        函数: GetLastCreatedEffectBJ
+    PlaySoundBJ
+        变量: gg_snd_Explosion14
+    CreateNUnitsAtLoc
+        常量: 1
+        常量: h06Y
+        预设: PlayerNA
+        函数: GetUnitLoc
+            函数: GetTriggerUnit
+        预设: RealUnitFacing
+    SetVariable
+        变量: UraOrb
+        函数: GetLastCreatedUnit
+    UnitApplyTimedLifeBJ
+        常量: 20.00
+        预设: TimedLifeBuffCodeGeneric
+        函数: GetLastCreatedUnit
+    EnableTrigger
+        变量: gg_trg_Urathol_Clap_Effect

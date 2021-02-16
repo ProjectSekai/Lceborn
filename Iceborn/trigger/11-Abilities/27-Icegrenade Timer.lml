@@ -1,0 +1,17 @@
+事件
+    TriggerRegisterTimerExpireEventBJ
+        变量: Timer
+条件
+动作
+    IfThenElseMultiple
+        条件
+            OperatorCompareBoolean
+                函数: IsUnitAliveBJ
+                    变量: Grenade
+                预设: OperatorEqualENE
+                常量: true
+        动作
+            DestroyEffectBJ
+                变量: Beam
+            RemoveUnit
+                变量: Grenade

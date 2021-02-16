@@ -1,0 +1,32 @@
+事件
+    TriggerRegisterDialogEventBJ
+        变量: Dialog
+条件
+动作
+    DisableTrigger
+        函数: GetTriggeringTrigger
+    IfThenElseMultiple
+        条件
+            OperatorCompareButton
+                函数: GetClickedButtonBJ
+                预设: OperatorEqualENE
+                变量: DialogButton1
+        动作
+            DisableTrigger
+                变量: gg_trg_Mask_Dialog_Checkup
+            TriggerSleepAction
+                常量: 1.00
+            CinematicFadeBJ
+                预设: FadeTypeOptionFadeOut
+                常量: 4.00
+                预设: CineFilterTextureWhite
+                常量: 100.00
+                常量: 100.00
+                常量: 100.00
+                常量: 0
+            TriggerSleepAction
+                常量: 4.00
+            EnableTrigger
+                变量: gg_trg_NeedleSpin
+            TriggerExecute
+                变量: gg_trg_A4_Fort
